@@ -1,0 +1,37 @@
+
+button[type="submit"]{
+     background-color:darkred !important;
+     color:white !important;
+     border-color: darkred;
+ }
+ button[type="submit"]:hover{
+     background-color: white !important;
+     color: darkred !important;
+     border-color: darkred;
+ }
+ button[type="submit"]:focus{
+     background-color: white !important;
+     color: darkred !important;
+     border-color: darkred;
+ }
+ a.add{
+     background-color:darkred;
+     color:white;
+     border-color: darkred;
+ }
+ a.add:hover{
+     background-color: white;
+     color: darkred;
+     border-color: darkred;
+ }
+ a.back{
+     color:darkred;
+ }
+ #tondach{
+     color:white;
+ }
+ #index{
+     padding-left: 1em;
+ }
+
+ 

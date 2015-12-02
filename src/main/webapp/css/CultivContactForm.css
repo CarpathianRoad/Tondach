@@ -1,0 +1,56 @@
+
+h1{
+font-size: 28px;
+color: #402024;
+margin-bottom: 20px;
+font-weight: normal;
+}	
+#cultivContact {
+width: 625px;
+margin: 0 auto;
+padding: 30px 10px;
+}
+		input, textarea {
+margin: 0 0 10px 0;
+padding: 5px 5px 6px;
+background: #eee;
+border: 1px solid lightgrey;
+		}		
+		input {width: 250px;}
+		textarea {width: 320px; height: 120px;}		
+	
+		form .submit {
+margin-right: -10px;
+margin-left: -10px;
+		}
+form .submit input {
+margin-left: 10px;
+}
+
+
+.canrow {
+line-height: 1em;
+		
+position: relative;
+float: none;
+overflow: hidden;
+clear: both;
+margin-left: auto;
+margin-right: auto;
+}
+.towhom {
+padding-left: 100px;
+max-width: 180px;
+text-align: left;
+float: right;
+}
+.towhom .towhom_label {
+float: left;
+text-align: right;
+width: 80px;
+margin-left: -100px;
+font-weight: normal;
+font-size: .86em;
+color: #333;
+}
+

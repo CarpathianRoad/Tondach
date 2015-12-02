@@ -1,0 +1,62 @@
+.product-detail .other-products {
+	width: 100%;
+	height: 170px;
+	padding-top: 20px;
+	border: 1px solid #e0dadb;
+}
+.product-detail .other-products .navi {
+	margin: 10px auto 0 auto;
+	font: 0/0 a;
+	text-align: center;
+}
+.product-detail .other-products .navi a {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin: 3px;
+	background: url(images/scrollablenavi.gif) no-repeat left top;
+	cursor: pointer;
+}
+.product-detail .other-products .navi a.active {
+	background-position: left bottom;
+}
+.product-detail .other-products > a {
+	float: left;
+	width: 54px;
+	height: 114px;
+	cursor: pointer;
+}
+.product-detail .other-products a.prev {
+	background: url(/Tondach/media/1446/thumbnails-left.png) no-repeat center center;
+}
+.product-detail .other-products a.next {
+	background: url(/Tondach/media/1444/thumbnails-right.png) no-repeat center center;
+}
+.product-detail .other-products .scrollable {
+	float: left;
+  	position: relative;
+  	overflow: hidden;
+  	width: 576px;
+ 	height: 114px;
+}
+
+.product-detail .other-products .scrollable .items {
+  	width: 20000em;
+  	position: absolute;
+}
+.product-detail .other-products .scrollable .items div {
+	float: left;
+}
+.product-detail .other-products .scrollable .items a {
+  	float: left;
+  	width: 110px;
+  	margin: 6px 6px 0 0;
+  	cursor: pointer;
+}
+.product-detail .other-products .scrollable .items img {
+	display: block;
+	width: 85px;
+}
+.individual-price ins {
+	color: #BD1220;
+}

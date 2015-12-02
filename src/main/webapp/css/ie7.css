@@ -1,0 +1,37 @@
+#content .subline {
+    margin-top: 0;
+}
+
+.foldable ul .item {
+	overflow: hidden;
+}
+
+.foldable ul .item .image {
+	display: block;
+	float: left;
+	text-align: center;
+	margin-left: 0;
+	padding-left: 0;
+	margin-right: 10px;
+	width: 34px;
+}
+
+.foldable ul .item a {
+}
+
+.foldable ul ul div {
+    padding-left: 35px;
+}
+
+.foldable ul ul ul div {
+    padding-left: 70px;
+}
+
+.foldable ul ul ul ul div {
+    padding-left: 105px;
+}
+
+.foldable ul ul ul ul ul div {
+    padding-left: 140px;
+}
+

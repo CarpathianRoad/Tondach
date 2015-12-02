@@ -1,0 +1,61 @@
+/* print view */
+
+#header,
+#print-product .header,
+#inner .slogan,
+#innerHeader ul.navigation,
+#sidebar,
+#footer,
+.product-detail .rightbox,
+ul.product-tabs,
+.product-panes,
+.product-slider,
+#content div.references-sidebar,
+#overlay
+{
+	display: none;
+}
+
+#inner .main {
+	padding: 0;
+}
+
+ul.breadcrumbs {
+	margin-left: 0;
+}
+
+#content {
+	width: 100%;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#content div.narrow {
+	width: 700px;
+}
+
+#content ul.news .main-column, #content ul.events .main-column {
+	width: 700px;
+}
+
+#inner {
+    background-color: #FFFFFF;
+    border-top-right-radius: 0;
+    box-shadow: none;
+}
+
+.content-view-embed-flash {
+	display: none;
+}
+
+#content .subcategories,
+#content div.references-content
+{
+	width: 100%;
+}
+
+#content ul.products {
+	background: none;
+	border: none;
+}
+
