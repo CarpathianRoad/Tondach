@@ -55,9 +55,9 @@
 			<input type="submit" value="Пройти реєстрацію" class="button">
 		</div></form>
 	</div>
-				<div  style="margin-top:10px"><p><span>Фоменко <span>Володимир<br />тел.: <a href="tel:%2B380675612934">+38 (067) 561-29-34<br /><span>e-mail: </span></a><a href="mailto:logist2@webtrans.net.ua">logist2@webtrans.net.ua</a><a href="tel:%2B380675612934"><br /></a></span></span></p></div>
+            <c:forEach items="${riders}" var="item">
+				<div  style="margin-top:10px">${item.text}</div>
+            </c:forEach>
 </div>
-	  
-        </div>
-      </div>
+	
 </t:indexpage>

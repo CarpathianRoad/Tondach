@@ -17,6 +17,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import ua.aits.tondach.functions.Helpers;
 import ua.aits.tondach.model.ArticleModel;
+import ua.aits.tondach.model.RiderModel;
+import ua.aits.tondach.model.SellerModel;
 import ua.aits.tondach.model.SlaterModel;
 
 /**
@@ -28,25 +30,79 @@ import ua.aits.tondach.model.SlaterModel;
 @Scope("session")
 public class PageController {
     
-    SlaterModel slaters = new SlaterModel();
+    SlaterModel Slaters = new SlaterModel();
+    RiderModel Riders = new RiderModel();
+    SellerModel Seller = new SellerModel();
     
     @RequestMapping(value = {"/where_buy/", "where_buy/"}, method = RequestMethod.GET)
     public ModelAndView where_buy(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/where_buy/where_buy");
+        List<SellerModel> seller = Seller.getSellerByCount("0","100");
+            model.addObject("seller", seller);
+            SellerModel tempArt1  = Seller.getOneSeller("1");
+            SellerModel tempArt2  = Seller.getOneSeller("2");
+            SellerModel tempArt3  = Seller.getOneSeller("3");
+            SellerModel tempArt4  = Seller.getOneSeller("4");
+            SellerModel tempArt5  = Seller.getOneSeller("5");
+            SellerModel tempArt6  = Seller.getOneSeller("6");
+            SellerModel tempArt7  = Seller.getOneSeller("7");
+            SellerModel tempArt8  = Seller.getOneSeller("8");
+            SellerModel tempArt9  = Seller.getOneSeller("9");
+            SellerModel tempArt10  = Seller.getOneSeller("10");
+            SellerModel tempArt11  = Seller.getOneSeller("11");
+            SellerModel tempArt12  = Seller.getOneSeller("12");
+            SellerModel tempArt13  = Seller.getOneSeller("13");
+            SellerModel tempArt14  = Seller.getOneSeller("14");
+            SellerModel tempArt15  = Seller.getOneSeller("15");
+            SellerModel tempArt16  = Seller.getOneSeller("16");
+            SellerModel tempArt17  = Seller.getOneSeller("17");
+            SellerModel tempArt18  = Seller.getOneSeller("18");
+            SellerModel tempArt19  = Seller.getOneSeller("19");
+            SellerModel tempArt20  = Seller.getOneSeller("20");
+            SellerModel tempArt21  = Seller.getOneSeller("21");
+            SellerModel tempArt22  = Seller.getOneSeller("22");
+            SellerModel tempArt23  = Seller.getOneSeller("23");
+            SellerModel tempArt24  = Seller.getOneSeller("24");
+            SellerModel tempArt25  = Seller.getOneSeller("25");
+            model.addObject("sellers1", tempArt1);
+            model.addObject("sellers2", tempArt2);
+            model.addObject("sellers3", tempArt3);
+            model.addObject("sellers4", tempArt4);
+            model.addObject("sellers5", tempArt5);
+            model.addObject("sellers6", tempArt6);
+            model.addObject("sellers7", tempArt7);
+            model.addObject("sellers8", tempArt8);
+            model.addObject("sellers9", tempArt9);
+            model.addObject("sellers10", tempArt10);
+            model.addObject("sellers11", tempArt11);
+            model.addObject("sellers12", tempArt12);
+            model.addObject("sellers13", tempArt13);
+            model.addObject("sellers14", tempArt14);
+            model.addObject("sellers15", tempArt15);
+            model.addObject("sellers16", tempArt16);
+            model.addObject("sellers17", tempArt17);
+            model.addObject("sellers18", tempArt18);
+            model.addObject("sellers19", tempArt19);
+            model.addObject("sellers20", tempArt20);
+            model.addObject("sellers21", tempArt21);
+            model.addObject("sellers22", tempArt22);
+            model.addObject("sellers23", tempArt23);
+            model.addObject("sellers24", tempArt24);
+            model.addObject("sellers25", tempArt25);
+            
         return model;
     }
     
     @RequestMapping(value = {"/slaters/", "slaters/", "slaters/slaters", "/slaters/slaters", "/slaters"}, method = RequestMethod.GET)
     public ModelAndView slaters_slaters(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("slaters/slaters");
-        List<SlaterModel> slater = slaters.getSlaterByCount("0","3");
-        
-            model.addObject("slaters", slaters);
-            SlaterModel tempArt  = slaters.getOneSlater("1");
+        List<SlaterModel> slater = Slaters.getSlaterByCount("0","100");
+            model.addObject("slaters", slater);
+            SlaterModel tempArt  = Slaters.getOneSlater("1");
             if(tempArt == null) {
                  return new ModelAndView("redirect:" + "/404");
             }
-            model.addObject("slaters", tempArt);
+            model.addObject("slater", tempArt);
         return model;
     }
     
@@ -58,7 +114,14 @@ public class PageController {
     
     @RequestMapping(value = {"/riders/", "riders/"}, method = RequestMethod.GET)
     public ModelAndView riders(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/riders/riders");
+        ModelAndView model = new ModelAndView("riders/riders");
+        List<RiderModel> rider = Riders.getRiderByCount("0","100");
+            model.addObject("riders", rider);
+            RiderModel tempArt  = Riders.getOneRider("1");
+            if(tempArt == null) {
+                 return new ModelAndView("redirect:" + "/404");
+            }
+            model.addObject("rider", tempArt);
         return model;
     }
     

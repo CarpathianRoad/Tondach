@@ -54,7 +54,7 @@ public class ArticleController {
 	public ModelAndView full(@PathVariable("id") String id, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
             ModelAndView modelAndView = new ModelAndView("FullArticle");
-            List<ArticleModel> articles = news.getArticleByCount(id,"3");
+            List<ArticleModel> articles = news.getArticle(id,"1");
                  for(ArticleModel temp: articles) {
                     if(!"".equals(temp.avatar) && temp.avatar != null){
                             temp.setImage(temp.avatar);
@@ -65,8 +65,8 @@ public class ArticleController {
             if(tempArt == null) {
                  return new ModelAndView("redirect:" + "/404");
             }
-            String face_text = Helpers.html2text(tempArt.article_text);
-            if("".equals(Helpers.html2text(tempArt.article_text)) && !"".equals(tempArt.article_text)){
+            String face_text = tempArt.article_text;
+            if("".equals(tempArt.article_text) && !"".equals(tempArt.article_text)){
                     face_text = tempArt.article_title;
             }
             modelAndView.addObject("article", tempArt);
@@ -128,5 +128,7 @@ public class ArticleController {
     	Boolean result = temp.delete();
     	return result.toString();
     }
+    
+    
         
 }

@@ -21,41 +21,41 @@
             <input type="hidden" name="path" value="/files/avatars/" />
             <input type="file" name="file" style="display:inline-block" />
         </form>
-	<form action="${Constants.URL}system/do/insertdata" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
-            <input type="hidden" class="form-control" name="category" value="${category}">
-            <input type="hidden" name="dir" id="dir-name" value="${folder}" />
+	<form action="${Constants.URL}system/do/editdata" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
+            <input type="hidden" class="form-control" name="article_id" value="${article.article_id}">
+            <input type="hidden" name="dir" id="dir-name" value="avatar_path" />
             <input type="hidden" class="form-control" id="avatar_path" name="avatar_path">
             
             <hr>
             <div class="row add-row">
                 <div class="col-lg-12 margintop30 field">
-                    <label for="tlt">Title <span class="red-star">*</span></label>
+                    <label for="tlt">Заголовок <span class="red-star">*</span></label>
                     <br/>
                     <div class="btn-group lang-switch-title" role="group" aria-label="...">
                     </div>
                 </div>
                 <div class="col-lg-6 margintop10 field titles">
-                    <input type="text" name="title" class="form-control input-title-lang" lang="title" id="tlt"  maxlength="55">
+                    <input type="text" name="title" class="form-control input-title-lang" lang="title" id="tlt"  maxlength="55" value="${article.article_title}">
                     <div class="validation"></div>
                 </div>
             </div>
             <hr>
             <div class="row add-row">
                 <div class="col-lg-12 margintop30 field">
-                    <label for="tlt">Новини</label><br/>
+                    <label for="tlt">News</label><br/>
                     <div class="btn-group lang-switch-text" role="group" aria-label="...">
                     </div>
                 </div>
                 <div class="col-lg-12 margintop10 field textareas">
                     <div class="ck-data-box" id="CKdata"></div>
-                        <div lang="text" class="textarea-msg"><textarea name="text" id="editor" rows="20" cols="80" class="input-block-level"></textarea></div>
+                        <div lang="text" class="textarea-msg"><textarea name="text" id="editor" rows="20" cols="80" class="input-block-level">${article.article_text}</textarea></div>
                         <div class="validation"></div>
                 </div>
             </div>
             <br><br>
         </form>
         <p>
-            <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Додати</button>
+            <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Додати зміни</button>
         </p>
     </div>
 </t:adminpage>
@@ -72,6 +72,10 @@
         var currentLangAT = $(".lang-switch-avatar-text button.active").attr("id");
         $(".input-avatar-text-lang[lang='"+currentLangAT+"']").show();
         initCKE();
+        if('${tondach_articles.image}' !== null && '${tondach_articles.image}' !== ''){
+            $("#my-awesome-dropzone-gal .dz-message").hide();
+            $("#my-awesome-dropzone-gal").append('<div class="dz-preview dz-file-preview dz-processing dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail=""></div><div class="dz-details"><div class="dz-size"><span data-dz-size="">0</span></div><div class="dz-filename"><span data-dz-name="">${tondach_articles.image}</span></div></div><div class="dz-error-message"><span data-dz-errormessage=""></span></div><div class="dz-success-mark"></div><a class="dz-remove" href="javascript:undefined;" onclick="deleteFile(this)" data-dz-remove="">Remove file</a></div>');
+        } 
     });
     
     $(".lang-switch-text button").click(function(){
@@ -85,7 +89,7 @@
         $(".lang-switch-title button").removeClass("active");
         $(this).addClass("active");
         var currentLangT = $(this).attr("id");
-        $(".").hide();
+        $(".input-title-lang").hide();
         $(".input-title-lang[lang='"+currentLangT+"']").show();
     });
     $(".lang-switch-avatar-text button").click(function(){
@@ -134,6 +138,10 @@
             type: 'GET',
             data: 'path='+path,
             success: function(data){
+                $(temp).parent().remove();
+                if (!$("#my-awesome-dropzone-gal").find("div.dz-file-preview").length) { 
+                    $(".dz-message").show();
+                }
             }
         });
     }

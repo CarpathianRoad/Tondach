@@ -36,22 +36,6 @@ public class MainController {
     @RequestMapping(value = {"/index", "/main", "/home"}, method = RequestMethod.GET)
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
         ModelAndView model = new ModelAndView("index");
-        List<ArticleModel> articles = news.getArticleByCount("0","3");
-        for(ArticleModel temp: articles) {
-                    if(!"".equals(temp.avatar) && temp.avatar != null){
-                            temp.setImage(temp.avatar);
-                    }
-                }
-            model.addObject("articles", articles);
-            ArticleModel tempArt  = news.getOneArticle("1");
-            if(tempArt == null) {
-                 return new ModelAndView("redirect:" + "/404");
-            }
-            String face_text = Helpers.html2text(tempArt.article_text);
-            if("".equals(Helpers.html2text(tempArt.article_text)) && !"".equals(tempArt.article_text)){
-                    face_text = tempArt.article_title;
-            }
-            model.addObject("article", tempArt);
         return model;
     }
     

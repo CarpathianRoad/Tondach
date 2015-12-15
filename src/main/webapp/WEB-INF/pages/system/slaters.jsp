@@ -8,6 +8,7 @@
         
     <script src="${Constants.URL}ckeditor/ckeditor.js"></script>
     <script src="${Constants.URL}js/plugins/dropzone.js"></script>
+    <script src="${Constants.URL}css/plugins/dropzone.js"></script>
     
    
     <div class="margintop20">
@@ -17,45 +18,28 @@
         <div class="row add-row" style="padding-top:2em">
             
         </div>
-        <form action="${Constants.URL}system/do/uploadfile" class="dropzone"  id="my-awesome-dropzone-gal">
-            <input type="hidden" name="path" value="/files/avatars/" />
-            <input type="file" name="file" style="display:inline-block" />
-        </form>
-	<form action="${Constants.URL}system/do/insertdata" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
-            <input type="hidden" class="form-control" name="category" value="${category}">
-            <input type="hidden" name="dir" id="dir-name" value="${folder}" />
-            <input type="hidden" class="form-control" id="avatar_path" name="avatar_path">
+        
+	<form action="${Constants.URL}system/do/editslater" name="addSlaterForm" id="addForm" method="POST" type="multipart/form-data">
+            <input type="hidden" class="form-control" name="slater_id" value="${slaters.id}">
+            
             
             <hr>
             <div class="row add-row">
                 <div class="col-lg-12 margintop30 field">
-                    <label for="tlt">Title <span class="red-star">*</span></label>
-                    <br/>
-                    <div class="btn-group lang-switch-title" role="group" aria-label="...">
-                    </div>
-                </div>
-                <div class="col-lg-6 margintop10 field titles">
-                    <input type="text" name="title" class="form-control input-title-lang" lang="title" id="tlt"  maxlength="55">
-                    <div class="validation"></div>
-                </div>
-            </div>
-            <hr>
-            <div class="row add-row">
-                <div class="col-lg-12 margintop30 field">
-                    <label for="tlt">Новини</label><br/>
+                    <label for="tlt"><h4>Покрівельники</h4></label><br/>
                     <div class="btn-group lang-switch-text" role="group" aria-label="...">
                     </div>
                 </div>
                 <div class="col-lg-12 margintop10 field textareas">
                     <div class="ck-data-box" id="CKdata"></div>
-                        <div lang="text" class="textarea-msg"><textarea name="text" id="editor" rows="20" cols="80" class="input-block-level"></textarea></div>
+                        <div lang="text" class="textarea-msg"><textarea name="text" id="editor" rows="20" cols="80" class="input-block-level">${slaters.text}</textarea></div>
                         <div class="validation"></div>
                 </div>
             </div>
             <br><br>
         </form>
         <p>
-            <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Додати</button>
+            <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Post</button>
         </p>
     </div>
 </t:adminpage>
@@ -146,10 +130,10 @@
        
     function initCKE() {
         CKEDITOR.replace('editor', {
-            filebrowserBrowseUrl : '${Constants.URL}tools/imageupload',
-            filebrowserUploadUrl : '${Constants.URL}tools/imageupload',
-            filebrowserImageBrowseUrl : '${Constants.URL}tools/imageupload',
-            filebrowserImageUploadUrl : '${Constants.URL}tools/imageupload',
+            filebrowserBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserImageBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserImageUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
             filebrowserWindowWidth  : 800,
             filebrowserWindowHeight : 500
         });
@@ -178,5 +162,5 @@
          obj.click("click", function (e) {
             $("#cke_71_textInput").val("s2as1");
         });
-    }   
+    }
 </script>

@@ -9,9 +9,11 @@ import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import org.jsoup.Jsoup;
+import ua.aits.tondach.model.ArticleModel;
 
 /**
  *
@@ -19,10 +21,7 @@ import org.jsoup.Jsoup;
  */
 public class Helpers  {
     
-    
-    public static String html2text(String html) {
-    	return Jsoup.parse(html).text();
-    }
+   
     
     public static String replaceChars(String text) {
         text = text.replaceAll("[\\x00-\\x1F]", "");
@@ -85,6 +84,10 @@ public class Helpers  {
         return imageSize;
     }
     
-    
+    ArticleModel Articles = new ArticleModel();
+    public static String getThreeNews() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException{
+        
+        return  new ArticleModel().getNews();
+    }
 }
 

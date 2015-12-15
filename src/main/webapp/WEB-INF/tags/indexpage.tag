@@ -1,6 +1,7 @@
 <%@tag description="Tondach indexpage" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
+<jsp:useBean id="Helpers" class="ua.aits.tondach.functions.Helpers" scope="session"/>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -35,7 +36,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="${Constants.URL}system/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="${Constants.URL}system/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- <script src="${Constants.URL}system/js/ie10-viewport-bug-workaround.js"></script> -->
     <script type="text/javascript" src="${Constants.URL}js/js.js" charset="utf-8"></script>
     <script type="text/javascript" src="${Constants.URL}js/functions.js" charset="utf-8"></script>
     <script type="text/javascript" src="${Constants.URL}js/bootstrap.min.js" charset="utf-8"></script>
@@ -68,7 +69,7 @@
       <div id="header">
         <ul class="tabs">
           <li class="active">
-            <a href="${Constants.URL}index">Головне меню</a>
+              <a href="${Constants.URL}index">Головне меню</a>
           </li>
           <li id="where-buy">
             <a href="${Constants.URL}where_buy/">Де придбати</a>
@@ -199,9 +200,7 @@
 </h2>
 	<ul class="news">
             
-            <script type="text/javascript">
-                    
-            </script>
+            ${Helpers.getThreeNews()}
           </ul>
         </div>
 

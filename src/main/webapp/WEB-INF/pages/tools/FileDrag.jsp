@@ -7,7 +7,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<jsp:useBean id="Constants" class="ua.aits.crc.functions.Constants" scope="session"/>
+<jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -36,7 +36,7 @@
 	<body>
      	<div>
 <form action="${Constants.URL}archive/do/uploadimage" class="dropzone"  id="my-awesome-dropzone">
-        	<input type="hidden" name="path" value="${folder}/images" />
+        	<input type="hidden" name="path" value="${folder}images" />
         	<input type="file" name="file" style="display:none" />
     	</form>
 </div>
@@ -50,7 +50,7 @@
             	init: function () {
 	this.on("complete", function (file) {
   	if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
-    	completeAjaxCall("${folder}/images/"+$(".dz-filename span").html());
+    	completeAjaxCall("${folder}images/"+$(".dz-filename span").html());
   	}
 	});
   }

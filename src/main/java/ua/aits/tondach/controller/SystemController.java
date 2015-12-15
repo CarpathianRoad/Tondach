@@ -16,6 +16,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import ua.aits.tondach.functions.Helpers;
+import ua.aits.tondach.model.ArticleModel;
+import ua.aits.tondach.model.RiderModel;
+import ua.aits.tondach.model.SellerModel;
+import ua.aits.tondach.model.SlaterModel;
 import ua.aits.tondach.model.UserModel;
 
 /**
@@ -28,6 +32,10 @@ public class SystemController {
     
     Helpers Helpers = new Helpers();
     UserModel Users = new UserModel();
+    ArticleModel Article = new ArticleModel();
+    SlaterModel Slater = new SlaterModel();
+    RiderModel Rider = new RiderModel();
+    SellerModel Seller = new SellerModel();
     
     @RequestMapping(value = {"/system/login", "/system/logon", "/system/enter"}, method = RequestMethod.GET)
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response)  {
@@ -83,4 +91,69 @@ public class SystemController {
         ModelAndView model = new ModelAndView("/system/add");
         return model;
     }
+    @RequestMapping(value = {"system/edit/{id}", "/system/edit/{id}"}, method = RequestMethod.GET)
+    public ModelAndView edit(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/edit");
+        model.addObject("article",Article.getOneArticle(id));
+        return model;
+    }
+    @RequestMapping(value = {"system/delete/{id}", "/system/delete/{id}"}, method = RequestMethod.GET)
+    public ModelAndView delete(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/delete");
+        model.addObject("article",Article.getOneArticle(id));
+        return model;
+    }
+    
+    @RequestMapping(value = {"system/slaters/", "/system/slaters/", "/system/slaters"}, method = RequestMethod.GET)
+    public ModelAndView slaters(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/slaters");
+        model.addObject("slaters", Slater.getOneSlater("1"));
+        return model;
+    }
+    
+    @RequestMapping(value = {"system/riders/", "/system/riders/", "/system/riders"}, method = RequestMethod.GET)
+    public ModelAndView riders(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/riders");
+        model.addObject("riders", Rider.getOneRider("1"));
+        return model;
+    }
+    
+    @RequestMapping(value = {"system/news/", "/system/news/", "/system/news"}, method = RequestMethod.GET)
+    public ModelAndView news(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/news");
+        model.addObject("article", Article.getArticleByCount("0", "100"));
+        return model;
+    }
+    @RequestMapping(value = {"system/wherebuy/", "/system/wherebuy/", "/system/wherebuy"}, method = RequestMethod.GET)
+    public ModelAndView wherebuy(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/wherebuy");
+        model.addObject("seller", Seller.getSellerByCount("0", "100"));
+        return model;
+    }
+    
+    @RequestMapping(value = {"system/editseller/{id}", "/system/editseller{id}"}, method = RequestMethod.GET)
+    public ModelAndView wherebuyedit(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/editseller");
+        model.addObject("seller", Seller.getOneSeller(id));
+        return model;
+    }
+
+    @RequestMapping(value = {"/tools/imageupload","/tools/imageupload/"}, method = RequestMethod.GET)
+    public ModelAndView fileManager (HttpServletRequest request, HttpServletResponse response) throws Exception {
+        String path = request.getParameter("path");
+        String type = request.getParameter("type");
+        String ckeditor = request.getParameter("CKEditor");
+        String num = request.getParameter("CKEditorFuncNum");
+        ModelAndView model = new ModelAndView("/tools/FileDrag");
+        model.addObject("ckeditor", ckeditor);
+        model.addObject("num", num);
+        model.addObject("type", type);
+        //model.addObject("folder", folder.replace('|', '/'));
+        if("".equals(path)) {
+            model.addObject("path",path.replace(",", "/"));
+        }
+   	return model;
+    }
+
 }
+

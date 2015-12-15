@@ -349,502 +349,56 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
                             <div class="partners-data" id="zak_partners">
                                 <h2>Закарпатська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>ТзОВ «Дахцентр-Урсус»</h5>
-                                            <p>
-                                                м. Ужгород<br />
-                                                вул. Щедріна, 146<br />
-                                                моб.: +38 (050) 372-20-69, (067)312-02-25<br />
-                                                e-mail: dachcentr.ursus@gmail.com<br />
-                                            </p>
-
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ДЕККЕР»</h5>
-                                            <p>
-                                                м. Ужгород<br />
-                                                вул. Верещагіна, 16<br />
-                                                тел./факс: +38 (0312) 61-77-61<br />
-                                                моб.: +38 (050) 555-06-79<br />
-                                                e-mail: sales@decker.net.ua<br />
-												<a href="http://www.dekker2013.uaprom.net" class="external">www.dekker2013.uaprom.net</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>«ТехноНИКОЛЬ»</h5>
-                                            <p>
-                                                м. Ужгород<br />
-                                                вул. Коритнянська, 35<br />
-                                                тел.: +38 (0322) 42-04-07<br />
-                                                моб.: +38 (067) 240-07-58<br />
-                                                e-mail: i.durkot@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                        
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Шаян»</h5>
-                                            <p>
-                                                м. Ужгород
-                                                вул. Перемоги, 145-а<br />
-                                                тел.: +38 (0312) 66-39-05<br />
-                                                моб.: +38 (050) 585-73-38<br />
-                                                e-mail: office@berkut.info<br />
-												<a href="http://www.berkut.info" class="external">www.berkut.info</a>
-                                            </p>
-                                            <p>
-                                                м. Ужгород
-                                                вул. Будителів, 2<br />
-                                                тел.: (0312) 69-35-89<br />
-                                                моб.: (050) 597-28-50<br />
-                                            </p>
-                                            <p>
-                                                м. Мукачево<br />
-                                                вул. Пряшівська, 3<br />
-                                                тел.: (231) 2-23-92<br />
-                                                моб.: (050) 430-82-82
-                                            </p>
-                                            <p>
-                                                м. Берегово<br />
-                                                вул. Мужайська, 99<br />
-                                                тел.: (241) 2-33-18<br />
-                                                моб.: (050) 183-33-63
-                                            </p>
-                                            <p>
-                                                м. Виноградів<br />
-                                                вул. Комунальна, 1<br />
-                                                тел.: (243) 2-62-72<br />
-                                                моб.: (050) 921-28-57
-                                            </p>
-                                        </li>
-
-
-
-                                    </div>
-
-                                    <div class="column last">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Шаян»</h5>
-                                            <p>
-                                                м. Хуст<br />
-                                                вул. Садова, 1Б<br />
-                                                тел.: (242) 4-52-85<br />
-                                                моб.: (050) 372-81-25
-                                            </p>
-                                            <p>
-                                                смт. Іршава<br />
-                                                вул. Гагаріна, 110<br />
-                                                тел.: (244) 2-38-69<br />
-                                                моб.: (050) 432-99-61
-                                            </p>
-                                            <p>
-                                                м. Тячево<br />
-                                                вул. Лазівська,2<br />
-                                                тел.: (234) 3-28-86<br />
-                                                моб.: (050) 866-07-31
-                                            </p>
-                                            <p>
-                                                смт. Ясіня<br />
-                                                вул. Миру, 56<br />
-                                                тел.: (232) 4-21-13<br />
-                                                моб.: (050) 432-51-33
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers1.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="lvov_partners">
                                 <h2>Львівська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Дахцентр Львів»</h5>
-                                            <p>
-                                                м. Львів<br />
-                                                вул. Зелена 149, корпус 8а<br />
-                                                тел.: +38 (0322) 95-55-78 / 73<br />
-                                                моб.: +38 (067) 340-81-80<br />
-                                                e-mail: dachcentr.lviv@gmail.com<br />
-                                                <a href="http://www.dachcentr-lviv.com" class="external">www.dachcentr-lviv.com</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНИКОЛЬ»</h5>
-                                            <p>
-                                                м. Львів<br />
-                                                вул. Городоцька, 367, офіс 227<br />
-                                                тел.: +38 (032) 242-04-07<br />
-                                                тел.: +38 (032) 242-35-05<br />
-                                                e-mail: l.servatyak@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers2.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="luck_partners">
                                 <h2>Волинська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «Престиж Плюс»</h5>
-                                            <p>
-                                                м. Рівне<br />
-                                                вул. Курчатова, 18-у<br />
-                                                тел.: +38 (0362) 63-55-33<br />
-                                                моб.: +38 (067) 360-22-20, +38 (067) 364-09-97, +38 (067) 364-09-98<br />
-                                                e-mail: prestij-plus@ukr.net<br />
-                                                <a href="http://www.prestig-plus.com" class="external">www.prestig-plus.com</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers3.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="rovno_partners">
                                 <h2>Рівенська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «Престиж Плюс»</h5>
-                                            <p>
-                                                м. Рівне<br />
-                                                вул. Курчатова, 18-у<br />
-                                                тел.: +38 (0362) 63-55-33<br />
-                                                моб.: +38 (067) 360-22-20, +38 (067) 364-09-97, +38 (067) 364-09-98<br />
-                                                e-mail: prestij-plus@ukr.net<br />
-                                                <a href="http://www.prestig-plus.com" class="external">www.prestig-plus.com</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Рівне<br />
-                                                вул. Старицького, 40а<br />
-                                                тел.: +38 (0362) 63-06-34<br />
-                                                моб.: +38 (067) 240-08-45<br />
-                                                e-mail: s.romanchuk@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers4.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="zhitomir_partners">
                                 <h2>Житомирська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-											<h5>ТОВ "АРС"</h5>
-                                            <p>                                             
-                                            	м. Житомир<br />
-                                                вул. Малинська,4<br />
-                                                тел.: +38(0412) 55-13-30<br />
-                                                моб.тел:+38(050) 382-64-05<br />
-                                                e-mail:ars.zt@rambler.ru<br />
-                                                <a href="http://www.tondach.dp.ua" class="external">www.tondach.dp.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers5.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="kyiv_partners">
                                 <h2>Київська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Альвіс»</h5>
-                                            <p>
-                                                м. Київ<br />
-                                                пер. Косогірний, 4, оф. 42, 3 пов.<br />
-                                                тел.: +38 (044) 461-95-99<br />
-                                                тел./факс: +38 (044) 461-90-49<br />
-                                                e-mail: alvis2@citiustele.com<br />
-                                                <a href="http://www.tondach.kiev.ua" class="external">www.tondach.kiev.ua</a>
-                                            </p>
-                                        </li>
-
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «ДЖЕНТА»</h5>
-                                            <p>
-                                                м. Київ<br />
-                                                вул. Магнітогорська,1 , оф. 502<br />
-                                                (ст. метро "Чернігівська", БЦ "ITI Service")<br />
-                                                тел.: +38 (044) 331-46-31<br />
-                                                моб.: +38 (050) 461-61-27<br />
-                                                e-mail: djenta@ukr.net<br />
-                                                <a href="http://www.djenta.com.ua" class="external">www.djenta.com.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Київ<br />
-                                                вул. Кіквідзе б. 10, оф. 22<br />
-                                                моб.: +38 (050) 415-69-09<br />
-                                                тел./факс: +38 (044) 229-38-38<br />
-                                                e-mail: kiev@profmet.com.ua<br />
-                                                <a href="http://www.profmet.com.ua" class="external">www.profmet.com.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-
-                                    <div class="column">
-
-                                        <li>
-                                            <h5>
-                                                <abbr>Компанія</abbr>«Profitile»</h5>
-                                            <p>
-                                                м. Київ<br />
-                                                вул. Солом’янська, 3-б<br />
-                                                тел.: +38 (044) 494-04-61<br />
-                                                моб.: +38 (067) 230-01-88<br />
-                                                e-mail: denis@profitile.com.ua<br />
-                                                <a href="http://www.profitile.com.ua" class="external">www.profitile.com.ua</a>
-                                            </p>
-
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «БЕНГРАФ»</h5>
-                                            <p>
-                                                м. Київ<br />
-                                                вул. Днепровская набережная 14 офис 247<br />
-                                                (ст.метро "Осокорки, ЖК RiverStone)<br />
-                                                тел.: +38 (044) 371-70-10<br />
-                                                моб.: +38 (067) 320-37-17<br />
-                                                Skype: Bengraf.com<br />
-                                                e-mail: i@Bengraf.com<br />
-                                                <a href="http://www.youtube.com/BengrafUa" class="external">youtube.com/BengrafUa</a><br />
-                                                <a href="http://www.Bengraf.com" class="external">www.Bengraf.com</a>
-                                            </p>
-
-                                        </li>
-									     <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Клінкер Стоун»</h5>
-                                            <p>
-                                                м. Київ<br />
-                                                вул. Московська 44/1<br />
-                                                тел.: +38 (044) 300-12-75<br />
-                                                моб.: +38 (095) 737-57-29<br />
-                                                e-mail: roof@klinker-stone.com.ua<br />
-                                                <a href="http://www.klinker-stone.com.ua" class="external">www.klinker-stone.com.ua</a>
-                                            </p>
-
-                                        </li>
-                                    </div>
-
-                                    <div class="column last">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «РЕКСБУД»</h5>
-                                            <p>
-                                                Київська обл.<br />
-                                                с. Софиївська Борщагівка<br />
-                                                вул. Київська, 2<br />
-                                                тел.: +38 (044) 406-01-35<br />
-                                                факс: +38 (044) 406-08-41<br />
-                                                e-mail: rexbud@i.com.ua<br />
-                                                <a href="http://www.rexbud.org.ua" class="external">www.rexbud.org.ua</a>
-                                            </p>
-                                        </li>
-
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                Київська обл.<br />
-                                                с. Софиївська Борщагівка<br />
-                                                вул. Мала Кільцева,4А<br />
-                                                тел.: +38 (044) 593-89-05<br />
-                                                моб.: +38 (067) 536-29-83<br />
-                                                e-mail: l.chorna@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers6.text}
 
                                 </ul>
                             </div>
                             <div class="partners-data" id="chernigov_partners">
                                 <h2>Чернігівська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Чернігів<br />
-                                                в ул. Князя Чорного, 4, офіс 42<br />
-                                                тел.: +38 (0462) 64-01-31<br />
-                                                e-mail: o.poma@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers7.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="sumy_partners">
                                 <h2>Сумська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>«Сучасні покрівельні матеріали»</h5>
-                                            <p>
-                                                <abbr>ПП</abbr>Остапенко А.В.<br />
-                                                м. Суми<br />
-                                                пр-т Курський, 18-а, офіс 3<br />
-                                                тел./факс: +38 (0542) 650-650<br />
-                                                моб.: +38 (095) 083-67-32, +38 (095) 559-64-40<br />
-                                                e-mail: metal_2006@mail.ru<br />
-                                                <a href="http://www.krovlya.ucoz.com" class="external">www.krovlya.ucoz.com</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers8.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="harkov_partners">
                                 <h2>Харківська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Харків<br />
-                                                вул. Мироносицька, 88<br />
-                                                тел./факс: +38 (057) 714-25-98<br />
-                                                тел.: +38 (057) 759-50-26, +38 (057) 754-555-9<br />
-                                                e-mail: info@profmet.com.ua<br />
-                                                <a href="http://www.profmet.kh.ua" class="external">www.profmet.kh.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Харків<br />
-                                                ул. Наб. Здоров’я, 12 оф. 1<br />
-                                                тел./факс: +38 (057) 728-23-88<br />
-                                                моб.: +38 (050) 323-37-14<br />
-                                                e-mail: yakira@profmet.com.ua<br />
-                                                <a href="http://www.profmet.com.ua" class="external">www.profmet.com.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Харків<br />
-                                                вул. Бакуліна, 11, оф. 318<br />
-                                                тел./факс: +38 (057) 752-07-29, +38 (057) 717-52-77<br />
-                                                моб.: +38 (067) 453-20-61<br />
-                                                e-mail: bakulina.str@profmet.com.ua<br />
-                                                <a href="http://www.profmet.com.ua" class="external">www.profmet.com.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-
-
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Харків<br />
-                                                вул. Павлівська, 5, оф. 10<br />
-                                                тел./факс: +38 (057) 751-86-57, +38 (057) 759-88-55<br />
-                                                моб.: +38 (050) 323-39-17, +38 (067) 570-67-86<br />
-                                                e-mail: pavlovskaya@profmet.in.ua<br />
-                                                <a href="http://www.profmet.in.ua" class="external">www.profmet.in.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Харків<br />
-                                                пер. Піскуновський, 4<br />
-                                                тел.: +38 (057) 734-98-85, +38 (057) 759-93-37, +38 (057) 712-51-31<br />
-                                                e-mail: profmet-4@ukr.net<br />
-                                                <a href="http://www.profmet.com.ua" class="external">www.profmet.com.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Харків<br />
-                                                вул. Ганни, 20-A<br />
-                                                тел./факс: +38 (057) 757-92-33, +38 (057) 768-01-60<br />
-                                                моб.: +38 (067) 570-33-83<br />
-                                                e-mail: ganny@profmet.com.ua<br />
-                                                <a href="http://www.cherepica.kharkov.ua" class="external">www.cherepica.kharkov.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-
-
-                                    <div class="column last">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Харків<br />
-                                                вул. Киргизька 19, корп. 1, оф. 306<br />
-                                                тел./факс: +38 (057) 739-50-64<br />
-                                                тел.: +38 (057) 758-93-32<br />
-                                                моб.: +38 (067) 545-50-40<br />
-                                                e-mail: kirgizskaya@profmet.com.ua<br />
-                                                <a href="http://www.profmet.kharkov.ua" class="external">www.profmet.kharkov.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Харків<br />
-                                                вул. Киргизька, 19, корп.1, офіс 702<br />
-                                                тел.: +38 (057) 739-50-48, +38 (057) 759-50-36<br />
-                                                моб.: +38 (067) 217-87-21<br />
-                                                e-mail: yu.kim@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-
-                                    </div>
+                                    ${sellers9.text}
 
                                 </ul>
                             </div>
@@ -852,406 +406,62 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
                                 <h2>Івано-Франківська область</h2>
                                 <ul class="to3col">
 
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНИКОЛЬ»</h5>
-                                            <p>
-                                                м. Івано-Франківськ<br />
-                                                вул. Чорновола, 157а<br />
-                                                тел.: +38 (342) 78-13-25<br />
-                                                моб.: +38 (067) 495-64-60<br />
-                                                e-mail: v.dudiy@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>ФОП «Зварич»</h5>
-                                            <p>
-                                                м. Івано-Франківськ<br />
-                                                вул.Панаса Мирного 8<br />
-                                                (офісний центр Бистриця)<br />
-                                                моб.: +38 (097) 184-14-11<br />
-                                                моб.: +38 (050) 962-69-27<br />
-                                                e-mail: pp.zvarych@yandex.ua<br />
-                                                <a href="http://www.tondach.if.ua" class="external">www.tondach.if.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column last"></div>
+                                    ${sellers10.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="chernovcy_partners">
                                 <h2>Чернівецька область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Джента»</h5>
-                                            <p>
-                                                м. Чернівці<br />
-                                                моб.: +38 (050) 434-11-51, +38 (050) 447-64-50<br />
-                                                <a href="http://www.djenta.com.ua" class="external">www.djenta.com.ua</a>
-                                            </p>
-                                        </li>
-
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «СОЛОМОН Б.Н.Т.»</h5>
-                                            <p>
-                                                м. Чернівці<br />
-                                                пров. Складський, 8<br />
-                                                тел./факс: +38 (0372) 58-54-58<br />
-                                                моб.: +38 (050) 374-58-58, +38 (067) 505-77-88<br />
-                                        </li>
-                                    </div>
-                                    <div class="column last">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Чернівці<br />
-                                                вул. Хотинська, 43<br />
-                                                тел.: +38 (0322) 42-04-07<br />
-                                                моб.: +38 (067) 243-17-28<br />
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers11.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="ternopol_partners">
                                 <h2>Тернопільська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТБК»</h5>
-                                            <p>
-                                                м. Тернопіль<br />
-                                                вул. Медова 2, оф. 32<br />
-                                                тел./факс: +38 (0352) 55-05-85<br />
-                                                моб.: +38 (067) 350-15-42, +38 (067) 352-18-53<br />
-                                                e-mail: office@tbk.biz.ua
-												<a href="http://www.tbk.biz.ua" class="external">www.tbk.biz.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers12.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="hmelnyck_partners">
                                 <h2>Хмельницька область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Хмельницький<br />
-                                                в ул. Заводська, 155<br />
-                                                тел.: +38 (0322) 42-04-07<br />
-                                                моб.: +38 (067) 340-32-75<br />
-                                                e-mail: a.bondar@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                   ${sellers13.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="vinnica_partners">
                                 <h2>Вінницька область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Джента»</h5>
-                                            <p>
-                                                м. Вінниця<br />
-                                                вул. Хмельницьке шосе, 2-а, оф. 32<br />
-                                                тел.: +38 (0432) 57-64-28, +38 (0432) 57-94-28<br />
-                                                моб.: +38 (050) 209-73-91<br />
-                                                e-mail: djenta@ukr.net<br />
-                                                <a href="http://www.djenta.com.ua" class="external">www.djenta.com.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «Отто-Будсервіс»</h5>
-                                            <p>
-                                                м. Вінниця<br />
-                                                вул. 1-й Індустріальний пров.,11<br />
-                                                тел.: +38 (0432) 57-96-42<br />
-                                                тел./факс: +38 (0432) 57-65-00<br />
-                                                моб.: +38 (067) 769-01-82<br />
-                                                e-mail: gryzak@ukr.net
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column last">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Вінниця<br />
-                                                вул. Хмельницьке шосе, 145<br />
-                                                тел.: +38 (0322) 42-04-07<br />
-                                                моб.: +38 (067) 217-62-16<br />
-                                                e-mail: a.yurkovsky@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers14.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="cherkasy_partners">
                                 <h2>Черкаська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Черкаси<br />
-                                                вул. Кірова, 73, офіс 33<br />
-                                                тел.: +38 (0472) 36-22-42<br />
-                                                моб.: +38 (067) 502-03-20<br />
-                                                e-mail: o.pikul@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers15.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="kirovograd_partners">
                                 <h2>Кіровоградська область</h2>
                                 <ul>
-                                    <li>У вказаній області поки нема зареєстрованих партнерів</li>
+                                    ${sellers16.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="poltava_partners">
                                 <h2>Полтавська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Джента»</h5>
-                                            <p>
-                                                м. Полтава<br />
-                                                моб.: +38 (050) 404-41-44, +38 (067) 404-41-24<br />
-                                                <a href="http://www.djenta.com.ua" class="external">www.djenta.com.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Купол ЛТД»</h5>
-                                            <p>
-                                                м. Полтава<br />
-                                                вул. Половки 64<br />
-                                                тел./факс: +38 (053) 224-29-93<br />
-                                                моб.: +38 (099) 784-51-83<br />
-                                                e-mail: elena@eurodah.com.ua<br />
-                                                <a href="http://www.eurodah.com.ua" class="external">www.eurodah.com.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column last">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Полтава<br />
-                                                вул. Ковпака, 57А<br />
-                                                тел.: +38 (0532) 61-22-60<br />
-                                                e-mail: s.zarundy@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers17.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="dnepropetrovsk_partners">
                                 <h2>Дніпропетровська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>«EURODACH»</h5>
-                                            <p>
-                                                м. Дніпропетровськ<br />
-                                                вул. Шинна, 4<br />
-                                                тел.: +38 (056) 744-39-29<br />
-                                                тел.: +38 (050) 432-88-32<br />
-                                                тел.: +38 (067) 631-81-54<br />
-                                                e-mail: eurodach@ukr.net<br />
-                                                <a href="http://www.eurodach.com.ua" class="external">www.eurodach.com.ua</a><br />
-                                                <a href="http://www.tondach.dp.ua" class="external">www.tondach.dp.ua</a>
-                                                <br />
-                                            </p>
-                                            <h5>«EURODACH»</h5>
-                                            <p>
-                                                м. Павлоград<br />
-                                                вул. Дніпровська 156<br />
-                                                тел: +38 (050) 480-13-22<br />
-                                                тел: +38 (050) 835-62-00<br />
-                                                тел: +38 (067) 631-81-54<br />
-                                                e-mail: eurodach@ukr.net<br />
-                                                <a href="http://www.eurodach.com.ua" class="external">www.eurodach.com.ua</a><br />
-                                                <a href="http://www.tondach.dp.ua" class="external">www.tondach.dp.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «Кровля-Днепр»</h5>
-                                            <p>
-                                                м. Дніпропетровськ<br />
-                                                вул. Винокурова, 1 офіс 309<br />
-                                                тел./моб.: +38 (067) 257-10-33<br />
-                                                e-mail: mail@krovlya.biz.ua<br />
-                                                <a href="http://www.krovlya.biz.ua" class="external">www.krovlya.biz.ua</a>
-                                            </p>
-                                        </li>
-
-                                    </div>
-
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                Дніпропетровська обл.<br />
-                                                м. Нікополь<br />
-                                                вул. Героїв Чернобиля, 102<br />
-                                                тел.: +38 (0566) 69-15-06<br />
-                                                e-mail: e.pugachova@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Дніпропетровськ<br />
-                                                вул. Квітки-Основ’яненко, 5<br />
-                                                тел.: +38 (0562) 36-50-41, +38 (0562) 36-50-43<br />
-                                                моб.: +38 (067) 561-42-10<br />
-                                                e-mail: e.byhovec@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-
-                                    <div class="column last">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Дніпропетровськ<br />
-                                                вул. Шинна, 35<br />
-                                                тел.: +38 (0562) 36-50-42<br />
-                                                моб.: +38 (067) 565-33-28<br />
-                                                e-mail: o.litvinenko@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                Дніпропетровська обл.<br />
-                                                м. Кривий Ріг<br />
-                                                вул. Дніпропетровське шосе,166, офіс 208<br />
-                                                тел.: +38 (056) 440-07-96, +38 (056) 440-07-73<br />
-                                                моб.: +38 (067) 569-41-21<br />
-                                                e-mail: r.reutov@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers18.text}
 
                                 </ul>
                             </div>
                             <div class="partners-data" id="odessa_partners">
                                 <h2>Одеська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Інтердах»</h5>
-                                            <p>
-                                                м. Одеса<br />
-                                                вул. Садова, 13<br />
-                                                тел.: +38 (048) 715-04-93,<br />
-                                                +38 (048) 237-51-01<br />
-                                                e-mail: interdach@rambler.ru<br />
-                                                <a href="http://www.interdach.com.ua" class="external">www.interdach.com.ua</a><br />
-												<a href="http://www.cherepitsa-v-odesse.webnode.com.ua" class="external">www.cherepitsa-v-odesse.webnode.com.ua</a> 
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Центр Покрівельних Матеріалів»</h5>
-                                            <p>
-                                                м. Одеса<br />
-                                                вул. Краснова, 5<br />
-                                                тел./факс: +38 (0482) 366-751,<br /> +38 (0482) 366-752<br />
-                                                моб.: +38 (050) 395-18-56<br />
-                                                e-mail: info@krovteks.net<br />
-                                                <a href="http://www.tondach.od.ua" class="external">www.tondach.od.ua</a><br />
-                                                <a href="http://www.krovteks.com.ua" class="external">www.krovteks.com.ua </a><br />
-                                                <a href="http://www.krovteks.net" class="external">www.krovteks.net</a>
-                                            </p>
-                                        </li>
-                                    </div>
-
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>СПД</abbr>
-                                                Сокол Л.В.</h5>
-                                            <p>
-                                                м. Одеса<br />
-                                                вул. Прохоровська, 26 оф. 2<br />
-                                                тел./факс: +38 (048) 735-37-85<br />
-                                                моб.: +38 (050) 391-53-50,<br />
-                                                +38 (063) 735-37-85<br />
-                                                e-mail: lilia-c@mail.ru<br />
-                                                <a href="http://www.rexbud-odessa.com" class="external">www.rexbud-odessa.com</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Одеса<br />
-                                                вул. Б. Хмельницького, 59<br />
-                                                тел.: +38 (0482) 39-70-97<br />
-                                                тел.: +38 (0482) 39-64-54<br />
-                                                моб.: +38 (067) 518-50-12<br />
-                                                e-mail: e.derevenskaya@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПФ</abbr>
-                                                “Еврокровля”</h5>
-                                            <p>
-                                                м. Одеса<br />
-                                                вул. Генерала Плієва, 2<br />
-                                                тел./факс: +38 (048) 778-20-20<br />                                                
-                                                моб.: +38 (067) 553-02-01<br />
-                                                e-mail:<br />
-												odessa@evrokrovlya.com.ua<br />
-                                                <a href="http://www.evrokrovlya.com.ua" class="external">www.evrokrovlya.com.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers19.text}
 
 
                                 </ul>
@@ -1259,258 +469,37 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
                             <div class="partners-data" id="nikolaev_partners">
                                 <h2>Миколаївська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «ТПК Еврохауз»</h5>
-                                            <p>
-                                                м. Миколаїв<br />
-                                                вул. Скороходова, 192а<br />
-                                                тел./факс: +38 (0512) 58-76-70<br />
-                                                тел./факс: +38 (0512) 47-50-38<br />
-                                                моб.: +38 (050)279-52-52<br />
-                                                e-mail: d.sidorenko@yahoo.com<br />
-                                                skype: dmitry_eh<br />
-                                                <a href="http://www.eurohouse.biz.ua" class="external">www.eurohouse.biz.ua</a>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПФ</abbr>
-                                                «Еврокровля»</h5>
-                                            <p>
-                                                м. Миколаїв<br />
-                                                вул. Авангардна, 8 (2-ий поверх)<br />
-                                                тел./факс: +38 (0512) 44-35-47<br />                                               
-                                                моб.: +38 (067) 552-49-00<br />
-                                                e-mail: evrokrovlya.nikolaev@gmail.com<br />
-
-                                                <a href="http://www.evrokrovlya.com.ua" class="external">www.evrokrovlya.com.ua</a>
-                                            </p>
-                                        </li>
-
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>«Івеко-Груп»</h5>
-                                            <p>
-                                                м. Миколаїв<br />
-                                                вул. Чигрина,  43-в.<br />
-                                                тел.: +38 (0512) 76-64-76<br />
-                                                моб.: +38 (098) 944-12-82<br />
-                                                e-mail: iveko-group@ukr.net
-                                                <a href="http://www.iveko.com.ua" class="external">www.iveko.com.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Миколаїв<br />
-                                                вул. Новозаводська,13, офіс 340<br />
-                                                тел.: +38 (0512) 58-05-24<br />
-                                                моб.: +38 (067) 246-21-09<br />
-                                                e-mail: v.tokarskay@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers20.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="herson_partners">
                                 <h2>Херсонська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «ТПК Єврохауз»</h5>
-                                            <p>
-                                                м. Херсон<br />
-                                                моб.: +38 (050) 279-52-52
-                                                <br />
-                                                e-mail: d.sidorenko@yahoo.com<br />
-                                                skype: dmitry_eh
-                                                <a href="http://www.eurohouse.biz.ua" class="external">www.eurohouse.biz.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «Континент Сервіс»</h5>
-                                            <p>
-                                                м. Херсон<br />
-                                                вул. Червонопрапорна, 31<br />
-                                                тел.: +38 (0552) 44-01-17,<br />
-												+38 (0552) 44-39-17
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column last">
-                                        <li>
-                                            <h5>ПФ «Еврокровля»</h5>
-                                            <p>
-                                                м. Херсон<br />
-                                                вул. Ладичука,161<br />
-                                                тел./факс: +38 (0552) 42-27-96<br />
-                                                тел./факс: +38 (0552) 45-40-68<br />	
-												моб.: +38 (067) 551-66-00<br />
-												моб.: +38 (067) 704-32-10<br />
-                                                e-mail: evrokrovlya.kherson@gmail.com<br />
-                                                <a href="http://www.evrokrovlya.com.ua" class="external">www.evrokrovlya.com.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers21.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="krym_partners">
                                 <h2>Крим</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Дахцентр Урсус»</h5>
-                                            Склад<br />
-                                            <p>
-                                                м. Сімферополь<br />
-                                                пер. Лавандовий 2а<br />
-                                                тел./факс: +38 (0652) 60-03-76<br />
-                                                моб.: +38 (050) 867-29-70, +38 (098) 672-28-90<br />
-                                                e-mail: ilya.koshin@gmail.com<br />
-                                            </p>
-                                        </li>
-
-                                        <li>
-                                            <h5>
-                                                <abbr>ТОВ</abbr>
-                                                «Інтердах»</h5>
-                                            <p>
-                                                м. Сімферополь<br />
-                                                вул. Монтажна, 1А<br />
-                                                тел./факс: +38 (0652) 61-88-51,70-79-95<br />
-                                                моб.: +38 (095) 597-78-98, +38 (095) 201-00-20, +38 (067) 182-35-93<br />
-                                                e-mail: interdach@mail.ru
-                                            </p>
-                                        </li>
-
-                                    </div>
-
-
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «Євродах»</h5>
-                                            <p>
-                                                м. Сімферополь <br />
-                                                пров. Елеваторний 6а<br />
-                                                тел./факс: +38 (0652) 600-885<br />
-                                                моб.:  +38 (066) 949-97-97, +38 (097) 909-78-58<br />
-                                                e-mail: yuran_16@mail.ru<br />
-                                                <a href="http://www.eurodach.com.ua" class="external">www.eurodach.com.ua</a><br />
-                                                <a href="http://www.tondach.dp.ua" class="external">www.tondach.dp.ua</a>
-
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ПрофМет»</h5>
-                                            <p>
-                                                м. Сімферополь<br />
-                                                вул. Лебедєва, 69<br />
-                                                тел./факс: +38 (0652) 27-26-76<br />
-                                                моб.: +38 (050) 323-55-88, +38 (098) 800-50-10<br />
-                                                e-mail: simferopol@profmet.com.ua
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column last">
-                                    </div>
+                                    ${sellers22.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="zaporozhje_partners">
                                 <h2>Запорізька область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ІКС БУД»</h5>
-                                            <p>
-                                                м. Запоріжжя<br />
-                                                вул. Брянська, 10<br />
-                                                тел.: +38 (0612) 34-84-35, +38 (061) 701-44-68<br />
-                                                моб.: +38 (050) 018-48-25
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Запоріжжя<br />
-                                                вул. Крива Бухта, 2<br />
-                                                тел.: +38 (0612) 63-88-41, +38 (0612) 20-75-10<br />
-                                                e-mail: e.taran@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers23.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="doneck_partners">
                                 <h2>Донецька область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>
-                                                <abbr>ПП</abbr>
-                                                «ЕТАЛОН-СТРОЙ»</h5>
-                                            <p>
-                                                м. Донецьк<br />
-                                                вул. Куйбишева, 75-а<br />
-                                                тел./факс: +38 (062) 348-4-04, +38 (062) 348-77-71<br />
-                                                моб.: +38 (062) 348-41-08<br />
-                                                e-mail: etalon@dn.velton.ua<br />
-                                                <a href="http://www.etalonstroy.com" class="external">www.etalonstroy.com</a>
-                                            </p>
-                                        </li>
-                                    </div>
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м. Донецьк<br />
-                                                вул. Економічна,34, офіс 201<br />
-                                                тел.: +38 (062) 210-26-32<br />
-                                                моб.: +38 (067) 564-26-82<br />
-                                                e-mail: a.safonov@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers24.text}
                                 </ul>
                             </div>
                             <div class="partners-data" id="lugansk_partners">
                                 <h2>Луганська область</h2>
                                 <ul class="to3col">
-                                    <div class="column">
-                                        <li>
-                                            <h5>«ТехноНІКОЛЬ»</h5>
-                                            <p>
-                                                м Луганськ<br />
-                                                вул. Лутугінська,1, офіс 38<br />
-                                                тел.: +38 (0642) 71-66-88<br />
-                                                e-mail: v.churkin@ts.tn.ua
-												<a href="http://www.tn.ua" class="external">www.tn.ua</a>
-                                            </p>
-                                        </li>
-                                    </div>
+                                    ${sellers25.text}
                                 </ul>
                             </div>
                         </div>

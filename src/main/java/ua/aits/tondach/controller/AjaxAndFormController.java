@@ -25,6 +25,9 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import ua.aits.tondach.functions.Constants;
 import ua.aits.tondach.model.ArticleModel;
+import ua.aits.tondach.model.RiderModel;
+import ua.aits.tondach.model.SellerModel;
+import ua.aits.tondach.model.SlaterModel;
 import ua.aits.tondach.model.UserModel;
 
 /**
@@ -37,6 +40,9 @@ public class AjaxAndFormController {
     
     UserModel Users = new UserModel();
     ArticleModel Articles = new ArticleModel();
+    SlaterModel Slaters = new SlaterModel();
+    RiderModel Riders = new RiderModel();
+    SellerModel Seller = new SellerModel();
     
     @RequestMapping(value = {"/system/ajax/check/user", "/system/ajax/check/user/"}, method = RequestMethod.GET)
 	public @ResponseBody String archiveCheckUser(HttpServletRequest request,HttpServletResponse response) throws Exception {
@@ -49,7 +55,7 @@ public class AjaxAndFormController {
         HttpSession session = request.getSession(true);
 	session.setAttribute("user", user);
         if(user.user_role == 1) {  
-            return new ModelAndView("redirect:" + "/system/add");   
+            return new ModelAndView("redirect:" + "/system/news");   
         }
         else {
             return new ModelAndView("redirect:" + "/system/index");   
@@ -101,6 +107,14 @@ public class AjaxAndFormController {
         return new ModelAndView("redirect:" + "/system/users");
     }
     
+    @RequestMapping(value = "/system/deletedata.do", method = RequestMethod.POST)
+    public ModelAndView doDeleteArticle(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
+        request.setCharacterEncoding("UTF-8");
+        String user_id = request.getParameter("article_id");
+        Articles.deleteArticle(user_id);
+        return new ModelAndView("redirect:" + "/system/news");
+    }
+    
     
     
     
@@ -114,11 +128,11 @@ public class AjaxAndFormController {
     	request.setCharacterEncoding("UTF-8");
     	String title = request.getParameter("title");
     	String text = request.getParameter("text");
-        String date = request.getParameter("date");
+        //String date = request.getParameter("date");
     	//String textAva = request.getParameter("avatar_text");
     	//String avatar = request.getParameter("avatar_path");
     	//Projects.insertProject(title, text, textAva, avatar);
-        Articles.insertArticle(title, text, date);
+        Articles.insertArticle(title, text);
     	return new ModelAndView("redirect:" + "/system/index/");
     }
         
@@ -128,15 +142,41 @@ public class AjaxAndFormController {
         String id = request.getParameter("article_id");
     	String title = request.getParameter("title");
     	String text = request.getParameter("text");
-        String date = request.getParameter("date");
+        //String date = request.getParameter("date");
     	//String textAva = request.getParameter("avatar_text");
     	//String avatar = request.getParameter("avatar_path");
     	
-    	Articles.updateArticle(id, title, text, date);
+    	Articles.updateArticle(id, title, text);
     	return new ModelAndView("redirect:" + "/system/index/");
     }
      
         
+    @RequestMapping(value = "/system/do/editslater", method = RequestMethod.POST)
+    public ModelAndView editSlater(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
+    	request.setCharacterEncoding("UTF-8");
+        String id = request.getParameter("slater_id");
+    	String text = request.getParameter("text");
+        Slaters.updateSlater(id, text);
+    	return new ModelAndView("redirect:" + "/system/slaters/");
+    }
+    
+    @RequestMapping(value = "/system/do/editrider", method = RequestMethod.POST)
+    public ModelAndView editRider(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
+    	request.setCharacterEncoding("UTF-8");
+        String id = request.getParameter("rider_id");
+    	String text = request.getParameter("text");
+        Riders.updateRider(id, text);
+    	return new ModelAndView("redirect:" + "/system/riders/");
+    }
+    
+    @RequestMapping(value = "/system/do/editseller", method = RequestMethod.POST)
+    public ModelAndView editSeller(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
+    	request.setCharacterEncoding("UTF-8");
+        String id = request.getParameter("seller_id");
+        String text = request.getParameter("text");
+        Seller.updateSeller(id, text);
+    	return new ModelAndView("redirect:" + "/system/wherebuy/");
+    }
     /* File functions */
     
 }

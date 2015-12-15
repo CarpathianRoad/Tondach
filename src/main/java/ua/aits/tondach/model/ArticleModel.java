@@ -12,13 +12,11 @@ import java.text.ParseException;
 import java.util.LinkedList;
 import java.util.List;
 import org.apache.commons.lang.StringEscapeUtils;
+import ua.aits.tondach.functions.Constants;
 import ua.aits.tondach.functions.DB;
 import ua.aits.tondach.functions.Helpers;
 
-/**
- *
- * @author kiwi
- */
+
 public class ArticleModel {
     public Integer article_id;
     public String article_title;
@@ -26,6 +24,24 @@ public class ArticleModel {
     public String article_add_date;
     public Integer article_is_publish;
     public String image;
+    public String news;
+
+    public String getNews() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
+        String returnHtml = "";
+        for(ArticleModel temp : this.getFirstNineNews()){
+            returnHtml += "<li>\n" +
+"              <div class=\"image\">\n" +
+"                <a href=\""+ Constants.URL +"article/full/"+ temp.article_id +"\"><img src=\n" +
+"                \""+ Constants.URL + temp.image +"\"\n" +
+"                width=\"69\" height=\"52\" alt=\"\" title=\"\" /></a>\n" +
+"              </div>\n" +
+"              <div>\n" +
+"                <a href=\"" + Constants.URL + "article/full/"+ temp.article_id +"\">"+ temp.article_title +"  »</a>\n" +
+"              </div>\n" +
+"            </li>";
+        }
+        return returnHtml;
+    }
 
     public String getAvatar() {
         return avatar;
@@ -106,24 +122,27 @@ public class ArticleModel {
     	return article;
     }
     
-    public void insertArticle(String title, String text, String date) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public void insertArticle(String title, String text) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
     	DB.runQuery("INSERT INTO `tondach_articles`("
                 + "`article_title`, "
                 + "`article_text`, "
-                + "`article_add_date`, `article_is_publish`) "
+                + "`article_is_publish`) "
                 + "VALUES ('"+StringEscapeUtils.escapeSql(title)+"',"
                 + "'"+StringEscapeUtils.escapeSql(text)+"',"
-                + "'"+date+"',0);");
+                + " 1);");
     	DB.closeCon();
 	}
     
-    public void updateArticle(String id, String title, String text, String date) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    public void updateArticle(String id, String title, String text) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
     	DB.runQuery("UPDATE `tondach_articles` SET "
                 + "`article_title`='"+StringEscapeUtils.escapeSql(title)+"',"
-                + "`article_text`='"+StringEscapeUtils.escapeSql(text)+"',"
-                + "`article_add_date`='"+date+"',"
-                + "`article_is_publish`=0,"
+                + "`article_text`='"+StringEscapeUtils.escapeSql(text)+"'"
                 + " WHERE article_id = "+id+";");
+    	DB.closeCon();
+    }
+    
+    public void deleteArticle(String article_id) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    	DB.runQuery("DELETE FROM `tondach_articles` WHERE tondach_articles.article_id = "+article_id+";");
     	DB.closeCon();
     }
     
@@ -142,7 +161,7 @@ public class ArticleModel {
     }
     
     public List<ArticleModel> getArticleByCount(String id, String count) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
-        ResultSet result = DB.getResultSet("select * from tondach_articles where article_id != "+id+" and article_is_publish = 1 order by article_id desc limit "+count+";");
+        ResultSet result = DB.getResultSet("select * from tondach_articles where article_id != "+id+" order by article_id desc limit "+count+";");
         List<ArticleModel> newsList = new LinkedList<>();
         while (result.next()) { 
             ArticleModel temp = new ArticleModel();
@@ -150,19 +169,13 @@ public class ArticleModel {
             if("".equals(f_title) || f_title == null){
                 f_title = result.getString("article_title");
             }
-            if(f_title.length() > 55){
-                f_title = f_title.substring(0,55);
-            }
-            String text = Helpers.html2text(result.getString("article_text"));
+            String text = result.getString("article_text");
             if("".equals(text) || text == null){
-                text = Helpers.html2text(result.getString("article_text"));
+                text = result.getString("article_text");
                 
-                if("".equals(Helpers.html2text(result.getString("article_text"))) && !"".equals(result.getString("article_text"))){
+                if("".equals(result.getString("article_text")) && !"".equals(result.getString("article_text"))){
                     text = f_title;
                 }
-            }
-            if(text.length() > 175){
-                text = text.substring(0,175);
             }
             temp.setArticle_text(text);
             temp.setArticle_id(result.getInt("article_id"));
@@ -181,7 +194,7 @@ public class ArticleModel {
     
     
     public List<ArticleModel> getFirstNineNews() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
-        ResultSet result = DB.getResultSet("select * from tondach_articles where article_is_publish = 1 order by article_id desc LIMIT 0, 3;");
+        ResultSet result = DB.getResultSet("SELECT * FROM tondach_articles WHERE article_is_publish = 1 ORDER BY article_id desc LIMIT 3;");
         List<ArticleModel> newsList = new LinkedList<>();
         while (result.next()) { 
             ArticleModel temp = new ArticleModel();
@@ -190,22 +203,51 @@ public class ArticleModel {
             if("".equals(f_title) || f_title == null){
                 f_title = result.getString("article_title");
             }
-            String text = Helpers.html2text(result.getString("article_text"));
+            String text = result.getString("article_text");
             if("".equals(text) || text == null){
-                text = Helpers.html2text(result.getString("article_text"));
-            }
-            if(text.length() > 400){
-                text = text.substring(0,400);
+                text = result.getString("article_text");
             }
             
             temp.setArticle_text(text);
             temp.setArticle_id(result.getInt("article_id"));
             temp.setArticle_title(f_title);
-            temp.setArticle_add_date(result.getString("article_add_date").replace("/", "."));
+            //temp.setArticle_add_date(result.getString("article_add_date").replace("/", "."));
             //temp.setAvatar(result.getString("avatar"));
             //if("".equals(temp.getImage())){
               //  temp.setImage("img/no-photo.png");
             //}
+            newsList.add(temp);
+        } 
+        DB.closeCon();
+    return newsList;
+    }
+    
+    public List<ArticleModel> getArticle(String id, String count) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
+        ResultSet result = DB.getResultSet("select * from tondach_articles where article_id = "+id+" order by article_id desc limit "+count+";");
+        List<ArticleModel> newsList = new LinkedList<>();
+        while (result.next()) { 
+            ArticleModel temp = new ArticleModel();
+            String f_title = result.getString("article_title");
+            if("".equals(f_title) || f_title == null){
+                f_title = result.getString("article_title");
+            }
+            String text = result.getString("article_text");
+            if("".equals(text) || text == null){
+                text = result.getString("article_text");
+                
+                if("".equals(result.getString("article_text")) && !"".equals(result.getString("article_text"))){
+                    text = f_title;
+                }
+            }
+            temp.setArticle_text(text);
+            temp.setArticle_id(result.getInt("article_id"));
+            temp.setArticle_title(f_title);
+            /*temp.setAvatar(result.getString("avatar"));
+            String [] arr = result.getString("image").split(",");
+            if("".equals(arr[0])){
+                arr[0] = "img/zak.png";
+            }
+            temp.setImage(arr[0]); */
             newsList.add(temp);
         } 
         DB.closeCon();

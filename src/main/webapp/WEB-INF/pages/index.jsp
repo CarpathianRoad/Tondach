@@ -8,6 +8,7 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
+<jsp:useBean id="Helpers" class="ua.aits.tondach.functions.Helpers" scope="session"/>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -740,21 +741,8 @@ schlicht überzeugend		</div>
  TONDACH<sup>®</sup> Новини
 </h2>
 	<ul class="news">
-
             
-          <c:forEach items="${articles}" var="item">
-                <li>
-              <div class="image">
-                <a href="${Constants.URL}news/вебинар/"><img src=
-                "${Constants.URL}media/2135/10257904_907941109226327_545788797682915966_n.jpg"
-                width="69" height="52" alt="" title="" /></a>
-              </div>
-              <div>
-                <a href="${Constants.URL}news/вебинар/">${item.article_title}»</a>
-              </div>
-            </li>
-            </c:forEach>
-
+            ${Helpers.getThreeNews()}
           </ul>
         </div>
 

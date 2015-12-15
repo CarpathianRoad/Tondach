@@ -58,17 +58,23 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" id="tondach" href="index">Tondach</a>
+          <a class="navbar-brand" id="tondach">Tondach</a>
         </div>
           
           
           
           <div id="navbar" class="navbar-form navbar-header">
-              <a id="index" href="${Constants.URL}system/add">
+              <a id="news" href="${Constants.URL}system/news">
                   <button type="submit" class="btn btn-success">Новини</button>
               </a>
-                <a id="users" href="${Constants.URL}system/users">
-                <button type="submit" class="btn btn-success">Користувачі</button>
+              <a id="slaters" href="${Constants.URL}system/slaters">
+                <button type="submit" class="btn btn-success">Покрівельники</button>
+              </a>
+              <a id="riders" href="${Constants.URL}system/riders">
+                <button type="submit" class="btn btn-success">Перевізники</button>
+              </a>
+              <a id="sellers" href="${Constants.URL}system/wherebuy">
+                <button type="submit" class="btn btn-success">Продавці</button>
               </a>
           </div>
                 
@@ -88,11 +94,7 @@
     <div class="container">
       <!-- Example row of columns -->
       <jsp:doBody/>
-      <hr>
 
-      <footer>
-        <p>&copy; AITS</p>
-      </footer>
     </div> <!-- /container -->
 
 
@@ -102,7 +104,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="${Constants.URL}system/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src=".${Constants.URL}system/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="${Constants.URL}system/js/ie10-viewport-bug-workaround.js"></script>
     
   </body>
 </html>
