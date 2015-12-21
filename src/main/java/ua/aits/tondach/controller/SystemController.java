@@ -94,6 +94,9 @@ public class SystemController {
     @RequestMapping(value = {"system/edit/{id}", "/system/edit/{id}"}, method = RequestMethod.GET)
     public ModelAndView edit(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/edit");
+        String folder = "files";
+    	model.addObject("folder", folder);
+    	model.addObject("folder_str", folder.replace('/', '|'));
         model.addObject("article",Article.getOneArticle(id));
         return model;
     }
@@ -138,22 +141,7 @@ public class SystemController {
         return model;
     }
 
-    @RequestMapping(value = {"/tools/imageupload","/tools/imageupload/"}, method = RequestMethod.GET)
-    public ModelAndView fileManager (HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String path = request.getParameter("path");
-        String type = request.getParameter("type");
-        String ckeditor = request.getParameter("CKEditor");
-        String num = request.getParameter("CKEditorFuncNum");
-        ModelAndView model = new ModelAndView("/tools/FileDrag");
-        model.addObject("ckeditor", ckeditor);
-        model.addObject("num", num);
-        model.addObject("type", type);
-        //model.addObject("folder", folder.replace('|', '/'));
-        if("".equals(path)) {
-            model.addObject("path",path.replace(",", "/"));
-        }
-   	return model;
-    }
+    
 
 }
 

@@ -207,7 +207,7 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
 </li>
 <li class="first"><a name="6895"></a>
 <div class="image"><img style="width: 110px; height: 73px;" src="${Constants.URL}media/1364/biber_rundschnitt_engobe_dunkelbraun_flaeche_product_small.png?width=110&amp;height=73" alt="Biber_Rundschnitt_Engobe_dunkelbraun_Flaeche_product_small.png" rel="2275" /></div>
-<a href="${Constants.URL}Produkte/Dach/Dachfarben/ENGOBE-dunkelbraun">Коричнева Ангоба</a>
+<a>Коричнева Ангоба</a>
 <div class="icons"></div>
 </li>
 <li><a name="8621"></a>

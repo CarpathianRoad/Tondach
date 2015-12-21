@@ -4,7 +4,12 @@
 <jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
 
 <t:indexpage>
-  
+  <script>
+	$(document).ready(function() {
+    	$(".tabs li").removeClass("active");
+		$("#where-buy").addClass("active");
+	});
+	</script>
          <title>  Де придбати нашу продукцію - природньо красиві і довговічні покрівлі </title>       
     <div id="sidebar" class="_1">
 	<div id="sidebar" class="_1">

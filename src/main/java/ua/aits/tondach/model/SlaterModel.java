@@ -5,7 +5,6 @@
  */
 package ua.aits.tondach.model;
 
-import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -13,7 +12,6 @@ import java.util.LinkedList;
 import java.util.List;
 import org.apache.commons.lang.StringEscapeUtils;
 import ua.aits.tondach.functions.DB;
-import ua.aits.tondach.functions.Helpers;
 
 /**
  *

@@ -4,6 +4,13 @@
 <jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
 
 <t:indexpage>
+    
+    <script>
+	$(document).ready(function() {
+    	$(".tabs li").removeClass("active");
+		$("#riders").addClass("active");
+	});
+	</script>
     <title>  Перевізники - природньо красиві і довговічні покрівлі </title>
     
     <div id="sidebar" class="_1"> 	<ul class="highlights">
@@ -49,7 +56,7 @@
 				
 				
 <div class="content" style="float: right;width: 675px;">
-		<h1>Перевізники</h1>
+		<h2>Перевізники</h2>
 	<div>
             <form action="${Constants.URL}rider_registration"><div class="submit" style="border-top: 1px solid #fff;">
 			<input type="submit" value="Пройти реєстрацію" class="button">

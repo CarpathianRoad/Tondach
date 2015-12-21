@@ -15,7 +15,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
-import ua.aits.tondach.functions.Helpers;
 import ua.aits.tondach.model.ArticleModel;
 import ua.aits.tondach.model.RiderModel;
 import ua.aits.tondach.model.SellerModel;
@@ -30,11 +29,12 @@ import ua.aits.tondach.model.SlaterModel;
 @Scope("session")
 public class PageController {
     
+    ArticleModel Article = new ArticleModel();
     SlaterModel Slaters = new SlaterModel();
     RiderModel Riders = new RiderModel();
     SellerModel Seller = new SellerModel();
     
-    @RequestMapping(value = {"/where_buy/", "where_buy/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/where_buy/", "where_buy/", "/where_buy"}, method = RequestMethod.GET)
     public ModelAndView where_buy(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/where_buy/where_buy");
         List<SellerModel> seller = Seller.getSellerByCount("0","100");
@@ -874,4 +874,21 @@ public class PageController {
         ModelAndView model = new ModelAndView("services/search-for-sales-partners");
         return model;
     }
+    @RequestMapping(value = {"article/", "/article", "/article/", "news/", "/news", "/news/", "articles/", "/articles", "/articles/"}, method = RequestMethod.GET)
+    public ModelAndView article(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("news/articles");
+            model.addObject("article", Article.getArticleByCount("0", "100"));
+        return model;
+    }
+    
+    @RequestMapping(value = {"/search","/search/","search/"}, method = RequestMethod.GET)
+    	public ModelAndView searchResult (HttpServletRequest request,
+   	 HttpServletResponse response) throws Exception {
+            	String searchStr = request.getParameter("find");
+   	 ModelAndView model = new ModelAndView("Search");
+            	List<ArticleModel> articles = Article.getSearchResult(searchStr);
+            	model.addObject("find", searchStr);
+            	model.addObject("resultList", articles);
+   	 return model;
+	}
 }

@@ -22,7 +22,19 @@
             <input type="hidden" class="form-control" name="seller_id" value="${seller.id}">
             
             <hr>
-            
+            <div class="row add-row">
+                <div class="col-lg-12 margintop30 field">
+                    <label for="tlt">Кількість<span class="red-star">*</span></label>
+                    <br/>
+                    <div class="btn-group lang-switch-title" role="group" aria-label="...">
+                    </div>
+                </div>
+                <div class="col-lg-6 margintop10 field titles">
+                    <input type="text" name="amount" class="form-control input-title-lang" lang="title" id="tlt"  maxlength="55" value="${seller.amount}">
+                    <div class="validation"></div>
+                </div>
+            </div>
+            <hr>
             <div class="row add-row">
                 <div class="col-lg-12 margintop30 field">
                     <label for="tlt">${seller.town}</label><br/>

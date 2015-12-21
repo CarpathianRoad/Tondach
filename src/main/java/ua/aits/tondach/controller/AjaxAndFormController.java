@@ -11,10 +11,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
+import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import org.springframework.context.annotation.Scope;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,16 +28,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import ua.aits.tondach.functions.Constants;
+import ua.aits.tondach.functions.Transliterator;
 import ua.aits.tondach.model.ArticleModel;
 import ua.aits.tondach.model.RiderModel;
 import ua.aits.tondach.model.SellerModel;
 import ua.aits.tondach.model.SlaterModel;
 import ua.aits.tondach.model.UserModel;
 
-/**
- *
- * @author kiwi
- */
+
+
+
 @Controller
 @Scope("session")
 public class AjaxAndFormController {
@@ -43,6 +47,7 @@ public class AjaxAndFormController {
     SlaterModel Slaters = new SlaterModel();
     RiderModel Riders = new RiderModel();
     SellerModel Seller = new SellerModel();
+    Transliterator TransliteratorClass = new Transliterator();
     
     @RequestMapping(value = {"/system/ajax/check/user", "/system/ajax/check/user/"}, method = RequestMethod.GET)
 	public @ResponseBody String archiveCheckUser(HttpServletRequest request,HttpServletResponse response) throws Exception {
@@ -75,50 +80,9 @@ public class AjaxAndFormController {
             HttpServletResponse response) throws Exception {
         return Users.isExitsUserName(request.getParameter("user_name"));
     }
-        
-    @RequestMapping(value = "/system/users/insertdata.do", method = RequestMethod.POST)
-    public ModelAndView doAddUser(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        String user_name = request.getParameter("user_name");
-        String user_password = request.getParameter("user_password");
-        String user_role = request.getParameter("user_role");
-        String user_enabled = request.getParameter("user_enabled");
-        Users.addUser(user_name, user_password, user_role, user_enabled);
-        return new ModelAndView("redirect:" + "/system/users");
-    } 
-        
-    @RequestMapping(value = "/system/users/updatedata.do", method = RequestMethod.POST)
-    public ModelAndView doEditUser(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        String user_id = request.getParameter("user_id");
-        String user_name = request.getParameter("user_name");
-        String user_password = request.getParameter("user_password");
-        String user_role = request.getParameter("user_role");
-        String user_enabled = request.getParameter("user_enabled");
-        Users.editUser(user_id, user_name, user_password, user_role, user_enabled);
-        return new ModelAndView("redirect:" + "/system/users");
-    }   
-        
-    @RequestMapping(value = "/system/users/deletedata.do", method = RequestMethod.POST)
-    public ModelAndView doDeleteUser(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        String user_id = request.getParameter("user_id");
-        Users.deleteUser(user_id);
-        return new ModelAndView("redirect:" + "/system/users");
-    }
-    
-    @RequestMapping(value = "/system/deletedata.do", method = RequestMethod.POST)
-    public ModelAndView doDeleteArticle(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        String user_id = request.getParameter("article_id");
-        Articles.deleteArticle(user_id);
-        return new ModelAndView("redirect:" + "/system/news");
-    }
     
     
-    
-    
-    
+   
     
     
     
@@ -128,12 +92,9 @@ public class AjaxAndFormController {
     	request.setCharacterEncoding("UTF-8");
     	String title = request.getParameter("title");
     	String text = request.getParameter("text");
-        //String date = request.getParameter("date");
-    	//String textAva = request.getParameter("avatar_text");
-    	//String avatar = request.getParameter("avatar_path");
-    	//Projects.insertProject(title, text, textAva, avatar);
-        Articles.insertArticle(title, text);
-    	return new ModelAndView("redirect:" + "/system/index/");
+    	String image = request.getParameter("avatar_path");
+        Articles.insertArticle(title, text, image);
+    	return new ModelAndView("redirect:" + "/system/news/");
     }
         
     @RequestMapping(value = "/system/do/editdata", method = RequestMethod.POST)
@@ -142,14 +103,19 @@ public class AjaxAndFormController {
         String id = request.getParameter("article_id");
     	String title = request.getParameter("title");
     	String text = request.getParameter("text");
-        //String date = request.getParameter("date");
-    	//String textAva = request.getParameter("avatar_text");
-    	//String avatar = request.getParameter("avatar_path");
+    	String image = request.getParameter("avatar_path");
     	
-    	Articles.updateArticle(id, title, text);
-    	return new ModelAndView("redirect:" + "/system/index/");
+    	Articles.updateArticle(id, title, text, image);
+    	return new ModelAndView("redirect:" + "/system/news/");
     }
      
+     @RequestMapping(value = "/system/deletedata.do", method = RequestMethod.POST)
+    public ModelAndView doDeleteArticle(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
+        request.setCharacterEncoding("UTF-8");
+        String user_id = request.getParameter("article_id");
+        Articles.deleteArticle(user_id);
+        return new ModelAndView("redirect:" + "/system/news");
+    }
         
     @RequestMapping(value = "/system/do/editslater", method = RequestMethod.POST)
     public ModelAndView editSlater(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
@@ -173,10 +139,135 @@ public class AjaxAndFormController {
     public ModelAndView editSeller(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
     	request.setCharacterEncoding("UTF-8");
         String id = request.getParameter("seller_id");
+        String amount = request.getParameter("amount");
         String text = request.getParameter("text");
-        Seller.updateSeller(id, text);
+        Seller.updateSeller(id, amount, text);
     	return new ModelAndView("redirect:" + "/system/wherebuy/");
     }
     /* File functions */
+        
+    @RequestMapping(value = {"/system/do/uploadimage", "/system/do/uploadimage/"}, method = RequestMethod.POST)
+    public @ResponseBody String uploadImageHandler(@RequestParam("file") MultipartFile file, @RequestParam("path") String path,  HttpServletRequest request) {
+    	String name = file.getOriginalFilename();
+        name = TransliteratorClass.transliterate(name);
+    	if (!file.isEmpty()) {
+            try {
+                byte[] bytes = file.getBytes();
+            	File dir = new File(Constants.home+path);
+            	if (!dir.exists())
+                	dir.mkdirs();
+            	File serverFile = new File(dir.getAbsolutePath() + File.separator + name);
+            	try (BufferedOutputStream stream = new BufferedOutputStream( new FileOutputStream(serverFile))) {
+                	stream.write(bytes);
+            	}
+            	return "";
+            } catch (Exception e) {
+            	return "You failed to upload " + name + " => " + e.getMessage();
+            }
+    	} else {
+        	return "You failed to upload " + name + " because the file was empty.";
+    	}
+    }
+    
+    @RequestMapping(value = {"/system/do/uploadfile", "/system/do/uploadfile/"}, method = RequestMethod.POST)
+    public @ResponseBody String uploadFileHandler(@RequestParam("file") MultipartFile file, @RequestParam("path") String path,  HttpServletRequest request) {
+    	String name = file.getOriginalFilename();
+    	if (!file.isEmpty()) {
+        	try {
+            	byte[] bytes = file.getBytes();
+            	File dir = new File(Constants.home+path);
+            	if (!dir.exists())
+                	dir.mkdirs();
+            	File serverFile = new File(dir.getAbsolutePath() + File.separator + name);
+            	try (BufferedOutputStream stream = new BufferedOutputStream( new FileOutputStream(serverFile))) {
+                	stream.write(bytes);
+            	}
+            	return "";
+        	} catch (Exception e) {
+            	return "You failed to upload " + name + " => " + e.getMessage();
+        	}
+    	} else {
+        	return "You failed to upload " + name + " because the file was empty.";
+    	}
+    }
+    
+    @RequestMapping(value = "/system/do/removefile", method = RequestMethod.GET)
+    public @ResponseBody String removeFileOrDir(HttpServletRequest request) {
+    	String path = request.getParameter("path");
+    	File temp = new File(Constants.home + path);
+    	Boolean result = temp.delete();
+    	return result.toString();
+    }
+    
+    @RequestMapping(value = {"/tools/imageupload/{folder}/","/tools/imageupload/{folder}"}, method = RequestMethod.GET)
+    public ModelAndView fileManager (@PathVariable("folder") String folder, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        String path = request.getParameter("path");
+        String type = request.getParameter("type");
+        String ckeditor = request.getParameter("CKEditor");
+        String num = request.getParameter("CKEditorFuncNum");
+        ModelAndView model = new ModelAndView("/tools/FileDrag");
+        model.addObject("ckeditor", ckeditor);
+        model.addObject("num", num);
+        model.addObject("type", type);
+        model.addObject("folder", folder.replace('|', '/'));
+        if("".equals(path)) {
+            model.addObject("path",path.replace(",", "/"));
+        }
+   	return model;
+    }
+    
+    @RequestMapping(value = {"/articles/loadсontentforsearch"}, method = RequestMethod.GET)
+    public @ResponseBody
+    ResponseEntity<String> load_content_for_search(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        request.setCharacterEncoding("UTF-8");
+        HttpHeaders responseHeaders = new HttpHeaders(); 
+        responseHeaders.add("Content-Type", "application/json; charset=utf-8");
+        String find = request.getParameter("find");
+        int countPage = Integer.parseInt(request.getParameter("count"));
+        int countNeed = countPage + 9;
+        List<ArticleModel> tempw =  Articles.getSearchResult(find);
+        if(tempw == null) { 
+        return new ResponseEntity<>("", responseHeaders, HttpStatus.CREATED);
+        }
+        String styleForMore = "";
+        if(tempw.size() < countNeed) { 
+            countNeed = tempw.size();
+            styleForMore = "doNotShow";
+        }
+        List<ArticleModel> tempC = tempw.subList(countPage, countNeed);
+        String returnHTML = "";
+        for (ArticleModel temp : tempC) 
+            {
+            String URL = Constants.URL + "article/full/";   
+        
+                
+                returnHTML = returnHTML + 
+"                            <div class=\"news_text_box\">\n" +
+"                                <div class=\"news_title\"><h2><a href=\"" + URL + temp.article_id + "\">" + temp.article_title + "</a></h2></div>\n" +
+"                                <a href=\"" + URL + temp.article_id +"\"></a>\n" +
+"                                <div class=\"news_text\">" + temp.article_text + "...</div>\n" +
+"                            </div>\n" +
+"                        </div>\n" +
+"                    </div><br>";
+            }
+        
+        List<ArticleModel> posts =  Articles.getPostSearchResult(find);
+        for (ArticleModel post : posts) 
+            {
+            String URL = Constants.URL + post.url;   
+        
+                
+                returnHTML = returnHTML + 
+"                            <div class=\"news_text_box\">\n" +
+"                                <div class=\"news_title\"><h2><a href=\"" + URL + "\">" + post.title + "</a></h2></div>\n" +
+"                                <a href=\"" + URL +"\"></a>\n" +
+"                                <div class=\"news_text\">" + post.text + "...</div>\n" +
+"                            </div>\n" +
+"                        </div>\n" +
+"                    </div><br>";
+            }
+        return new ResponseEntity<>(returnHTML, responseHeaders, HttpStatus.CREATED);
+        //return returnHTML;
+    }
     
 }

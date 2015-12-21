@@ -33,9 +33,9 @@
                         <input type="password" name="user_password" class="form-control" id="user_password" placeholder="Password">
                     </div>
                 </form>
-                <button class="float submit-button">Login</button>
+                <button class="float submit-button">Вхід</button>
                 <div class="validation"></div>
-                <button class="float button"><a href="${Constants.URL}index" style="text-decoration:none; color: white;">Back to the future</a></button>
+                <button class="float button"><a href="${Constants.URL}index" style="text-decoration:none; color: white;">Повернутись до головної</a></button>
             </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>

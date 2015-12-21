@@ -14,18 +14,17 @@
             pointer-events: none;
         }
     </style>
+    <br><hr>
     <div class="margintop20">
-        <h4>Видалити користувача</h4>
+        <h4>Видалити новину</h4>
         <ol class="breadcrumb">
-            <li class="active">
-                <a href="${Constants.URL}system/news"> <i class="fa fa-fw fa-list-alt"></i> Повернутись до новин</a>
-            </li>
+            <div class="delete-row">Видалити новину <strong>"${article.article_title}"</strong> ?</div>
         </ol>
 	<div class="row add-row">
                 <div class="col-lg-12 margintop30">
-                    <div class="delete-row">Видалити новину <strong>"${article.article_title}"</strong> ?</div>
-                    <br><p>
-                        <button class="btn btn-success margintop30 marginbottom30"  id="sudmitDelete" type="submit">Видалити новину</button>
+                    
+                    <p>
+                        <button class="btn btn-success margintop30 marginbottom30"  id="sudmitDelete" type="submit">Видалити</button>
                         <a href="${Constants.URL}system/news"><button class="btn btn-danger margintop30 marginbottom30" id="sudmitData" type="submit">Повернутись до новин</button></a>
                     </p>
                 </div>

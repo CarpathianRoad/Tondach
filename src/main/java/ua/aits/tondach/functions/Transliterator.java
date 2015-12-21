@@ -8,10 +8,8 @@ package ua.aits.tondach.functions;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- * @author kiwi
- */
+
+
 public class Transliterator {
 
     private static final Map<Character, String> charMap = new HashMap<Character, String>();

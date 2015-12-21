@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ua.aits.tondach.functions;
 
-/**
- *
- * @author kiwi
- */
+
 public class Constants
 {
-    public static final String home = "/home/rollthedrums/NetBeansProjects/Tondach/src/main/webapp/"; 
+    public static final String home = "/home/rollthedrums/NetBeansProjects/Tondach-main/src/main/webapp/"; 
     public static final String URL = "/Tondach/";
     
     public static final String DB_DRIVER = "com.mysql.jdbc.Driver";

@@ -156,7 +156,7 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
 		
 		<div id="content" style="margin-top: 30px;">
             <h1>
-              Керамічні покрівельні аксесуари
+              Прохід через покрівлю
             </h1>
             <div>
 				          

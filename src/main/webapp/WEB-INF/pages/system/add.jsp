@@ -4,7 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <t:adminpage>
      
-        <link rel="stylesheet" href="${Constants.URL}css/plugins/ckeditor.css" type="text/css" />  
+        <link rel="stylesheet" href="${Constants.URL}css/plugins/ckeditor.css" type="text/css" />
+        <link rel="stylesheet" href="${Constants.URL}css/plugins/dropzone.css" type="text/css" />
         
     <script src="${Constants.URL}ckeditor/ckeditor.js"></script>
     <script src="${Constants.URL}js/plugins/dropzone.js"></script>
@@ -14,22 +15,20 @@
         
    
    
-        <div class="row add-row" style="padding-top:2em">
-            
+        <div class="row add-row" style="padding-top:1em">
+            <hr>
         </div>
         <form action="${Constants.URL}system/do/uploadfile" class="dropzone"  id="my-awesome-dropzone-gal">
             <input type="hidden" name="path" value="/files/avatars/" />
-            <input type="file" name="file" style="display:inline-block" />
+            <input type="file" name="file" style="display:none" />
         </form>
 	<form action="${Constants.URL}system/do/insertdata" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
-            <input type="hidden" class="form-control" name="category" value="${category}">
-            <input type="hidden" name="dir" id="dir-name" value="${folder}" />
             <input type="hidden" class="form-control" id="avatar_path" name="avatar_path">
             
             <hr>
             <div class="row add-row">
                 <div class="col-lg-12 margintop30 field">
-                    <label for="tlt">Title <span class="red-star">*</span></label>
+                    <label for="tlt">Заголовок <span class="red-star">*</span></label>
                     <br/>
                     <div class="btn-group lang-switch-title" role="group" aria-label="...">
                     </div>
@@ -42,7 +41,7 @@
             <hr>
             <div class="row add-row">
                 <div class="col-lg-12 margintop30 field">
-                    <label for="tlt">Новини</label><br/>
+                    <label for="tlt">Текст новини</label><br/>
                     <div class="btn-group lang-switch-text" role="group" aria-label="...">
                     </div>
                 </div>
@@ -177,6 +176,10 @@
         var obj = $("#cke_120_fileInput").contents().find(".returnImage");
          obj.click("click", function (e) {
             $("#cke_71_textInput").val("s2as1");
+        });
+        $("#my-awesome-dropzone-gal").dropzone({ 
+            url: "${Constants.URL}system/do/uploadfile",
+            addRemoveLinks: true
         });
     }   
 </script>

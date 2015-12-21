@@ -5,21 +5,22 @@
 <t:adminpage>
      
         <link rel="stylesheet" href="${Constants.URL}css/plugins/ckeditor.css" type="text/css" />  
+        <link rel="stylesheet" href="${Constants.URL}css/plugins/dropzone.css" type="text/css" /> 
         
     <script src="${Constants.URL}ckeditor/ckeditor.js"></script>
-    <script src="${Constants.URL}js/plugins/dropzone.js"></script>
+    
     
    
     <div class="margintop20">
         
    
    
-        <div class="row add-row" style="padding-top:2em">
-            
+        <div class="row add-row" style="padding-top:1em">
+            <hr>
         </div>
         <form action="${Constants.URL}system/do/uploadfile" class="dropzone"  id="my-awesome-dropzone-gal">
             <input type="hidden" name="path" value="/files/avatars/" />
-            <input type="file" name="file" style="display:inline-block" />
+            <input type="file" name="file" style="display:none" />
         </form>
 	<form action="${Constants.URL}system/do/editdata" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
             <input type="hidden" class="form-control" name="article_id" value="${article.article_id}">
@@ -55,13 +56,14 @@
             <br><br>
         </form>
         <p>
-            <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Додати зміни</button>
+            <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Зберегти</button>
         </p>
     </div>
 </t:adminpage>
     
 <script src="${Constants.URL}js/jquery.webkitresize.js"></script>
 <script src="${Constants.URL}js/jquery.mb.browser.min.js"></script>
+<script src="${Constants.URL}js/plugins/dropzone.js"></script>
 <script> 
     $(document).ready(function () { 
         
@@ -72,9 +74,9 @@
         var currentLangAT = $(".lang-switch-avatar-text button.active").attr("id");
         $(".input-avatar-text-lang[lang='"+currentLangAT+"']").show();
         initCKE();
-        if('${tondach_articles.image}' !== null && '${tondach_articles.image}' !== ''){
+        if('${article.image}' !== null && '${article.image}' !== ''){
             $("#my-awesome-dropzone-gal .dz-message").hide();
-            $("#my-awesome-dropzone-gal").append('<div class="dz-preview dz-file-preview dz-processing dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail=""></div><div class="dz-details"><div class="dz-size"><span data-dz-size="">0</span></div><div class="dz-filename"><span data-dz-name="">${tondach_articles.image}</span></div></div><div class="dz-error-message"><span data-dz-errormessage=""></span></div><div class="dz-success-mark"></div><a class="dz-remove" href="javascript:undefined;" onclick="deleteFile(this)" data-dz-remove="">Remove file</a></div>');
+            $("#my-awesome-dropzone-gal").append('<div class="dz-preview dz-file-preview dz-processing dz-success dz-complete"><div class="dz-image"><img data-dz-thumbnail=""></div><div class="dz-details"><div class="dz-size"><span data-dz-size="">0</span></div><div class="dz-filename"><span data-dz-name="">${article.image}</span></div></div><div class="dz-error-message"><span data-dz-errormessage=""></span></div><div class="dz-success-mark"></div><a class="dz-remove" href="javascript:undefined;" onclick="deleteFile(this)" data-dz-remove="">Remove file</a></div>');
         } 
     });
     
@@ -154,10 +156,10 @@
        
     function initCKE() {
         CKEDITOR.replace('editor', {
-            filebrowserBrowseUrl : '${Constants.URL}tools/imageupload',
-            filebrowserUploadUrl : '${Constants.URL}tools/imageupload',
-            filebrowserImageBrowseUrl : '${Constants.URL}tools/imageupload',
-            filebrowserImageUploadUrl : '${Constants.URL}tools/imageupload',
+            filebrowserBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserImageBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserImageUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
             filebrowserWindowWidth  : 800,
             filebrowserWindowHeight : 500
         });
@@ -185,6 +187,10 @@
         var obj = $("#cke_120_fileInput").contents().find(".returnImage");
          obj.click("click", function (e) {
             $("#cke_71_textInput").val("s2as1");
+        });
+        $("#my-awesome-dropzone-gal").dropzone({ 
+            url: "${Constants.URL}system/do/uploadfile",
+            addRemoveLinks: true
         });
     }   
 </script>

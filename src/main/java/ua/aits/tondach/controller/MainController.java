@@ -7,7 +7,6 @@ package ua.aits.tondach.controller;
 
 import java.sql.SQLException;
 import java.text.ParseException;
-import java.util.List;
 import java.util.Properties;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -19,12 +18,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
-import ua.aits.tondach.functions.Helpers;
 import ua.aits.tondach.model.ArticleModel;
 
 @Controller
@@ -163,45 +160,4 @@ public class MainController {
 	}
     }
     
-    /*@RequestMapping(value = {"/article/full/{id}", "/article/full/{id}/"})
-	public ModelAndView full(@PathVariable("id") String id, HttpServletRequest request,
-		HttpServletResponse response) throws Exception {
-            ModelAndView modelAndView = new ModelAndView("FullArticle");
-            List<ArticleModel> articles = news.getArticleByCount(id,"3");
-                 for(ArticleModel temp: articles) {
-                    if(!"".equals(temp.avatar) && temp.avatar != null){
-                            temp.setImage(temp.avatar);
-                    }
-                    String[] img  = temp.image.split(",");
-                    temp.setImage(img[0]);
-                }
-            modelAndView.addObject("articles", articles);
-            ArticleModel tempArt  = news.getOneArticle(id);
-            if(tempArt == null) {
-                 return new ModelAndView("redirect:" + "/404");
-            }
-            String[] tempImg = tempArt.getImage().split(",");
-            if("".equals(tempArt.avatar) || tempArt.avatar == null) {
-                if("".equals(tempImg[0]) || tempImg[0] == null) {
-                    tempArt.avatar = "img/slides/slider.png";
-                }
-                else {
-                    tempArt.avatar = tempImg[0];
-                }
-            }
-            String face_text = Helpers.html2text(tempArt.article_text);
-            if("".equals(Helpers.html2text(tempArt.article_text)) && !"".equals(tempArt.article_text)){
-                    face_text = tempArt.article_title;
-            }
-            modelAndView.addObject("article", tempArt);
-            modelAndView.addObject("main_image", tempImg[0]);
-            modelAndView.addObject("images", tempImg);
-            modelAndView.addObject("avatarvar", tempArt.avatar);
-            modelAndView.addObject("titlevar", Helpers.replaceChars(tempArt.article_title));
-            modelAndView.addObject("descrvar", Helpers.replaceChars(face_text));
-            return modelAndView;
- 
-	}
-        
-       */ 
 }

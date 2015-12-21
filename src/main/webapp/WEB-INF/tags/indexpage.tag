@@ -68,7 +68,7 @@
     <div id="wrapper">
       <div id="header">
         <ul class="tabs">
-          <li class="active">
+          <li id="home">
               <a href="${Constants.URL}index">Головне меню</a>
           </li>
           <li id="where-buy">
@@ -85,12 +85,10 @@
         "https://server.iad.liveperson.net/hc/29238624/?cmd=mTagRepstate&amp;site=29238624&amp;buttonID=12&amp;divID=lpButDivID-1372848083&amp;bt=1&amp;c=1">
 </script> <!-- END LivePerson Button code --></div>
         <!---->
-        <a style="padding-left:1.5em;line-height:60px;" class="not-add-lan" href="${Constants.URL}system/login">
-                	Вхід
-                    	</a>
-				<form class="searchform" method="get" action="/search">
+        
+				<form class="searchform" method="get" action="${Constants.URL}search">
           <fieldset>
-            <input class="text" type="text" value="Пошук" title="Пошук" name="q" /><input class="btn" type="submit" value="Пошук" />
+            <input class="text" type="text" value="Пошук" title="Пошук" name="find" /><input class="btn" type="submit" value="Пошук" />
           </fieldset>
         </form>
 
@@ -196,7 +194,7 @@
 
 <div class="col">
 <h2>
- TONDACH<sup>®</sup> Новини
+    <a href="${Constants.URL}article" style="color:white">TONDACH<sup>®</sup> Новини</a>
 </h2>
 	<ul class="news">
             
@@ -208,7 +206,7 @@
 	
         <div class="col">
           <h2>
-            Галерея
+              <a href="${Constants.URL}gallery" style="color:white">Галерея</a>
           </h2>
           <ul class="references" style="height: 205px;overflow: hidden;">
 			  
@@ -276,11 +274,11 @@
               </div>
             </li> 
 			  
-          </ul><a class="references-more" href="/gallery">Докладніше »</a>
+          </ul>
         </div>
         <div class="col">
           <h2>
-            TONDACH<sup>®</sup> Сервіс
+              <a href="${Constants.URL}where_buy" style="color:white">TONDACH<sup>®</sup> Сервіс</a>
           </h2>
           <div class="info">
             <a href="${Constants.URL}download-files/" target="_self">Файли для завантаження&nbsp;»</a><br />
@@ -316,7 +314,7 @@
               </li>
               <li class="level-3">
 				  <!--  -->
-                <a href="http://tondach.biz/tondach" target="_blank">Вхід для партнерів</a>
+                <a href="${Constants.URL}system/login" target="_blank">Вхід для партнерів</a>
               </li>
             </ul>
 				  <a style="color: #fff;margin-left: 125px; display:none" target="_blank" href="http://1c.tondach.biz/Price">Прайс для партнерів</a>

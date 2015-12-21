@@ -4,12 +4,10 @@
 <jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
 
 <t:indexpage>
-    <title>  Новини - природньо красиві і довговічні покрівлі </title>
-    
     <div id="sidebar" class="_1">
             <ul class="subnavigation">
               <li class="level-4">
-                  <a href="${Constants.URL}why-tondach/enterprise/">Підприємство</a>
+                <a href="${Constants.URL}why-tondach/enterprise/">Підприємство</a>
                 <ul class="subsubnavigation">
                   <li class="level-5">
                     <a href="${Constants.URL}why-tondach/enterprise/philosophy/">Наша філософія</a>
@@ -20,8 +18,8 @@
                   <li class="level-5">
                     <a href="${Constants.URL}why-tondach/enterprise/factories-and-offices/">Заводи та представництва</a>
                   </li>
-					    <li class="level-5">
-                  <a href="${Constants.URL}why-tondach/enterprise/jobs-and-careers/">Робота та кар'єра</a>
+                  <li class="level-5">
+                      <a href="${Constants.URL}why-tondach/enterprise/jobs-and-careers/">Робота та кар'єра</a>
                   </li>  
                 </ul>
               </li>
@@ -150,109 +148,36 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
 	
     <ul class="breadcrumb">
         
-            <li><a href="/">Tondach</a></li>
+            <li><a href="${Constants.URL}index">Tondach</a></li>
+            <li class="active">Новини</li>
 
         
-        <li class="active">Новини</li>
+        <li></li>
     </ul>
-		
-		<div id="content" style="margin-top: 30px;">
-			<h1>
-              Новини та оновлення
-            </h1>
-				<ul class="news" data-limit="5" data-nodes="18">
-			
-	<li class="reloaded" style="display: list-item;"> 
-            <div class="preview-image">
+            <br><br>
+            <div id="content">
+                <h1>
+                    Новини та оновлення
+                </h1>
+                
+                <ul class="news" data-limit="5" data-nodes="18">
+                <c:forEach items="${article}" var="item">
+                    <li class="reloaded" style="display: list-item;"> 
+                    <div class="preview-image">
                             
 			<div class="image">
-			<a href="${Constants.URL}news/вебинар/"><img src="${Constants.URL}media/2135/10257904_907941109226327_545788797682915966_n.jpg" width="200" height="147" alt="" title=""></a>		</div>
+                            <a href="${Constants.URL}article/full/${item.article_id}"><img src="${Constants.URL}files/avatars/${item.image}" width="200" height="147" alt="" title=""></a>		</div>
 	                    </div>
         <div class="main-column">
         <h2>
-                            <a href="${Constants.URL}news/вебинар/">Семінар від Вінербергер та ТОНДАХ в Ужгороді</a>
-                    </h2>
-        <span class="date">
-           Wednesday, March 04, 2015 4:56 PM
-        </span>
-        <p class="summary">
- <p>Семінар від компанії «Вінербергер» в Ужгороді<span class="text_exposed_show"><br /></span></p>
-<div class="text_exposed_show"><p>Міжнародний конкурс цегляної архітектури BRICK AWARD.<br /><br /></p>
-<p>На початку смінару учасників було ознайомлено з Міжнародн&hellip;</p></div>
-			
-			<a href="${Constants.URL}news/вебинар/" class="more">Докладніше »</a>
-        </p>
+                            <a href="${Constants.URL}article/full/${item.article_id}/">${item.article_title}</a>
+        </h2><br>
+        ${item.article_text}...
+       <a href="${Constants.URL}article/full/${item.article_id}/" style="color:#C00;"><br>Докладніше »</a>
     </div>
     <div class="clear"></div>
 </li>
-	<li class="reloaded" style="display: list-item;"> 
-            <div class="preview-image">
-                            
-			<div class="image">
-			<a href="${Constants.URL}news/tondach-gives-100-roofs/"><img src="${Constants.URL}media/2020/flut_content_overlay.jpg" width="200" height="147" alt="" title=""></a>		</div>
-	                    </div>
-        <div class="main-column">
-        <h2>
-                            <a href="${Constants.URL}news/tondach-gives-100-roofs/">TONDACH дарує 100 покрівель, чим підтримує постраждалих від повені на Балканах</a>
-                    </h2>
-        <span class="date">
-           Thursday, July 10, 2014 9:20 AM
-        </span>
-        <p class="summary">
-<p>Більше 3 мільйонів осіб постраждали в Хорватії, Боснії і Герцеговині та Сербії від найсильнішої повені за останні більш ніж 100 років.</p>
-<p>Ситуація в постраждалих регіонах на Балканах покращується повільно, в деяких районах Боснії та Сербії недавні дощі дали підставу для нового занепокоєння - що в будь-якому випадку залишається це бруд і зруйновані будинки. За даними ЄБРР (Європейський банк реконструкції та розвитку) збиток заподіяний катастрофічною повінню складе близько 3 млрд євро.</p>
-<p><img style="float: right; width: 249px; height: 165px;" src="${Constants.URL}media/2022/dpa-o-casa-se-scufunda-in-noroi_content_overlay.jpg?width=249px&amp;height=165px" alt="DPA-o-casa-se-scufunda-in-noroi_content_overlay.jpg" rel="3084" /></p>&hellip;
-			
-			<a href="${Constants.URL}news/tondach-gives-100-roofs/" class="more">Докладніше »</a>
-        </p>
-    </div>
-    <div class="clear"></div>
-</li>
-	<li class="reloaded" style="display: list-item;"> 
-            <div class="preview-image">
-                            
-			<div class="image">
-			<a href="${Constants.URL}news/exclusive-supplier-of-roofing-for-sochi/"><img src="${Constants.URL}media/1430/sotschi_content_small.png" width="200" height="147" alt="" title=""></a>		</div>
-	                    </div>
-        <div class="main-column">
-        <h2>
-                            <a href="${Constants.URL}news/exclusive-supplier-of-roofing-for-sochi/">TONDACH&#174; - ексклюзивний постачальник покрівлі для Сочі</a>
-                    </h2>
-        <span class="date">
-           Wednesday, April 23, 2014 8:46 PM
-        </span>
-        <p class="summary">
- <div class="news"><div class="date"></div>
-<div class="summary"></div>
-<div class="column-right"><div class="image"><div class="content-view-embed-image"><div class="attribute-image"><img style="width: 210px; height: 109px;" src="${Constants.URL}media/1427/sotschi_content_small.png?width=210&amp;height=109" alt="Sotschi_content_small.png" rel="2371" /></div>
-<div class="attribute-caption" style="width: 210px;"><div class="attribute-caption-inner"></div>
-</div>
-</div>
-</div>
-<div class="image"><div class="content-view-embed-image"><div class="attribute-image"><img style="width: 210px; height: 109px;" src="${Constants.URL}media/1428/venus-dachflaeche_content_small.png?width=210&amp;height=109" alt="Venus-Dachflaeche_content_small.png" rel="2372" /></div>
-<div class="attribute-caption" style="width: 210px;"><div class="attribute-caption-inner"></div>
-</div>
-</div>
-</div>
-<div class="image"><div class="content-view-embed-image"><div class="attribute-image"><img style="width: 210px; height: 109px;" src="${Constants.URL}media/1429/venus-sotschi_content_small.png?width=210&amp;height=109" alt="Venus-Sotschi_content_small.png" rel="2370" /></div>
-<div class="attribute-caption" style="width: 210px;"><div class="attribute-caption-inner"></div>
-</div>
-</div>
-</div>
-</div>
-<p>Всі матеріали для Сочі були доставлені вчасно</p>
-<p style="text-align: justify;" dir="ltr"><span>TONDACH Gleinstätten AG більше як 2 роки тому отримав замовлення на поставку покрівельного матеріалу для олімпійського проекту «Гірська Карусель». Це наймасштабніший девелоперський проект у районі «Червоної Поляни» в рамках зимової олімпіади Сочі 2014.</span></p>
-<p style="text-align: justify;" class=" text-justify"><span><span>Відповідно до домовленостей, черепиця була вироблена в термін і в певному диз&hellip;</span></span></p></div>
-			
-			<a href="${Constants.URL}news/exclusive-supplier-of-roofing-for-sochi/" class="more">Докладніше »</a>
-        </p>
-    </div>
-    <div class="clear"></div>
-</li>
-
-
-
-					
-				</ul>
+                </c:forEach>
+                </ul>
           </div>
 </t:indexpage>

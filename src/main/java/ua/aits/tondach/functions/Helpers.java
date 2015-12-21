@@ -9,16 +9,12 @@ import java.sql.SQLException;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-import org.jsoup.Jsoup;
 import ua.aits.tondach.model.ArticleModel;
 
-/**
- *
- * @author kiwi
- */
+
+
+
 public class Helpers  {
     
    
