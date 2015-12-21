@@ -172,151 +172,151 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
                             <div class="region" id="zak" usemap="#zak" alt="Закарпатська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Ужгород						
-                                    <div class="partners_quan">12</div>
+                                    <div class="partners_quan">${sellers1.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="lvov" usemap="#lvov" alt="Львівська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Львів						
-                                    <div class="partners_quan">2</div>
+                                    <div class="partners_quan">${sellers2.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="luck" usemap="#luck" alt="Волинська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Луцьк						
-                                    <div class="partners_quan">1</div>
+                                    <div class="partners_quan">${sellers3.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="rovno" usemap="#rovno" alt="Рівенська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Рівне						
-                                    <div class="partners_quan">2</div>
+                                    <div class="partners_quan">${sellers4.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="zhitomir" usemap="#zhitomir" alt="Житомирська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Житомир						
-                                    <div class="partners_quan">1</div>
+                                    <div class="partners_quan">${sellers5.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="kyiv" usemap="#kyiv" alt="Київська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Київ						
-                                    <div class="partners_quan">7</div>
+                                    <div class="partners_quan">${sellers6.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="chernigov" usemap="#chernigov" alt="Чернігівська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Чернігів						
-                                    <div class="partners_quan">1</div>
+                                    <div class="partners_quan">${sellers7.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="sumy" usemap="#sumy" alt="Сумська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Суми						
-                                    <div class="partners_quan">1</div>
+                                    <div class="partners_quan">${sellers8.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="harkov" usemap="#harkov" alt="Харківська область">
                                 <div class="city">
                                     Харків						
-                                    <div class="partners_quan">8</div>
+                                    <div class="partners_quan">${sellers9.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="if" usemap="#if" alt="Івано-Франківська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Івано-Франківськ						
-                                    <div class="partners_quan">2</div>
+                                    <div class="partners_quan">${sellers10.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="chernovcy" usemap="#chernovcy" alt="Чернівецька область" style="opacity: 0.6;">
                                 <div class="city">
                                     Чернівці						
-                                    <div class="partners_quan">3</div>
+                                    <div class="partners_quan">${sellers11.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="ternopol" usemap="#ternopol" alt="Тернопільська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Тернопіль						
-                                    <div class="partners_quan">1</div>
+                                    <div class="partners_quan">${sellers12.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="hmelnyck" usemap="#hmelnyck" alt="Хмельницька область" style="opacity: 0.6;">
                                 <div class="city">
                                     Хмельницький						
-                                    <div class="partners_quan">1</div>
+                                    <div class="partners_quan">${sellers13.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="vinnica" usemap="#vinnica" alt="Вінницька область" style="opacity: 0.6;">
                                 <div class="city">
                                     Вінниця						
-                                    <div class="partners_quan">3</div>
+                                    <div class="partners_quan">${sellers14.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="cherkasy" usemap="#cherkasy" alt="Черкаська область">
                                 <div class="city">
                                     Черкаси						
-                                    <div class="partners_quan">1</div>
+                                    <div class="partners_quan">${sellers15.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="kirovograd" usemap="#kirovograd" alt="Кіровоградська область">
                                 <div class="city">
                                     Кіровоград						
-                                    <div class="partners_quan">0</div>
+                                    <div class="partners_quan">${sellers16.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="poltava" usemap="#poltava" alt="Полтавська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Полтава						
-                                    <div class="partners_quan">3</div>
+                                    <div class="partners_quan">${sellers17.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="dnepropetrovsk" usemap="#dnepropetrovsk" alt="Дніпропетровська область">
                                 <div class="city">
                                     Дніпропетровськ						
-                                    <div class="partners_quan">6</div>
+                                    <div class="partners_quan">${sellers18.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="odessa" usemap="#odessa" alt="Одеська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Одеса						
-                                    <div class="partners_quan">5</div>
+                                    <div class="partners_quan">${sellers19.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="nikolaev" usemap="#nikolaev" alt="Миколаївська область" style="opacity: 0.6;">
                                 <div class="city">
                                     Миколаїв						
-                                    <div class="partners_quan">4</div>
+                                    <div class="partners_quan">${sellers20.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="herson" usemap="#herson" alt="Херсонська область">
                                 <div class="city">
                                     Херсон						
-                                    <div class="partners_quan">3</div>
+                                    <div class="partners_quan">${sellers21.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="krym" usemap="#krym" alt="Крим">
                                 <div class="city">
                                     Сімферополь						
-                                    <div class="partners_quan">4</div>
+                                    <div class="partners_quan">${sellers22.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="zaporozhje" usemap="#zaporozhje" alt="Запорізька область">
                                 <div class="city">
                                     Запоріжжя						
-                                    <div class="partners_quan">2</div>
+                                    <div class="partners_quan">${sellers23.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="doneck" usemap="#doneck" alt="Донецька область">
                                 <div class="city">
                                     Донецьк						
-                                    <div class="partners_quan">2</div>
+                                    <div class="partners_quan">${seller24.amount}</div>
                                 </div>
                             </div>
                             <div class="region" id="lugansk" usemap="#lugansk" alt="Луганська область">
                                 <div class="city">
                                     Луганськ						
-                                    <div class="partners_quan">1</div>
+                                    <div class="partners_quan">${sellers25.amount}</div>
                                 </div>
                             </div>
                             <img src="${Constants.URL}css/images/tr.png" id="hoverimage" usemap="#hovermap">
