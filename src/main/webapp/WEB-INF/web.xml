@@ -79,6 +79,9 @@
             org.springframework.web.context.ContextLoaderListener
         </listener-class>
     </listener>
+    <listener>
+        <listener-class>ua.aits.tondach.functions.ListenToMeFirst</listener-class>
+    </listener>
     <filter>
         <filter-name>FormEncodingSetterFilter</filter-name>
         <filter-class>ua.aits.tondach.functions.FormEncodingSetterFilter</filter-class>
