@@ -14,7 +14,7 @@
             display:none;
         }
     </style>
-    <script>window.location.href = "${Constants.URL}system/login";</script>
+    <script>window.location.href = "${Constants.URL}orders/login";</script>
 </c:if>
   
 <!DOCTYPE html>
@@ -81,7 +81,7 @@
           
         <div id="navbar" class="navbar-collapse collapse">
           <div class="navbar-form navbar-right">
-              <a id="logout"  href="${Constants.URL}system/login">
+              <a id="logout"  href="${Constants.URL}orders/system/logout.do">
             <button type="submit" class="btn btn-success">Вихід</button>
               </a>
           </div>  

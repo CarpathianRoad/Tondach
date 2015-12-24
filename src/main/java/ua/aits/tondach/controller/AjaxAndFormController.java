@@ -72,7 +72,7 @@ public class AjaxAndFormController {
         request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession(false);
         if (session != null) { session.invalidate(); }
-        return new ModelAndView("redirect:" + "/system/login"); 
+        return new ModelAndView("redirect:" + "/orders/login"); 
     } 
     
     @RequestMapping(value = {"/system/users/checkUserName", "/system/users/checkUserName/"}, method = RequestMethod.GET)

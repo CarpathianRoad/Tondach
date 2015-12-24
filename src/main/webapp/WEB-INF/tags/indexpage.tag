@@ -212,63 +212,63 @@
 			  
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=2393"><img src=
+                <a href="${Constants.URL}gallery/item2393"><img src=
                 "${Constants.URL}media/1450/1.jpg"
                 width="69" height="46" alt="Медитеран" title="Медитеран" /></a>
               </div>
             </li> 
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=6108"><img src=
+                <a href="${Constants.URL}gallery/item6108"><img src=
                 "${Constants.URL}media/2054/1.jpg"
                 width="69" height="46" alt="Медитеран Плюс" title="Медитеран Плюс" /></a>
               </div>
             </li> 
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=2404"><img src=
+                <a href="${Constants.URL}gallery/item2404"><img src=
                 "${Constants.URL}media/1478/2.jpg"
                 width="69" height="46" alt="Твіст" title="Твіст" /></a>
               </div>
             </li> 
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=2478"><img src=
+                <a href="${Constants.URL}gallery/item2478"><img src=
                 "${Constants.URL}media/1508/2.jpg"
                 width="69" height="46" alt="Танго +" title="Танго +" /></a>
               </div>
             </li> 
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=2517"><img src=
+                <a href="${Constants.URL}gallery/item2517"><img src=
                 "${Constants.URL}media/2017/болеро2.jpg"
                 width="69" height="46" alt="Болеро" title="Болеро" /></a>
               </div>
             </li> 
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=2535"><img src=
+                <a href="${Constants.URL}gallery/item2535"><img src=
                 "${Constants.URL}media/1563/1.jpg"
                 width="69" height="46" alt="Бобровка" title="Бобровка" /></a>
               </div>
             </li> 
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=2593"><img src=
+                <a href="${Constants.URL}gallery/item2593"><img src=
                 "${Constants.URL}media/1611/ref291_1___altstadtpaket_tasche_eckig_naturrot__aufgeraut.jpg"
                 width="69" height="46" alt="Віденська" title="Віденська" /></a>
               </div>
             </li> 
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=2606"><img src=
+                <a href="${Constants.URL}gallery/item2606"><img src=
                 "${Constants.URL}media/1624/albrecht_05.jpg"
                 width="69" height="46" alt="Фальцева бобровка" title="Фальцева бобровка" /></a>
               </div>
             </li> 
 					<li>
               <div class="image">
-                <a href="${Constants.URL}gallery/generate-item?id=2636"><img src=
+                <a href="${Constants.URL}gallery/item2636"><img src=
                 "${Constants.URL}media/1651/1.jpg"
                 width="69" height="46" alt="Самба" title="Самба" /></a>
               </div>

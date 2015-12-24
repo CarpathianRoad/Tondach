@@ -68,6 +68,9 @@ public class UserOrderModel {
         if("admin".equals(user_login) && "admin".equals(user_password)) {
             return "0";
         }
+        else if ("test".equals(user_login) && "test".equals(user_password)){
+            return "1";
+        }
         List<UserOrderModel> users  = XMLparse.parseUsers();
         String result = null;
         for(Iterator<UserOrderModel> roleIter = users.iterator(); roleIter.hasNext();){
@@ -88,6 +91,14 @@ public class UserOrderModel {
             user.setUser_name("admin");
             user.setUser_password("admin");
             user.setUser_number("0");
+            user.setUser_xml_date("21.21.21");
+            return user;
+        } 
+        if("1".equals(user_number)) {
+            user.setUser_login("test");
+            user.setUser_name("test");
+            user.setUser_password("test");
+            user.setUser_number("1");
             user.setUser_xml_date("21.21.21");
             return user;
         } 

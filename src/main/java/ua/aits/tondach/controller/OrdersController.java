@@ -141,6 +141,10 @@ public class OrdersController {
         UserOrderModel user = Users.getOneUserFullById(user_code);
         HttpSession session = request.getSession(true);
 	session.setAttribute("user", user);
+        if("0".equals(user.user_number)) {
+        
+        return new ModelAndView("redirect:" + "/system/news");  
+        }
         return new ModelAndView("redirect:" + "/orders/index");   
     }
     
