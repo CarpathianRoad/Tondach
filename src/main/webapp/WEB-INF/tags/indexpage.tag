@@ -314,7 +314,7 @@
               </li>
               <li class="level-3">
 				  <!--  -->
-                <a href="${Constants.URL}system/login" target="_blank">Вхід для партнерів</a>
+                <a href="${Constants.URL}orders/login" target="_blank">Вхід для партнерів</a>
               </li>
             </ul>
 				  <a style="color: #fff;margin-left: 125px; display:none" target="_blank" href="http://1c.tondach.biz/Price">Прайс для партнерів</a>
