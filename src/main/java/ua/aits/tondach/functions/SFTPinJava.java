@@ -95,6 +95,8 @@ public  class SFTPinJava {
         fileExists = false;
         }
          logger.info("Existing of file: " + filepath + "is " + fileExists);
+            ftp.getChanS().exit();
+            ftp.getSess().disconnect();
          return fileExists;
      }
     public void getFiles(String filename) {
@@ -119,6 +121,8 @@ public  class SFTPinJava {
                 bos.close();
                 sftp.chanS.rm("/upload/"+filename);
                 logger.info("FIle " + filename + " was updated");
+                sftp.getChanS().exit();
+                sftp.getSess().disconnect();
             }
             else {
                 logger.info(filename + " version of this file is latest");
