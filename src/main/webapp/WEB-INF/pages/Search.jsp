@@ -8,6 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <t:indexpage>
+    
     <div class="s-new widthClass">
         
             <div class="all_news">
@@ -32,6 +33,7 @@ function loadContent(country, count){
     var type = $("#type").val();
     var menuCat = $("#menu").val();
     $(".loader-block").show();
+    
     $.ajax({
             type: "get",
             url: "${Constants.URL}articles/loadсontentforsearch",
@@ -39,6 +41,7 @@ function loadContent(country, count){
             data:'&count='+count+'&find=${find}',
             mimeType:"text/html; charset=UTF-8",
             success: function(response){
+                
              $(".load-more-content").remove();
              $(response).hide().appendTo(".all_news").fadeIn(1000);
              $(".doNotShow").hide();

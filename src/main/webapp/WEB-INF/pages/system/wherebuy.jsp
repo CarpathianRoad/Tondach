@@ -2,7 +2,13 @@
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <t:adminpage>
-    
+    <style>
+        #sellers button{
+            background-color: white !important;
+            color: darkred !important;
+            border-color: white !important;
+        }
+    </style>
     <br><hr><br>
     
     <div class="row">

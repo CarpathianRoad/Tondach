@@ -10,6 +10,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <t:adminpage>
     <style>
+        #news button{
+            background-color: white !important;
+            color: darkred !important;
+            border-color: white !important;
+        }
         .disabled {
             pointer-events: none;
         }

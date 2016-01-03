@@ -5,6 +5,7 @@
  */
 package ua.aits.tondach.controller;
 
+import java.awt.Font;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -216,6 +217,8 @@ public class AjaxAndFormController {
    	return model;
     }
     
+    
+    
     @RequestMapping(value = {"/articles/loadсontentforsearch"}, method = RequestMethod.GET)
     public @ResponseBody
     ResponseEntity<String> load_content_for_search(HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -238,6 +241,7 @@ public class AjaxAndFormController {
         String returnHTML = "";
         for (ArticleModel temp : tempC) 
             {
+           
             String URL = Constants.URL + "article/full/";   
         
                 

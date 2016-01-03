@@ -3,7 +3,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <t:adminpage>
-     
+     <style>
+        #news button{
+            background-color: white !important;
+            color: darkred !important;
+            border-color: white !important;
+        }
+    </style>
         <link rel="stylesheet" href="${Constants.URL}css/plugins/ckeditor.css" type="text/css" />
         <link rel="stylesheet" href="${Constants.URL}css/plugins/dropzone.css" type="text/css" />
         
@@ -13,12 +19,16 @@
    
     <div class="margintop20">
         
-   
-   
-        <div class="row add-row" style="padding-top:1em">
-            <hr>
+        <br>
+        <hr>
+        <div class="row add-row">
+            
+            <div class="col-lg-12 margintop30 field">
+                <label for="tlt"><span class="red-star">Аватар</span></label><br/>
+            </div>
         </div>
         <form action="${Constants.URL}system/do/uploadfile" class="dropzone"  id="my-awesome-dropzone-gal">
+           <label for="tlt"><span class="red-star"></span></label>
             <input type="hidden" name="path" value="/files/avatars/" />
             <input type="file" name="file" style="display:none" />
         </form>

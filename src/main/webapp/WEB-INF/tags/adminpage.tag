@@ -76,6 +76,9 @@
               <a id="sellers" href="${Constants.URL}system/wherebuy">
                 <button type="submit" class="btn btn-success">Продавці</button>
               </a>
+              <a id="download" href="${Constants.URL}system/download">
+                <button type="submit" class="btn btn-success">Файли для завантаження</button>
+              </a>
           </div>
                 
           

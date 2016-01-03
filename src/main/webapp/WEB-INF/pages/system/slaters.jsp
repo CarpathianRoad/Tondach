@@ -3,27 +3,30 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <t:adminpage>
-     
+     <style>
+        #slaters button{
+            background-color: white !important;
+            color: darkred !important;
+            border-color: white !important;
+        }
+    </style>
         <link rel="stylesheet" href="${Constants.URL}css/plugins/ckeditor.css" type="text/css" />  
         
     <script src="${Constants.URL}ckeditor/ckeditor.js"></script>
     <script src="${Constants.URL}js/plugins/dropzone.js"></script>
     <script src="${Constants.URL}css/plugins/dropzone.js"></script>
-    
+    <br><hr>
    
     <div class="margintop20">
         
    
    
-        <div class="row add-row" style="padding-top:2em">
-            
-        </div>
+       
         
 	<form action="${Constants.URL}system/do/editslater" name="addSlaterForm" id="addForm" method="POST" type="multipart/form-data">
             <input type="hidden" class="form-control" name="slater_id" value="${slaters.id}">
             
             
-            <hr>
             <div class="row add-row">
                 <div class="col-lg-12 margintop30 field">
                     <label for="tlt"><h4>Покрівельники</h4></label><br/>
@@ -39,7 +42,7 @@
             <br><br>
         </form>
         <p>
-            <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Post</button>
+            <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Зберегти</button>
         </p>
     </div>
 </t:adminpage>

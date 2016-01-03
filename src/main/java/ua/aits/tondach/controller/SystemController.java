@@ -127,6 +127,7 @@ public class SystemController {
         model.addObject("article", Article.getArticleByCount("0", "100"));
         return model;
     }
+    
     @RequestMapping(value = {"system/wherebuy/", "/system/wherebuy/", "/system/wherebuy"}, method = RequestMethod.GET)
     public ModelAndView wherebuy(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/wherebuy");
@@ -141,7 +142,11 @@ public class SystemController {
         return model;
     }
 
-    
+    @RequestMapping(value = {"system/download/", "/system/download/", "/system/download"}, method = RequestMethod.GET)
+    public ModelAndView download(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/download");
+        return model;
+    }
 
 }
 
