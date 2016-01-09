@@ -114,11 +114,12 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
             <div>
 				          
 
-              <ul>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/cat-ruk.pdf" target="_blank" class="wf_file"><span class="wf_file_text">Технічний буклет 2010</span> </a><span class="wf_file_size" style="margin-left: 5px;">7.17 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/Katalog_rekonstrukcie_GUS.pdf" target="_blank" class="wf_file"><span class="wf_file_text">Реконструкції історичних будівель</span> </a><span class="wf_file_size" style="margin-left: 5px;">4.49 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/tr.pdf" target="_blank" class="wf_file"><span class="wf_file_text">Технічне керівництво</span> </a><span class="wf_file_size" style="margin-left: 5px;">4.14 MB</span></li>
-</ul>
+              <div>
+            
+            <c:forEach items="${extra}" var="item">
+                <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/avatars/${item.url}" target="_blank" class="wf_file" download><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;"></span></li>
+                </c:forEach>
+        </div>
             </div>
           </div>  
 </t:indexpage>

@@ -15,7 +15,7 @@
                     
                     <div class="table-responsive">
                         	<div class="add-button-panel">
-                                    <a id="news" href="${Constants.URL}system/add">
+                                    <a href="${Constants.URL}system/add">
                                         <button type="submit" class="btn btn-success">Додати новину</button>
                                     </a>
                                 </div>

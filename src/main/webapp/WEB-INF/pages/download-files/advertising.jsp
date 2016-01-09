@@ -114,14 +114,12 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
             <div>
 				          
 
-              <ul>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/image.png" alt="jpg" /> <a href="${Constants.URL}media/2027/banner.jpg" target="_blank" class="wf_file"><span class="wf_file_text">баннер акція_08_2014.jpg</span> </a><span class="wf_file_size" style="margin-left: 5px;">2.58 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/Katalog UA 2014_preview_finished.pdf" target="_blank" class="wf_file"><span class="wf_file_text">Katalog UA 2014.pdf</span> </a><span class="wf_file_size" style="margin-left: 5px;">6.12 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/image.png" alt="tif" /> <a href="${Constants.URL}files/reklama/Venera_210x150_PRINT-1.tif" target="_blank" class="wf_file"><span class="wf_file_text">Venera_210x150_PRINT-1.tif</span> </a><span class="wf_file_size" style="margin-left: 5px;">4.73 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/jpg.png" alt="jpg" /> <a href="${Constants.URL}files/reklama/BILLBOARD%20Venera%20PRINT.jpg" target="_blank" class="wf_file"><span class="wf_file_text">BILLBOARD Venera PRINT.jpg</span> </a><span class="wf_file_size" style="margin-left: 5px;">6.5 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/archive.png" alt="rar" /> <a href="${Constants.URL}files/reklama/Logo.rar" target="_blank" class="wf_file"><span class="wf_file_text">Logo.rar</span> </a><span class="wf_file_size" style="margin-left: 5px;">21.73 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/archive.png" alt="cdr" /> <a href="${Constants.URL}files/reklama/TONDACH_12-emty.cdr" target="_blank" class="wf_file"><span class="wf_file_text">Price 12.cdr</span> </a> <span class="wf_file_size" style="margin-left: 5px;">46.1 MB</span></li>
-</ul>
+              <div>
+            
+            <c:forEach items="${advert}" var="item">
+                <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/archive.png" alt="jpg" /> <a href="${Constants.URL}files/avatars/${item.url}" target="_blank" class="wf_file" download><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;"></span></li>
+                </c:forEach>
+        </div>
             </div>
           </div>
 </t:indexpage>

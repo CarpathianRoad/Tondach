@@ -74,7 +74,7 @@
                 <button type="submit" class="btn btn-success">Перевізники</button>
               </a>
               <a id="sellers" href="${Constants.URL}system/wherebuy">
-                <button type="submit" class="btn btn-success">Продавці</button>
+                <button type="submit" class="btn btn-success">Де придбати</button>
               </a>
               <a id="download" href="${Constants.URL}system/download">
                 <button type="submit" class="btn btn-success">Файли для завантаження</button>

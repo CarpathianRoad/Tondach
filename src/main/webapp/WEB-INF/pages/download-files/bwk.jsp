@@ -114,12 +114,12 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
             <div>
 				          
 
-              <ul>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/plivka/Гідроізоляція DIFFLEX THERMO ND.pdf" target="_blank" class="wf_file"><span class="wf_file_text">Гідроізоляція DIFFLEX THERMO ND</span> </a><span class="wf_file_size" style="margin-left: 5px;">0,2 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/plivka/Гідроізоляція REWASI TOP.pdf" target="_blank" class="wf_file"><span class="wf_file_text">Гідроізоляція REWASI TOP</span> </a><span class="wf_file_size" style="margin-left: 5px;">0,18 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/plivka/Пароізоляція DIFFLEX REFLEX.pdf" target="_blank" class="wf_file"><span class="wf_file_text">Пароізоляція DIFFLEX REFLEX</span> </a><span class="wf_file_size" style="margin-left: 5px;">0,14 MB</span></li>
-<li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/plivka/Пароізоляція REWAFOL ALU.pdf" target="_blank" class="wf_file"><span class="wf_file_text">Пароізоляція REWAFOL ALU</span> </a><span class="wf_file_size" style="margin-left: 5px;">0,14 MB</span></li>
-</ul>
+              <div>
+            
+            <c:forEach items="${bwk}" var="item">
+                <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/avatars/${item.url}" target="_blank" class="wf_file" download><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;"></span></li>
+                </c:forEach>
+        </div>
             </div>
           </div>  
 

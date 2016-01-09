@@ -31,6 +31,7 @@ import org.springframework.web.servlet.ModelAndView;
 import ua.aits.tondach.functions.Constants;
 import ua.aits.tondach.functions.Transliterator;
 import ua.aits.tondach.model.ArticleModel;
+import ua.aits.tondach.model.DownloadModel;
 import ua.aits.tondach.model.RiderModel;
 import ua.aits.tondach.model.SellerModel;
 import ua.aits.tondach.model.SlaterModel;
@@ -48,6 +49,7 @@ public class AjaxAndFormController {
     SlaterModel Slaters = new SlaterModel();
     RiderModel Riders = new RiderModel();
     SellerModel Seller = new SellerModel();
+    DownloadModel Download = new DownloadModel();
     Transliterator TransliteratorClass = new Transliterator();
     
     @RequestMapping(value = {"/system/ajax/check/user", "/system/ajax/check/user/"}, method = RequestMethod.GET)
@@ -86,6 +88,73 @@ public class AjaxAndFormController {
    
     
     
+    @RequestMapping(value = "/system/do/insertCert", method = RequestMethod.POST)
+    public ModelAndView insertCertificate(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
+    	request.setCharacterEncoding("UTF-8");
+    	String title = request.getParameter("title");
+    	String url = request.getParameter("avatar_path");
+        Download.insertFile(title, url, "1");
+    	return new ModelAndView("redirect:" + "/system/download/");
+    }
+    
+    @RequestMapping(value = "/system/do/insertBWK", method = RequestMethod.POST)
+    public ModelAndView insertBWK(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
+    	request.setCharacterEncoding("UTF-8");
+    	String title = request.getParameter("title");
+    	String url = request.getParameter("avatar_path");
+        Download.insertFile(title, url, "2");
+    	return new ModelAndView("redirect:" + "/system/download/");
+    }
+    
+    @RequestMapping(value = "/system/do/insertExtra", method = RequestMethod.POST)
+    public ModelAndView insertExtra(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
+    	request.setCharacterEncoding("UTF-8");
+    	String title = request.getParameter("title");
+    	String url = request.getParameter("avatar_path");
+        Download.insertFile(title, url, "3");
+    	return new ModelAndView("redirect:" + "/system/download/");
+    }
+    
+    @RequestMapping(value = "/system/do/insertAdvert", method = RequestMethod.POST)
+    public ModelAndView insertAdvert(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
+    	request.setCharacterEncoding("UTF-8");
+    	String title = request.getParameter("title");
+    	String url = request.getParameter("avatar_path");
+        Download.insertFile(title, url, "4");
+    	return new ModelAndView("redirect:" + "/system/download/");
+    }
+    
+    @RequestMapping(value = "/system/totallyDeleteCert", method = RequestMethod.POST)
+    public ModelAndView deleteCert(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
+        request.setCharacterEncoding("UTF-8");
+        String file_id = request.getParameter("id");
+        Download.deleteFile(file_id, "1");
+        return new ModelAndView("redirect:" + "/system/download");
+    }
+    
+    @RequestMapping(value = "/system/totallyDeleteBWK", method = RequestMethod.POST)
+    public ModelAndView deleteBWK(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
+        request.setCharacterEncoding("UTF-8");
+        String file_id = request.getParameter("id");
+        Download.deleteFile(file_id, "2");
+        return new ModelAndView("redirect:" + "/system/download");
+    }
+    
+    @RequestMapping(value = "/system/totallyDeleteExtra", method = RequestMethod.POST)
+    public ModelAndView deleteExtra(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
+        request.setCharacterEncoding("UTF-8");
+        String file_id = request.getParameter("id");
+        Download.deleteFile(file_id, "3");
+        return new ModelAndView("redirect:" + "/system/download");
+    }
+    
+    @RequestMapping(value = "/system/totallyDeleteAdvert", method = RequestMethod.POST)
+    public ModelAndView deleteAdvert(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
+        request.setCharacterEncoding("UTF-8");
+        String file_id = request.getParameter("id");
+        Download.deleteFile(file_id, "4");
+        return new ModelAndView("redirect:" + "/system/download");
+    }
     
     
     @RequestMapping(value = "/system/do/insertdata", method = RequestMethod.POST)
