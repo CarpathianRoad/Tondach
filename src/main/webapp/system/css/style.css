@@ -1,9 +1,8 @@
-
-button[type="submit"]{
+ button[type="submit"]{
      background-color:darkred !important;
      color:white !important;
      border-color: darkred;
- }
+ }  
  button[type="submit"]:hover{
      background-color: white !important;
      color: darkred !important;
@@ -34,5 +33,8 @@ button[type="submit"]{
  #index{
      padding-left: 1em;
  }
-
- 
+ button[type="button"]{
+     background-color:darkred !important;
+     color:white !important;
+     border-color: darkred;
+ }

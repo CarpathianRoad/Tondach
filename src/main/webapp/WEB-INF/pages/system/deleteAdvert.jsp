@@ -30,7 +30,7 @@
                     
                     <p>
                         <button class="btn btn-success margintop30 marginbottom30"  id="sudmitDelete" type="submit">Видалити</button>
-                        <a href="${Constants.URL}system/download"><button class="btn btn-danger margintop30 marginbottom30" id="sudmitData" type="submit">Повернутись до новин</button></a>
+                        <a href="${Constants.URL}system/download"><button class="btn btn-danger margintop30 marginbottom30" id="sudmitData" type="submit">Повернутись</button></a>
                     </p>
                 </div>
         </div>
