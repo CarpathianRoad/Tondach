@@ -147,10 +147,7 @@ public class SystemController {
     @RequestMapping(value = {"system/download/", "/system/download/", "/system/download"}, method = RequestMethod.GET)
     public ModelAndView download(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/download");
-        model.addObject("cert", Download.getFilesByCount("0", "1", "10000"));
-        model.addObject("bwk", Download.getFilesByCount("0", "2", "10000"));
-        model.addObject("extra", Download.getFilesByCount("0", "3", "10000"));
-        model.addObject("advert", Download.getFilesByCount("0", "4", "10000"));
+        model.addObject("downloads", Download.getFilesByCount("0", "10000"));
         return model;
     }
     
@@ -175,34 +172,6 @@ public class SystemController {
     @RequestMapping(value = {"system/addAdvertising/", "/system/addAdvertising/", "/system/addAdvertising"}, method = RequestMethod.GET)
     public ModelAndView addAdvert(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/addAdvertising");
-        return model;
-    }
-    
-    @RequestMapping(value = {"system/deleteCert/{id}", "/system/deleteCert/{id}"}, method = RequestMethod.GET)
-    public ModelAndView deleteCert(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/deleteCert");
-        model.addObject("cert", Download.getOneFile(id));
-        return model;
-    }
-    
-    @RequestMapping(value = {"system/deleteBWK/{id}", "/system/deleteBWK/{id}"}, method = RequestMethod.GET)
-    public ModelAndView deleteBWK(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/deleteBWK");
-        model.addObject("bwk", Download.getOneFile(id));
-        return model;
-    }
-    
-    @RequestMapping(value = {"system/deleteExtra/{id}", "/system/deleteExtra/{id}"}, method = RequestMethod.GET)
-    public ModelAndView deleteExtra(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/deleteExtra");
-        model.addObject("extra", Download.getOneFile(id));
-        return model;
-    }
-    
-    @RequestMapping(value = {"system/deleteAdvert/{id}", "/system/deleteAdvert/{id}"}, method = RequestMethod.GET)
-    public ModelAndView deleteAdvert(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/deleteAdvert");
-        model.addObject("advert", Download.getOneFile(id));
         return model;
     }
 }

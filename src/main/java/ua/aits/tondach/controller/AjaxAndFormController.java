@@ -124,35 +124,10 @@ public class AjaxAndFormController {
     	return new ModelAndView("redirect:" + "/system/download/");
     }
     
-    @RequestMapping(value = "/system/totallyDeleteCert", method = RequestMethod.POST)
-    public ModelAndView deleteCert(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
+    @RequestMapping(value = "/system/deleteFile/{id}", method = RequestMethod.GET)
+    public ModelAndView deleteFile(@PathVariable("id") String id, HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
-        String file_id = request.getParameter("id");
-        Download.deleteFile(file_id, "1");
-        return new ModelAndView("redirect:" + "/system/download");
-    }
-    
-    @RequestMapping(value = "/system/totallyDeleteBWK", method = RequestMethod.POST)
-    public ModelAndView deleteBWK(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        String file_id = request.getParameter("id");
-        Download.deleteFile(file_id, "2");
-        return new ModelAndView("redirect:" + "/system/download");
-    }
-    
-    @RequestMapping(value = "/system/totallyDeleteExtra", method = RequestMethod.POST)
-    public ModelAndView deleteExtra(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        String file_id = request.getParameter("id");
-        Download.deleteFile(file_id, "3");
-        return new ModelAndView("redirect:" + "/system/download");
-    }
-    
-    @RequestMapping(value = "/system/totallyDeleteAdvert", method = RequestMethod.POST)
-    public ModelAndView deleteAdvert(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        String file_id = request.getParameter("id");
-        Download.deleteFile(file_id, "4");
+        Download.deleteFile(id);
         return new ModelAndView("redirect:" + "/system/download");
     }
     

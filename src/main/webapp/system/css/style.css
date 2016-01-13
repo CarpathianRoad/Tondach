@@ -38,3 +38,6 @@
      color:white !important;
      border-color: darkred;
  }
+ .modal-footer{
+     text-align: center !important;
+ }

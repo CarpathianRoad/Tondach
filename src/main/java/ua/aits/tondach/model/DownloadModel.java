@@ -73,12 +73,36 @@ public class DownloadModel {
 	}
     
     
-    public void deleteFile(String id, String type) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
-    	DB.runQuery("DELETE FROM `downloads` WHERE type = "+type+" AND id = "+id+";");
+    public void deleteFile(String id) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
+    	DB.runQuery("DELETE FROM `downloads` WHERE id = "+id+";");
     	DB.closeCon();
     }
     
-    public List<DownloadModel> getFilesByCount(String id, String type, String count) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
+    public List<DownloadModel> getFilesByCount(String id, String count) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
+        ResultSet result = DB.getResultSet("SELECT * FROM downloads WHERE id != "+id+" ORDER BY id desc limit "+count+";");
+        List<DownloadModel> filesList = new LinkedList<>();
+        while (result.next()) { 
+            DownloadModel temp = new DownloadModel();
+            String f_title = result.getString("title");
+            if("".equals(f_title) || f_title == null){
+                f_title = result.getString("title");
+            }
+            if(f_title.length() > 55){
+                f_title = f_title.substring(0,55);
+            }
+            
+            temp.setTitle(f_title);
+            temp.setId(result.getInt("id"));
+            temp.setUrl(result.getString("url"));
+            temp.setType(result.getInt("type"));
+            
+            filesList.add(temp);
+        } 
+        DB.closeCon();
+    return filesList;
+    }
+    
+    public List<DownloadModel> getFilesByType(String id, String type, String count) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
         ResultSet result = DB.getResultSet("SELECT * FROM downloads WHERE id != "+id+" AND type = "+type+" ORDER BY id desc limit "+count+";");
         List<DownloadModel> filesList = new LinkedList<>();
         while (result.next()) { 
