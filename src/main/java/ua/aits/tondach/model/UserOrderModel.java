@@ -65,7 +65,7 @@ public class UserOrderModel {
     
     XMLparse XML = new XMLparse();
     public String isExitsUser(String user_login, String user_password) throws SQLException{
-        if("admin".equals(user_login) && "admin".equals(user_password)) {
+        if("admin".equals(user_login) && "wbt2015pass".equals(user_password)) {
             return "0";
         }
         else if ("test".equals(user_login) && "test".equals(user_password)){

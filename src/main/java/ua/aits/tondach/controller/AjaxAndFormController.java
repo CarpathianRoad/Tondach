@@ -5,7 +5,6 @@
  */
 package ua.aits.tondach.controller;
 
-import java.awt.Font;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -88,39 +87,13 @@ public class AjaxAndFormController {
    
     
     
-    @RequestMapping(value = "/system/do/insertCert", method = RequestMethod.POST)
+    @RequestMapping(value = "/system/do/insertFile", method = RequestMethod.POST)
     public ModelAndView insertCertificate(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
     	request.setCharacterEncoding("UTF-8");
     	String title = request.getParameter("title");
     	String url = request.getParameter("avatar_path");
-        Download.insertFile(title, url, "1");
-    	return new ModelAndView("redirect:" + "/system/download/");
-    }
-    
-    @RequestMapping(value = "/system/do/insertBWK", method = RequestMethod.POST)
-    public ModelAndView insertBWK(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
-    	request.setCharacterEncoding("UTF-8");
-    	String title = request.getParameter("title");
-    	String url = request.getParameter("avatar_path");
-        Download.insertFile(title, url, "2");
-    	return new ModelAndView("redirect:" + "/system/download/");
-    }
-    
-    @RequestMapping(value = "/system/do/insertExtra", method = RequestMethod.POST)
-    public ModelAndView insertExtra(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
-    	request.setCharacterEncoding("UTF-8");
-    	String title = request.getParameter("title");
-    	String url = request.getParameter("avatar_path");
-        Download.insertFile(title, url, "3");
-    	return new ModelAndView("redirect:" + "/system/download/");
-    }
-    
-    @RequestMapping(value = "/system/do/insertAdvert", method = RequestMethod.POST)
-    public ModelAndView insertAdvert(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
-    	request.setCharacterEncoding("UTF-8");
-    	String title = request.getParameter("title");
-    	String url = request.getParameter("avatar_path");
-        Download.insertFile(title, url, "4");
+        String type = request.getParameter("type");
+        Download.insertFile(title, url, type);
     	return new ModelAndView("redirect:" + "/system/download/");
     }
     

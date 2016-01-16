@@ -13,7 +13,7 @@ public class DownloadModel {
     public Integer id;
     public String title;
     public String url;
-    public Integer type;
+    public String type;
     
     
     public Integer getId() {
@@ -40,11 +40,11 @@ public class DownloadModel {
         this.url = url;
     }
 
-    public Integer getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Integer type) {
+    public void setType(String type) {
         this.type = type;
     }
     
@@ -55,7 +55,7 @@ public class DownloadModel {
             temp.setId(result.getInt("id"));
             temp.setTitle(result.getString("title").replace("\"","&quot;"));
             temp.setUrl(result.getString("url"));
-            temp.setType(result.getInt("type"));
+            temp.setType(result.getString("type"));
             tempList.add(temp);
     	}
         return tempList;
@@ -68,7 +68,7 @@ public class DownloadModel {
                 + "`type`) "
                 + "VALUES ('"+StringEscapeUtils.escapeSql(title)+"', "
                 + "'"+StringEscapeUtils.escapeSql(url)+"', "
-                + "'"+type+"');");
+                + "'"+StringEscapeUtils.escapeSql(type)+"');");
     	DB.closeCon();
 	}
     
@@ -94,7 +94,7 @@ public class DownloadModel {
             temp.setTitle(f_title);
             temp.setId(result.getInt("id"));
             temp.setUrl(result.getString("url"));
-            temp.setType(result.getInt("type"));
+            temp.setType(result.getString("type"));
             
             filesList.add(temp);
         } 
@@ -103,7 +103,7 @@ public class DownloadModel {
     }
     
     public List<DownloadModel> getFilesByType(String id, String type, String count) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
-        ResultSet result = DB.getResultSet("SELECT * FROM downloads WHERE id != "+id+" AND type = "+type+" ORDER BY id desc limit "+count+";");
+        ResultSet result = DB.getResultSet("SELECT * FROM downloads WHERE id != "+id+" AND type = '"+StringEscapeUtils.escapeSql(type)+"' ORDER BY id asc limit "+count+";");
         List<DownloadModel> filesList = new LinkedList<>();
         while (result.next()) { 
             DownloadModel temp = new DownloadModel();
@@ -118,7 +118,7 @@ public class DownloadModel {
             temp.setTitle(f_title);
             temp.setId(result.getInt("id"));
             temp.setUrl(result.getString("url"));
-            temp.setType(result.getInt("type"));
+            temp.setType(result.getString("type"));
             
             filesList.add(temp);
         } 

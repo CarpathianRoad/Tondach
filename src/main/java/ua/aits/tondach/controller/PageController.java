@@ -765,38 +765,38 @@ public class PageController {
     @RequestMapping(value = {"/download-files/", "download-files/", "download-files/download-files", "/download-files/download-files", "/download-files"}, method = RequestMethod.GET)
     public ModelAndView downloadfiles(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("download-files/download-files");
-        model.addObject("cert", Download.getFilesByType("0", "1", "10000"));
-        model.addObject("bwk", Download.getFilesByType("0", "2", "10000"));
-        model.addObject("extra", Download.getFilesByType("0", "3", "10000"));
-        model.addObject("advert", Download.getFilesByType("0", "4", "10000"));
+        model.addObject("cert", Download.getFilesByType("0", "Сертифікат", "10000"));
+        model.addObject("bwk", Download.getFilesByType("0", "Плівка від BWK", "10000"));
+        model.addObject("extra", Download.getFilesByType("0", "Додаткові матеріали", "10000"));
+        model.addObject("advert", Download.getFilesByType("0", "Рекламні матеріали", "10000"));
         return model;
     }
     
     @RequestMapping(value = {"download-files/quality", "/download-files/quality"}, method = RequestMethod.GET)
     public ModelAndView downloadfiles_quality(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("download-files/quality");
-        model.addObject("cert", Download.getFilesByType("0", "1", "10000"));
+        model.addObject("cert", Download.getFilesByType("0", "Сертифікат", "10000"));
         return model;
     }
     
     @RequestMapping(value = {"download-files/advertising", "/download-files/advertising"}, method = RequestMethod.GET)
     public ModelAndView downloadfiles_advertising(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("download-files/advertising");
-        model.addObject("advert", Download.getFilesByType("0", "4", "10000"));
+        model.addObject("advert", Download.getFilesByType("0", "Рекламні матеріали", "10000"));
         return model;
     }
     
     @RequestMapping(value = {"download-files/extras", "/download-files/extras"}, method = RequestMethod.GET)
     public ModelAndView downloadfiles_extras(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("download-files/extras");
-        model.addObject("extra", Download.getFilesByType("0", "3", "10000"));
+        model.addObject("extra", Download.getFilesByType("0", "Додаткові матеріали", "10000"));
         return model;
     }
     
     @RequestMapping(value = {"download-files/bwk", "/download-files/bwk"}, method = RequestMethod.GET)
     public ModelAndView downloadfiles_bwk(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("download-files/bwk");
-        model.addObject("bwk", Download.getFilesByType("0", "2", "10000"));
+        model.addObject("bwk", Download.getFilesByType("0", "Плівка від BWK", "10000"));
         return model;
     }
     

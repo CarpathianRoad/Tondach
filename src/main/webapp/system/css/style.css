@@ -38,6 +38,35 @@
      color:white !important;
      border-color: darkred;
  }
+ button[type="button"]:active{
+     background-color: white !important;
+     color: darkred !important;
+     border-color: darkred !important;
+ }
+ button[type="button"]:focus{
+     background-color: white !important;
+     color: darkred !important;
+     border-color: darkred !important;
+ }
  .modal-footer{
      text-align: center !important;
+ }
+ button.btn.btn-primary{
+     margin:2px;
+ }
+ div #cert{
+     background:lightgrey;
+     border-radius: 10px;
+ }
+ #certForm{
+     margin-left: 10px;
+ }
+ .col-lg-12.margintop30.field{
+     margin-bottom:10px;
+ }
+ #submitData{
+     margin-top:20px;
+ }
+ .article-filters{
+     margin-bottom: 10px;
  }
