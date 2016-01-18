@@ -70,3 +70,20 @@
  .article-filters{
      margin-bottom: 10px;
  }
+ .article-filters-block.col-lg-12{
+     display:none;
+ }
+ #fileBut{
+     background-color:darkred !important;
+     color:white !important;
+     border-color: darkred;
+ }
+ #fileBut.active{
+    background-color: white !important;
+     color: darkred !important;
+     border-color: darkred !important;
+}
+div.article-filters{
+    width:112px;
+    height:40px;
+}

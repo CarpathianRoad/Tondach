@@ -5,8 +5,10 @@
  */
 package ua.aits.tondach.functions;
 
+import java.io.File;
 import java.sql.SQLException;
 import java.text.DateFormat;
+import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -85,5 +87,42 @@ public class Helpers  {
         
         return  new ArticleModel().getNews();
     }
+    
+    private long getFolderSize(File folder) {
+    	long length = 0;
+    	File[] files = folder.listFiles();
+    	for (File file : files) {
+        	if (file.isFile()) {
+            	length += file.length();
+        	}
+        	else {
+            	length += getFolderSize(file);
+        	}
+    	}
+    	return length;
+	}
+    
+    public String getReadableSize(String path, Integer format) {
+    	File folder = new File(path);
+    	String readableSize = "";
+    	if(folder.exists()){
+        	long size;
+        	if(folder.isFile()){
+            	size = folder.length();
+        	}
+        	else {
+            	size = getFolderSize(folder);
+        	}
+        	String[] units = new String[] { "B", "KB", "MB", "GB", "TB" };
+        	if(size == 0) {
+            	return "0 " + units[format];
+        	}
+        	int unitIndex = (int) (Math.log10(size) / format);
+        	double unitValue = 1 << (unitIndex * 10);
+        	readableSize = new DecimalFormat("#,##0.#").format(size / unitValue) + " " + units[unitIndex];
+       	 
+    	}
+    	return readableSize;
+	}
 }
 

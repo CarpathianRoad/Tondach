@@ -190,6 +190,7 @@ public class AjaxAndFormController {
     @RequestMapping(value = {"/system/do/uploadfile", "/system/do/uploadfile/"}, method = RequestMethod.POST)
     public @ResponseBody String uploadFileHandler(@RequestParam("file") MultipartFile file, @RequestParam("path") String path,  HttpServletRequest request) {
     	String name = file.getOriginalFilename();
+        name = TransliteratorClass.transliterate(name);
     	if (!file.isEmpty()) {
         	try {
             	byte[] bytes = file.getBytes();

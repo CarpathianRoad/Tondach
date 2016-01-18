@@ -89,6 +89,7 @@ public class Transliterator {
         charMap.put('ґ', "g");
         charMap.put('ї', "ji");
         charMap.put('є', "je");
+        charMap.put(' ', "_");
 
     }
 

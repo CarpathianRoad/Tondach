@@ -11,8 +11,9 @@
             border-color: white !important;
         }
     </style>
-    <link rel="stylesheet" href="${Constants.URL}css/plugins/ckeditor.css" type="text/css" />
     <link rel="stylesheet" href="${Constants.URL}css/plugins/dropzone.css" type="text/css" />
+
+    <script src="${Constants.URL}js/plugins/dropzone.js"></script>
 
 
     <div class="row add-row">
@@ -21,22 +22,22 @@
 
     <div class="row">
 
-<div class="article-filters">
-                <button type="submit" class="filter-button btn btn-primary">Додати файл</button>
-            </div>
+        <div class="article-filters">
+            <button type="submit" class="filter-button btn btn-primary" id="fileBut">Додати файл</button>
+        </div>
         <div class="table-responsive">
 
-            
+
         </div>
 
         <div class="article-filters-block col-lg-12">
-
+            <hr>
 
             <div class="row add-row">
                 <form action="${Constants.URL}system/do/insertFile" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
                     <input type="hidden" class="form-control" id="avatar_path" name="avatar_path">
 
-                    <hr>
+
 
                     <div class="col-lg-6 margintop30 field">
                         <label for="tlt">Назва <span class="red-star">*</span></label>
@@ -59,7 +60,9 @@
 
 
                 </form>
+                <div class="col-lg-12 margintop30 field">
 
+                </div>
                 <div class="col-lg-12 margintop30 field">
                     <label for="tlt"><span class="red-star">Файл</span></label><br/>
                 </div>
@@ -134,9 +137,16 @@
 
 <script src="${Constants.URL}js/jquery.webkitresize.js"></script>
 <script src="${Constants.URL}js/jquery.mb.browser.min.js"></script>
-<script src="${Constants.URL}js/plugins/dropzone.js"></script>
 <script>
     $(document).ready(function () {
+
+        $('#fileBut').click(function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active')
+            } else {
+                $(this).addClass('active')
+            }
+        });
 
         var currentLang = $(".lang-switch-text button.active").attr("id");
         $(".textareas .textarea-msg[lang='" + currentLang + "']").show();

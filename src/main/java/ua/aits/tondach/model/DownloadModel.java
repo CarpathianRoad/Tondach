@@ -6,7 +6,9 @@ import java.text.ParseException;
 import java.util.LinkedList;
 import java.util.List;
 import org.apache.commons.lang.StringEscapeUtils;
+import ua.aits.tondach.functions.Constants;
 import ua.aits.tondach.functions.DB;
+import ua.aits.tondach.functions.Helpers;
 
 
 public class DownloadModel {
@@ -14,7 +16,9 @@ public class DownloadModel {
     public String title;
     public String url;
     public String type;
+    public String size;
     
+    Helpers help = new Helpers();
     
     public Integer getId() {
         return id;
@@ -47,6 +51,16 @@ public class DownloadModel {
     public void setType(String type) {
         this.type = type;
     }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+    
+    
     
     public List<DownloadModel> fillModel(ResultSet result)throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
         List<DownloadModel> tempList = new LinkedList<>();
@@ -56,6 +70,7 @@ public class DownloadModel {
             temp.setTitle(result.getString("title").replace("\"","&quot;"));
             temp.setUrl(result.getString("url"));
             temp.setType(result.getString("type"));
+            temp.setSize(result.getString("size"));
             tempList.add(temp);
     	}
         return tempList;
@@ -95,6 +110,7 @@ public class DownloadModel {
             temp.setId(result.getInt("id"));
             temp.setUrl(result.getString("url"));
             temp.setType(result.getString("type"));
+            temp.setSize(help.getReadableSize(Constants.home + "files/avatars/" + result.getString("url"), 3));
             
             filesList.add(temp);
         } 
@@ -119,6 +135,7 @@ public class DownloadModel {
             temp.setId(result.getInt("id"));
             temp.setUrl(result.getString("url"));
             temp.setType(result.getString("type"));
+            temp.setSize(help.getReadableSize(Constants.home + "files/avatars/" + result.getString("url"), 3));
             
             filesList.add(temp);
         } 
