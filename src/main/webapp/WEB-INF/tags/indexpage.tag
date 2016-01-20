@@ -15,7 +15,7 @@
     <meta name="revisit-after" content="7 days" />
     <meta name="description" content="Ваш дах з TONDACH. Будівництво та реконструкція даху з класичною або сучасною покрівлею. Покрівля TONDACH - ідеальне рішення для природного потенціалу та життя." />
     <meta name="language" content="uk-UA" />
-	<link rel="icon" href="${Constants.URL}images/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="${Constants.URL}orders/img/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="${Constants.URL}css/style.css" />
     <link rel="stylesheet" type="text/css" href="${Constants.URL}css/second-style.css" />
     <!--[if IE 7]><link rel="stylesheet" type="text/css" href="/css/ie7.css" /><![endif]-->

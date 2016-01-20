@@ -59,9 +59,8 @@
                   </h2><a href="${Constants.URL}products/gallery/mediteran-plus/">TONDACH<sup>®</sup> Медитеран плюс</a>
                 </div>
                 <div class="photoservice">
-                  <h2>
-                    Сервіс
-                  </h2><a class="print-image" href=""  target="_blank">Роздрукувати зображення</a> 
+                  
+                  
                   <form class="mailform" method="get" action="">
                     <fieldset>
                       <label for="email">Відправити на E-Mail:</label> <input class="text clearFocus" type="text" value="E-Mail адреса" name="email">

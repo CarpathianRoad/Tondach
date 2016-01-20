@@ -49,22 +49,12 @@ $("#slaters-button").click(function (){
             data:'firstname='+ firstname + '&lastname='+ lastname + '&phone='+ phone + '&place='+ place + '&regions='+ regions + '&email='+$("#email").val() + '&certificate=' + $("#certificate").val() + '&education=' + $("#education").val(),
             success: function(response){
                 if(response === "" || response === null){
-                    $("#mail-loading").fadeOut("fast", function() {
-                        $("#contactForm").fadeIn("fast");
-                    });
-                    $(".SlatValidation").html("Something goes wrong with sending mail. Try again later.");
-                    $("#slaters-button").prop('disabled', false);
+                    
                 }
                 else {
-                    $("#mail-loading").fadeOut("fast", function() {
-                        $("#mail-complete").fadeIn("fast");
-                        $("#slaters-button").prop('disabled', false);
-                        setTimeout(function() { 
-                        $("#mail-complete").fadeOut("slow", function() {
-                            $("#mail-block").fadeIn("slow");
-                        });
-                        }, 3000);
-                    });
+                    $("#contactForm").hide();
+                    $("#mail-loading").hide();
+                    $("#completeText").show();
                 }
             }, 
             error: function(response){ 

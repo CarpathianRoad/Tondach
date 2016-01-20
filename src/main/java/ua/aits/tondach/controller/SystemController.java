@@ -91,6 +91,9 @@ public class SystemController {
     @RequestMapping(value = {"system/add/", "/system/add/", "/system/add"}, method = RequestMethod.GET)
     public ModelAndView add(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/add");
+        String folder = "files";
+    	model.addObject("folder", folder);
+    	model.addObject("folder_str", folder.replace('/', '|'));
         return model;
     }
     @RequestMapping(value = {"system/edit/{id}", "/system/edit/{id}"}, method = RequestMethod.GET)
@@ -113,6 +116,10 @@ public class SystemController {
     public ModelAndView slaters(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/slaters");
         model.addObject("slaters", Slater.getOneSlater("1"));
+        String folder = "files";
+    	model.addObject("folder", folder);
+    	model.addObject("folder_str", folder.replace('/', '|'));
+        
         return model;
     }
     
@@ -120,6 +127,10 @@ public class SystemController {
     public ModelAndView riders(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/riders");
         model.addObject("riders", Rider.getOneRider("1"));
+        String folder = "files";
+    	model.addObject("folder", folder);
+    	model.addObject("folder_str", folder.replace('/', '|'));
+        
         return model;
     }
     
@@ -141,6 +152,9 @@ public class SystemController {
     public ModelAndView wherebuyedit(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/editseller");
         model.addObject("seller", Seller.getOneSeller(id));
+        String folder = "files";
+    	model.addObject("folder", folder);
+    	model.addObject("folder_str", folder.replace('/', '|'));
         return model;
     }
 

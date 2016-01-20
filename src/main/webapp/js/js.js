@@ -2112,7 +2112,7 @@ function mailformSubmit(action, node_id, email, single) {
 var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 if (emailReg.test(email) && email.length > 0) {
 var url = action+'/'+node_id+'/'+email+'/'+single;
-$.ajax({ url: url });
+$.ajax({ url: "/Tondach/sendmail" });
 $('form.mailform .formsuccess').fadeIn('fast').delay(3000).fadeOut('fast');
 }
 }

@@ -130,22 +130,12 @@ $("#send-button").click(function (){
             data:'firstname='+ name + '&lastname=' + $("#lastname").val() + '&theme=' + $("#theme").val() +'&email='+$("#email").val()+'&text='+comment,
             success: function(response){
                 if(response === "" || response === null){
-                    $("#mail-loading").fadeOut("fast", function() {
-                        $("#contactForm").fadeIn("fast");
-                    });
-                    $(".validation").html("Something goes wrong with sending mail. Try again later.");
-                    $("#send-button").prop('disabled', false);
+                   
                 }
                 else {
-                    $("#mail-loading").fadeOut("fast", function() {
-                        $("#mail-complete").fadeIn("fast");
-                        $("#send-button").prop('disabled', false);
-                        setTimeout(function() { 
-                        $("#mail-complete").fadeOut("slow", function() {
-                            $("#mail-block").fadeIn("slow");
-                        });
-                        }, 3000);
-                    });
+                    $("#contactForm").hide();
+                    $("#mail-loading").hide();
+                    $("#completeText").show();
                 }
             }, 
             error: function(response){ 

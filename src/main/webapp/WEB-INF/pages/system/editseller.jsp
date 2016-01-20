@@ -152,10 +152,10 @@
        
     function initCKE() {
         CKEDITOR.replace('editor', {
-            filebrowserBrowseUrl : '${Constants.URL}tools/imageupload',
-            filebrowserUploadUrl : '${Constants.URL}tools/imageupload',
-            filebrowserImageBrowseUrl : '${Constants.URL}tools/imageupload',
-            filebrowserImageUploadUrl : '${Constants.URL}tools/imageupload',
+            filebrowserBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserImageBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserImageUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
             filebrowserWindowWidth  : 800,
             filebrowserWindowHeight : 500
         });

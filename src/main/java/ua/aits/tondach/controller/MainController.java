@@ -61,7 +61,7 @@ public class MainController {
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(email));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("slavutapbe@gmail.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("consultant@tondach.biz"));
             message.setSubject("Mail from site");
             message.setText("Firstame: "+firstname
                     + "\nLastname: " + lastname 
@@ -100,7 +100,7 @@ public class MainController {
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(email));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("slavutapbe@gmail.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("consultant@tondach.biz"));
             message.setSubject("Mail from site");
             message.setText("Firstame: "+firstname
                     + "\nLastname: " + lastname
@@ -142,7 +142,7 @@ public class MainController {
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(email));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("slavutapbe@gmail.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("consultant@tondach.biz"));
             message.setSubject("Mail from site");
             message.setText("Firstame: "+firstname
                     + "\nLastname: " + lastname

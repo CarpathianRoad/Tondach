@@ -15,12 +15,12 @@
 	<div id="sidebar" class="_1">
                 <ul class="subnavigation">
             <li class="level-4">
-                <a href="${Constants.URL}feedback/" target="_blank">Надіслати повідомлення</a>
+                <a href="${Constants.URL}feedback/">Надіслати повідомлення</a>
                 <ul class="subsubnavigation">
                   </ul>
                   </li>
               <li class="level-4">
-                <a href="${Constants.URL}news/">Новини та події</a>
+                <a href="${Constants.URL}article/">Новини та події</a>
               </li>
               <li class="level-4">
                 <a href="${Constants.URL}coordinates/">Контакти</a>

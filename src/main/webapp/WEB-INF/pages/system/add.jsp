@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="${Constants.URL}css/plugins/dropzone.css" type="text/css" />
         
     <script src="${Constants.URL}ckeditor/ckeditor.js"></script>
-    <script src="${Constants.URL}js/plugins/dropzone.js"></script>
     
    
     <div class="margintop20">
@@ -71,6 +70,7 @@
     
 <script src="${Constants.URL}js/jquery.webkitresize.js"></script>
 <script src="${Constants.URL}js/jquery.mb.browser.min.js"></script>
+    <script src="${Constants.URL}js/plugins/dropzone.js"></script>
 <script> 
     $(document).ready(function () { 
         
@@ -81,6 +81,10 @@
         var currentLangAT = $(".lang-switch-avatar-text button.active").attr("id");
         $(".input-avatar-text-lang[lang='"+currentLangAT+"']").show();
         initCKE();
+        $("#my-awesome-dropzone-gal").dropzone({ 
+            url: "${Constants.URL}system/do/uploadfile",
+            addRemoveLinks: true
+        });
     });
     
     $(".lang-switch-text button").click(function(){
@@ -91,7 +95,11 @@
         $(".textareas .textarea-msg[lang='"+currentLang+"']").show();
     });
     $(".lang-switch-title button").click(function(){
-        $(".lang-switch-title button").removeClass("active");
+        $(".lang-switch-title button").removeClass;
+        $("#my-awesome-dropzone-gal").dropzone({ 
+            url: "${Constants.URL}system/do/uploadfile",
+            addRemoveLinks: true
+        });("active");
         $(this).addClass("active");
         var currentLangT = $(this).attr("id");
         $(".").hide();
@@ -155,10 +163,10 @@
        
     function initCKE() {
         CKEDITOR.replace('editor', {
-            filebrowserBrowseUrl : '${Constants.URL}tools/imageupload',
-            filebrowserUploadUrl : '${Constants.URL}tools/imageupload',
-            filebrowserImageBrowseUrl : '${Constants.URL}tools/imageupload',
-            filebrowserImageUploadUrl : '${Constants.URL}tools/imageupload',
+            filebrowserBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserImageBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
+            filebrowserImageUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
             filebrowserWindowWidth  : 800,
             filebrowserWindowHeight : 500
         });
@@ -186,10 +194,6 @@
         var obj = $("#cke_120_fileInput").contents().find(".returnImage");
          obj.click("click", function (e) {
             $("#cke_71_textInput").val("s2as1");
-        });
-        $("#my-awesome-dropzone-gal").dropzone({ 
-            url: "${Constants.URL}system/do/uploadfile",
-            addRemoveLinks: true
         });
     }   
 </script>

@@ -309,7 +309,7 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
 	var boxes = $("#appl > img");
 	for(var j=0; j<boxes.length; j++) {
 		var link = $(boxes[j]).attr("src");
-		var slink = link.substr(12);
+		var slink = link.substr(20);
 		var klink = slink.substr(-slink.length,slink.length-4);
 		if(klink === "3and4") {klink = "3/4";}
 		if(klink === "підгребенева-3and4") {klink = "підгребенева 3/4";}

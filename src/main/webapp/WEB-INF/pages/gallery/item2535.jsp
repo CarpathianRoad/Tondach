@@ -117,8 +117,8 @@
                 <div class="photoservice">
                   <h2>
                     Сервіс
-                  </h2><a class="print-image" href=""  target="_blank">Роздрукувати зображення</a> 
-                  <form class="mailform" method="get" action="">
+                  
+                  <form class="mailform" method="post" action="">
                     <fieldset>
                       <label for="email">Відправити на E-Mail:</label> <input class="text clearFocus" type="text" value="E-Mail адреса" name="email">
 						  <input class="btn" type="submit" value="Absenden">
