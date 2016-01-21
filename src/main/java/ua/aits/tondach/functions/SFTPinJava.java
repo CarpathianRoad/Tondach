@@ -19,6 +19,7 @@ import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpATTRS;
 import com.jcraft.jsch.SftpException;
 import java.io.FileInputStream;
+import java.io.IOException;
 import org.apache.log4j.Logger;
 
 /**
@@ -28,40 +29,15 @@ import org.apache.log4j.Logger;
 
 public  class SFTPinJava {
     final static Logger logger = Logger.getLogger(SFTPinJava.class);
-    
-        private Channel chan;
-        private ChannelSftp chanS;
-        private Session sess;
-
-        public Channel getChan() {
-            return chan;
-        }
-
-        public void setChan(Channel chan) {
-            this.chan = chan;
-        }
-
-        public ChannelSftp getChanS() {
-            return chanS;
-        }
-
-        public void setChanS(ChannelSftp chanS) {
-            this.chanS = chanS;
-        }
-
-        public Session getSess() {
-            return sess;
-        }
-
-        public void setSess(Session sess) {
-            this.sess = sess;
-        }
-        public static SFTPinJava initSession() throws JSchException, SftpException{
-            String SFTPHOST = "88.81.239.25";
+    String SFTPHOST = "88.81.239.25";
             int SFTPPORT = 22;
             String SFTPUSER = "user1";
             String SFTPPASS = "userdahsftp";
             String SFTPWORKINGDIR = "/upload/";
+    
+    
+     public boolean checkFiles(String filepath) throws JSchException, SftpException{
+         
 
             Session session = null;
             Channel channel = null;
@@ -78,34 +54,44 @@ public  class SFTPinJava {
             channel.connect();
             channelSftp = (ChannelSftp) channel;
             channelSftp.cd(SFTPWORKINGDIR);
-            SFTPinJava res = new SFTPinJava();
-            res.setChan(channel);
-            res.setChanS(channelSftp);
-            res.setSess(session);
-            return res;
-        }
-    
-    
-     public boolean checkFiles(SFTPinJava ftp, String filepath){
+            
         Boolean fileExists = true;
          try{ 
             SftpATTRS sftpATTRS = null;
-            sftpATTRS = ftp.chanS.lstat("/upload/"+filepath);
+            sftpATTRS = channelSftp.lstat("/upload/"+filepath);
         } catch (Exception ex) {
         fileExists = false;
         }
          logger.info("Existing of file: " + filepath + "is " + fileExists);
-            ftp.getChanS().exit();
-            ftp.getSess().disconnect();
+            channelSftp.exit();
+            session.disconnect();
          return fileExists;
      }
-    public void getFiles(String filename) {
+    public void getFiles(String filename) throws SftpException, JSchException {
+
+            Session session = null;
+            Channel channel = null;
+            ChannelSftp channelSftp = null;
+            
+            JSch jsch = new JSch();
+            session = jsch.getSession(SFTPUSER, SFTPHOST, SFTPPORT);
+            session.setPassword(SFTPPASS);
+            java.util.Properties config = new java.util.Properties();
+            config.put("StrictHostKeyChecking", "no");
+            session.setConfig(config);
+            session.connect();
+            channel = session.openChannel("sftp");
+            channel.connect();
+            channelSftp = (ChannelSftp) channel;
+            channelSftp.cd(SFTPWORKINGDIR);
         try{
-            SFTPinJava sftp = this.initSession();
-            if(checkFiles(sftp, filename)) {
+            if(checkFiles(filename)) {
                 logger.info("The file "+ filename + " will be loaded");
+            System.out.println("sss0");
             byte[] buffer = new byte[1024];
-            BufferedInputStream bis = new BufferedInputStream(sftp.getChanS().get(filename));
+            System.out.println("sss1");
+            BufferedInputStream bis = new BufferedInputStream(channelSftp.get(filename));
+            System.out.println("sss2");
                 File fileD = new File(Constants.home + "orders/files/"+filename);
                 if(fileD.delete()){
     			System.out.println(fileD.getName() + " is deleted!");
@@ -119,34 +105,49 @@ public  class SFTPinJava {
                 }
                 bis.close();
                 bos.close();
-                sftp.chanS.rm("/upload/"+filename);
+               channelSftp.rm("/upload/"+filename);
                 logger.info("FIle " + filename + " was updated");
-                sftp.getChanS().exit();
-                sftp.getSess().disconnect();
+                channelSftp.exit();
+                session.disconnect();
             }
             else {
                 logger.info(filename + " version of this file is latest");
             }
         }
-        catch(Exception ex){
-            logger.error("Dowload xml file error: " + ex.getMessage());
+        catch(JSchException | SftpException | IOException ex){
+            logger.error("Dowload xml file error: " + ex.getMessage() + ex.getStackTrace());
         }
     }
     
-    public void updateFiles() {
+    public void updateFiles() throws SftpException, JSchException {
         getFiles("kontragent.xml");
         getFiles("nomenklatura.xml");
     }
     
-    public void upload(String filename) {
+    public void upload(String filename) throws JSchException, SftpException {
+
+            Session session = null;
+            Channel channel = null;
+            ChannelSftp channelSftp = null;
+            
+            JSch jsch = new JSch();
+            session = jsch.getSession(SFTPUSER, SFTPHOST, SFTPPORT);
+            session.setPassword(SFTPPASS);
+            java.util.Properties config = new java.util.Properties();
+            config.put("StrictHostKeyChecking", "no");
+            session.setConfig(config);
+            session.connect();
+            channel = session.openChannel("sftp");
+            channel.connect();
+            channelSftp = (ChannelSftp) channel;
+            channelSftp.cd(SFTPWORKINGDIR);
         try {
-        SFTPinJava sftp = this.initSession();
       File f1 = new File(Constants.home+"orders/files/"+filename);
-      sftp.getChanS().put(new FileInputStream(f1), f1.getName());
+      channelSftp.put(new FileInputStream(f1), f1.getName());
       File f2 = new File(Constants.home+"orders/files/"+filename);
-      sftp.getChanS().put(new FileInputStream(f2), f2.getName());
-      sftp.getChanS().exit();
-      sftp.getSess().disconnect();
+      channelSftp.put(new FileInputStream(f2), f2.getName());
+      channelSftp.exit();
+      channelSftp.disconnect();
       logger.info("Order " + filename + " was uploaded to server");
       File fileD = new File(Constants.home+"orders/files/"+filename);
       fileD.delete();

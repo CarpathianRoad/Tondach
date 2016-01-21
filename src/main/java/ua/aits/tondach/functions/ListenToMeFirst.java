@@ -5,8 +5,12 @@
  */
 package ua.aits.tondach.functions;
 
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.SftpException;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.servlet.ServletContextEvent;
 
 /**
@@ -29,7 +33,13 @@ public class ListenToMeFirst implements javax.servlet.ServletContextListener {
     TimerTask hourlyTask = new TimerTask () {
         @Override
         public void run () {
-            SFTP.updateFiles();
+            try {
+                SFTP.updateFiles();
+            } catch (SftpException ex) {
+                Logger.getLogger(ListenToMeFirst.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JSchException ex) {
+                Logger.getLogger(ListenToMeFirst.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     };
 

@@ -48,7 +48,7 @@ public class OrdersController {
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response)  {
         ModelAndView model = new ModelAndView("/orders/login");
         try{
-            SFTP.updateFiles();
+            //SFTP.updateFiles();
         }
         catch (Exception ex) {
         ex.printStackTrace();
