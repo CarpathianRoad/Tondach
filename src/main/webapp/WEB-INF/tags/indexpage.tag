@@ -7,6 +7,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk-UA" lang="uk-UA">
     <head>
+        <title>Tondach - природньо красиві і довговічні покрівлі </title>
         <style>#dialog-box{display:none;}</style>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta http-equiv="content-language" content="uk-UA" />
@@ -22,7 +23,6 @@
         <link rel="stylesheet" type="text/css" href="${Constants.URL}css/print.css" media="print" />
         <link rel="stylesheet" type="text/css" href="${Constants.URL}css/CultivContactForm.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
-        
         <script type="text/javascript">
     //<![CDATA[
             var lightbox_txt = {previous: "", next: "", close: "", xhrError: "", imgError: ""};

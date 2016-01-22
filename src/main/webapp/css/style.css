@@ -686,9 +686,17 @@ text-align: center;
 margin: 0px 0px 34px 0px;
 line-height: 10px;
 }
-footer div span.reserved {
+@font-face {
+    font-family: Comunica;
+    src: url(../orders/fonts/COMUNICA_TYPE.ttf);
+}
+.left a span.reserved {
     font-family: Comunica;
     margin-left: 6px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.1em;
+    font-weight: 700;
 }
-
+.left a {    
+    font-size: 14px;
+    color: #ffffff;
+}
