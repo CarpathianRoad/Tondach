@@ -96,7 +96,7 @@
                 <c:forEach items="${downloads}" var="item">
                     <tr class="table-item">
                         <td class="text-center counter">${count}</td>
-                        <td><a href="${Constants.URL}files/avatars/${item.url}">${item.title}</a></td>
+                        <td><a href="${Constants.URL}files/avatars/${item.url}" target="_blank">${item.title}</a></td>
                         <td>${item.type}</td>
                         <td class="text-center"><a onclick="changeLink('${item.id}', '${item.title}')" href="#" data-toggle="modal" data-target="#myModal"><img class="article-buttons" src="${Constants.URL}images/delete.png"  width="20" height="20"/></a></td>
 

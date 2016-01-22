@@ -5,6 +5,8 @@
  */
 package ua.aits.tondach.controller;
 
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.SftpException;
 import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -94,7 +96,7 @@ public class OrdersController {
     }
     
     @RequestMapping(value = {"/orders/sending", "/orders/sending/"}, method = RequestMethod.POST)
-    public ModelAndView sending(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException  {
+    public ModelAndView sending(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException, JSchException, SftpException  {
         request.setCharacterEncoding("UTF-8");
         String descr = request.getParameter("descr");
         HttpSession session = request.getSession(true);

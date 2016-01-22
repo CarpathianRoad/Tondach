@@ -168,7 +168,7 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
     </ul>
 		
 		<div class="content" style="width: 920px;height: 400px;margin-top: 20px;">
-            <div id="adress"><b>ТзОВ «Дахмаркет»</b><br/>
+            <div id="adress">
 			Щедріна 146 <br/>
 88000 Закарпаття <br/>
 Україна <br/><span id="grey-ad">GPS (48.623319, 22.245779)</span><br/>

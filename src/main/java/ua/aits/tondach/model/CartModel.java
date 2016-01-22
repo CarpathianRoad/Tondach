@@ -5,6 +5,8 @@
  */
 package ua.aits.tondach.model;
 
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.SftpException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
@@ -121,7 +123,7 @@ public class CartModel {
     
     XMLparse XML = new XMLparse();
     SFTPinJava SFTP = new SFTPinJava();
-    public String completeOrder(String number, String name, String summary, String descr, List<CartModel> items) throws SQLException {
+    public String completeOrder(String number, String name, String summary, String descr, List<CartModel> items) throws SQLException, JSchException, SftpException {
         String date = new SimpleDateFormat("dd.MM.yyyy").format(new Date());
         DB.runQuery("INSERT INTO `tondach_orders`(`order_partner`, `order_partner_name`, `order_summary`, `order_date`, `order_xml_date`, `order_descr`) VALUES ('"+number+"','"+StringEscapeUtils.escapeSql(name)+"','"+summary+"','"+date+"','"+items.get(0).item_xml_date+"', '"+StringEscapeUtils.escapeSql(descr)+"')");
         ResultSet result_last = DB.getResultSet("SELECT MAX(order_id) AS last FROM tondach_orders;");
