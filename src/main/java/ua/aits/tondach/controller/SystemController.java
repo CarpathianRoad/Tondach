@@ -72,7 +72,7 @@ public class SystemController {
             return modelAndView;
     }
     
-    @RequestMapping(value = {"/system/users/edit/{id}", "/system/users/edit/{id}/","/Carpath/system/users/edit/{id}", "/Carpath/system/users/edit/{id}/"})
+    @RequestMapping(value = {"/system/users/edit/{id}", "/system/users/edit/{id}/"})
     public ModelAndView editUser (@PathVariable("id") String id, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
                 ModelAndView modelAndView = new ModelAndView("/system/users_edit");

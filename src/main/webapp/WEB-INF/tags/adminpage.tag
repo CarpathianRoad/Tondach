@@ -4,7 +4,7 @@
     Author     : kiwi
 --%>
 
-<%@tag description="Carpathian road - Admin page" pageEncoding="UTF-8"%>
+<%@tag description="Tondach Admin page" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>

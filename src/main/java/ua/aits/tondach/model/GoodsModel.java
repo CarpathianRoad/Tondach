@@ -5,6 +5,9 @@
  */
 package ua.aits.tondach.model;
 
+import java.util.List;
+import ua.aits.tondach.functions.XMLparse;
+
 /**
  *
  * @author kiwi
@@ -84,5 +87,14 @@ public class GoodsModel {
         this.xml_date = xml_date;
     }
     
-    
+    public static String getPrice(String art) {
+        List<GoodsModel> goods = XMLparse.parseGoods();
+        String price = "0";
+        for(GoodsModel item: goods) {
+            if(item.article.equals(art)) {
+                price = item.price;
+            }
+        }
+        return price;
+    }
 }

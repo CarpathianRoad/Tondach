@@ -1,4 +1,5 @@
-<jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
+
+
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style type="text/css">
 <!--
@@ -801,50 +802,50 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.84px;top:148.86px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:451.60px;top:148.86px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.24px;top:148.86px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:521.23px;top:147.45px' class='cls_059'><span class='cls_059'>41,52</span></div>
-<div style='position:absolute;left:567.10px;top:147.45px' class='cls_059'><span class='cls_059'>45,11</span></div>
-<div style='position:absolute;left:604.83px;top:147.45px' class='cls_059'><span class='cls_059'>51,78</span></div>
+<div style='position:absolute;left:521.23px;top:147.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612730081") %></span></div>
+<div style='position:absolute;left:567.10px;top:147.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612730012") %></span></div>
+<div style='position:absolute;left:604.83px;top:147.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612730040") %></span></div>
 <div style='position:absolute;left:154.32px;top:165.87px' class='cls_013'><span class='cls_013'>16127301..</span></div>
 <div style='position:absolute;left:208.17px;top:165.87px' class='cls_013'><span class='cls_013'>ТВИСТ половинчатая</span></div>
 <div style='position:absolute;left:397.65px;top:165.87px' class='cls_013'><span class='cls_013'>17,0 x 50,0</span></div>
 <div style='position:absolute;left:451.60px;top:165.87px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.24px;top:165.87px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:521.23px;top:164.79px' class='cls_059'><span class='cls_059'>47,93</span></div>
-<div style='position:absolute;left:567.90px;top:164.79px' class='cls_059'><span class='cls_059'>53,83</span></div>
-<div style='position:absolute;left:604.83px;top:164.79px' class='cls_059'><span class='cls_059'>53,83</span></div>
+<div style='position:absolute;left:521.23px;top:164.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612730181") %></span></div>
+<div style='position:absolute;left:567.90px;top:164.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612730112") %></span></div>
+<div style='position:absolute;left:604.83px;top:164.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612730140") %></span></div>
 <div style='position:absolute;left:154.32px;top:182.88px' class='cls_013'><span class='cls_013'>16127340..</span></div>
 <div style='position:absolute;left:208.17px;top:182.88px' class='cls_013'><span class='cls_013'>ТВИСТ боковая левая</span></div>
 <div style='position:absolute;left:396.84px;top:182.88px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.94px;top:182.88px' class='cls_013'><span class='cls_013'>72</span></div>
 <div style='position:absolute;left:485.24px;top:182.88px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:514.83px;top:181.45px' class='cls_059'><span class='cls_059'>193,52</span></div>
-<div style='position:absolute;left:563.10px;top:181.45px' class='cls_059'><span class='cls_059'>203,00</span></div>
-<div style='position:absolute;left:602.43px;top:181.45px' class='cls_059'><span class='cls_059'>203,00</span></div>
+<div style='position:absolute;left:514.83px;top:181.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612734081") %></span></div>
+<div style='position:absolute;left:563.10px;top:181.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612734012") %></span></div>
+<div style='position:absolute;left:602.43px;top:181.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612734040") %></span></div>
 <div style='position:absolute;left:154.32px;top:199.88px' class='cls_013'><span class='cls_013'>16127341..</span></div>
 <div style='position:absolute;left:208.17px;top:199.88px' class='cls_013'><span class='cls_013'>ТВИСТ боковая правая</span></div>
 <div style='position:absolute;left:396.84px;top:199.88px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.78px;top:199.88px' class='cls_013'><span class='cls_013'>64</span></div>
 <div style='position:absolute;left:485.24px;top:199.88px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:514.83px;top:198.79px' class='cls_059'><span class='cls_059'>193,52</span></div>
-<div style='position:absolute;left:563.10px;top:198.79px' class='cls_059'><span class='cls_059'>203,00</span></div>
-<div style='position:absolute;left:602.43px;top:198.79px' class='cls_059'><span class='cls_059'>203,00</span></div>
+<div style='position:absolute;left:514.83px;top:198.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612734181") %></span></div>
+<div style='position:absolute;left:563.10px;top:198.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("161273412") %></span></div>
+<div style='position:absolute;left:602.43px;top:198.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612734140") %></span></div>
 <div style='position:absolute;left:154.32px;top:216.89px' class='cls_013'><span class='cls_013'>16127310..</span></div>
 <div style='position:absolute;left:208.18px;top:216.89px' class='cls_013'><span class='cls_013'>ТВИСТ вентиляционная</span></div>
 <div style='position:absolute;left:396.84px;top:216.89px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:451.91px;top:216.89px' class='cls_013'><span class='cls_013'>128</span></div>
 <div style='position:absolute;left:485.25px;top:216.89px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:521.23px;top:216.12px' class='cls_059'><span class='cls_059'>152,76</span></div>
-<div style='position:absolute;left:563.10px;top:216.12px' class='cls_059'><span class='cls_059'>165,32</span></div>
-<div style='position:absolute;left:602.43px;top:216.12px' class='cls_059'><span class='cls_059'>165,32</span></div>
+<div style='position:absolute;left:521.23px;top:216.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612731081") %></span></div>
+<div style='position:absolute;left:563.10px;top:216.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612731012") %></span></div>
+<div style='position:absolute;left:602.43px;top:216.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612731040") %></span></div>
 <div style='position:absolute;left:34.52px;top:233.96px' class='cls_056'><span class='cls_056'>Расход: 8,8 - 9,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:233.90px' class='cls_013'><span class='cls_013'>16127320..</span></div>
 <div style='position:absolute;left:208.18px;top:233.90px' class='cls_013'><span class='cls_013'>ТВИСТ снегозащитная</span></div>
 <div style='position:absolute;left:396.84px;top:233.90px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.78px;top:233.90px' class='cls_013'><span class='cls_013'>80</span></div>
 <div style='position:absolute;left:485.25px;top:233.90px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:521.23px;top:232.79px' class='cls_059'><span class='cls_059'>88,17</span></div>
-<div style='position:absolute;left:567.90px;top:232.79px' class='cls_059'><span class='cls_059'>112,78</span></div>
-<div style='position:absolute;left:604.83px;top:232.79px' class='cls_059'><span class='cls_059'>112,78</span></div>
+<div style='position:absolute;left:521.23px;top:232.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612731081") %></span></div>
+<div style='position:absolute;left:567.90px;top:232.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612731012") %></span></div>
+<div style='position:absolute;left:604.83px;top:232.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612731040") %></span></div>
 <div style='position:absolute;left:150.55px;top:250.38px' class='cls_057'></div>
 <div style='position:absolute;left:34.52px;top:306.24px' class='cls_037'><span class='cls_037'>Самба 11  </span><span class='cls_052'>посувная черепица</span></div>
 <div style='position:absolute;left:640.82px;top:326.33px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
@@ -878,63 +879,63 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.55px;top:387.27px' class='cls_013'><span class='cls_013'>28,0 x 47,0</span></div>
 <div style='position:absolute;left:451.75px;top:387.27px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.24px;top:387.27px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:520.43px;top:386.12px' class='cls_059'><span class='cls_059'>39,99</span></div>
-<div style='position:absolute;left:581.50px;top:386.12px' class='cls_059'><span class='cls_059'>47,42</span></div>
-<div style='position:absolute;left:644.77px;top:386.12px' class='cls_059'><span class='cls_059'>58,95</span></div>
-<div style='position:absolute;left:707.71px;top:386.93px' class='cls_059'><span class='cls_059'>60,49</span></div>
+<div style='position:absolute;left:520.43px;top:386.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112760000") %></span></div>
+<div style='position:absolute;left:581.50px;top:386.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112760010") %></span></div>
+<div style='position:absolute;left:644.77px;top:386.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112760070") %></span></div>
+<div style='position:absolute;left:707.71px;top:386.93px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112760074") %></span></div>
 <div style='position:absolute;left:154.32px;top:404.28px' class='cls_013'><span class='cls_013'>21127640..</span></div>
 <div style='position:absolute;left:208.17px;top:404.28px' class='cls_013'><span class='cls_013'>САМБА 11 боковая левая</span></div>
 <div style='position:absolute;left:397.47px;top:404.28px' class='cls_013'><span class='cls_013'>28,2 x 47,0</span></div>
 <div style='position:absolute;left:453.77px;top:404.28px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.24px;top:404.28px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.83px;top:403.12px' class='cls_059'><span class='cls_059'>270,67</span></div>
-<div style='position:absolute;left:575.90px;top:403.12px' class='cls_059'><span class='cls_059'>285,28</span></div>
-<div style='position:absolute;left:638.37px;top:403.12px' class='cls_059'><span class='cls_059'>293,99</span></div>
-<div style='position:absolute;left:702.11px;top:403.93px' class='cls_059'><span class='cls_059'>302,19</span></div>
+<div style='position:absolute;left:514.83px;top:403.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112764000") %></span></div>
+<div style='position:absolute;left:575.90px;top:403.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112764010") %></span></div>
+<div style='position:absolute;left:638.37px;top:403.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112764070") %></span></div>
+<div style='position:absolute;left:702.11px;top:403.93px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112764074") %></span></div>
 <div style='position:absolute;left:154.32px;top:421.29px' class='cls_013'><span class='cls_013'>21127641..</span></div>
 <div style='position:absolute;left:208.17px;top:421.29px' class='cls_013'><span class='cls_013'>САМБА 11 боковая правая</span></div>
 <div style='position:absolute;left:397.55px;top:421.29px' class='cls_013'><span class='cls_013'>28,0 x 47,0</span></div>
 <div style='position:absolute;left:453.77px;top:421.29px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.24px;top:421.29px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.83px;top:420.12px' class='cls_059'><span class='cls_059'>270,67</span></div>
-<div style='position:absolute;left:575.90px;top:420.12px' class='cls_059'><span class='cls_059'>285,28</span></div>
-<div style='position:absolute;left:638.37px;top:420.12px' class='cls_059'><span class='cls_059'>293,99</span></div>
-<div style='position:absolute;left:702.11px;top:420.93px' class='cls_059'><span class='cls_059'>302,19</span></div>
+<div style='position:absolute;left:514.83px;top:420.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112764100") %></span></div>
+<div style='position:absolute;left:575.90px;top:420.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112764110") %></span></div>
+<div style='position:absolute;left:638.37px;top:420.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112764170") %></span></div>
+<div style='position:absolute;left:702.11px;top:420.93px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112764174") %></span></div>
 <div style='position:absolute;left:154.32px;top:438.30px' class='cls_013'><span class='cls_013'>21127650..</span></div>
 <div style='position:absolute;left:208.17px;top:438.30px' class='cls_013'><span class='cls_013'>САМБА 11 подконьковая</span></div>
 <div style='position:absolute;left:397.56px;top:438.30px' class='cls_013'><span class='cls_013'>28,0 x 47,0</span></div>
 <div style='position:absolute;left:451.87px;top:438.30px' class='cls_013'><span class='cls_013'>120</span></div>
 <div style='position:absolute;left:485.24px;top:438.30px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:520.43px;top:437.12px' class='cls_059'><span class='cls_059'>60,49</span></div>
-<div style='position:absolute;left:581.50px;top:437.12px' class='cls_059'><span class='cls_059'>64,08</span></div>
-<div style='position:absolute;left:644.77px;top:437.12px' class='cls_059'><span class='cls_059'>71,26</span></div>
-<div style='position:absolute;left:707.71px;top:437.93px' class='cls_059'><span class='cls_059'>72,79</span></div>
+<div style='position:absolute;left:520.43px;top:437.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765000") %></span></div>
+<div style='position:absolute;left:581.50px;top:437.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765010") %></span></div>
+<div style='position:absolute;left:644.77px;top:437.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765070") %></span></div>
+<div style='position:absolute;left:707.71px;top:437.93px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765074") %></span></div>
 <div style='position:absolute;left:154.32px;top:455.31px' class='cls_013'><span class='cls_013'>21127651..</span></div>
 <div style='position:absolute;left:208.17px;top:455.31px' class='cls_013'><span class='cls_013'>САМБА 11 подконьковая боковая левая</span></div>
 <div style='position:absolute;left:397.47px;top:455.31px' class='cls_013'><span class='cls_013'>28,2 x 47,0</span></div>
 <div style='position:absolute;left:485.24px;top:455.31px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.83px;top:454.12px' class='cls_059'><span class='cls_059'>270,67</span></div>
-<div style='position:absolute;left:575.90px;top:454.12px' class='cls_059'><span class='cls_059'>285,28</span></div>
-<div style='position:absolute;left:638.37px;top:454.12px' class='cls_059'><span class='cls_059'>293,99</span></div>
-<div style='position:absolute;left:702.11px;top:454.93px' class='cls_059'><span class='cls_059'>302,19</span></div>
+<div style='position:absolute;left:514.83px;top:454.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765100") %></span></div>
+<div style='position:absolute;left:575.90px;top:454.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765110") %></span></div>
+<div style='position:absolute;left:638.37px;top:454.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765170") %></span></div>
+<div style='position:absolute;left:702.11px;top:454.93px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765174") %></span></div>
 <div style='position:absolute;left:154.32px;top:472.31px' class='cls_013'><span class='cls_013'>21127652..</span></div>
 <div style='position:absolute;left:208.17px;top:472.31px' class='cls_013'><span class='cls_013'>САМБА 11 подконьковая боковая правая</span></div>
 <div style='position:absolute;left:397.56px;top:472.31px' class='cls_013'><span class='cls_013'>28,0 x 47,0</span></div>
 <div style='position:absolute;left:485.24px;top:472.31px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.83px;top:471.12px' class='cls_059'><span class='cls_059'>270,67</span></div>
-<div style='position:absolute;left:575.90px;top:471.12px' class='cls_059'><span class='cls_059'>285,28</span></div>
-<div style='position:absolute;left:638.37px;top:471.12px' class='cls_059'><span class='cls_059'>293,99</span></div>
-<div style='position:absolute;left:702.11px;top:471.93px' class='cls_059'><span class='cls_059'>302,19</span></div>
+<div style='position:absolute;left:514.83px;top:471.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765200") %></span></div>
+<div style='position:absolute;left:575.90px;top:471.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765210") %></span></div>
+<div style='position:absolute;left:638.37px;top:471.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765270") %></span></div>
+<div style='position:absolute;left:702.11px;top:471.93px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112765274") %></span></div>
 <div style='position:absolute;left:34.52px;top:489.38px' class='cls_056'><span class='cls_056'>Расход: мин. 11,5 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:489.32px' class='cls_013'><span class='cls_013'>21127610..</span></div>
 <div style='position:absolute;left:208.18px;top:489.32px' class='cls_013'><span class='cls_013'>САМБА 11 вентиляционная</span></div>
 <div style='position:absolute;left:397.56px;top:489.32px' class='cls_013'><span class='cls_013'>28,0 x 47,0</span></div>
 <div style='position:absolute;left:451.87px;top:489.32px' class='cls_013'><span class='cls_013'>120</span></div>
 <div style='position:absolute;left:485.25px;top:489.32px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:520.43px;top:488.12px' class='cls_059'><span class='cls_059'>176,86</span></div>
-<div style='position:absolute;left:581.50px;top:488.12px' class='cls_059'><span class='cls_059'>193,52</span></div>
-<div style='position:absolute;left:644.77px;top:488.12px' class='cls_059'><span class='cls_059'>195,06</span></div>
-<div style='position:absolute;left:707.71px;top:488.93px' class='cls_059'><span class='cls_059'>200,18</span></div>
+<div style='position:absolute;left:520.43px;top:488.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112761000") %></span></div>
+<div style='position:absolute;left:581.50px;top:488.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112761010") %></span></div>
+<div style='position:absolute;left:644.77px;top:488.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112761070") %></span></div>
+<div style='position:absolute;left:707.71px;top:488.93px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112761074") %></span></div>
 <div style='position:absolute;left:150.55px;top:508.38px' class='cls_057'></div>
 <div style='position:absolute;left:807.86px;top:566.16px' class='cls_007'><span class='cls_007'>8</span></div>
 </div><div style='position:absolute;left:50%;margin-left:-420px;top:4840px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -966,50 +967,50 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.84px;top:145.32px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:451.60px;top:145.32px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.24px;top:145.32px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:518.10px;top:143.82px' class='cls_059'><span class='cls_059'>43,06</span></div>
-<div style='position:absolute;left:569.03px;top:143.82px' class='cls_059'><span class='cls_059'>46,65</span></div>
-<div style='position:absolute;left:612.50px;top:143.82px' class='cls_059'><span class='cls_059'>55,36</span></div>
+<div style='position:absolute;left:518.10px;top:143.82px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612110081") %></span></div>
+<div style='position:absolute;left:569.03px;top:143.82px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612110012") %></span></div>
+<div style='position:absolute;left:612.50px;top:143.82px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612110040") %></span></div>
 <div style='position:absolute;left:154.32px;top:162.32px' class='cls_013'><span class='cls_013'>16121101..</span></div>
 <div style='position:absolute;left:208.17px;top:162.32px' class='cls_013'><span class='cls_013'>ТАНГО ПЛЮС половинчатая</span></div>
 <div style='position:absolute;left:397.65px;top:162.32px' class='cls_013'><span class='cls_013'>17,0 x 50,0</span></div>
 <div style='position:absolute;left:451.60px;top:162.32px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.24px;top:162.32px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:516.90px;top:161.42px' class='cls_059'><span class='cls_059'>51,01</span></div>
-<div style='position:absolute;left:568.90px;top:161.42px' class='cls_059'><span class='cls_059'>53,83</span></div>
-<div style='position:absolute;left:612.10px;top:161.42px' class='cls_059'><span class='cls_059'>53,83</span></div>
+<div style='position:absolute;left:516.90px;top:161.42px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612110181") %></span></div>
+<div style='position:absolute;left:568.90px;top:161.42px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612110112") %></span></div>
+<div style='position:absolute;left:612.10px;top:161.42px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612110140") %></span></div>
 <div style='position:absolute;left:154.32px;top:179.33px' class='cls_013'><span class='cls_013'>16121140..</span></div>
 <div style='position:absolute;left:208.17px;top:179.33px' class='cls_013'><span class='cls_013'>ТАНГО ПЛЮС боковая левая</span></div>
 <div style='position:absolute;left:396.84px;top:179.33px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.94px;top:179.33px' class='cls_013'><span class='cls_013'>72</span></div>
 <div style='position:absolute;left:485.24px;top:179.33px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:511.30px;top:177.42px' class='cls_059'><span class='cls_059'>193,52</span></div>
-<div style='position:absolute;left:565.70px;top:177.42px' class='cls_059'><span class='cls_059'>203,00</span></div>
-<div style='position:absolute;left:608.90px;top:177.42px' class='cls_059'><span class='cls_059'>203,00</span></div>
+<div style='position:absolute;left:511.30px;top:177.42px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612114081") %></span></div>
+<div style='position:absolute;left:565.70px;top:177.42px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612114012") %></span></div>
+<div style='position:absolute;left:608.90px;top:177.42px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612114040") %></span></div>
 <div style='position:absolute;left:154.32px;top:196.34px' class='cls_013'><span class='cls_013'>16121141..</span></div>
 <div style='position:absolute;left:208.17px;top:196.34px' class='cls_013'><span class='cls_013'>ТАНГО ПЛЮС боковая правая</span></div>
 <div style='position:absolute;left:396.84px;top:196.34px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.78px;top:196.34px' class='cls_013'><span class='cls_013'>64</span></div>
 <div style='position:absolute;left:485.24px;top:196.34px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:511.30px;top:195.02px' class='cls_059'><span class='cls_059'>193,52</span></div>
-<div style='position:absolute;left:565.70px;top:195.02px' class='cls_059'><span class='cls_059'>203,00</span></div>
-<div style='position:absolute;left:608.90px;top:195.02px' class='cls_059'><span class='cls_059'>203,00</span></div>
+<div style='position:absolute;left:511.30px;top:195.02px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612114181") %></span></div>
+<div style='position:absolute;left:565.70px;top:195.02px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612114112") %></span></div>
+<div style='position:absolute;left:608.90px;top:195.02px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612114140") %></span></div>
 <div style='position:absolute;left:154.32px;top:213.35px' class='cls_013'><span class='cls_013'>16121110..</span></div>
 <div style='position:absolute;left:208.17px;top:213.35px' class='cls_013'><span class='cls_013'>ТАНГО ПЛЮС вентиляционная</span></div>
 <div style='position:absolute;left:396.84px;top:213.35px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:451.91px;top:213.35px' class='cls_013'><span class='cls_013'>128</span></div>
 <div style='position:absolute;left:485.24px;top:213.35px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:516.90px;top:211.82px' class='cls_059'><span class='cls_059'>152,76</span></div>
-<div style='position:absolute;left:565.70px;top:211.82px' class='cls_059'><span class='cls_059'>165,32</span></div>
-<div style='position:absolute;left:608.90px;top:211.82px' class='cls_059'><span class='cls_059'>165,32</span></div>
+<div style='position:absolute;left:516.90px;top:211.82px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612111081") %></span></div>
+<div style='position:absolute;left:565.70px;top:211.82px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612111012") %></span></div>
+<div style='position:absolute;left:608.90px;top:211.82px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612111040") %></span></div>
 <div style='position:absolute;left:34.52px;top:230.41px' class='cls_056'><span class='cls_056'>Расход: 8,8 - 9,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:230.36px' class='cls_013'><span class='cls_013'>16121120..</span></div>
 <div style='position:absolute;left:208.17px;top:230.36px' class='cls_013'><span class='cls_013'>ТАНГО ПЛЮС снегозащитная</span></div>
 <div style='position:absolute;left:396.84px;top:230.36px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.77px;top:230.36px' class='cls_013'><span class='cls_013'>80</span></div>
 <div style='position:absolute;left:485.24px;top:230.36px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:516.90px;top:228.62px' class='cls_059'><span class='cls_059'>88,17</span></div>
-<div style='position:absolute;left:568.90px;top:228.62px' class='cls_059'><span class='cls_059'>112,78</span></div>
-<div style='position:absolute;left:612.10px;top:228.62px' class='cls_059'><span class='cls_059'>112,78</span></div>
+<div style='position:absolute;left:516.90px;top:228.62px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612112081") %></span></div>
+<div style='position:absolute;left:568.90px;top:228.62px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612112012") %></span></div>
+<div style='position:absolute;left:612.10px;top:228.62px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612112040") %></span></div>
 <div style='position:absolute;left:34.52px;top:258.45px' class='cls_037'><span class='cls_037'>Медитеран</span></div>
 <div style='position:absolute;left:640.82px;top:278.54px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
 <div style='position:absolute;left:443.27px;top:286.49px' class='cls_053'><span class='cls_053'>Колличе-</span></div>
@@ -1036,51 +1037,51 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.37px;top:339.49px' class='cls_013'><span class='cls_013'>27,0 x 43,0</span></div>
 <div style='position:absolute;left:451.75px;top:339.49px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.24px;top:339.49px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.10px;top:338.22px' class='cls_059'><span class='cls_059'>32,81</span></div>
-<div style='position:absolute;left:584.10px;top:338.22px' class='cls_059'><span class='cls_059'>34,86</span></div>
+<div style='position:absolute;left:520.10px;top:338.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612700081") %></span></div>
+<div style='position:absolute;left:584.10px;top:338.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612700019") %></span></div>
 <div style='position:absolute;left:154.31px;top:356.50px' class='cls_013'><span class='cls_013'>16127050..</span></div>
 <div style='position:absolute;left:208.17px;top:356.50px' class='cls_013'><span class='cls_013'>МЕДИТЕРАН подконьковая</span></div>
 <div style='position:absolute;left:397.37px;top:356.50px' class='cls_013'><span class='cls_013'>27,0 x 43,0</span></div>
 <div style='position:absolute;left:451.52px;top:356.50px' class='cls_013'><span class='cls_013'>200</span></div>
 <div style='position:absolute;left:485.24px;top:356.50px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.10px;top:355.22px' class='cls_059'><span class='cls_059'>44,34</span></div>
-<div style='position:absolute;left:584.10px;top:355.22px' class='cls_059'><span class='cls_059'>56,90</span></div>
+<div style='position:absolute;left:520.10px;top:355.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612705081") %></span></div>
+<div style='position:absolute;left:584.10px;top:355.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612705019") %></span></div>
 <div style='position:absolute;left:154.31px;top:373.51px' class='cls_013'><span class='cls_013'>16127040..</span></div>
 <div style='position:absolute;left:208.17px;top:373.51px' class='cls_013'><span class='cls_013'>МЕДИТЕРАН боковая левая</span></div>
 <div style='position:absolute;left:396.78px;top:373.51px' class='cls_013'><span class='cls_013'>33,0 x 43,0</span></div>
 <div style='position:absolute;left:453.78px;top:373.51px' class='cls_013'><span class='cls_013'>30</span></div>
 <div style='position:absolute;left:485.24px;top:373.51px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.10px;top:372.22px' class='cls_059'><span class='cls_059'>131,75</span></div>
-<div style='position:absolute;left:578.10px;top:372.22px' class='cls_059'><span class='cls_059'>167,37</span></div>
+<div style='position:absolute;left:520.10px;top:372.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612704081") %></span></div>
+<div style='position:absolute;left:578.10px;top:372.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612704019") %></span></div>
 <div style='position:absolute;left:154.32px;top:390.51px' class='cls_013'><span class='cls_013'>16127041..</span></div>
 <div style='position:absolute;left:208.17px;top:390.51px' class='cls_013'><span class='cls_013'>МЕДИТЕРАН боковая правая</span></div>
 <div style='position:absolute;left:397.37px;top:390.51px' class='cls_013'><span class='cls_013'>27,0 x 43,0</span></div>
 <div style='position:absolute;left:453.78px;top:390.51px' class='cls_013'><span class='cls_013'>30</span></div>
 <div style='position:absolute;left:485.24px;top:390.51px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.10px;top:390.22px' class='cls_059'><span class='cls_059'>131,75</span></div>
-<div style='position:absolute;left:578.10px;top:390.22px' class='cls_059'><span class='cls_059'>167,37</span></div>
+<div style='position:absolute;left:520.10px;top:390.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612704181") %></span></div>
+<div style='position:absolute;left:578.10px;top:390.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612704119") %></span></div>
 <div style='position:absolute;left:154.32px;top:407.52px' class='cls_013'><span class='cls_013'>16127051..</span></div>
 <div style='position:absolute;left:208.17px;top:407.52px' class='cls_013'><span class='cls_013'>МЕДИТЕРАН подконьковая боковая левая</span></div>
 <div style='position:absolute;left:396.78px;top:407.52px' class='cls_013'><span class='cls_013'>33,0 x 43,0</span></div>
 <div style='position:absolute;left:453.78px;top:407.52px' class='cls_013'><span class='cls_013'>30</span></div>
 <div style='position:absolute;left:485.24px;top:407.52px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.10px;top:407.22px' class='cls_059'><span class='cls_059'>131,75</span></div>
-<div style='position:absolute;left:578.10px;top:407.22px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.10px;top:407.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612705181") %></span></div>
+<div style='position:absolute;left:578.10px;top:407.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612705119") %></span></div>
 <div style='position:absolute;left:154.32px;top:424.53px' class='cls_013'><span class='cls_013'>16127052..</span></div>
 <div style='position:absolute;left:208.17px;top:424.53px' class='cls_013'><span class='cls_013'>МЕДИТЕРАН подконьковая боковая правая</span></div>
 <div style='position:absolute;left:397.37px;top:424.53px' class='cls_013'><span class='cls_013'>27,0 x 43,0</span></div>
 <div style='position:absolute;left:453.78px;top:424.53px' class='cls_013'><span class='cls_013'>30</span></div>
 <div style='position:absolute;left:485.24px;top:424.53px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.10px;top:424.22px' class='cls_059'><span class='cls_059'>131,75</span></div>
-<div style='position:absolute;left:578.10px;top:424.22px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.10px;top:424.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612705281") %></span></div>
+<div style='position:absolute;left:578.10px;top:424.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612705219") %></span></div>
 <div style='position:absolute;left:34.52px;top:441.60px' class='cls_056'><span class='cls_056'>Расход: 13,1 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:441.54px' class='cls_013'><span class='cls_013'>16127010..</span></div>
 <div style='position:absolute;left:208.17px;top:441.54px' class='cls_013'><span class='cls_013'>МЕДИТЕРАН вентиляционная</span></div>
 <div style='position:absolute;left:397.37px;top:441.54px' class='cls_013'><span class='cls_013'>27,0 x 43,0</span></div>
 <div style='position:absolute;left:451.87px;top:441.54px' class='cls_013'><span class='cls_013'>120</span></div>
 <div style='position:absolute;left:485.24px;top:441.54px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.10px;top:441.22px' class='cls_059'><span class='cls_059'>119,44</span></div>
-<div style='position:absolute;left:584.10px;top:441.22px' class='cls_059'><span class='cls_059'>152,25</span></div>
+<div style='position:absolute;left:520.10px;top:441.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612701081") %></span></div>
+<div style='position:absolute;left:584.10px;top:441.22px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612701019") %></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>9</span></div>
 </div><div style='position:absolute;left:50%;margin-left:-420px;top:5445px;width:841px;height:595px;border-style:outset;overflow:hidden'>
 <div style='position:absolute;left:0px;top:0px'>
@@ -1108,80 +1109,80 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.82px;top:123.71px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:452.41px;top:123.71px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:123.71px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:122.15px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:122.15px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:122.15px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310010000") %></span></div>
+<div style='position:absolute;left:584.46px;top:122.15px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310010010") %></span></div>
 <div style='position:absolute;left:155.02px;top:139.16px' class='cls_065'><span class='cls_065'>13100101..</span></div>
 <div style='position:absolute;left:208.88px;top:139.16px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК 3/4</span></div>
 <div style='position:absolute;left:397.80px;top:139.16px' class='cls_065'><span class='cls_065'>14,2 x 40,0</span></div>
 <div style='position:absolute;left:452.41px;top:139.16px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:139.16px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:137.64px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:137.64px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:137.64px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310010100") %></span></div>
+<div style='position:absolute;left:584.46px;top:137.64px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310010110") %></span></div>
 <div style='position:absolute;left:155.02px;top:154.84px' class='cls_065'><span class='cls_065'>13100150..</span></div>
 <div style='position:absolute;left:208.88px;top:154.84px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК подконьковая</span></div>
 <div style='position:absolute;left:397.86px;top:154.84px' class='cls_065'><span class='cls_065'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:452.41px;top:154.84px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:154.84px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:153.13px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:153.13px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:153.13px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310015000") %></span></div>
+<div style='position:absolute;left:584.46px;top:153.13px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310015010") %></span></div>
 <div style='position:absolute;left:155.02px;top:170.53px' class='cls_065'><span class='cls_065'>13100151..</span></div>
 <div style='position:absolute;left:208.88px;top:170.53px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК подконьковая 3/4</span></div>
 <div style='position:absolute;left:397.84px;top:170.53px' class='cls_065'><span class='cls_065'>14,2 x 28,0</span></div>
 <div style='position:absolute;left:452.41px;top:170.53px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:170.53px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:169.36px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:169.36px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:169.36px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310015100") %></span></div>
+<div style='position:absolute;left:584.46px;top:169.36px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310015110") %></span></div>
 <div style='position:absolute;left:155.02px;top:186.21px' class='cls_065'><span class='cls_065'>13105130..</span></div>
 <div style='position:absolute;left:208.88px;top:186.21px' class='cls_065'><span class='cls_065'>БОБРОВКА карнизная</span></div>
 <div style='position:absolute;left:397.86px;top:186.21px' class='cls_065'><span class='cls_065'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:452.41px;top:186.21px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:186.21px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:185.03px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:185.03px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:185.03px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513000") %></span></div>
+<div style='position:absolute;left:584.46px;top:185.03px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513010") %></span></div>
 <div style='position:absolute;left:155.02px;top:201.89px' class='cls_065'><span class='cls_065'>13100346..</span></div>
 <div style='position:absolute;left:208.88px;top:201.89px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК боковая левая / правая</span></div>
 <div style='position:absolute;left:399.75px;top:201.89px' class='cls_065'><span class='cls_065'>9,5 x 38,0</span></div>
 <div style='position:absolute;left:452.16px;top:201.89px' class='cls_065'><span class='cls_065'>300</span></div>
 <div style='position:absolute;left:483.09px;top:201.89px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:200.71px' class='cls_069'><span class='cls_069'>67,67</span></div>
-<div style='position:absolute;left:584.46px;top:200.71px' class='cls_069'><span class='cls_069'>74,33</span></div>
+<div style='position:absolute;left:522.06px;top:200.71px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310034600") %></span></div>
+<div style='position:absolute;left:584.46px;top:200.71px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310034610") %></span></div>
 <div style='position:absolute;left:155.02px;top:217.57px' class='cls_065'><span class='cls_065'>13100120..</span></div>
 <div style='position:absolute;left:208.88px;top:217.57px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК снегозащитная</span></div>
 <div style='position:absolute;left:397.82px;top:217.57px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:452.58px;top:217.57px' class='cls_065'><span class='cls_065'>120</span></div>
 <div style='position:absolute;left:483.09px;top:217.57px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:216.20px' class='cls_069'><span class='cls_069'>74,33</span></div>
-<div style='position:absolute;left:584.46px;top:216.20px' class='cls_069'><span class='cls_069'>81,51</span></div>
+<div style='position:absolute;left:522.06px;top:216.20px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310012000") %></span></div>
+<div style='position:absolute;left:584.46px;top:216.20px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310012010") %></span></div>
 <div style='position:absolute;left:155.02px;top:232.33px' class='cls_065'><span class='cls_065'>13100110..</span></div>
 <div style='position:absolute;left:208.88px;top:232.72px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК вентиляционная</span></div>
 <div style='position:absolute;left:397.82px;top:232.33px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:452.58px;top:232.33px' class='cls_065'><span class='cls_065'>216</span></div>
 <div style='position:absolute;left:483.09px;top:232.11px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:231.44px' class='cls_069'><span class='cls_069'>115,85</span></div>
-<div style='position:absolute;left:584.46px;top:231.44px' class='cls_069'><span class='cls_069'>126,62</span></div>
+<div style='position:absolute;left:522.06px;top:231.44px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011000") %></span></div>
+<div style='position:absolute;left:584.46px;top:231.44px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011010") %></span></div>
 <div style='position:absolute;left:208.88px;top:244.40px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК вентиляционная</span></div>
 <div style='position:absolute;left:155.02px;top:248.93px' class='cls_065'><span class='cls_065'>13100113..</span></div>
 <div style='position:absolute;left:397.82px;top:248.93px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:452.41px;top:248.91px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:248.14px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:247.61px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:247.61px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:247.61px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011300") %></span></div>
+<div style='position:absolute;left:584.46px;top:247.61px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011310") %></span></div>
 <div style='position:absolute;left:208.88px;top:251.78px' class='cls_065'><span class='cls_065'>боковая левая, двойное покрытие</span></div>
 <div style='position:absolute;left:208.88px;top:262.10px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК вентиляционная</span></div>
 <div style='position:absolute;left:155.02px;top:266.45px' class='cls_065'><span class='cls_065'>13100114..</span></div>
 <div style='position:absolute;left:397.82px;top:266.45px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:452.41px;top:266.43px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:265.84px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:265.13px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:265.13px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:265.13px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011400") %></span></div>
+<div style='position:absolute;left:584.46px;top:265.13px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011410") %></span></div>
 <div style='position:absolute;left:208.88px;top:269.48px' class='cls_065'><span class='cls_065'>боковая правая, двойное покрытие</span></div>
 <div style='position:absolute;left:208.88px;top:279.07px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК вентиляционная</span></div>
 <div style='position:absolute;left:155.02px;top:283.04px' class='cls_065'><span class='cls_065'>13100117..</span></div>
 <div style='position:absolute;left:397.82px;top:283.04px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:452.41px;top:283.95px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:282.81px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:282.65px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:282.65px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:282.65px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011700") %></span></div>
+<div style='position:absolute;left:584.46px;top:282.65px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011710") %></span></div>
 <div style='position:absolute;left:208.88px;top:286.45px' class='cls_065'><span class='cls_065'>боковая левая, корончатое покрытие</span></div>
 <div style='position:absolute;left:208.88px;top:296.77px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК вентиляционная</span></div>
 <div style='position:absolute;left:35.22px;top:301.71px' class='cls_062'><span class='cls_062'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_063'><sup>2</sup></span></div>
@@ -1189,8 +1190,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.82px;top:300.56px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:452.41px;top:301.47px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:483.09px;top:300.51px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:300.17px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:300.17px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:300.17px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011800") %></span></div>
+<div style='position:absolute;left:584.46px;top:300.17px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310011810") %></span></div>
 <div style='position:absolute;left:208.88px;top:304.15px' class='cls_065'><span class='cls_065'>боковая правая, корончатое покрытие</span></div>
 <div style='position:absolute;left:34.52px;top:318.12px' class='cls_061'><span class='cls_061'>Бобровка сегментная</span></div>
 <div style='position:absolute;left:640.82px;top:336.91px' class='cls_065'><span class='cls_065'>ГРН / шт</span></div>
@@ -1214,74 +1215,74 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:393.11px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:393.11px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:393.56px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:392.14px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:392.14px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:392.14px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310030000") %></span></div>
+<div style='position:absolute;left:584.46px;top:392.14px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310030010") %></span></div>
 <div style='position:absolute;left:154.32px;top:408.79px' class='cls_065'><span class='cls_065'>13100301..</span></div>
 <div style='position:absolute;left:208.17px;top:408.79px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная 3/4</span></div>
 <div style='position:absolute;left:397.18px;top:408.79px' class='cls_065'><span class='cls_065'>14,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:408.79px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:408.75px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:407.64px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:407.64px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:407.64px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310030100") %></span></div>
+<div style='position:absolute;left:584.46px;top:407.64px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310030110") %></span></div>
 <div style='position:absolute;left:154.32px;top:424.47px' class='cls_065'><span class='cls_065'>13100350..</span></div>
 <div style='position:absolute;left:208.17px;top:424.47px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная подконьковая</span></div>
 <div style='position:absolute;left:397.15px;top:424.47px' class='cls_065'><span class='cls_065'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:424.47px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:424.78px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:423.13px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:423.13px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:423.13px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310035000") %></span></div>
+<div style='position:absolute;left:584.46px;top:423.13px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310035010") %></span></div>
 <div style='position:absolute;left:154.32px;top:440.15px' class='cls_065'><span class='cls_065'>13100351..</span></div>
 <div style='position:absolute;left:208.17px;top:440.15px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная подконьковая 3/4</span></div>
 <div style='position:absolute;left:397.22px;top:440.15px' class='cls_065'><span class='cls_065'>14,0 x 28,0</span></div>
 <div style='position:absolute;left:451.56px;top:440.15px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:440.09px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:439.35px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:439.35px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:439.35px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310035100") %></span></div>
+<div style='position:absolute;left:584.46px;top:439.35px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310035110") %></span></div>
 <div style='position:absolute;left:154.32px;top:455.84px' class='cls_065'><span class='cls_065'>13105130..</span></div>
 <div style='position:absolute;left:208.17px;top:455.84px' class='cls_065'><span class='cls_065'>БОБРОВКА карнизная</span></div>
 <div style='position:absolute;left:397.15px;top:455.84px' class='cls_065'><span class='cls_065'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:455.84px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:455.45px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:455.03px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:584.46px;top:455.03px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:522.06px;top:455.03px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513000") %></span></div>
+<div style='position:absolute;left:584.46px;top:455.03px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513010") %></span></div>
 <div style='position:absolute;left:154.31px;top:471.88px' class='cls_065'><span class='cls_065'>13100320.</span></div>
 <div style='position:absolute;left:208.17px;top:471.96px' class='cls_070'><span class='cls_070'>БОБРОВКА</span></div>
 <div style='position:absolute;left:252.63px;top:471.97px' class='cls_071'><span class='cls_071'>сегментная снегозащитная</span></div>
 <div style='position:absolute;left:397.11px;top:471.36px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:472.00px' class='cls_065'><span class='cls_065'>120</span></div>
 <div style='position:absolute;left:482.34px;top:472.36px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:470.20px' class='cls_069'><span class='cls_069'>74,33</span></div>
-<div style='position:absolute;left:584.46px;top:470.20px' class='cls_069'><span class='cls_069'>81,51</span></div>
+<div style='position:absolute;left:522.06px;top:470.20px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310032000") %></span></div>
+<div style='position:absolute;left:584.46px;top:470.20px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310032010") %></span></div>
 <div style='position:absolute;left:154.28px;top:486.58px' class='cls_065'><span class='cls_065'>13100310..</span></div>
 <div style='position:absolute;left:208.13px;top:486.97px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная вентиляционная</span></div>
 <div style='position:absolute;left:397.07px;top:486.58px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.83px;top:486.58px' class='cls_065'><span class='cls_065'>216</span></div>
 <div style='position:absolute;left:482.34px;top:486.36px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:485.69px' class='cls_069'><span class='cls_069'>115,85</span></div>
-<div style='position:absolute;left:583.71px;top:485.69px' class='cls_069'><span class='cls_069'>126,62</span></div>
+<div style='position:absolute;left:521.31px;top:485.69px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031000") %></span></div>
+<div style='position:absolute;left:583.71px;top:485.69px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031010") %></span></div>
 <div style='position:absolute;left:208.13px;top:498.65px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:503.18px' class='cls_065'><span class='cls_065'>13100313..</span></div>
 <div style='position:absolute;left:397.07px;top:503.18px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:503.16px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:502.39px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:501.86px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:501.86px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:501.86px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031300") %></span></div>
+<div style='position:absolute;left:583.71px;top:501.86px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031310") %></span></div>
 <div style='position:absolute;left:208.13px;top:506.03px' class='cls_065'><span class='cls_065'>боковая левая, двойное покрытие</span></div>
 <div style='position:absolute;left:208.13px;top:516.35px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:520.70px' class='cls_065'><span class='cls_065'>13100314..</span></div>
 <div style='position:absolute;left:397.07px;top:520.70px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:520.68px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:520.09px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:519.38px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:519.38px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:519.38px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031400") %></span></div>
+<div style='position:absolute;left:583.71px;top:519.38px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031410") %></span></div>
 <div style='position:absolute;left:208.13px;top:523.73px' class='cls_065'><span class='cls_065'>боковая правая, двойное покрытие</span></div>
 <div style='position:absolute;left:208.13px;top:533.32px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:537.29px' class='cls_065'><span class='cls_065'>13100317..</span></div>
 <div style='position:absolute;left:397.07px;top:537.29px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:538.20px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:537.05px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:536.90px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:536.90px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:536.90px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031700") %></span></div>
+<div style='position:absolute;left:583.71px;top:536.90px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031710") %></span></div>
 <div style='position:absolute;left:208.13px;top:540.70px' class='cls_065'><span class='cls_065'>боковая левая, корончатое покрытие</span></div>
 <div style='position:absolute;left:208.13px;top:551.02px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная вентиляционная</span></div>
 <div style='position:absolute;left:34.52px;top:555.65px' class='cls_062'><span class='cls_062'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_063'><sup>2</sup></span></div>
@@ -1289,8 +1290,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.07px;top:554.81px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:555.72px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:554.76px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:554.42px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:554.42px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:554.42px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031800") %></span></div>
+<div style='position:absolute;left:583.71px;top:554.42px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031810") %></span></div>
 <div style='position:absolute;left:208.13px;top:558.40px' class='cls_065'><span class='cls_065'>боковая правая, корончатое покрытие</span></div>
 <div style='position:absolute;left:802.86px;top:570.82px' class='cls_007'><span class='cls_007'>10</span></div>
 </div><div style='position:absolute;left:50%;margin-left:-420px;top:6050px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -1318,59 +1319,59 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:127.57px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:127.57px' class='cls_073'><span class='cls_073'>420</span></div>
 <div style='position:absolute;left:482.34px;top:127.85px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:126.46px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:126.46px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:126.46px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310510000") %></span></div>
+<div style='position:absolute;left:583.71px;top:126.46px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310510010") %></span></div>
 <div style='position:absolute;left:154.32px;top:144.22px' class='cls_073'><span class='cls_073'>13105150..</span></div>
 <div style='position:absolute;left:208.17px;top:144.22px' class='cls_073'><span class='cls_073'>Б. ВЕНСКАЯ ПК подконьковая</span></div>
 <div style='position:absolute;left:397.15px;top:144.22px' class='cls_073'><span class='cls_073'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:144.22px' class='cls_073'><span class='cls_073'>420</span></div>
 <div style='position:absolute;left:482.34px;top:144.16px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:141.66px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:141.66px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:141.66px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310515000") %></span></div>
+<div style='position:absolute;left:583.71px;top:141.66px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310515010") %></span></div>
 <div style='position:absolute;left:154.32px;top:160.22px' class='cls_073'><span class='cls_073'>13105130..</span></div>
 <div style='position:absolute;left:208.17px;top:160.22px' class='cls_073'><span class='cls_073'>Б. ВЕНСКАЯ карнизная</span></div>
 <div style='position:absolute;left:397.15px;top:160.22px' class='cls_073'><span class='cls_073'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:160.22px' class='cls_073'><span class='cls_073'>420</span></div>
 <div style='position:absolute;left:482.34px;top:160.58px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:158.46px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:158.46px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:158.46px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513000") %></span></div>
+<div style='position:absolute;left:583.71px;top:158.46px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513010") %></span></div>
 <div style='position:absolute;left:154.32px;top:176.94px' class='cls_073'><span class='cls_073'>13100320..</span></div>
 <div style='position:absolute;left:208.17px;top:176.94px' class='cls_073'><span class='cls_073'>БОБРОВКА сегментная снегозащитная</span></div>
 <div style='position:absolute;left:397.22px;top:176.94px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:176.94px' class='cls_073'><span class='cls_073'>120</span></div>
 <div style='position:absolute;left:482.34px;top:176.85px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:175.80px' class='cls_069'><span class='cls_069'>74,33</span></div>
-<div style='position:absolute;left:584.46px;top:175.80px' class='cls_069'><span class='cls_069'>81,51</span></div>
+<div style='position:absolute;left:522.06px;top:175.80px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310032000") %></span></div>
+<div style='position:absolute;left:584.46px;top:175.80px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310032010") %></span></div>
 <div style='position:absolute;left:154.32px;top:192.94px' class='cls_073'><span class='cls_073'>13100310..</span></div>
 <div style='position:absolute;left:208.17px;top:192.94px' class='cls_073'><span class='cls_073'>БОБРОВКА сегментная вентиляционная</span></div>
 <div style='position:absolute;left:397.22px;top:192.94px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:192.94px' class='cls_073'><span class='cls_073'>216</span></div>
 <div style='position:absolute;left:482.34px;top:193.16px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:191.29px' class='cls_069'><span class='cls_069'>115,85</span></div>
-<div style='position:absolute;left:583.71px;top:191.29px' class='cls_069'><span class='cls_069'>126,62</span></div>
+<div style='position:absolute;left:521.31px;top:191.29px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031000") %></span></div>
+<div style='position:absolute;left:583.71px;top:191.29px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031010") %></span></div>
 <div style='position:absolute;left:208.13px;top:204.85px' class='cls_065'><span class='cls_065'>Б. ВЕНСКАЯ ПК вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:209.38px' class='cls_065'><span class='cls_065'>13105113..</span></div>
 <div style='position:absolute;left:208.13px;top:212.23px' class='cls_065'><span class='cls_065'>боковая левая, двойное покрытие</span></div>
 <div style='position:absolute;left:397.07px;top:209.38px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:209.36px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:209.58px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:208.06px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:208.06px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:208.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310511300") %></span></div>
+<div style='position:absolute;left:583.71px;top:208.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310511310") %></span></div>
 <div style='position:absolute;left:208.13px;top:222.55px' class='cls_065'><span class='cls_065'>Б. ВЕНСКАЯ ПК вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:226.90px' class='cls_065'><span class='cls_065'>13105114..</span></div>
 <div style='position:absolute;left:397.07px;top:226.90px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:226.88px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:226.29px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:225.58px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:225.58px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:225.58px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310511400") %></span></div>
+<div style='position:absolute;left:583.71px;top:225.58px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310511410") %></span></div>
 <div style='position:absolute;left:208.13px;top:229.93px' class='cls_065'><span class='cls_065'>боковая правая, двойное покрытие</span></div>
 <div style='position:absolute;left:208.13px;top:239.52px' class='cls_065'><span class='cls_065'>Б. ВЕНСКАЯ ПК вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:243.49px' class='cls_065'><span class='cls_065'>13105107..</span></div>
 <div style='position:absolute;left:397.07px;top:243.49px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:244.40px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:243.25px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:243.10px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:243.10px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:243.10px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310510700") %></span></div>
+<div style='position:absolute;left:583.71px;top:243.10px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310510710") %></span></div>
 <div style='position:absolute;left:208.13px;top:246.90px' class='cls_065'><span class='cls_065'>боковая левая, корончатое покрытие</span></div>
 <div style='position:absolute;left:208.13px;top:257.22px' class='cls_065'><span class='cls_065'>Б. ВЕНСКАЯ ПК вентиляционная</span></div>
 <div style='position:absolute;left:35.52px;top:260.21px' class='cls_079'><span class='cls_079'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_077'><sup>2</sup></span></div>
@@ -1378,8 +1379,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.07px;top:261.01px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:261.92px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:260.96px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:260.62px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:260.62px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:260.62px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310510800") %></span></div>
+<div style='position:absolute;left:583.71px;top:260.62px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310510810") %></span></div>
 <div style='position:absolute;left:208.13px;top:264.60px' class='cls_065'><span class='cls_065'>боковая правая, корончатое покрытие</span></div>
 <div style='position:absolute;left:34.52px;top:318.50px' class='cls_072'><span class='cls_072'>Бобровка Венская ЗК</span></div>
 <div style='position:absolute;left:640.82px;top:337.93px' class='cls_073'><span class='cls_073'>ГРН / шт</span></div>
@@ -1403,59 +1404,59 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:396.43px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:396.43px' class='cls_073'><span class='cls_073'>420</span></div>
 <div style='position:absolute;left:482.34px;top:396.78px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:395.46px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:395.46px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:395.46px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310530000") %></span></div>
+<div style='position:absolute;left:583.71px;top:395.46px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310530010") %></span></div>
 <div style='position:absolute;left:154.32px;top:413.09px' class='cls_073'><span class='cls_073'>13105350..</span></div>
 <div style='position:absolute;left:208.17px;top:413.09px' class='cls_073'><span class='cls_073'>Б. ВЕНСКАЯ ЗК подконьковая</span></div>
 <div style='position:absolute;left:397.15px;top:413.09px' class='cls_073'><span class='cls_073'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:413.09px' class='cls_073'><span class='cls_073'>420</span></div>
 <div style='position:absolute;left:482.34px;top:412.78px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:410.66px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:410.66px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:410.66px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310535000") %></span></div>
+<div style='position:absolute;left:583.71px;top:410.66px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310535010") %></span></div>
 <div style='position:absolute;left:154.32px;top:428.94px' class='cls_073'><span class='cls_073'>13105130..</span></div>
 <div style='position:absolute;left:208.17px;top:428.94px' class='cls_073'><span class='cls_073'>Б. ВЕНСКАЯ карнизная</span></div>
 <div style='position:absolute;left:397.15px;top:428.94px' class='cls_073'><span class='cls_073'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:428.94px' class='cls_073'><span class='cls_073'>420</span></div>
 <div style='position:absolute;left:482.34px;top:428.89px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:427.46px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:427.46px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:427.46px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513000") %></span></div>
+<div style='position:absolute;left:583.71px;top:427.46px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513010") %></span></div>
 <div style='position:absolute;left:154.32px;top:444.94px' class='cls_073'><span class='cls_073'>13100320..</span></div>
 <div style='position:absolute;left:208.17px;top:444.94px' class='cls_073'><span class='cls_073'>БОБРОВКА сегментная снегозащитная</span></div>
 <div style='position:absolute;left:397.22px;top:444.94px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:444.94px' class='cls_073'><span class='cls_073'>120</span></div>
 <div style='position:absolute;left:482.34px;top:445.85px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:522.06px;top:443.80px' class='cls_069'><span class='cls_069'>74,33</span></div>
-<div style='position:absolute;left:584.46px;top:443.80px' class='cls_069'><span class='cls_069'>81,51</span></div>
+<div style='position:absolute;left:522.06px;top:443.80px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310032000") %></span></div>
+<div style='position:absolute;left:584.46px;top:443.80px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310032010") %></span></div>
 <div style='position:absolute;left:154.32px;top:460.94px' class='cls_073'><span class='cls_073'>13100310..</span></div>
 <div style='position:absolute;left:208.17px;top:460.94px' class='cls_073'><span class='cls_073'>БОБРОВКА сегментная вентиляционная</span></div>
 <div style='position:absolute;left:397.22px;top:460.94px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:460.94px' class='cls_073'><span class='cls_073'>216</span></div>
 <div style='position:absolute;left:482.34px;top:461.16px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:459.29px' class='cls_069'><span class='cls_069'>115,85</span></div>
-<div style='position:absolute;left:583.71px;top:459.29px' class='cls_069'><span class='cls_069'>126,62</span></div>
+<div style='position:absolute;left:521.31px;top:459.29px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031000") %></span></div>
+<div style='position:absolute;left:583.71px;top:459.29px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031010") %></span></div>
 <div style='position:absolute;left:208.13px;top:473.85px' class='cls_065'><span class='cls_065'>Б. ВЕНСКАЯ ЗК вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:478.38px' class='cls_065'><span class='cls_065'>13105313..</span></div>
 <div style='position:absolute;left:208.13px;top:481.23px' class='cls_065'><span class='cls_065'>боковая левая, двойное покрытие</span></div>
 <div style='position:absolute;left:397.07px;top:478.38px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:478.36px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:478.58px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:477.06px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:477.06px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:477.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310531300") %></span></div>
+<div style='position:absolute;left:583.71px;top:477.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310531310") %></span></div>
 <div style='position:absolute;left:208.13px;top:491.55px' class='cls_065'><span class='cls_065'>Б. ВЕНСКАЯ ЗК вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:495.90px' class='cls_065'><span class='cls_065'>13105314..</span></div>
 <div style='position:absolute;left:397.07px;top:495.90px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:495.88px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:495.29px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:494.58px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:494.58px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:494.58px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310531400") %></span></div>
+<div style='position:absolute;left:583.71px;top:494.58px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310531410") %></span></div>
 <div style='position:absolute;left:208.13px;top:498.93px' class='cls_065'><span class='cls_065'>боковая правая, двойное покрытие</span></div>
 <div style='position:absolute;left:208.13px;top:508.52px' class='cls_065'><span class='cls_065'>Б. ВЕНСКАЯ ЗК вентиляционная</span></div>
 <div style='position:absolute;left:154.28px;top:512.49px' class='cls_065'><span class='cls_065'>13105307..</span></div>
 <div style='position:absolute;left:397.07px;top:512.49px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:513.40px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:512.26px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:512.10px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:512.10px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:512.10px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310530700") %></span></div>
+<div style='position:absolute;left:583.71px;top:512.10px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310530710") %></span></div>
 <div style='position:absolute;left:208.13px;top:515.90px' class='cls_065'><span class='cls_065'>боковая левая, корончатое покрытие</span></div>
 <div style='position:absolute;left:208.13px;top:526.22px' class='cls_065'><span class='cls_065'>Б. ВЕНСКАЯ ЗК вентиляционная</span></div>
 <div style='position:absolute;left:34.52px;top:527.99px' class='cls_079'><span class='cls_079'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_077'><sup>2</sup></span></div>
@@ -1463,8 +1464,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.07px;top:530.01px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:530.92px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:529.96px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:521.31px;top:529.62px' class='cls_069'><span class='cls_069'>19,74</span></div>
-<div style='position:absolute;left:583.71px;top:529.62px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:521.31px;top:529.62px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310530800") %></span></div>
+<div style='position:absolute;left:583.71px;top:529.62px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310530810") %></span></div>
 <div style='position:absolute;left:208.13px;top:533.60px' class='cls_065'><span class='cls_065'>боковая правая, корончатое покрытие</span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>11</span></div>
 </div><div style='position:absolute;left:50%;margin-left:-420px;top:6655px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -1491,56 +1492,56 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.77px;top:130.65px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.62px;top:130.65px' class='cls_013'><span class='cls_013'>140</span></div>
 <div style='position:absolute;left:482.34px;top:131.16px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:129.06px' class='cls_069'><span class='cls_069'>35,63</span></div>
+<div style='position:absolute;left:583.71px;top:129.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310590019") %></span></div>
 <div style='position:absolute;left:154.32px;top:147.65px' class='cls_013'><span class='cls_013'>1310760007</span></div>
 <div style='position:absolute;left:208.21px;top:148.06px' class='cls_041'><span class='cls_041'>Староградская Чорнои ПК рядовая дымчастый антик</span></div>
 <div style='position:absolute;left:396.77px;top:147.65px' class='cls_013'><span class='cls_013'>19,0 x 42,0</span></div>
 <div style='position:absolute;left:451.62px;top:147.65px' class='cls_013'><span class='cls_013'>140</span></div>
 <div style='position:absolute;left:482.34px;top:148.49px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:146.06px' class='cls_069'><span class='cls_069'>35,63</span></div>
+<div style='position:absolute;left:583.71px;top:146.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310760007") %></span></div>
 <div style='position:absolute;left:154.32px;top:164.66px' class='cls_013'><span class='cls_013'>1310740009</span></div>
 <div style='position:absolute;left:208.21px;top:165.06px' class='cls_041'><span class='cls_041'>Староградская Чорнои ПК рядовая тёмный антик</span></div>
 <div style='position:absolute;left:396.77px;top:164.66px' class='cls_013'><span class='cls_013'>19,0 x 44,0</span></div>
 <div style='position:absolute;left:451.62px;top:164.66px' class='cls_013'><span class='cls_013'>140</span></div>
 <div style='position:absolute;left:482.34px;top:165.16px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:163.06px' class='cls_069'><span class='cls_069'>35,63</span></div>
+<div style='position:absolute;left:583.71px;top:163.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310740009") %></span></div>
 <div style='position:absolute;left:154.32px;top:181.08px' class='cls_013'><span class='cls_013'>1310513019</span></div>
 <div style='position:absolute;left:208.18px;top:181.08px' class='cls_013'><span class='cls_013'>Бобровка карнизная</span></div>
 <div style='position:absolute;left:396.77px;top:181.08px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:450.83px;top:181.08px' class='cls_013'><span class='cls_013'>120</span></div>
 <div style='position:absolute;left:482.34px;top:181.83px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:180.06px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:583.71px;top:180.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310513019") %></span></div>
 <div style='position:absolute;left:154.32px;top:198.64px' class='cls_013'><span class='cls_013'>1310595019</span></div>
 <div style='position:absolute;left:208.22px;top:199.13px' class='cls_080'><span class='cls_080'>Староградская Чорнои ПК подконьковая антик</span></div>
 <div style='position:absolute;left:396.77px;top:198.68px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:450.82px;top:198.68px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:482.34px;top:199.16px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:197.06px' class='cls_069'><span class='cls_069'>0</span></div>
+<div style='position:absolute;left:583.71px;top:197.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310595019") %></span></div>
 <div style='position:absolute;left:154.32px;top:216.24px' class='cls_013'><span class='cls_013'>1310595019</span></div>
 <div style='position:absolute;left:208.22px;top:216.73px' class='cls_080'><span class='cls_080'>Староградская Чорнои ПК подконьковая тёмный антик</span></div>
 <div style='position:absolute;left:396.77px;top:215.48px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:450.82px;top:215.48px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:482.34px;top:215.82px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:214.06px' class='cls_069'><span class='cls_069'>0</span></div>
+<div style='position:absolute;left:583.71px;top:214.06px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310595019") %></span></div>
 <div style='position:absolute;left:154.24px;top:232.55px' class='cls_082'><span class='cls_082'>1310031019</span></div>
 <div style='position:absolute;left:208.17px;top:232.94px' class='cls_073'><span class='cls_073'>Бобровка сегментная вентиляционная</span></div>
 <div style='position:absolute;left:397.22px;top:232.94px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:232.94px' class='cls_073'><span class='cls_073'>216</span></div>
 <div style='position:absolute;left:482.34px;top:233.16px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:231.29px' class='cls_069'><span class='cls_069'>126,62</span></div>
+<div style='position:absolute;left:583.71px;top:231.29px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310031019") %></span></div>
 <div style='position:absolute;left:208.13px;top:246.85px' class='cls_065'><span class='cls_065'>Б. Венская ПК вентиляционная</span></div>
 <div style='position:absolute;left:154.20px;top:251.00px' class='cls_081'><span class='cls_081'>1310511319</span></div>
 <div style='position:absolute;left:397.07px;top:251.38px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:251.36px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:251.58px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:249.07px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:583.71px;top:249.07px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310511319") %></span></div>
 <div style='position:absolute;left:208.13px;top:254.23px' class='cls_065'><span class='cls_065'>боковая левая, двойное покрытие</span></div>
 <div style='position:absolute;left:208.13px;top:266.55px' class='cls_065'><span class='cls_065'>Б. Венская ПК вентиляционная</span></div>
 <div style='position:absolute;left:154.20px;top:270.52px' class='cls_081'><span class='cls_081'>1310511419</span></div>
 <div style='position:absolute;left:397.07px;top:270.90px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.66px;top:270.88px' class='cls_065'><span class='cls_065'>420</span></div>
 <div style='position:absolute;left:482.34px;top:270.29px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:269.58px' class='cls_069'><span class='cls_069'>21,02</span></div>
+<div style='position:absolute;left:583.71px;top:269.58px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310511419") %></span></div>
 <div style='position:absolute;left:208.13px;top:273.93px' class='cls_065'><span class='cls_065'>боковая правая, двойное покрытие</span></div>
 <div style='position:absolute;left:34.52px;top:288.69px' class='cls_056'><span class='cls_056'>Расход: 30,2 - 33,1 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:289.96px' class='cls_013'><span class='cls_013'>1310034619</span></div>
@@ -1548,7 +1549,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:401.57px;top:289.96px' class='cls_013'><span class='cls_013'>9,5 x 38,0</span></div>
 <div style='position:absolute;left:451.63px;top:289.96px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:482.34px;top:289.62px' class='cls_065'><span class='cls_065'>CN</span></div>
-<div style='position:absolute;left:583.71px;top:287.29px' class='cls_069'><span class='cls_069'>74,33</span></div>
+<div style='position:absolute;left:583.71px;top:287.29px' class='cls_069'><span class='cls_069'><%= ua.aits.tondach.model.GoodsModel.getPrice("1310034619") %></span></div>
 <div style='position:absolute;left:34.52px;top:309.27px' class='cls_037'><span class='cls_037'>Фальцевая Бобровка ПК</span></div>
 <div style='position:absolute;left:640.82px;top:329.36px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
 <div style='position:absolute;left:442.18px;top:335.15px' class='cls_053'><span class='cls_053'>Колличе-</span></div>
@@ -1571,23 +1572,23 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.95px;top:391.38px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:391.38px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:482.38px;top:390.38px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.69px;top:389.57px' class='cls_059'><span class='cls_059'>22,56</span></div>
-<div style='position:absolute;left:581.49px;top:389.57px' class='cls_059'><span class='cls_059'>24,09</span></div>
+<div style='position:absolute;left:520.69px;top:389.57px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311100000") %></span></div>
+<div style='position:absolute;left:581.49px;top:389.57px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311100010") %></span></div>
 <div style='position:absolute;left:154.13px;top:406.61px' class='cls_083'><span class='cls_083'>13111001..</span></div>
 <div style='position:absolute;left:208.17px;top:407.32px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА ПК половинчатая</span></div>
 <div style='position:absolute;left:398.06px;top:408.39px' class='cls_013'><span class='cls_013'>12,0 x 37,5</span></div>
 <div style='position:absolute;left:451.51px;top:408.39px' class='cls_013'><span class='cls_013'>600</span></div>
 <div style='position:absolute;left:482.38px;top:407.98px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.69px;top:406.24px' class='cls_059'><span class='cls_059'>35,63</span></div>
-<div style='position:absolute;left:581.49px;top:406.24px' class='cls_059'><span class='cls_059'>39,22</span></div>
+<div style='position:absolute;left:520.69px;top:406.24px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311100100") %></span></div>
+<div style='position:absolute;left:581.49px;top:406.24px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311100110") %></span></div>
 <div style='position:absolute;left:34.52px;top:424.47px' class='cls_056'><span class='cls_056'>Расход: 17,0 - 20,5 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:424.15px' class='cls_013'><span class='cls_013'>13110010..</span></div>
 <div style='position:absolute;left:208.17px;top:424.15px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА ПК вентиляционная</span></div>
 <div style='position:absolute;left:396.90px;top:425.22px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.75px;top:425.22px' class='cls_013'><span class='cls_013'>180</span></div>
 <div style='position:absolute;left:482.38px;top:424.78px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.69px;top:422.77px' class='cls_059'><span class='cls_059'>115,85</span></div>
-<div style='position:absolute;left:581.49px;top:422.77px' class='cls_059'><span class='cls_059'>126,62</span></div>
+<div style='position:absolute;left:520.69px;top:422.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311001000") %></span></div>
+<div style='position:absolute;left:581.49px;top:422.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311001010") %></span></div>
 <div style='position:absolute;left:34.52px;top:441.94px' class='cls_037'><span class='cls_037'>Фальцевая Бобровка ОК</span></div>
 <div style='position:absolute;left:640.82px;top:462.03px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
 <div style='position:absolute;left:442.18px;top:467.82px' class='cls_053'><span class='cls_053'>Колличе-</span></div>
@@ -1610,23 +1611,23 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.95px;top:522.98px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:522.98px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:482.38px;top:522.78px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.69px;top:521.97px' class='cls_059'><span class='cls_059'>22,56</span></div>
-<div style='position:absolute;left:581.49px;top:521.97px' class='cls_059'><span class='cls_059'>24,09</span></div>
+<div style='position:absolute;left:520.69px;top:521.97px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311000000") %></span></div>
+<div style='position:absolute;left:581.49px;top:521.97px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311000010") %></span></div>
 <div style='position:absolute;left:154.32px;top:539.98px' class='cls_013'><span class='cls_013'>13110001..</span></div>
 <div style='position:absolute;left:208.17px;top:539.98px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА ОК половинчатая</span></div>
 <div style='position:absolute;left:398.06px;top:539.98px' class='cls_013'><span class='cls_013'>12,0 x 37,5</span></div>
 <div style='position:absolute;left:451.51px;top:539.98px' class='cls_013'><span class='cls_013'>600</span></div>
 <div style='position:absolute;left:482.38px;top:540.38px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.69px;top:538.63px' class='cls_059'><span class='cls_059'>35,63</span></div>
-<div style='position:absolute;left:581.49px;top:538.63px' class='cls_059'><span class='cls_059'>39,22</span></div>
+<div style='position:absolute;left:520.69px;top:538.63px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311000100") %></span></div>
+<div style='position:absolute;left:581.49px;top:538.63px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311000110") %></span></div>
 <div style='position:absolute;left:34.52px;top:557.14px' class='cls_056'><span class='cls_056'>Расход: 18,0 - 21,5 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:556.82px' class='cls_013'><span class='cls_013'>13110010..</span></div>
 <div style='position:absolute;left:208.17px;top:556.82px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА ОК вентиляционная</span></div>
 <div style='position:absolute;left:396.90px;top:556.82px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.75px;top:556.82px' class='cls_013'><span class='cls_013'>180</span></div>
 <div style='position:absolute;left:482.38px;top:557.18px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.69px;top:555.17px' class='cls_059'><span class='cls_059'>115,85</span></div>
-<div style='position:absolute;left:581.49px;top:555.17px' class='cls_059'><span class='cls_059'>126,62</span></div>
+<div style='position:absolute;left:520.69px;top:555.17px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311001000") %></span></div>
+<div style='position:absolute;left:581.49px;top:555.17px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311001010") %></span></div>
 <div style='position:absolute;left:802.86px;top:570.16px' class='cls_007'><span class='cls_007'>12</span></div>
 </div>
                     <div style='position:absolute;left:50%;margin-left:-420px;top:7260px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -1659,41 +1660,41 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.84px;top:145.32px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:451.60px;top:145.32px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.24px;top:145.32px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.53px;top:143.67px' class='cls_059'><span class='cls_059'>41,52</span></div>
-<div style='position:absolute;left:568.36px;top:143.67px' class='cls_059'><span class='cls_059'>45,11</span></div>
-<div style='position:absolute;left:609.69px;top:143.67px' class='cls_059'><span class='cls_059'>51,78</span></div>
+<div style='position:absolute;left:520.53px;top:143.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612750081") %></span></div>
+<div style='position:absolute;left:568.36px;top:143.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612750012") %></span></div>
+<div style='position:absolute;left:609.69px;top:143.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612750040") %></span></div>
 <div style='position:absolute;left:154.32px;top:162.32px' class='cls_013'><span class='cls_013'>16127540..</span></div>
 <div style='position:absolute;left:208.17px;top:162.32px' class='cls_013'><span class='cls_013'>БОЛЕРО боковая левая</span></div>
 <div style='position:absolute;left:396.84px;top:162.32px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.93px;top:162.32px' class='cls_013'><span class='cls_013'>72</span></div>
 <div style='position:absolute;left:485.24px;top:162.32px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:515.19px;top:160.67px' class='cls_059'><span class='cls_059'>193,52</span></div>
-<div style='position:absolute;left:565.02px;top:160.67px' class='cls_059'><span class='cls_059'>203,00</span></div>
-<div style='position:absolute;left:607.03px;top:160.67px' class='cls_059'><span class='cls_059'>203,00</span></div>
+<div style='position:absolute;left:515.19px;top:160.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612754081") %></span></div>
+<div style='position:absolute;left:565.02px;top:160.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612754012") %></span></div>
+<div style='position:absolute;left:607.03px;top:160.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612754040") %></span></div>
 <div style='position:absolute;left:154.31px;top:179.33px' class='cls_013'><span class='cls_013'>16127541..</span></div>
 <div style='position:absolute;left:208.17px;top:179.33px' class='cls_013'><span class='cls_013'>БОЛЕРО боковая правая</span></div>
 <div style='position:absolute;left:396.84px;top:179.33px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.78px;top:179.33px' class='cls_013'><span class='cls_013'>64</span></div>
 <div style='position:absolute;left:485.24px;top:179.33px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:515.19px;top:177.34px' class='cls_059'><span class='cls_059'>193,52</span></div>
-<div style='position:absolute;left:565.02px;top:177.34px' class='cls_059'><span class='cls_059'>203,00</span></div>
-<div style='position:absolute;left:607.03px;top:177.34px' class='cls_059'><span class='cls_059'>203,00</span></div>
+<div style='position:absolute;left:515.19px;top:177.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612754181") %></span></div>
+<div style='position:absolute;left:565.02px;top:177.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612754112") %></span></div>
+<div style='position:absolute;left:607.03px;top:177.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612754140") %></span></div>
 <div style='position:absolute;left:154.31px;top:196.34px' class='cls_013'><span class='cls_013'>16127510..</span></div>
 <div style='position:absolute;left:208.17px;top:196.34px' class='cls_013'><span class='cls_013'>БОЛЕРО вентиляционная</span></div>
 <div style='position:absolute;left:396.84px;top:196.34px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:451.91px;top:196.34px' class='cls_013'><span class='cls_013'>128</span></div>
 <div style='position:absolute;left:485.24px;top:196.34px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.53px;top:194.67px' class='cls_059'><span class='cls_059'>152,76</span></div>
-<div style='position:absolute;left:565.02px;top:194.67px' class='cls_059'><span class='cls_059'>165,32</span></div>
-<div style='position:absolute;left:607.03px;top:194.67px' class='cls_059'><span class='cls_059'>165,32</span></div>
+<div style='position:absolute;left:520.53px;top:194.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612751081") %></span></div>
+<div style='position:absolute;left:565.02px;top:194.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612751012") %></span></div>
+<div style='position:absolute;left:607.03px;top:194.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612751040") %></span></div>
 <div style='position:absolute;left:154.31px;top:213.35px' class='cls_013'><span class='cls_013'>16127520..</span></div>
 <div style='position:absolute;left:208.17px;top:213.35px' class='cls_013'><span class='cls_013'>БОЛЕРО снегозащитная</span></div>
 <div style='position:absolute;left:396.84px;top:213.35px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
 <div style='position:absolute;left:453.77px;top:213.35px' class='cls_013'><span class='cls_013'>80</span></div>
 <div style='position:absolute;left:485.24px;top:213.35px' class='cls_013'><span class='cls_013'>C</span></div>
-<div style='position:absolute;left:520.53px;top:210.67px' class='cls_059'><span class='cls_059'>88,17</span></div>
-<div style='position:absolute;left:567.03px;top:210.67px' class='cls_059'><span class='cls_059'>112,78</span></div>
-<div style='position:absolute;left:609.03px;top:210.67px' class='cls_059'><span class='cls_059'>112,78</span></div>
+<div style='position:absolute;left:520.53px;top:210.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612752081") %></span></div>
+<div style='position:absolute;left:567.03px;top:210.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612752012") %></span></div>
+<div style='position:absolute;left:609.03px;top:210.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1612752040") %></span></div>
 <div style='position:absolute;left:34.52px;top:230.41px' class='cls_056'><span class='cls_056'>Расход: 8,8 - 9,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:34.52px;top:260.58px' class='cls_037'><span class='cls_037'>Романская</span></div>
 <div style='position:absolute;left:640.82px;top:280.67px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
@@ -1725,70 +1726,70 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.84px;top:337.38px' class='cls_013'><span class='cls_013'>28,0 x 46,5</span></div>
 <div style='position:absolute;left:451.75px;top:337.38px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.24px;top:337.38px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:519.28px;top:336.03px' class='cls_059'><span class='cls_059'>56,13</span></div>
-<div style='position:absolute;left:569.83px;top:336.03px' class='cls_059'><span class='cls_059'>60,49</span></div>
-<div style='position:absolute;left:610.63px;top:336.03px' class='cls_059'><span class='cls_059'>60,49</span></div>
-<div style='position:absolute;left:649.78px;top:336.03px' class='cls_059'><span class='cls_059'>65,62</span></div>
-<div style='position:absolute;left:690.45px;top:336.03px' class='cls_059'><span class='cls_059'>65,62</span></div>
+<div style='position:absolute;left:519.28px;top:336.03px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112700000") %></span></div>
+<div style='position:absolute;left:569.83px;top:336.03px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112700013") %></span></div>
+<div style='position:absolute;left:610.63px;top:336.03px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112700010") %></span></div>
+<div style='position:absolute;left:649.78px;top:336.03px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112700070") %></span></div>
+<div style='position:absolute;left:690.45px;top:336.03px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112700071") %></span></div>
 <div style='position:absolute;left:154.32px;top:351.60px' class='cls_013'><span class='cls_013'>21127040..</span></div>
 <div style='position:absolute;left:208.17px;top:351.60px' class='cls_013'><span class='cls_013'>РОМАНСКАЯ боковая левая</span></div>
 <div style='position:absolute;left:397.14px;top:351.60px' class='cls_013'><span class='cls_013'>31,5 x 46,5</span></div>
 <div style='position:absolute;left:453.77px;top:351.60px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.24px;top:351.60px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:513.19px;top:349.67px' class='cls_059'><span class='cls_059'>301,43</span></div>
-<div style='position:absolute;left:563.73px;top:349.67px' class='cls_059'><span class='cls_059'>302,71</span></div>
-<div style='position:absolute;left:604.54px;top:349.67px' class='cls_059'><span class='cls_059'>302,71</span></div>
-<div style='position:absolute;left:643.69px;top:349.67px' class='cls_059'><span class='cls_059'>311,68</span></div>
-<div style='position:absolute;left:684.36px;top:349.67px' class='cls_059'><span class='cls_059'>311,68</span></div>
+<div style='position:absolute;left:513.19px;top:349.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704000") %></span></div>
+<div style='position:absolute;left:563.73px;top:349.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704013") %></span></div>
+<div style='position:absolute;left:604.54px;top:349.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704010") %></span></div>
+<div style='position:absolute;left:643.69px;top:349.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704070") %></span></div>
+<div style='position:absolute;left:684.36px;top:349.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704071") %></span></div>
 <div style='position:absolute;left:154.32px;top:365.82px' class='cls_013'><span class='cls_013'>21127041..</span></div>
 <div style='position:absolute;left:208.17px;top:365.82px' class='cls_013'><span class='cls_013'>РОМАНСКАЯ боковая правая</span></div>
 <div style='position:absolute;left:396.84px;top:365.82px' class='cls_013'><span class='cls_013'>28,0 x 46,5</span></div>
 <div style='position:absolute;left:453.77px;top:365.82px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.24px;top:365.82px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:513.19px;top:364.67px' class='cls_059'><span class='cls_059'>301,43</span></div>
-<div style='position:absolute;left:563.74px;top:364.67px' class='cls_059'><span class='cls_059'>302,71</span></div>
-<div style='position:absolute;left:604.54px;top:364.67px' class='cls_059'><span class='cls_059'>302,71</span></div>
-<div style='position:absolute;left:643.69px;top:364.67px' class='cls_059'><span class='cls_059'>311,68</span></div>
-<div style='position:absolute;left:684.36px;top:364.67px' class='cls_059'><span class='cls_059'>311,68</span></div>
+<div style='position:absolute;left:513.19px;top:364.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704100") %></span></div>
+<div style='position:absolute;left:563.74px;top:364.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704113") %></span></div>
+<div style='position:absolute;left:604.54px;top:364.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704110") %></span></div>
+<div style='position:absolute;left:643.69px;top:364.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704170") %></span></div>
+<div style='position:absolute;left:684.36px;top:364.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112704171") %></span></div>
 <div style='position:absolute;left:154.32px;top:380.03px' class='cls_013'><span class='cls_013'>21127050..</span></div>
 <div style='position:absolute;left:208.17px;top:380.03px' class='cls_013'><span class='cls_013'>РОМАНСКАЯ подконьковая</span></div>
 <div style='position:absolute;left:396.84px;top:380.03px' class='cls_013'><span class='cls_013'>28,0 x 46,5</span></div>
 <div style='position:absolute;left:451.87px;top:380.03px' class='cls_013'><span class='cls_013'>120</span></div>
 <div style='position:absolute;left:485.24px;top:380.03px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:519.28px;top:378.67px' class='cls_059'><span class='cls_059'>60,49</span></div>
-<div style='position:absolute;left:569.83px;top:378.67px' class='cls_059'><span class='cls_059'>64,08</span></div>
-<div style='position:absolute;left:610.63px;top:378.67px' class='cls_059'><span class='cls_059'>64,08</span></div>
-<div style='position:absolute;left:649.78px;top:378.67px' class='cls_059'><span class='cls_059'>71,26</span></div>
-<div style='position:absolute;left:690.45px;top:378.67px' class='cls_059'><span class='cls_059'>71,26</span></div>
+<div style='position:absolute;left:519.28px;top:378.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705000") %></span></div>
+<div style='position:absolute;left:569.83px;top:378.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705013") %></span></div>
+<div style='position:absolute;left:610.63px;top:378.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705010") %></span></div>
+<div style='position:absolute;left:649.78px;top:378.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705070") %></span></div>
+<div style='position:absolute;left:690.45px;top:378.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705071") %></span></div>
 <div style='position:absolute;left:154.32px;top:394.25px' class='cls_013'><span class='cls_013'>21127051..</span></div>
 <div style='position:absolute;left:208.17px;top:394.25px' class='cls_013'><span class='cls_013'>РОМАНСКАЯ подконьковая боковая левая</span></div>
 <div style='position:absolute;left:397.14px;top:394.25px' class='cls_013'><span class='cls_013'>31,5 x 46,5</span></div>
 <div style='position:absolute;left:485.24px;top:394.25px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:513.19px;top:392.67px' class='cls_059'><span class='cls_059'>301,43</span></div>
-<div style='position:absolute;left:563.74px;top:392.67px' class='cls_059'><span class='cls_059'>302,71</span></div>
-<div style='position:absolute;left:604.54px;top:392.67px' class='cls_059'><span class='cls_059'>302,71</span></div>
-<div style='position:absolute;left:643.69px;top:392.67px' class='cls_059'><span class='cls_059'>311,68</span></div>
-<div style='position:absolute;left:684.36px;top:392.67px' class='cls_059'><span class='cls_059'>311,68</span></div>
+<div style='position:absolute;left:513.19px;top:392.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705100") %></span></div>
+<div style='position:absolute;left:563.74px;top:392.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705113") %></span></div>
+<div style='position:absolute;left:604.54px;top:392.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705110") %></span></div>
+<div style='position:absolute;left:643.69px;top:392.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705170") %></span></div>
+<div style='position:absolute;left:684.36px;top:392.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705171") %></span></div>
 <div style='position:absolute;left:154.32px;top:408.46px' class='cls_013'><span class='cls_013'>21127052..</span></div>
 <div style='position:absolute;left:208.17px;top:408.46px' class='cls_013'><span class='cls_013'>РОМАНСКАЯ подконьковая боковая правая</span></div>
 <div style='position:absolute;left:396.84px;top:408.46px' class='cls_013'><span class='cls_013'>28,0 x 46,5</span></div>
 <div style='position:absolute;left:485.24px;top:408.46px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:513.19px;top:407.67px' class='cls_059'><span class='cls_059'>301,43</span></div>
-<div style='position:absolute;left:563.74px;top:407.67px' class='cls_059'><span class='cls_059'>302,71</span></div>
-<div style='position:absolute;left:604.54px;top:407.67px' class='cls_059'><span class='cls_059'>302,71</span></div>
-<div style='position:absolute;left:643.69px;top:407.67px' class='cls_059'><span class='cls_059'>311,68</span></div>
-<div style='position:absolute;left:684.36px;top:407.67px' class='cls_059'><span class='cls_059'>311,68</span></div>
+<div style='position:absolute;left:513.19px;top:407.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705200") %></span></div>
+<div style='position:absolute;left:563.74px;top:407.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705213") %></span></div>
+<div style='position:absolute;left:604.54px;top:407.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705210") %></span></div>
+<div style='position:absolute;left:643.69px;top:407.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705270") %></span></div>
+<div style='position:absolute;left:684.36px;top:407.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112705271") %></span></div>
 <div style='position:absolute;left:34.52px;top:421.34px' class='cls_056'><span class='cls_056'>Расход: 11,9 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:422.68px' class='cls_013'><span class='cls_013'>21127010..</span></div>
 <div style='position:absolute;left:208.18px;top:422.68px' class='cls_013'><span class='cls_013'>РОМАНСКАЯ вентиляционная</span></div>
 <div style='position:absolute;left:396.85px;top:422.68px' class='cls_013'><span class='cls_013'>28,0 x 46,5</span></div>
 <div style='position:absolute;left:451.87px;top:422.68px' class='cls_013'><span class='cls_013'>120</span></div>
 <div style='position:absolute;left:485.25px;top:422.68px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:512.62px;top:422.67px' class='cls_059'><span class='cls_059'>191,47</span></div>
-<div style='position:absolute;left:564.49px;top:422.67px' class='cls_059'><span class='cls_059'>195,82</span></div>
-<div style='position:absolute;left:605.30px;top:422.67px' class='cls_059'><span class='cls_059'>195,82</span></div>
-<div style='position:absolute;left:643.78px;top:422.67px' class='cls_059'><span class='cls_059'>197,36</span></div>
-<div style='position:absolute;left:683.79px;top:422.67px' class='cls_059'><span class='cls_059'>197,36</span></div>
+<div style='position:absolute;left:512.62px;top:422.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112701000") %></span></div>
+<div style='position:absolute;left:564.49px;top:422.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112701013") %></span></div>
+<div style='position:absolute;left:605.30px;top:422.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112701010") %></span></div>
+<div style='position:absolute;left:643.78px;top:422.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112701070") %></span></div>
+<div style='position:absolute;left:683.79px;top:422.67px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112701071") %></span></div>
 <div style='position:absolute;left:150.55px;top:438.78px' class='cls_057'></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>13</span></div>
 </div><div style='position:absolute;left:50%;margin-left:-420px;top:7865px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -1821,42 +1822,42 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.59px;top:141.09px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
 <div style='position:absolute;left:451.72px;top:141.09px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.36px;top:141.09px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:519.85px;top:139.94px' class='cls_059'><span class='cls_059'>53,83</span></div>
-<div style='position:absolute;left:583.85px;top:139.94px' class='cls_059'><span class='cls_059'>58,18</span></div>
-<div style='position:absolute;left:644.65px;top:139.94px' class='cls_059'><span class='cls_059'>63,31</span></div>
+<div style='position:absolute;left:519.85px;top:139.94px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112000000") %></span></div>
+<div style='position:absolute;left:583.85px;top:139.94px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112000010") %></span></div>
+<div style='position:absolute;left:644.65px;top:139.94px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112000071") %></span></div>
 <div style='position:absolute;left:154.43px;top:155.30px' class='cls_013'><span class='cls_013'>21120001..</span></div>
 <div style='position:absolute;left:208.29px;top:155.30px' class='cls_013'><span class='cls_013'>ФРАНЦУЗСКАЯ 12 половинчатая</span></div>
 <div style='position:absolute;left:397.12px;top:155.30px' class='cls_013'><span class='cls_013'>16,0 x 46,5</span></div>
 <div style='position:absolute;left:451.97px;top:155.30px' class='cls_013'><span class='cls_013'>140</span></div>
 <div style='position:absolute;left:485.36px;top:155.30px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:519.86px;top:154.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:583.85px;top:154.34px' class='cls_059'><span class='cls_059'>71,26</span></div>
-<div style='position:absolute;left:644.65px;top:154.34px' class='cls_059'><span class='cls_059'>77,15</span></div>
+<div style='position:absolute;left:519.86px;top:154.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112000100") %></span></div>
+<div style='position:absolute;left:583.85px;top:154.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112000110") %></span></div>
+<div style='position:absolute;left:644.65px;top:154.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112000171") %></span></div>
 <div style='position:absolute;left:154.43px;top:169.52px' class='cls_013'><span class='cls_013'>21120040..</span></div>
 <div style='position:absolute;left:208.29px;top:169.52px' class='cls_013'><span class='cls_013'>ФРАНЦУЗСКАЯ 12 боковая левая</span></div>
 <div style='position:absolute;left:397.59px;top:169.52px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
 <div style='position:absolute;left:453.89px;top:169.52px' class='cls_013'><span class='cls_013'>80</span></div>
 <div style='position:absolute;left:485.36px;top:169.52px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.26px;top:168.74px' class='cls_059'><span class='cls_059'>287,58</span></div>
-<div style='position:absolute;left:578.25px;top:168.74px' class='cls_059'><span class='cls_059'>290,40</span></div>
-<div style='position:absolute;left:639.05px;top:168.74px' class='cls_059'><span class='cls_059'>299,89</span></div>
+<div style='position:absolute;left:514.26px;top:168.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112004000") %></span></div>
+<div style='position:absolute;left:578.25px;top:168.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112004010") %></span></div>
+<div style='position:absolute;left:639.05px;top:168.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112004071") %></span></div>
 <div style='position:absolute;left:154.43px;top:183.73px' class='cls_013'><span class='cls_013'>21120041..</span></div>
 <div style='position:absolute;left:208.29px;top:183.73px' class='cls_013'><span class='cls_013'>ФРАНЦУЗСКАЯ 12 боковая правая</span></div>
 <div style='position:absolute;left:397.59px;top:183.73px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
 <div style='position:absolute;left:453.89px;top:183.73px' class='cls_013'><span class='cls_013'>80</span></div>
 <div style='position:absolute;left:485.36px;top:183.73px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.26px;top:183.14px' class='cls_059'><span class='cls_059'>287,58</span></div>
-<div style='position:absolute;left:578.25px;top:183.14px' class='cls_059'><span class='cls_059'>290,40</span></div>
-<div style='position:absolute;left:639.05px;top:183.14px' class='cls_059'><span class='cls_059'>299,89</span></div>
+<div style='position:absolute;left:514.26px;top:183.14px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112004100") %></span></div>
+<div style='position:absolute;left:578.25px;top:183.14px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112004110") %></span></div>
+<div style='position:absolute;left:639.05px;top:183.14px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112004171") %></span></div>
 <div style='position:absolute;left:34.63px;top:196.61px' class='cls_056'><span class='cls_056'>Расход: 11,3 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.43px;top:197.95px' class='cls_013'><span class='cls_013'>21120010..</span></div>
 <div style='position:absolute;left:208.29px;top:197.95px' class='cls_013'><span class='cls_013'>ФРАНЦУЗСКАЯ 12 вентиляционная</span></div>
 <div style='position:absolute;left:397.59px;top:197.95px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
 <div style='position:absolute;left:451.97px;top:197.95px' class='cls_013'><span class='cls_013'>140</span></div>
 <div style='position:absolute;left:485.36px;top:197.95px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.26px;top:196.74px' class='cls_059'><span class='cls_059'>191,47</span></div>
-<div style='position:absolute;left:578.25px;top:196.74px' class='cls_059'><span class='cls_059'>195,82</span></div>
-<div style='position:absolute;left:638.25px;top:196.74px' class='cls_059'><span class='cls_059'>197,36</span></div>
+<div style='position:absolute;left:514.26px;top:196.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112001000") %></span></div>
+<div style='position:absolute;left:578.25px;top:196.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112001010") %></span></div>
+<div style='position:absolute;left:638.25px;top:196.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112001071") %></span></div>
 <div style='position:absolute;left:33.19px;top:230.33px' class='cls_037'><span class='cls_037'>Границе 11  </span><span class='cls_052'>посувная черепица</span></div>
 <div style='position:absolute;left:640.94px;top:251.04px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
 <div style='position:absolute;left:442.96px;top:258.12px' class='cls_053'><span class='cls_053'>Колличе-</span></div>
@@ -1884,36 +1885,36 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.59px;top:307.75px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
 <div style='position:absolute;left:451.72px;top:307.75px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.36px;top:307.75px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:520.66px;top:306.61px' class='cls_059'><span class='cls_059'>45,88</span></div>
-<div style='position:absolute;left:583.85px;top:306.61px' class='cls_059'><span class='cls_059'>58,18</span></div>
-<div style='position:absolute;left:644.65px;top:306.61px' class='cls_059'><span class='cls_059'>63,31</span></div>
+<div style='position:absolute;left:520.66px;top:306.61px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112110000") %></span></div>
+<div style='position:absolute;left:583.85px;top:306.61px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112110010") %></span></div>
+<div style='position:absolute;left:644.65px;top:306.61px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112110071") %></span></div>
 <div style='position:absolute;left:154.43px;top:321.97px' class='cls_013'><span class='cls_013'>21121101..</span></div>
 <div style='position:absolute;left:208.29px;top:321.75px' class='cls_013'><span class='cls_013'>ГРАНИЦЕ  11</span></div>
 <div style='position:absolute;left:264.67px;top:321.97px' class='cls_013'><span class='cls_013'>половинчатая</span></div>
 <div style='position:absolute;left:397.12px;top:321.97px' class='cls_013'><span class='cls_013'>16,0 x 46,5</span></div>
 <div style='position:absolute;left:451.97px;top:321.97px' class='cls_013'><span class='cls_013'>140</span></div>
 <div style='position:absolute;left:485.36px;top:321.97px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:520.66px;top:321.01px' class='cls_059'><span class='cls_059'>63,31</span></div>
-<div style='position:absolute;left:583.85px;top:321.01px' class='cls_059'><span class='cls_059'>71,26</span></div>
-<div style='position:absolute;left:644.65px;top:321.01px' class='cls_059'><span class='cls_059'>77,15</span></div>
+<div style='position:absolute;left:520.66px;top:321.01px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112110100") %></span></div>
+<div style='position:absolute;left:583.85px;top:321.01px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112110110") %></span></div>
+<div style='position:absolute;left:644.65px;top:321.01px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112110171") %></span></div>
 <div style='position:absolute;left:154.43px;top:336.19px' class='cls_013'><span class='cls_013'>21121140..</span></div>
 <div style='position:absolute;left:208.29px;top:335.75px' class='cls_013'><span class='cls_013'>ГРАНИЦЕ  11</span></div>
 <div style='position:absolute;left:264.67px;top:336.19px' class='cls_013'><span class='cls_013'>боковая левая</span></div>
 <div style='position:absolute;left:397.59px;top:336.19px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
 <div style='position:absolute;left:453.89px;top:336.19px' class='cls_013'><span class='cls_013'>80</span></div>
 <div style='position:absolute;left:485.36px;top:336.19px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.66px;top:335.41px' class='cls_059'><span class='cls_059'>275,28</span></div>
-<div style='position:absolute;left:578.25px;top:335.41px' class='cls_059'><span class='cls_059'>290,40</span></div>
-<div style='position:absolute;left:639.85px;top:335.41px' class='cls_059'><span class='cls_059'>299,89</span></div>
+<div style='position:absolute;left:514.66px;top:335.41px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112114000") %></span></div>
+<div style='position:absolute;left:578.25px;top:335.41px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112114010") %></span></div>
+<div style='position:absolute;left:639.85px;top:335.41px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112114071") %></span></div>
 <div style='position:absolute;left:154.43px;top:350.40px' class='cls_013'><span class='cls_013'>21121141..</span></div>
 <div style='position:absolute;left:208.29px;top:349.75px' class='cls_013'><span class='cls_013'>ГРАНИЦЕ  11</span></div>
 <div style='position:absolute;left:264.67px;top:350.40px' class='cls_013'><span class='cls_013'>боковая правая</span></div>
 <div style='position:absolute;left:397.59px;top:350.40px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
 <div style='position:absolute;left:453.89px;top:350.40px' class='cls_013'><span class='cls_013'>80</span></div>
 <div style='position:absolute;left:485.36px;top:350.40px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:514.66px;top:349.41px' class='cls_059'><span class='cls_059'>275,28</span></div>
-<div style='position:absolute;left:578.25px;top:349.81px' class='cls_059'><span class='cls_059'>290,40</span></div>
-<div style='position:absolute;left:639.85px;top:349.81px' class='cls_059'><span class='cls_059'>299,89</span></div>
+<div style='position:absolute;left:514.66px;top:349.41px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112114100") %></span></div>
+<div style='position:absolute;left:578.25px;top:349.81px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112114110") %></span></div>
+<div style='position:absolute;left:639.85px;top:349.81px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112114171") %></span></div>
 <div style='position:absolute;left:119.25px;top:361.11px' class='cls_060'><span class='cls_060'>2</span></div>
 <div style='position:absolute;left:34.69px;top:362.43px' class='cls_056'><span class='cls_056'>Расход: мин. 10,8 шт/м</span></div>
 <div style='position:absolute;left:154.43px;top:364.62px' class='cls_013'><span class='cls_013'>21121110..</span></div>
@@ -1922,9 +1923,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.59px;top:364.62px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
 <div style='position:absolute;left:451.97px;top:364.62px' class='cls_013'><span class='cls_013'>140</span></div>
 <div style='position:absolute;left:485.36px;top:364.62px' class='cls_013'><span class='cls_013'>H</span></div>
-<div style='position:absolute;left:515.06px;top:363.41px' class='cls_059'><span class='cls_059'>181,21</span></div>
-<div style='position:absolute;left:578.25px;top:363.41px' class='cls_059'><span class='cls_059'>195,82</span></div>
-<div style='position:absolute;left:639.05px;top:363.41px' class='cls_059'><span class='cls_059'>197,36</span></div>
+<div style='position:absolute;left:515.06px;top:363.41px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112111000") %></span></div>
+<div style='position:absolute;left:578.25px;top:363.41px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112111010") %></span></div>
+<div style='position:absolute;left:639.05px;top:363.41px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2112111071") %></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>14</span></div>
 </div>
 <div style='position:absolute;left:50%;margin-left:-420px;top:8470px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -1954,8 +1955,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.22px;top:151.69px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.45px;top:151.69px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:482.38px;top:151.69px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.99px;top:150.35px' class='cls_059'><span class='cls_059'>21,79</span></div>
-<div style='position:absolute;left:582.99px;top:150.35px' class='cls_059'><span class='cls_059'>24,09</span></div>
+<div style='position:absolute;left:520.99px;top:150.35px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311320000") %></span></div>
+<div style='position:absolute;left:582.99px;top:150.35px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311320010") %></span></div>
 <div style='position:absolute;left:222.35px;top:155.69px' class='cls_013'><span class='cls_013'>рядовая</span></div>
 <div style='position:absolute;left:222.35px;top:172.54px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА</span></div>
 <div style='position:absolute;left:323.41px;top:171.87px' class='cls_013'><span class='cls_013'>гладкая</span></div>
@@ -1963,16 +1964,16 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.22px;top:177.21px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.45px;top:177.21px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:482.38px;top:177.21px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.99px;top:175.94px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:582.99px;top:175.94px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.99px;top:175.94px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311330000") %></span></div>
+<div style='position:absolute;left:582.99px;top:175.94px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311330010") %></span></div>
 <div style='position:absolute;left:222.61px;top:181.81px' class='cls_013'><span class='cls_013'>карнизная</span></div>
 <div style='position:absolute;left:222.35px;top:198.05px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА гладкая</span></div>
 <div style='position:absolute;left:154.32px;top:202.72px' class='cls_013'><span class='cls_013'>13110010..</span></div>
 <div style='position:absolute;left:397.22px;top:202.72px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.75px;top:202.72px' class='cls_013'><span class='cls_013'>180</span></div>
 <div style='position:absolute;left:482.38px;top:202.72px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.99px;top:201.35px' class='cls_059'><span class='cls_059'>115,85</span></div>
-<div style='position:absolute;left:582.99px;top:201.35px' class='cls_059'><span class='cls_059'>126,62</span></div>
+<div style='position:absolute;left:520.99px;top:201.35px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311001000") %></span></div>
+<div style='position:absolute;left:582.99px;top:201.35px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311001010") %></span></div>
 <div style='position:absolute;left:222.60px;top:206.49px' class='cls_013'><span class='cls_013'>вентиляционная</span></div>
 <div style='position:absolute;left:124.14px;top:225.59px' class='cls_085'><span class='cls_085'>2</span></div>
 <div style='position:absolute;left:222.35px;top:224.23px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА гладкая ПК</span></div>
@@ -1981,8 +1982,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.22px;top:228.23px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.45px;top:228.23px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:482.38px;top:228.23px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.99px;top:227.14px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:582.99px;top:227.14px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.99px;top:227.14px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311330000") %></span></div>
+<div style='position:absolute;left:582.99px;top:227.14px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311330010") %></span></div>
 <div style='position:absolute;left:222.35px;top:232.23px' class='cls_013'><span class='cls_013'>рядовая</span></div>
 <div style='position:absolute;left:222.35px;top:249.38px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА гладкая</span></div>
 <div style='position:absolute;left:141.13px;top:258.42px' class='cls_055'><span class='cls_055'>2</span></div>
@@ -1990,8 +1991,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.22px;top:255.16px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
 <div style='position:absolute;left:451.75px;top:255.16px' class='cls_013'><span class='cls_013'>180</span></div>
 <div style='position:absolute;left:482.38px;top:255.16px' class='cls_013'><span class='cls_013'>CN</span></div>
-<div style='position:absolute;left:520.99px;top:252.35px' class='cls_059'><span class='cls_059'>115,85</span></div>
-<div style='position:absolute;left:582.99px;top:252.35px' class='cls_059'><span class='cls_059'>126,62</span></div>
+<div style='position:absolute;left:520.99px;top:252.35px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311001000") %></span></div>
+<div style='position:absolute;left:582.99px;top:252.35px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1311001010") %></span></div>
 <div style='position:absolute;left:34.52px;top:258.05px' class='cls_056'><span class='cls_056'>Расход: 18,5 - 21,5 шт/м</span></div>
 <div style='position:absolute;left:222.60px;top:257.82px' class='cls_013'><span class='cls_013'>вентиляционная</span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>15</span></div>
@@ -2026,63 +2027,63 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.77px;top:147.21px' class='cls_013'><span class='cls_013'>24,1 x 42,4</span></div>
 <div style='position:absolute;left:451.62px;top:147.21px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:147.21px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:146.34px' class='cls_059'><span class='cls_059'>63,31</span></div>
-<div style='position:absolute;left:582.74px;top:146.34px' class='cls_059'><span class='cls_059'>67,67</span></div>
-<div style='position:absolute;left:644.74px;top:146.34px' class='cls_059'><span class='cls_059'>67,67</span></div>
-<div style='position:absolute;left:707.74px;top:146.34px' class='cls_059'><span class='cls_059'>76,38</span></div>
+<div style='position:absolute;left:519.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112780000") %></span></div>
+<div style='position:absolute;left:582.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112780010") %></span></div>
+<div style='position:absolute;left:644.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112780031") %></span></div>
+<div style='position:absolute;left:707.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112780070") %></span></div>
 <div style='position:absolute;left:154.32px;top:164.21px' class='cls_013'><span class='cls_013'>01127801..</span></div>
 <div style='position:absolute;left:208.17px;top:164.21px' class='cls_013'><span class='cls_013'>ФИГАРО Делюкс половинчатая</span></div>
 <div style='position:absolute;left:396.77px;top:164.21px' class='cls_013'><span class='cls_013'>12,0 x 42,4</span></div>
 <div style='position:absolute;left:451.62px;top:164.21px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:485.10px;top:164.21px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:163.34px' class='cls_059'><span class='cls_059'>87,40</span></div>
-<div style='position:absolute;left:582.74px;top:163.34px' class='cls_059'><span class='cls_059'>93,81</span></div>
-<div style='position:absolute;left:644.74px;top:163.34px' class='cls_059'><span class='cls_059'>93,81</span></div>
-<div style='position:absolute;left:707.74px;top:163.34px' class='cls_059'><span class='cls_059'>134,57</span></div>
+<div style='position:absolute;left:519.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112780100") %></span></div>
+<div style='position:absolute;left:582.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112780110") %></span></div>
+<div style='position:absolute;left:644.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112780131") %></span></div>
+<div style='position:absolute;left:707.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112780170") %></span></div>
 <div style='position:absolute;left:154.32px;top:181.22px' class='cls_013'><span class='cls_013'>01127840..</span></div>
 <div style='position:absolute;left:208.17px;top:181.22px' class='cls_013'><span class='cls_013'>ФИГАРО Делюкс боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:181.22px' class='cls_013'><span class='cls_013'>24,1 x 42,4</span></div>
 <div style='position:absolute;left:451.62px;top:181.22px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:181.22px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:513.74px;top:179.34px' class='cls_059'><span class='cls_059'>266,31</span></div>
-<div style='position:absolute;left:576.74px;top:179.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:638.74px;top:179.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:701.74px;top:179.34px' class='cls_059'><span class='cls_059'>333,47</span></div>
+<div style='position:absolute;left:513.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("00") %></span></div>
+<div style='position:absolute;left:576.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("10") %></span></div>
+<div style='position:absolute;left:638.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("31") %></span></div>
+<div style='position:absolute;left:701.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("70") %></span></div>
 <div style='position:absolute;left:154.32px;top:198.23px' class='cls_013'><span class='cls_013'>01125142..</span></div>
 <div style='position:absolute;left:208.17px;top:198.23px' class='cls_013'><span class='cls_013'>ФИГАРО Делюкс боковая пластина левая</span></div>
 <div style='position:absolute;left:451.62px;top:198.23px' class='cls_013'><span class='cls_013'>400</span></div>
 <div style='position:absolute;left:485.10px;top:198.23px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:197.34px' class='cls_059'><span class='cls_059'>62,54</span></div>
-<div style='position:absolute;left:582.74px;top:197.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:644.74px;top:197.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:707.74px;top:197.34px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:519.74px;top:197.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514200") %></span></div>
+<div style='position:absolute;left:582.74px;top:197.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514210") %></span></div>
+<div style='position:absolute;left:644.74px;top:197.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514231") %></span></div>
+<div style='position:absolute;left:707.74px;top:197.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514270") %></span></div>
 <div style='position:absolute;left:154.32px;top:215.24px' class='cls_013'><span class='cls_013'>01127841..</span></div>
 <div style='position:absolute;left:208.17px;top:215.24px' class='cls_013'><span class='cls_013'>ФИГАРО Делюкс боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:215.24px' class='cls_013'><span class='cls_013'>24,1 x 42,4</span></div>
 <div style='position:absolute;left:451.62px;top:215.24px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:215.24px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:513.74px;top:213.34px' class='cls_059'><span class='cls_059'>266,31</span></div>
-<div style='position:absolute;left:576.74px;top:213.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:638.74px;top:213.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:701.74px;top:213.34px' class='cls_059'><span class='cls_059'>333,47</span></div>
+<div style='position:absolute;left:513.74px;top:213.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112784100") %></span></div>
+<div style='position:absolute;left:576.74px;top:213.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112784110") %></span></div>
+<div style='position:absolute;left:638.74px;top:213.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112784131") %></span></div>
+<div style='position:absolute;left:701.74px;top:213.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112784170") %></span></div>
 <div style='position:absolute;left:154.32px;top:232.25px' class='cls_013'><span class='cls_013'>01125143..</span></div>
 <div style='position:absolute;left:208.17px;top:232.25px' class='cls_013'><span class='cls_013'>ФИГАРО Делюкс боковая пластина правая</span></div>
 <div style='position:absolute;left:451.62px;top:232.25px' class='cls_013'><span class='cls_013'>400</span></div>
 <div style='position:absolute;left:485.10px;top:232.25px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:230.34px' class='cls_059'><span class='cls_059'>62,54</span></div>
-<div style='position:absolute;left:582.74px;top:230.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:644.74px;top:230.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:707.74px;top:230.34px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:519.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514300") %></span></div>
+<div style='position:absolute;left:582.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514310") %></span></div>
+<div style='position:absolute;left:644.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514331") %></span></div>
+<div style='position:absolute;left:707.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514370") %></span></div>
 <div style='position:absolute;left:34.52px;top:249.31px' class='cls_056'><span class='cls_056'>Расход: мин. 13,5 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:249.25px' class='cls_013'><span class='cls_013'>01127810..</span></div>
 <div style='position:absolute;left:208.17px;top:249.25px' class='cls_013'><span class='cls_013'>ФИГАРО Делюкс вентиляционная</span></div>
 <div style='position:absolute;left:396.77px;top:249.25px' class='cls_013'><span class='cls_013'>24,1 x 42,4</span></div>
 <div style='position:absolute;left:451.62px;top:249.25px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:249.25px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:513.74px;top:247.34px' class='cls_059'><span class='cls_059'>266,31</span></div>
-<div style='position:absolute;left:576.74px;top:247.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:638.74px;top:247.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:701.74px;top:247.34px' class='cls_059'><span class='cls_059'>333,47</span></div>
+<div style='position:absolute;left:513.74px;top:247.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112781000") %></span></div>
+<div style='position:absolute;left:576.74px;top:247.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112781010") %></span></div>
+<div style='position:absolute;left:638.74px;top:247.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112781031") %></span></div>
+<div style='position:absolute;left:701.74px;top:247.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112781070") %></span></div>
 <div style='position:absolute;left:34.52px;top:279.68px' class='cls_037'><span class='cls_037'>Сулм  </span><span class='cls_086'>посувная черепица</span></div>
 <div style='position:absolute;left:719.29px;top:279.49px' class='cls_087'><span class='cls_087'>EXCLUSIVE</span></div>
 <div style='position:absolute;left:640.82px;top:299.77px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
@@ -2111,98 +2112,98 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.77px;top:360.71px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
 <div style='position:absolute;left:451.62px;top:360.71px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.10px;top:360.71px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:359.34px' class='cls_059'><span class='cls_059'>56,13</span></div>
-<div style='position:absolute;left:582.74px;top:359.34px' class='cls_059'><span class='cls_059'>61,77</span></div>
-<div style='position:absolute;left:644.74px;top:359.34px' class='cls_059'><span class='cls_059'>61,77</span></div>
-<div style='position:absolute;left:707.74px;top:359.34px' class='cls_059'><span class='cls_059'>72,02</span></div>
-<div style='position:absolute;left:769.74px;top:359.34px' class='cls_059'><span class='cls_059'>119,44</span></div>
+<div style='position:absolute;left:519.74px;top:359.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112310000") %></span></div>
+<div style='position:absolute;left:582.74px;top:359.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112310010") %></span></div>
+<div style='position:absolute;left:644.74px;top:359.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112310031") %></span></div>
+<div style='position:absolute;left:707.74px;top:359.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112310070") %></span></div>
+<div style='position:absolute;left:769.74px;top:359.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112310022") %></span></div>
 <div style='position:absolute;left:154.32px;top:377.72px' class='cls_013'><span class='cls_013'>01123140..</span></div>
 <div style='position:absolute;left:208.17px;top:377.72px' class='cls_013'><span class='cls_013'>СУЛМ боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:377.72px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
 <div style='position:absolute;left:451.62px;top:377.72px' class='cls_013'><span class='cls_013'>144</span></div>
 <div style='position:absolute;left:485.10px;top:377.72px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:513.74px;top:376.34px' class='cls_059'><span class='cls_059'>266,31</span></div>
-<div style='position:absolute;left:576.74px;top:376.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:638.74px;top:376.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:701.74px;top:376.34px' class='cls_059'><span class='cls_059'>333,47</span></div>
-<div style='position:absolute;left:763.74px;top:376.34px' class='cls_059'><span class='cls_059'>538,00</span></div>
+<div style='position:absolute;left:513.74px;top:376.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314000") %></span></div>
+<div style='position:absolute;left:576.74px;top:376.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314010") %></span></div>
+<div style='position:absolute;left:638.74px;top:376.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314031") %></span></div>
+<div style='position:absolute;left:701.74px;top:376.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314070") %></span></div>
+<div style='position:absolute;left:763.74px;top:376.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314022") %></span></div>
 <div style='position:absolute;left:154.32px;top:394.73px' class='cls_013'><span class='cls_013'>01125142..</span></div>
 <div style='position:absolute;left:208.17px;top:394.73px' class='cls_013'><span class='cls_013'>СУЛМ боковая пластина левая</span></div>
 <div style='position:absolute;left:451.62px;top:394.73px' class='cls_013'><span class='cls_013'>400</span></div>
 <div style='position:absolute;left:485.09px;top:394.73px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:393.34px' class='cls_059'><span class='cls_059'>62,54</span></div>
-<div style='position:absolute;left:582.74px;top:393.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:644.74px;top:393.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:707.74px;top:393.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:764.74px;top:393.34px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:519.74px;top:393.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514200") %></span></div>
+<div style='position:absolute;left:582.74px;top:393.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514210") %></span></div>
+<div style='position:absolute;left:644.74px;top:393.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514231") %></span></div>
+<div style='position:absolute;left:707.74px;top:393.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514270") %></span></div>
+<div style='position:absolute;left:764.74px;top:393.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514222") %></span></div>
 <div style='position:absolute;left:154.31px;top:411.74px' class='cls_013'><span class='cls_013'>01123141..</span></div>
 <div style='position:absolute;left:208.17px;top:411.74px' class='cls_013'><span class='cls_013'>СУЛМ боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:411.74px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
 <div style='position:absolute;left:451.62px;top:411.74px' class='cls_013'><span class='cls_013'>144</span></div>
 <div style='position:absolute;left:485.09px;top:411.74px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:513.74px;top:410.34px' class='cls_059'><span class='cls_059'>266,31</span></div>
-<div style='position:absolute;left:576.74px;top:410.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:638.74px;top:410.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:701.74px;top:410.34px' class='cls_059'><span class='cls_059'>333,47</span></div>
-<div style='position:absolute;left:763.74px;top:410.34px' class='cls_059'><span class='cls_059'>538,00</span></div>
+<div style='position:absolute;left:513.74px;top:410.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314100") %></span></div>
+<div style='position:absolute;left:576.74px;top:410.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314110") %></span></div>
+<div style='position:absolute;left:638.74px;top:410.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314131") %></span></div>
+<div style='position:absolute;left:701.74px;top:410.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314170") %></span></div>
+<div style='position:absolute;left:763.74px;top:410.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112314122") %></span></div>
 <div style='position:absolute;left:154.31px;top:428.74px' class='cls_013'><span class='cls_013'>01125143..</span></div>
 <div style='position:absolute;left:208.17px;top:428.74px' class='cls_013'><span class='cls_013'>СУЛМ боковая пластина правая</span></div>
 <div style='position:absolute;left:451.62px;top:428.74px' class='cls_013'><span class='cls_013'>400</span></div>
 <div style='position:absolute;left:485.09px;top:428.74px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:427.34px' class='cls_059'><span class='cls_059'>62,54</span></div>
-<div style='position:absolute;left:582.74px;top:427.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:644.74px;top:427.34px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:707.74px;top:427.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:764.74px;top:427.34px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:519.74px;top:427.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514300") %></span></div>
+<div style='position:absolute;left:582.74px;top:427.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514310") %></span></div>
+<div style='position:absolute;left:644.74px;top:427.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514331") %></span></div>
+<div style='position:absolute;left:707.74px;top:427.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514370") %></span></div>
+<div style='position:absolute;left:764.74px;top:427.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514322") %></span></div>
 <div style='position:absolute;left:154.31px;top:445.75px' class='cls_013'><span class='cls_013'>01123150..</span></div>
 <div style='position:absolute;left:208.17px;top:445.75px' class='cls_013'><span class='cls_013'>СУЛМ подконьковая</span></div>
 <div style='position:absolute;left:396.77px;top:445.75px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
 <div style='position:absolute;left:451.62px;top:445.75px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.09px;top:445.75px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:444.34px' class='cls_059'><span class='cls_059'>106,88</span></div>
-<div style='position:absolute;left:582.74px;top:444.34px' class='cls_059'><span class='cls_059'>113,55</span></div>
-<div style='position:absolute;left:644.74px;top:444.34px' class='cls_059'><span class='cls_059'>113,55</span></div>
-<div style='position:absolute;left:701.74px;top:444.34px' class='cls_059'><span class='cls_059'>201,72</span></div>
-<div style='position:absolute;left:764.74px;top:444.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
+<div style='position:absolute;left:519.74px;top:444.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315000") %></span></div>
+<div style='position:absolute;left:582.74px;top:444.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315010") %></span></div>
+<div style='position:absolute;left:644.74px;top:444.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315031") %></span></div>
+<div style='position:absolute;left:701.74px;top:444.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315070") %></span></div>
+<div style='position:absolute;left:764.74px;top:444.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315022") %></span></div>
 <div style='position:absolute;left:154.31px;top:462.76px' class='cls_013'><span class='cls_013'>01123151..</span></div>
 <div style='position:absolute;left:208.17px;top:462.76px' class='cls_013'><span class='cls_013'>СУЛМ подконьковая боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:462.76px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
 <div style='position:absolute;left:451.62px;top:462.76px' class='cls_013'><span class='cls_013'>160</span></div>
 <div style='position:absolute;left:485.09px;top:462.76px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:513.74px;top:461.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:576.74px;top:461.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:638.74px;top:461.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:701.74px;top:461.34px' class='cls_059'><span class='cls_059'>333,47</span></div>
-<div style='position:absolute;left:763.74px;top:461.34px' class='cls_059'><span class='cls_059'>538,00</span></div>
+<div style='position:absolute;left:513.74px;top:461.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315100") %></span></div>
+<div style='position:absolute;left:576.74px;top:461.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315110") %></span></div>
+<div style='position:absolute;left:638.74px;top:461.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315131") %></span></div>
+<div style='position:absolute;left:701.74px;top:461.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315170") %></span></div>
+<div style='position:absolute;left:763.74px;top:461.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315122") %></span></div>
 <div style='position:absolute;left:154.31px;top:479.77px' class='cls_013'><span class='cls_013'>01123152..</span></div>
 <div style='position:absolute;left:208.17px;top:479.77px' class='cls_013'><span class='cls_013'>СУЛМ подконьковая боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:479.77px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
 <div style='position:absolute;left:451.62px;top:479.77px' class='cls_013'><span class='cls_013'>160</span></div>
 <div style='position:absolute;left:485.09px;top:479.77px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:513.74px;top:478.34px' class='cls_059'><span class='cls_059'>266,31</span></div>
-<div style='position:absolute;left:576.74px;top:478.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:638.74px;top:478.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:701.74px;top:478.34px' class='cls_059'><span class='cls_059'>333,47</span></div>
-<div style='position:absolute;left:763.74px;top:478.34px' class='cls_059'><span class='cls_059'>538,00</span></div>
+<div style='position:absolute;left:513.74px;top:478.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315200") %></span></div>
+<div style='position:absolute;left:576.74px;top:478.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315210") %></span></div>
+<div style='position:absolute;left:638.74px;top:478.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315231") %></span></div>
+<div style='position:absolute;left:701.74px;top:478.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315270") %></span></div>
+<div style='position:absolute;left:763.74px;top:478.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112315222") %></span></div>
 <div style='position:absolute;left:154.31px;top:496.78px' class='cls_013'><span class='cls_013'>01123110..</span></div>
 <div style='position:absolute;left:208.17px;top:496.78px' class='cls_013'><span class='cls_013'>СУЛМ вентиляционная</span></div>
 <div style='position:absolute;left:396.77px;top:496.78px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
 <div style='position:absolute;left:451.62px;top:496.78px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.09px;top:496.78px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:513.74px;top:495.34px' class='cls_059'><span class='cls_059'>266,31</span></div>
-<div style='position:absolute;left:576.74px;top:495.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:638.74px;top:495.34px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:701.74px;top:495.34px' class='cls_059'><span class='cls_059'>333,47</span></div>
-<div style='position:absolute;left:763.74px;top:495.34px' class='cls_059'><span class='cls_059'>538,00</span></div>
+<div style='position:absolute;left:513.74px;top:495.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112311000") %></span></div>
+<div style='position:absolute;left:576.74px;top:495.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112311010") %></span></div>
+<div style='position:absolute;left:638.74px;top:495.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112311031") %></span></div>
+<div style='position:absolute;left:701.74px;top:495.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112311070") %></span></div>
+<div style='position:absolute;left:763.74px;top:495.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112311022") %></span></div>
 <div style='position:absolute;left:34.52px;top:513.84px' class='cls_056'><span class='cls_056'>Расход: мин. 14,8 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.31px;top:513.78px' class='cls_013'><span class='cls_013'>01123120..</span></div>
 <div style='position:absolute;left:208.17px;top:513.78px' class='cls_013'><span class='cls_013'>СУЛМ снегозащитная</span></div>
 <div style='position:absolute;left:396.77px;top:513.78px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
 <div style='position:absolute;left:451.62px;top:513.78px' class='cls_013'><span class='cls_013'>200</span></div>
 <div style='position:absolute;left:485.09px;top:513.78px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:519.74px;top:511.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:582.74px;top:511.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:644.74px;top:511.34px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:519.74px;top:511.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112312000") %></span></div>
+<div style='position:absolute;left:582.74px;top:511.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112312010") %></span></div>
+<div style='position:absolute;left:644.74px;top:511.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112312031") %></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>16</span></div>
 </div>
 <div style='position:absolute;left:50%;margin-left:-420px;top:9680px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -2236,78 +2237,78 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.77px;top:145.32px' class='cls_013'><span class='cls_013'>24,0 x 40,5</span></div>
 <div style='position:absolute;left:451.62px;top:145.32px' class='cls_013'><span class='cls_013'>280</span></div>
 <div style='position:absolute;left:485.09px;top:145.32px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.03px;top:143.77px' class='cls_059'><span class='cls_059'>58,95</span></div>
-<div style='position:absolute;left:582.03px;top:143.77px' class='cls_059'><span class='cls_059'>61,77</span></div>
-<div style='position:absolute;left:646.03px;top:143.77px' class='cls_059'><span class='cls_059'>61,77</span></div>
-<div style='position:absolute;left:708.03px;top:143.77px' class='cls_059'><span class='cls_059'>72,02</span></div>
-<div style='position:absolute;left:770.03px;top:143.77px' class='cls_059'><span class='cls_059'>119,44</span></div>
+<div style='position:absolute;left:520.03px;top:143.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210000") %></span></div>
+<div style='position:absolute;left:582.03px;top:143.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210010") %></span></div>
+<div style='position:absolute;left:646.03px;top:143.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210031") %></span></div>
+<div style='position:absolute;left:708.03px;top:143.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210070") %></span></div>
+<div style='position:absolute;left:770.03px;top:143.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210022") %></span></div>
 <div style='position:absolute;left:154.31px;top:162.32px' class='cls_013'><span class='cls_013'>01122101..</span></div>
 <div style='position:absolute;left:208.17px;top:162.32px' class='cls_013'><span class='cls_013'>МУЛДЕ половинчатая</span></div>
 <div style='position:absolute;left:396.77px;top:162.32px' class='cls_013'><span class='cls_013'>14,0 x 40,5</span></div>
 <div style='position:absolute;left:451.62px;top:162.32px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:485.09px;top:162.32px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.03px;top:160.77px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:582.03px;top:160.77px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:646.03px;top:160.77px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:708.03px;top:160.77px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:764.03px;top:160.77px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.03px;top:160.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210100") %></span></div>
+<div style='position:absolute;left:582.03px;top:160.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210110") %></span></div>
+<div style='position:absolute;left:646.03px;top:160.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210131") %></span></div>
+<div style='position:absolute;left:708.03px;top:160.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210170") %></span></div>
+<div style='position:absolute;left:764.03px;top:160.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112210122") %></span></div>
 <div style='position:absolute;left:154.31px;top:179.33px' class='cls_013'><span class='cls_013'>01122140..</span></div>
 <div style='position:absolute;left:208.17px;top:179.33px' class='cls_013'><span class='cls_013'>МУЛДЕ боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:179.33px' class='cls_013'><span class='cls_013'>24,0 x 40,5</span></div>
 <div style='position:absolute;left:451.62px;top:179.33px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.09px;top:179.33px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:514.03px;top:177.77px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:576.03px;top:177.77px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:640.03px;top:177.77px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:702.03px;top:177.77px' class='cls_059'><span class='cls_059'>333,47</span></div>
-<div style='position:absolute;left:764.03px;top:177.77px' class='cls_059'><span class='cls_059'>538,00</span></div>
+<div style='position:absolute;left:514.03px;top:177.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214000") %></span></div>
+<div style='position:absolute;left:576.03px;top:177.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214010") %></span></div>
+<div style='position:absolute;left:640.03px;top:177.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214031") %></span></div>
+<div style='position:absolute;left:702.03px;top:177.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214070") %></span></div>
+<div style='position:absolute;left:764.03px;top:177.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214022") %></span></div>
 <div style='position:absolute;left:154.31px;top:196.34px' class='cls_013'><span class='cls_013'>01125142..</span></div>
 <div style='position:absolute;left:208.17px;top:196.34px' class='cls_013'><span class='cls_013'>МУЛДЕ боковая пластина левая</span></div>
 <div style='position:absolute;left:451.62px;top:196.34px' class='cls_013'><span class='cls_013'>400</span></div>
 <div style='position:absolute;left:485.09px;top:196.34px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.03px;top:194.77px' class='cls_059'><span class='cls_059'>62,54</span></div>
-<div style='position:absolute;left:582.03px;top:194.77px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:646.03px;top:194.77px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:708.03px;top:194.77px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:764.03px;top:194.77px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.03px;top:194.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514200") %></span></div>
+<div style='position:absolute;left:582.03px;top:194.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514210") %></span></div>
+<div style='position:absolute;left:646.03px;top:194.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514231") %></span></div>
+<div style='position:absolute;left:708.03px;top:194.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514270") %></span></div>
+<div style='position:absolute;left:764.03px;top:194.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514222") %></span></div>
 <div style='position:absolute;left:154.31px;top:213.35px' class='cls_013'><span class='cls_013'>01122141..</span></div>
 <div style='position:absolute;left:208.17px;top:213.35px' class='cls_013'><span class='cls_013'>МУЛДЕ боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:213.35px' class='cls_013'><span class='cls_013'>24,0 x 40,5</span></div>
 <div style='position:absolute;left:451.62px;top:213.35px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.09px;top:213.35px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:514.03px;top:211.77px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:576.03px;top:211.77px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:640.03px;top:211.77px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:702.03px;top:211.77px' class='cls_059'><span class='cls_059'>333,47</span></div>
-<div style='position:absolute;left:764.03px;top:211.77px' class='cls_059'><span class='cls_059'>538,00</span></div>
+<div style='position:absolute;left:514.03px;top:211.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214100") %></span></div>
+<div style='position:absolute;left:576.03px;top:211.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214110") %></span></div>
+<div style='position:absolute;left:640.03px;top:211.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214131") %></span></div>
+<div style='position:absolute;left:702.03px;top:211.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214170") %></span></div>
+<div style='position:absolute;left:764.03px;top:211.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112214122") %></span></div>
 <div style='position:absolute;left:154.31px;top:230.36px' class='cls_013'><span class='cls_013'>01125143..</span></div>
 <div style='position:absolute;left:208.17px;top:230.36px' class='cls_013'><span class='cls_013'>МУЛДЕ боковая пластина правая</span></div>
 <div style='position:absolute;left:451.62px;top:230.36px' class='cls_013'><span class='cls_013'>400</span></div>
 <div style='position:absolute;left:485.09px;top:230.36px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.03px;top:228.77px' class='cls_059'><span class='cls_059'>62,54</span></div>
-<div style='position:absolute;left:582.03px;top:228.77px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:646.03px;top:228.77px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:708.03px;top:228.77px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:764.03px;top:228.77px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.03px;top:228.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514300") %></span></div>
+<div style='position:absolute;left:582.03px;top:228.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514310") %></span></div>
+<div style='position:absolute;left:646.03px;top:228.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514331") %></span></div>
+<div style='position:absolute;left:708.03px;top:228.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514370") %></span></div>
+<div style='position:absolute;left:764.03px;top:228.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514322") %></span></div>
 <div style='position:absolute;left:154.31px;top:247.36px' class='cls_013'><span class='cls_013'>01122110..</span></div>
 <div style='position:absolute;left:208.17px;top:247.36px' class='cls_013'><span class='cls_013'>МУЛДЕ вентиляционная</span></div>
 <div style='position:absolute;left:396.77px;top:247.36px' class='cls_013'><span class='cls_013'>24,0 x 40,5</span></div>
 <div style='position:absolute;left:451.62px;top:247.36px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.09px;top:247.36px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:514.03px;top:245.77px' class='cls_059'><span class='cls_059'>266,31</span></div>
-<div style='position:absolute;left:576.03px;top:245.77px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:640.03px;top:245.77px' class='cls_059'><span class='cls_059'>272,21</span></div>
-<div style='position:absolute;left:702.03px;top:245.77px' class='cls_059'><span class='cls_059'>333,47</span></div>
-<div style='position:absolute;left:764.03px;top:245.77px' class='cls_059'><span class='cls_059'>538,00</span></div>
+<div style='position:absolute;left:514.03px;top:245.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112211000") %></span></div>
+<div style='position:absolute;left:576.03px;top:245.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112211010") %></span></div>
+<div style='position:absolute;left:640.03px;top:245.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112211031") %></span></div>
+<div style='position:absolute;left:702.03px;top:245.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112211070") %></span></div>
+<div style='position:absolute;left:764.03px;top:245.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112211022") %></span></div>
 <div style='position:absolute;left:34.52px;top:264.43px' class='cls_056'><span class='cls_056'>Расход: мин. 14,5 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.31px;top:264.37px' class='cls_013'><span class='cls_013'>01122120..</span></div>
 <div style='position:absolute;left:208.17px;top:264.37px' class='cls_013'><span class='cls_013'>МУЛДЕ снегозащитная</span></div>
 <div style='position:absolute;left:396.77px;top:264.37px' class='cls_013'><span class='cls_013'>24,0 x 40,5</span></div>
 <div style='position:absolute;left:451.62px;top:264.37px' class='cls_013'><span class='cls_013'>160</span></div>
 <div style='position:absolute;left:485.09px;top:264.37px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.03px;top:262.77px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:582.03px;top:262.77px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:646.03px;top:262.77px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.03px;top:262.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112212000") %></span></div>
+<div style='position:absolute;left:582.03px;top:262.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112212010") %></span></div>
+<div style='position:absolute;left:646.03px;top:262.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112212031") %></span></div>
 <div style='position:absolute;left:34.52px;top:298.85px' class='cls_037'><span class='cls_037'>Венская Делюкс</span></div>
 <div style='position:absolute;left:719.29px;top:298.62px' class='cls_087'><span class='cls_087'>EXCLUSIVE</span></div>
 <div style='position:absolute;left:672.21px;top:318.94px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
@@ -2330,7 +2331,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:459.34px;top:382.72px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:514.19px;top:382.72px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:547.67px;top:382.72px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:582.03px;top:380.77px' class='cls_059'><span class='cls_059'>50,24</span></div>
+<div style='position:absolute;left:582.03px;top:380.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110590098") %></span></div>
 <div style='position:absolute;left:45.96px;top:385.72px' class='cls_085'><span class='cls_085'>1</span></div>
 <div style='position:absolute;left:223.11px;top:386.57px' class='cls_013'><span class='cls_013'>поверхность</span></div>
 <div style='position:absolute;left:72.04px;top:399.25px' class='cls_085'><span class='cls_085'>2</span></div>
@@ -2340,7 +2341,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:459.34px;top:405.40px' class='cls_013'><span class='cls_013'>19,0 x 42,0</span></div>
 <div style='position:absolute;left:514.19px;top:405.40px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:547.67px;top:405.40px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:582.03px;top:403.77px' class='cls_059'><span class='cls_059'>58,95</span></div>
+<div style='position:absolute;left:582.03px;top:403.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110550098") %></span></div>
 <div style='position:absolute;left:223.24px;top:409.40px' class='cls_013'><span class='cls_013'>поверхность</span></div>
 <div style='position:absolute;left:101.66px;top:412.86px' class='cls_085'><span class='cls_085'>3</span></div>
 <div style='position:absolute;left:222.35px;top:424.07px' class='cls_013'><span class='cls_013'>ВЕНСКАЯ ЧЕРЕПИЦА СТАРОГРАДСКАЯ ПК, шершавая</span></div>
@@ -2349,7 +2350,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:459.34px;top:428.07px' class='cls_013'><span class='cls_013'>19,0 x 44,0</span></div>
 <div style='position:absolute;left:514.19px;top:428.07px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:547.67px;top:428.07px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:582.03px;top:426.77px' class='cls_059'><span class='cls_059'>67,67</span></div>
+<div style='position:absolute;left:582.03px;top:426.77px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110770098") %></span></div>
 <div style='position:absolute;left:223.01px;top:432.07px' class='cls_013'><span class='cls_013'>поверхность</span></div>
 <div style='position:absolute;left:631.42px;top:451.83px' class='cls_041'><span class='cls_041'>Поддон Венской черепицы Делюкс (324 шт) состоит</span></div>
 <div style='position:absolute;left:34.52px;top:462.23px' class='cls_073'><span class='cls_073'>Расход: мин. 30,4 - 35,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
@@ -2387,50 +2388,50 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:402.77px;top:148.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:147.21px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:147.21px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:146.34px' class='cls_059'><span class='cls_059'>63,31</span></div>
-<div style='position:absolute;left:582.74px;top:146.34px' class='cls_059'><span class='cls_059'>76,38</span></div>
-<div style='position:absolute;left:644.74px;top:146.34px' class='cls_059'><span class='cls_059'>76,38</span></div>
+<div style='position:absolute;left:519.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740000") %></span></div>
+<div style='position:absolute;left:582.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740010") %></span></div>
+<div style='position:absolute;left:644.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740031") %>/span></div>
 <div style='position:absolute;left:154.32px;top:164.21px' class='cls_013'><span class='cls_013'>03127401..</span></div>
 <div style='position:absolute;left:208.17px;top:164.21px' class='cls_013'><span class='cls_013'>ФИДЕЛИО половинчатая</span></div>
 <div style='position:absolute;left:395.77px;top:164.21px' class='cls_013'><span class='cls_013'>15,5 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:164.21px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:485.10px;top:164.21px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:163.34px' class='cls_059'><span class='cls_059'>115,09</span></div>
-<div style='position:absolute;left:582.74px;top:163.34px' class='cls_059'><span class='cls_059'>123,03</span></div>
-<div style='position:absolute;left:644.74px;top:163.34px' class='cls_059'><span class='cls_059'>123,03</span></div>
+<div style='position:absolute;left:519.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740100") %></span></div>
+<div style='position:absolute;left:582.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740110") %></span></div>
+<div style='position:absolute;left:644.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740131") %></span></div>
 <div style='position:absolute;left:154.32px;top:181.22px' class='cls_013'><span class='cls_013'>03127440..</span></div>
 <div style='position:absolute;left:208.17px;top:181.22px' class='cls_013'><span class='cls_013'>ФИДЕЛИО боковая левая</span></div>
 <div style='position:absolute;left:402.77px;top:181.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:456.62px;top:181.22px' class='cls_013'><span class='cls_013'>64</span></div>
 <div style='position:absolute;left:485.10px;top:181.22px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:179.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:179.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:179.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312744000") %></span></div>
+<div style='position:absolute;left:576.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312744010") %></span></div>
+<div style='position:absolute;left:638.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312744031") %></span></div>
 <div style='position:absolute;left:154.32px;top:198.24px' class='cls_013'><span class='cls_013'>03127441..</span></div>
 <div style='position:absolute;left:208.17px;top:198.24px' class='cls_013'><span class='cls_013'>ФИДЕЛИО боковая правая</span></div>
 <div style='position:absolute;left:402.77px;top:198.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:456.63px;top:198.24px' class='cls_013'><span class='cls_013'>64</span></div>
 <div style='position:absolute;left:485.10px;top:198.24px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:196.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:196.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:196.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:196.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312744100") %></span></div>
+<div style='position:absolute;left:576.74px;top:196.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312744110") %></span></div>
+<div style='position:absolute;left:638.74px;top:196.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312744131") %></span></div>
 <div style='position:absolute;left:154.32px;top:215.25px' class='cls_013'><span class='cls_013'>03127410..</span></div>
 <div style='position:absolute;left:208.18px;top:215.25px' class='cls_013'><span class='cls_013'>ФИДЕЛИО вентиляционная</span></div>
 <div style='position:absolute;left:402.77px;top:215.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.63px;top:215.25px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:215.25px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:514.69px;top:213.84px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:213.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:213.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:514.69px;top:213.84px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312741000") %></span></div>
+<div style='position:absolute;left:576.74px;top:213.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312741010") %></span></div>
+<div style='position:absolute;left:638.74px;top:213.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312741031") %></span></div>
 <div style='position:absolute;left:34.52px;top:232.31px' class='cls_056'><span class='cls_056'>Расход: мин. 11 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:232.25px' class='cls_013'><span class='cls_013'>03127420..</span></div>
 <div style='position:absolute;left:208.18px;top:232.25px' class='cls_013'><span class='cls_013'>ФИДЕЛИО снегозащитная</span></div>
 <div style='position:absolute;left:402.77px;top:232.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:232.25px' class='cls_013'><span class='cls_013'>144</span></div>
 <div style='position:absolute;left:485.10px;top:232.25px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:230.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:582.74px;top:230.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:644.74px;top:230.34px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:519.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312742000") %></span></div>
+<div style='position:absolute;left:582.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312742010") %></span></div>
+<div style='position:absolute;left:644.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312742031") %></span></div>
 <div style='position:absolute;left:34.52px;top:279.68px' class='cls_037'><span class='cls_037'>Кармен</span></div>
 <div style='position:absolute;left:640.82px;top:299.77px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
 <div style='position:absolute;left:442.69px;top:305.51px' class='cls_053'><span class='cls_053'>Колличе-</span></div>
@@ -2456,66 +2457,66 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:400.77px;top:360.71px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:360.71px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:360.71px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:359.34px' class='cls_059'><span class='cls_059'>76,38</span></div>
-<div style='position:absolute;left:582.74px;top:359.34px' class='cls_059'><span class='cls_059'>81,51</span></div>
-<div style='position:absolute;left:644.74px;top:359.34px' class='cls_059'><span class='cls_059'>81,51</span></div>
+<div style='position:absolute;left:519.74px;top:359.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312700000") %></span></div>
+<div style='position:absolute;left:582.74px;top:359.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312700010") %></span></div>
+<div style='position:absolute;left:644.74px;top:359.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312700031") %></span></div>
 <div style='position:absolute;left:154.32px;top:377.72px' class='cls_013'><span class='cls_013'>03127040..</span></div>
 <div style='position:absolute;left:208.17px;top:377.72px' class='cls_013'><span class='cls_013'>КАРМЕН боковая левая</span></div>
 <div style='position:absolute;left:400.77px;top:377.72px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:455.62px;top:377.72px' class='cls_013'><span class='cls_013'>48</span></div>
 <div style='position:absolute;left:485.10px;top:377.72px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:376.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:376.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:376.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:376.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312704000") %></span></div>
+<div style='position:absolute;left:576.74px;top:376.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312704010") %></span></div>
+<div style='position:absolute;left:638.74px;top:376.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312704031") %></span></div>
 <div style='position:absolute;left:154.21px;top:394.74px' class='cls_013'><span class='cls_013'>03127041..</span></div>
 <div style='position:absolute;left:208.17px;top:394.74px' class='cls_013'><span class='cls_013'>КАРМЕН боковая правая</span></div>
 <div style='position:absolute;left:400.77px;top:394.74px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:455.62px;top:394.74px' class='cls_013'><span class='cls_013'>48</span></div>
 <div style='position:absolute;left:485.09px;top:394.74px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:393.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:393.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:393.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:393.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312704100") %></span></div>
+<div style='position:absolute;left:576.74px;top:393.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312704110") %></span></div>
+<div style='position:absolute;left:638.74px;top:393.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312704131") %></span></div>
 <div style='position:absolute;left:154.21px;top:411.75px' class='cls_013'><span class='cls_013'>03127050..</span></div>
 <div style='position:absolute;left:208.17px;top:411.75px' class='cls_013'><span class='cls_013'>КАРМЕН подконьковая</span></div>
 <div style='position:absolute;left:400.77px;top:411.75px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:411.75px' class='cls_013'><span class='cls_013'>200</span></div>
 <div style='position:absolute;left:485.09px;top:411.75px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:410.34px' class='cls_059'><span class='cls_059'>142,00</span></div>
-<div style='position:absolute;left:582.74px;top:410.34px' class='cls_059'><span class='cls_059'>150,71</span></div>
-<div style='position:absolute;left:644.74px;top:410.34px' class='cls_059'><span class='cls_059'>150,71</span></div>
+<div style='position:absolute;left:519.74px;top:410.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705000") %></span></div>
+<div style='position:absolute;left:582.74px;top:410.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705010") %></span></div>
+<div style='position:absolute;left:644.74px;top:410.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705031") %></span></div>
 <div style='position:absolute;left:154.21px;top:428.76px' class='cls_013'><span class='cls_013'>03127051..</span></div>
 <div style='position:absolute;left:208.17px;top:428.76px' class='cls_013'><span class='cls_013'>КАРМЕН подконьковая боковая левая</span></div>
 <div style='position:absolute;left:400.77px;top:428.76px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:455.62px;top:428.76px' class='cls_013'><span class='cls_013'>48</span></div>
 <div style='position:absolute;left:485.09px;top:428.76px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:427.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:427.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:427.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:427.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705100") %></span></div>
+<div style='position:absolute;left:576.74px;top:427.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705110") %></span></div>
+<div style='position:absolute;left:638.74px;top:427.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705131") %></span></div>
 <div style='position:absolute;left:154.31px;top:445.75px' class='cls_013'><span class='cls_013'>03127052..</span></div>
 <div style='position:absolute;left:208.17px;top:445.77px' class='cls_013'><span class='cls_013'>КАРМЕН подконьковая боковая правая</span></div>
 <div style='position:absolute;left:400.77px;top:445.77px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:455.62px;top:445.77px' class='cls_013'><span class='cls_013'>48</span></div>
 <div style='position:absolute;left:485.09px;top:445.77px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:444.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:444.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:444.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:444.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705200") %></span></div>
+<div style='position:absolute;left:576.74px;top:444.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705210") %></span></div>
+<div style='position:absolute;left:638.74px;top:444.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312705231") %></span></div>
 <div style='position:absolute;left:154.21px;top:462.78px' class='cls_013'><span class='cls_013'>03127010..</span></div>
 <div style='position:absolute;left:208.17px;top:462.78px' class='cls_013'><span class='cls_013'>КАРМЕН вентиляционная</span></div>
 <div style='position:absolute;left:400.77px;top:462.78px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:462.78px' class='cls_013'><span class='cls_013'>200</span></div>
 <div style='position:absolute;left:485.09px;top:462.78px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:461.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:461.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:461.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:461.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312701000") %></span></div>
+<div style='position:absolute;left:576.74px;top:461.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312701010") %></span></div>
+<div style='position:absolute;left:638.74px;top:461.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312701031") %></span></div>
 <div style='position:absolute;left:34.52px;top:479.84px' class='cls_056'><span class='cls_056'>Расход: мин. 12,3 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.31px;top:479.77px' class='cls_013'><span class='cls_013'>03127020..</span></div>
 <div style='position:absolute;left:208.17px;top:479.78px' class='cls_013'><span class='cls_013'>КАРМЕН снегозащитная</span></div>
 <div style='position:absolute;left:400.77px;top:479.78px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:479.78px' class='cls_013'><span class='cls_013'>160</span></div>
 <div style='position:absolute;left:485.09px;top:479.78px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:477.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:582.74px;top:477.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:644.74px;top:477.34px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:519.74px;top:477.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312702000") %></span></div>
+<div style='position:absolute;left:582.74px;top:477.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312702010") %></span></div>
+<div style='position:absolute;left:644.74px;top:477.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312702031") %></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>18</span></div>
 </div>
 <div style='position:absolute;left:50%;margin-left:-420px;top:11495px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -2547,64 +2548,64 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:208.21px;top:119.06px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС рядовая</span></div>
 <div style='position:absolute;left:396.77px;top:118.82px' class='cls_013'><span class='cls_013'>25,5 x 44,6</span></div>
 <div style='position:absolute;left:451.62px;top:118.82px' class='cls_013'><span class='cls_013'>240</span></div>
-<div style='position:absolute;left:519.74px;top:117.45px' class='cls_059'><span class='cls_059' old-price='63,31'>63,31</span></div>
-<div style='position:absolute;left:583.07px;top:117.45px' class='cls_059'><span class='cls_059' old-price='69,20'>69,20</span></div>
-<div style='position:absolute;left:646.07px;top:117.45px' class='cls_059'><span class='cls_059' old-price='69,20'>69,20</span></div>
+<div style='position:absolute;left:519.74px;top:117.45px' class='cls_059'><span class='cls_059' old-price='63,31'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312770000") %></span></div>
+<div style='position:absolute;left:583.07px;top:117.45px' class='cls_059'><span class='cls_059' old-price='69,20'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312770019") %></span></div>
+<div style='position:absolute;left:646.07px;top:117.45px' class='cls_059'><span class='cls_059' old-price='69,20'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312770010") %></span></div>
 <div style='position:absolute;left:154.32px;top:135.83px' class='cls_013'><span class='cls_013'>03127740..</span></div>
 <div style='position:absolute;left:208.21px;top:136.07px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:135.83px' class='cls_013'><span class='cls_013'>25,5 x 44,6</span></div>
 <div style='position:absolute;left:451.62px;top:135.83px' class='cls_013'><span class='cls_013'>160</span></div>
-<div style='position:absolute;left:513.07px;top:134.45px' class='cls_059'><span class='cls_059' old-price='266,31'>266,31</span></div>
-<div style='position:absolute;left:576.40px;top:134.45px' class='cls_059'><span class='cls_059' old-price='272,21'>272,21</span></div>
-<div style='position:absolute;left:639.40px;top:134.45px' class='cls_059'><span class='cls_059' old-price='272,21'>272,21</span></div>
+<div style='position:absolute;left:513.07px;top:134.45px' class='cls_059'><span class='cls_059' old-price='266,31'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312774000") %></span></div>
+<div style='position:absolute;left:576.40px;top:134.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312774019") %></span></div>
+<div style='position:absolute;left:639.40px;top:134.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312774010") %></span></div>
 <div style='position:absolute;left:154.32px;top:152.84px' class='cls_013'><span class='cls_013'>01125142..</span></div>
 <div style='position:absolute;left:208.21px;top:153.08px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС боковая пластина левая</span></div>
 <div style='position:absolute;left:451.62px;top:152.84px' class='cls_013'><span class='cls_013'>400</span></div>
-<div style='position:absolute;left:519.73px;top:151.45px' class='cls_059'><span class='cls_059'>62,54</span></div>
-<div style='position:absolute;left:583.07px;top:151.45px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:646.07px;top:151.45px' class='cls_059'><span class='cls_059'>66,90</span></div>
+<div style='position:absolute;left:519.73px;top:151.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514200") %></span></div>
+<div style='position:absolute;left:583.07px;top:151.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514219") %></span></div>
+<div style='position:absolute;left:646.07px;top:151.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514210") %></span></div>
 <div style='position:absolute;left:154.32px;top:169.85px' class='cls_013'><span class='cls_013'>03127741..</span></div>
 <div style='position:absolute;left:208.21px;top:170.09px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:169.85px' class='cls_013'><span class='cls_013'>25,5 x 44,6</span></div>
 <div style='position:absolute;left:451.62px;top:169.85px' class='cls_013'><span class='cls_013'>160</span></div>
-<div style='position:absolute;left:513.07px;top:168.45px' class='cls_059'><span class='cls_059' old-price='266,31'>300,78</span></div>
-<div style='position:absolute;left:576.40px;top:168.45px' class='cls_059'><span class='cls_059' old-price='272,21'>307,46</span></div>
-<div style='position:absolute;left:639.40px;top:168.45px' class='cls_059'><span class='cls_059' old-price='272,21'>307,46</span></div>
+<div style='position:absolute;left:513.07px;top:168.45px' class='cls_059'><span class='cls_059' old-price='266,31'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312774100") %></span></div>
+<div style='position:absolute;left:576.40px;top:168.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312774119") %></span></div>
+<div style='position:absolute;left:639.40px;top:168.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312774110") %></span></div>
 <div style='position:absolute;left:154.32px;top:186.85px' class='cls_013'><span class='cls_013'>01125143..</span></div>
 <div style='position:absolute;left:208.21px;top:187.09px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС боковая пластина правая</span></div>
 <div style='position:absolute;left:451.62px;top:186.85px' class='cls_013'><span class='cls_013'>400</span></div>
-<div style='position:absolute;left:519.73px;top:185.45px' class='cls_059'><span class='cls_059'>62,54</span></div>
-<div style='position:absolute;left:583.07px;top:185.45px' class='cls_059'><span class='cls_059'>66,90</span></div>
-<div style='position:absolute;left:646.07px;top:185.45px' class='cls_059'><span class='cls_059'>66,90</span></div>
+<div style='position:absolute;left:519.73px;top:185.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514300") %></span></div>
+<div style='position:absolute;left:583.07px;top:185.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514319") %></span></div>
+<div style='position:absolute;left:646.07px;top:185.45px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0112514310") %></span></div>
 <div style='position:absolute;left:154.32px;top:203.86px' class='cls_013'><span class='cls_013'>03127750..</span></div>
 <div style='position:absolute;left:208.21px;top:204.10px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС подконьковая</span></div>
 <div style='position:absolute;left:396.77px;top:203.86px' class='cls_013'><span class='cls_013'>25,5 x 44,6</span></div>
 <div style='position:absolute;left:451.62px;top:203.86px' class='cls_013'><span class='cls_013'>240</span></div>
-<div style='position:absolute;left:519.73px;top:202.45px' class='cls_059'><span class='cls_059' old-price='106,88'>120,50</span></div>
-<div style='position:absolute;left:583.07px;top:202.45px' class='cls_059'><span class='cls_059' old-price='113,55'>128,45</span></div>
-<div style='position:absolute;left:646.07px;top:202.45px' class='cls_059'><span class='cls_059' old-price='113,55'>128,45</span></div>
+<div style='position:absolute;left:519.73px;top:202.45px' class='cls_059'><span class='cls_059' old-price='106,88'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775000") %></span></div>
+<div style='position:absolute;left:583.07px;top:202.45px' class='cls_059'><span class='cls_059' old-price='113,55'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775019") %></span></div>
+<div style='position:absolute;left:646.07px;top:202.45px' class='cls_059'><span class='cls_059' old-price='113,55'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775010") %></span></div>
 <div style='position:absolute;left:154.32px;top:220.87px' class='cls_013'><span class='cls_013'>03127751..</span></div>
 <div style='position:absolute;left:208.21px;top:221.11px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС подконьковая боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:220.87px' class='cls_013'><span class='cls_013'>25,5 x 44,6</span></div>
 <div style='position:absolute;left:451.62px;top:220.87px' class='cls_013'><span class='cls_013'>160</span></div>
-<div style='position:absolute;left:513.07px;top:219.45px' class='cls_059'><span class='cls_059' old-price='266,31'>300,78</span></div>
-<div style='position:absolute;left:576.40px;top:219.45px' class='cls_059'><span class='cls_059' old-price='272,21'>307,46</span></div>
-<div style='position:absolute;left:639.40px;top:219.45px' class='cls_059'><span class='cls_059' old-price='272,21'>307,46</span></div>
+<div style='position:absolute;left:513.07px;top:219.45px' class='cls_059'><span class='cls_059' old-price='266,31'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775100") %></span></div>
+<div style='position:absolute;left:576.40px;top:219.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775119") %></span></div>
+<div style='position:absolute;left:639.40px;top:219.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775110") %></span></div>
 <div style='position:absolute;left:154.31px;top:237.88px' class='cls_013'><span class='cls_013'>03127752..</span></div>
 <div style='position:absolute;left:208.21px;top:238.12px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС подконьковая боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:237.88px' class='cls_013'><span class='cls_013'>25,5 x 44,6</span></div>
 <div style='position:absolute;left:451.62px;top:237.88px' class='cls_013'><span class='cls_013'>160</span></div>
-<div style='position:absolute;left:513.07px;top:236.45px' class='cls_059'><span class='cls_059' old-price='266,31'>300,78</span></div>
-<div style='position:absolute;left:576.40px;top:236.45px' class='cls_059'><span class='cls_059' old-price='272,21'>307,46</span></div>
-<div style='position:absolute;left:639.40px;top:236.45px' class='cls_059'><span class='cls_059' old-price='272,21'>307,46</span></div>
+<div style='position:absolute;left:513.07px;top:236.45px' class='cls_059'><span class='cls_059' old-price='266,31'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775200") %></span></div>
+<div style='position:absolute;left:576.40px;top:236.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775219") %></span></div>
+<div style='position:absolute;left:639.40px;top:236.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312775210") %></span></div>
 <div style='position:absolute;left:34.52px;top:253.20px' class='cls_056'><span class='cls_056'>Расход: мин. 13,8 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.31px;top:254.88px' class='cls_013'><span class='cls_013'>03127710..</span></div>
 <div style='position:absolute;left:208.21px;top:255.12px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС вентиляционная</span></div>
 <div style='position:absolute;left:396.77px;top:254.88px' class='cls_013'><span class='cls_013'>25,5 x 44,6</span></div>
 <div style='position:absolute;left:451.62px;top:254.88px' class='cls_013'><span class='cls_013'>240</span></div>
-<div style='position:absolute;left:512.73px;top:253.45px' class='cls_059'><span class='cls_059' old-price='266,31'>300,78</span></div>
-<div style='position:absolute;left:576.40px;top:253.45px' class='cls_059'><span class='cls_059' old-price='272,21'>307,46</span></div>
-<div style='position:absolute;left:639.40px;top:253.45px' class='cls_059'><span class='cls_059' old-price='272,21'>307,46</span></div>
+<div style='position:absolute;left:512.73px;top:253.45px' class='cls_059'><span class='cls_059' old-price='266,31'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312771000") %></span></div>
+<div style='position:absolute;left:576.40px;top:253.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312771019") %></span></div>
+<div style='position:absolute;left:639.40px;top:253.45px' class='cls_059'><span class='cls_059' old-price='272,21'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312771010") %></span></div>
 <div style='position:absolute;left:150.55px;top:268.78px' class='cls_057'><span class='cls_057' style='display:none'>*</span><span class='cls_091' style='display:none'>В данный момент действует акция на Медитеран Плюс и комплектующие к ней в цветах натур, антик ангоб, санд-антик ангоб, бронза ангоб</span></div>
 <div style='position:absolute;left:163.72px;top:284.97px' class='cls_058'><span class='cls_058'>и патина ангоб. Цены уточняйте у представителей в Вашем регионе.</span></div>
 <div style='position:absolute;left:34.52px;top:306.71px' class='cls_037'><span class='cls_037'>Венера </span><span class='cls_086'>посувная черепица</span></div>
@@ -2632,73 +2633,73 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:208.17px;top:387.75px' class='cls_013'><span class='cls_013'>ВЕНЕРА рядовая</span></div>
 <div style='position:absolute;left:396.77px;top:387.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:451.62px;top:387.75px' class='cls_013'><span class='cls_013'>240</span></div>
-<div style='position:absolute;left:520.03px;top:386.20px' class='cls_059'><span class='cls_059'>64,85</span></div>
-<div style='position:absolute;left:582.03px;top:386.20px' class='cls_059'><span class='cls_059'>68,44</span></div>
-<div style='position:absolute;left:646.03px;top:386.20px' class='cls_059'><span class='cls_059'>79,46</span></div>
+<div style='position:absolute;left:520.03px;top:386.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312700000") %></span></div>
+<div style='position:absolute;left:582.03px;top:386.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312700010") %></span></div>
+<div style='position:absolute;left:646.03px;top:386.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312700071") %></span></div>
 <div style='position:absolute;left:154.31px;top:405.77px' class='cls_013'><span class='cls_013'>43127040..</span></div>
 <div style='position:absolute;left:208.17px;top:405.77px' class='cls_013'><span class='cls_013'>ВЕНЕРА боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:404.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.62px;top:404.76px' class='cls_013'><span class='cls_013'>34</span></div>
-<div style='position:absolute;left:514.03px;top:403.20px' class='cls_059'><span class='cls_059'>277,33</span></div>
-<div style='position:absolute;left:576.03px;top:403.20px' class='cls_059'><span class='cls_059'>291,94</span></div>
-<div style='position:absolute;left:640.03px;top:403.20px' class='cls_059'><span class='cls_059'>338,59</span></div>
+<div style='position:absolute;left:514.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704000") %></span></div>
+<div style='position:absolute;left:576.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704010") %></span></div></span></div>
+<div style='position:absolute;left:640.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704071") %></span></div></span></div>
 <div style='position:absolute;left:154.31px;top:421.78px' class='cls_013'><span class='cls_013'>43127041..</span></div>
 <div style='position:absolute;left:208.17px;top:421.78px' class='cls_013'><span class='cls_013'>ВЕНЕРА боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:421.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.62px;top:421.77px' class='cls_013'><span class='cls_013'>30</span></div>
-<div style='position:absolute;left:514.03px;top:420.20px' class='cls_059'><span class='cls_059'>277,33</span></div>
-<div style='position:absolute;left:576.03px;top:420.20px' class='cls_059'><span class='cls_059'>291,94</span></div>
-<div style='position:absolute;left:640.03px;top:420.20px' class='cls_059'><span class='cls_059'>338,59</span></div>
+<div style='position:absolute;left:514.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704100") %></span></div></span></div>
+<div style='position:absolute;left:576.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704110") %></span></div></span></div>
+<div style='position:absolute;left:640.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704171") %></span></div></span></div>
 <div style='position:absolute;left:154.31px;top:438.77px' class='cls_013'><span class='cls_013'>43127050..</span></div>
 <div style='position:absolute;left:208.17px;top:438.77px' class='cls_013'><span class='cls_013'>ВЕНЕРА подконьковая</span></div>
 <div style='position:absolute;left:396.77px;top:438.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:451.96px;top:438.78px' class='cls_013'><span class='cls_013'>120</span></div>
-<div style='position:absolute;left:520.03px;top:437.20px' class='cls_059'><span class='cls_059'>116,37</span></div>
-<div style='position:absolute;left:582.03px;top:437.20px' class='cls_059'><span class='cls_059'>122,26</span></div>
-<div style='position:absolute;left:646.03px;top:437.20px' class='cls_059'><span class='cls_059'>141,23</span></div>
+<div style='position:absolute;left:520.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705000") %></span></div></span></div>
+<div style='position:absolute;left:582.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705010") %></span></div></span></div>
+<div style='position:absolute;left:646.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705071") %></span></div></span></div>
 <div style='position:absolute;left:154.31px;top:456.77px' class='cls_013'><span class='cls_013'>43127051..</span></div>
 <div style='position:absolute;left:208.17px;top:456.77px' class='cls_013'><span class='cls_013'>ВЕНЕРА подконьковая боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:455.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.62px;top:455.78px' class='cls_013'><span class='cls_013'>68</span></div>
-<div style='position:absolute;left:514.03px;top:454.20px' class='cls_059'><span class='cls_059'>277,33</span></div>
-<div style='position:absolute;left:576.03px;top:454.20px' class='cls_059'><span class='cls_059'>291,94</span></div>
-<div style='position:absolute;left:640.03px;top:454.20px' class='cls_059'><span class='cls_059'>338,59</span></div>
+<div style='position:absolute;left:514.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705100") %></span></div></span></div>
+<div style='position:absolute;left:576.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705110") %></span></div></span></div>
+<div style='position:absolute;left:640.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705171") %></span></div></span></div>
 <div style='position:absolute;left:154.31px;top:472.78px' class='cls_013'><span class='cls_013'>43127052..</span></div>
 <div style='position:absolute;left:208.17px;top:472.78px' class='cls_013'><span class='cls_013'>ВЕНЕРА подконьковая боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:472.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.29px;top:472.81px' class='cls_013'><span class='cls_013'>60</span></div>
-<div style='position:absolute;left:514.03px;top:471.20px' class='cls_059'><span class='cls_059'>277,33</span></div>
-<div style='position:absolute;left:576.03px;top:471.20px' class='cls_059'><span class='cls_059'>291,94</span></div>
-<div style='position:absolute;left:640.03px;top:471.20px' class='cls_059'><span class='cls_059'>338,59</span></div>
+<div style='position:absolute;left:514.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705200") %></span></div></span></div>
+<div style='position:absolute;left:576.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705210") %></span></div></span></div>
+<div style='position:absolute;left:640.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705271") %></span></div></span></div>
 <div style='position:absolute;left:154.31px;top:489.80px' class='cls_013'><span class='cls_013'>43127010..</span></div>
 <div style='position:absolute;left:208.17px;top:489.80px' class='cls_013'><span class='cls_013'>ВЕНЕРА вентиляционная</span></div>
 <div style='position:absolute;left:396.77px;top:489.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:451.62px;top:489.81px' class='cls_013'><span class='cls_013'>120</span></div>
-<div style='position:absolute;left:514.03px;top:488.20px' class='cls_059'><span class='cls_059'>227,86</span></div>
-<div style='position:absolute;left:582.03px;top:488.20px' class='cls_059'><span class='cls_059'>239,40</span></div>
-<div style='position:absolute;left:640.03px;top:488.20px' class='cls_059'><span class='cls_059'>278,10</span></div>
+<div style='position:absolute;left:514.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701000") %></span></div></span></div>
+<div style='position:absolute;left:582.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701010") %></span></div></span></div>
+<div style='position:absolute;left:640.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701071") %></span></div></span></div>
 <div style='position:absolute;left:154.31px;top:506.81px' class='cls_013'><span class='cls_013'>43127030..</span></div>
 <div style='position:absolute;left:208.17px;top:506.81px' class='cls_013'><span class='cls_013'>ВЕНЕРА карнизная</span></div>
 <div style='position:absolute;left:396.77px;top:506.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:451.62px;top:506.81px' class='cls_013'><span class='cls_013'>120</span></div>
-<div style='position:absolute;left:520.03px;top:505.20px' class='cls_059'><span class='cls_059'>113,55</span></div>
-<div style='position:absolute;left:582.03px;top:505.20px' class='cls_059'><span class='cls_059'>119,44</span></div>
-<div style='position:absolute;left:646.03px;top:505.20px' class='cls_059'><span class='cls_059'>138,92</span></div>
+<div style='position:absolute;left:520.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703000") %></span></div></span></div>
+<div style='position:absolute;left:582.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703010") %></span></div></span></div>
+<div style='position:absolute;left:646.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703071") %></span></div></span></div>
 <div style='position:absolute;left:154.31px;top:523.80px' class='cls_013'><span class='cls_013'>43127031..</span></div>
 <div style='position:absolute;left:208.17px;top:523.80px' class='cls_013'><span class='cls_013'>ВЕНЕРА карнизная боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:523.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.29px;top:523.81px' class='cls_013'><span class='cls_013'>34</span></div>
-<div style='position:absolute;left:514.03px;top:522.20px' class='cls_059'><span class='cls_059'>277,33</span></div>
-<div style='position:absolute;left:576.03px;top:522.20px' class='cls_059'><span class='cls_059'>291,94</span></div>
-<div style='position:absolute;left:640.03px;top:522.20px' class='cls_059'><span class='cls_059'>338,59</span></div>
+<div style='position:absolute;left:514.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703100") %></span></div></span></div>
+<div style='position:absolute;left:576.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703110") %></span></div></span></div>
+<div style='position:absolute;left:640.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703171") %></span></div></span></div>
 <div style='position:absolute;left:34.52px;top:536.74px' class='cls_056'><span class='cls_056'>Расход: мин. 11,0 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.31px;top:540.81px' class='cls_013'><span class='cls_013'>43127032..</span></div>
 <div style='position:absolute;left:208.17px;top:540.81px' class='cls_013'><span class='cls_013'>ВЕНЕРА карнизная боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:540.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.29px;top:540.81px' class='cls_013'><span class='cls_013'>30</span></div>
-<div style='position:absolute;left:514.03px;top:539.20px' class='cls_059'><span class='cls_059'>277,33</span></div>
-<div style='position:absolute;left:576.03px;top:539.20px' class='cls_059'><span class='cls_059'>291,94</span></div>
-<div style='position:absolute;left:640.03px;top:539.20px' class='cls_059'><span class='cls_059'>338,59</span></div>
+<div style='position:absolute;left:514.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703200") %></span></div></span></div>
+<div style='position:absolute;left:576.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703210") %></span></div></span></div>
+<div style='position:absolute;left:640.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703271") %></span></div></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>20</span></div>
 </div>
 <div style='position:absolute;left:50%;margin-left:-420px;top:10890px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -2731,50 +2732,50 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:402.77px;top:148.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:147.21px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:147.21px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:146.34px' class='cls_059'><span class='cls_059'>76,38</span></div>
-<div style='position:absolute;left:582.74px;top:146.34px' class='cls_059'><span class='cls_059'>81,51</span></div>
-<div style='position:absolute;left:644.74px;top:146.34px' class='cls_059'><span class='cls_059'>81,51</span></div>
+<div style='position:absolute;left:519.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312720000") %></span></div>
+<div style='position:absolute;left:582.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312720010") %></span></div>
+<div style='position:absolute;left:644.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312720031") %></span></div>
 <div style='position:absolute;left:154.32px;top:164.21px' class='cls_013'><span class='cls_013'>03127201..</span></div>
 <div style='position:absolute;left:208.17px;top:164.21px' class='cls_013'><span class='cls_013'>ФИГАРО половинчатая</span></div>
 <div style='position:absolute;left:395.77px;top:164.21px' class='cls_013'><span class='cls_013'>15,5 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:164.21px' class='cls_013'><span class='cls_013'>300</span></div>
 <div style='position:absolute;left:485.10px;top:164.21px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:163.34px' class='cls_059'><span class='cls_059'>115,09</span></div>
-<div style='position:absolute;left:582.74px;top:163.34px' class='cls_059'><span class='cls_059'>123,03</span></div>
-<div style='position:absolute;left:644.74px;top:163.34px' class='cls_059'><span class='cls_059'>123,03</span></div>
+<div style='position:absolute;left:519.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312720100") %></span></div>
+<div style='position:absolute;left:582.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312720110") %></span></div>
+<div style='position:absolute;left:644.74px;top:163.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312720131") %></span></div>
 <div style='position:absolute;left:154.32px;top:181.22px' class='cls_013'><span class='cls_013'>03127240..</span></div>
 <div style='position:absolute;left:208.17px;top:181.22px' class='cls_013'><span class='cls_013'>ФИГАРО боковая левая</span></div>
 <div style='position:absolute;left:402.77px;top:181.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:456.62px;top:181.22px' class='cls_013'><span class='cls_013'>64</span></div>
 <div style='position:absolute;left:485.10px;top:181.22px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:179.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:179.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:179.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312724000") %></span></div>
+<div style='position:absolute;left:576.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312724010") %></span></div>
+<div style='position:absolute;left:638.74px;top:179.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312724031") %></span></div>
 <div style='position:absolute;left:154.32px;top:198.24px' class='cls_013'><span class='cls_013'>03127241..</span></div>
 <div style='position:absolute;left:208.17px;top:198.24px' class='cls_013'><span class='cls_013'>ФИГАРО боковая правая</span></div>
 <div style='position:absolute;left:402.77px;top:198.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:456.62px;top:198.24px' class='cls_013'><span class='cls_013'>64</span></div>
 <div style='position:absolute;left:485.10px;top:198.24px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:513.74px;top:196.34px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:196.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:196.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:513.74px;top:196.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312724100") %></span></div>
+<div style='position:absolute;left:576.74px;top:196.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312724110") %></span></div>
+<div style='position:absolute;left:638.74px;top:196.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312724131") %></span></div>
 <div style='position:absolute;left:154.32px;top:215.25px' class='cls_013'><span class='cls_013'>03127210..</span></div>
 <div style='position:absolute;left:208.18px;top:215.25px' class='cls_013'><span class='cls_013'>ФИГАРО вентиляционнаяая</span></div>
 <div style='position:absolute;left:402.77px;top:215.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.63px;top:215.25px' class='cls_013'><span class='cls_013'>240</span></div>
 <div style='position:absolute;left:485.10px;top:215.25px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:514.69px;top:213.85px' class='cls_059'><span class='cls_059'>462,90</span></div>
-<div style='position:absolute;left:576.74px;top:213.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
-<div style='position:absolute;left:638.74px;top:213.34px' class='cls_059'><span class='cls_059'>470,34</span></div>
+<div style='position:absolute;left:514.69px;top:213.85px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312721000") %></span></div>
+<div style='position:absolute;left:576.74px;top:213.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312721010") %></span></div>
+<div style='position:absolute;left:638.74px;top:213.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312721031") %></span></div>
 <div style='position:absolute;left:34.52px;top:231.13px' class='cls_056'><span class='cls_056'>Расход: мин. 11,6 шт/м</span><span class='cls_060'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:232.25px' class='cls_013'><span class='cls_013'>03127220..</span></div>
 <div style='position:absolute;left:208.18px;top:232.25px' class='cls_013'><span class='cls_013'>ФИГАРО снегозащитнаяая</span></div>
 <div style='position:absolute;left:402.77px;top:232.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
 <div style='position:absolute;left:451.62px;top:232.25px' class='cls_013'><span class='cls_013'>144</span></div>
 <div style='position:absolute;left:485.10px;top:232.25px' class='cls_013'><span class='cls_013'>P</span></div>
-<div style='position:absolute;left:519.74px;top:230.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:576.74px;top:230.34px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:638.74px;top:230.34px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:519.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312722000") %></span></div>
+<div style='position:absolute;left:576.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312722010") %></span></div>
+<div style='position:absolute;left:638.74px;top:230.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312722031") %></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_002'><span class='cls_007'>19</span></div>
 </div>
 
@@ -2808,37 +2809,37 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.95px;top:157.40px' class='cls_013'><span class='cls_013'>22,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:157.40px' class='cls_013'><span class='cls_013'>384</span></div>
 <div style='position:absolute;left:485.47px;top:157.40px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.69px;top:156.39px' class='cls_059'><span class='cls_059'>52,29</span></div>
-<div style='position:absolute;left:581.49px;top:156.39px' class='cls_059'><span class='cls_059'>61,77</span></div>
+<div style='position:absolute;left:520.69px;top:156.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111000000") %></span></div>
+<div style='position:absolute;left:581.49px;top:156.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111000010") %></span></div>
 <div style='position:absolute;left:154.32px;top:174.41px' class='cls_013'><span class='cls_013'>01110001..</span></div>
 <div style='position:absolute;left:208.17px;top:174.41px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА половинчатая</span></div>
 <div style='position:absolute;left:398.06px;top:174.41px' class='cls_013'><span class='cls_013'>11,0 x 37,0</span></div>
 <div style='position:absolute;left:451.51px;top:174.41px' class='cls_013'><span class='cls_013'>480</span></div>
 <div style='position:absolute;left:485.47px;top:174.41px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.69px;top:173.06px' class='cls_059'><span class='cls_059'>91,76</span></div>
-<div style='position:absolute;left:581.49px;top:173.06px' class='cls_059'><span class='cls_059'>98,17</span></div>
+<div style='position:absolute;left:520.69px;top:173.06px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111000100") %></span></div>
+<div style='position:absolute;left:581.49px;top:173.06px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111000110") %></span></div>
 <div style='position:absolute;left:154.32px;top:191.24px' class='cls_013'><span class='cls_013'>01110010..</span></div>
 <div style='position:absolute;left:208.17px;top:191.24px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА вентиляционная</span></div>
 <div style='position:absolute;left:396.90px;top:191.24px' class='cls_013'><span class='cls_013'>22,3 x 40,0</span></div>
 <div style='position:absolute;left:451.75px;top:191.24px' class='cls_013'><span class='cls_013'>128</span></div>
 <div style='position:absolute;left:485.47px;top:191.42px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:515.09px;top:189.59px' class='cls_059'><span class='cls_059'>559,02</span></div>
-<div style='position:absolute;left:575.89px;top:189.59px' class='cls_059'><span class='cls_059'>572,86</span></div>
+<div style='position:absolute;left:515.09px;top:189.59px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111001000") %></span></div>
+<div style='position:absolute;left:575.89px;top:189.59px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111001010") %></span></div>
 <div style='position:absolute;left:154.32px;top:208.42px' class='cls_013'><span class='cls_013'>01110040..</span></div>
 <div style='position:absolute;left:208.17px;top:208.42px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА боковая левая</span></div>
 <div style='position:absolute;left:397.00px;top:208.42px' class='cls_013'><span class='cls_013'>18,3 x 40,0</span></div>
 <div style='position:absolute;left:452.25px;top:208.42px' class='cls_013'><span class='cls_013'>112</span></div>
 <div style='position:absolute;left:485.47px;top:208.42px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:515.09px;top:206.92px' class='cls_059'><span class='cls_059'>441,89</span></div>
-<div style='position:absolute;left:575.89px;top:206.92px' class='cls_059'><span class='cls_059'>460,08</span></div>
+<div style='position:absolute;left:515.09px;top:206.92px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111004000") %></span></div>
+<div style='position:absolute;left:575.89px;top:206.92px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111004010") %></span></div>
 <div style='position:absolute;left:34.52px;top:225.57px' class='cls_056'><span class='cls_056'>Расход: 17,8 - 20,1 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:225.43px' class='cls_013'><span class='cls_013'>01110041..</span></div>
 <div style='position:absolute;left:208.17px;top:225.43px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА боковая правая</span></div>
 <div style='position:absolute;left:397.00px;top:225.43px' class='cls_013'><span class='cls_013'>18,3 x 40,0</span></div>
 <div style='position:absolute;left:452.25px;top:225.43px' class='cls_013'><span class='cls_013'>112</span></div>
 <div style='position:absolute;left:485.47px;top:225.43px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:515.09px;top:224.26px' class='cls_059'><span class='cls_059'>441,89</span></div>
-<div style='position:absolute;left:575.89px;top:224.26px' class='cls_059'><span class='cls_059'>460,08</span></div>
+<div style='position:absolute;left:515.09px;top:224.26px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111004100") %></span></div>
+<div style='position:absolute;left:575.89px;top:224.26px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0111004110") %></span></div>
 <div style='position:absolute;left:34.52px;top:262.95px' class='cls_037'><span class='cls_037'>Бобровка ОК</span></div>
 <div style='position:absolute;left:640.82px;top:283.04px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
 <div style='position:absolute;left:442.18px;top:289.68px' class='cls_053'><span class='cls_053'>Колличе-</span></div>
@@ -2884,86 +2885,86 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.77px;top:343.98px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.62px;top:343.98px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:343.98px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.69px;top:342.39px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:581.49px;top:342.39px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:644.69px;top:342.39px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:707.08px;top:342.39px' class='cls_059'><span class='cls_059'>41,52</span></div>
-<div style='position:absolute;left:769.48px;top:342.39px' class='cls_059'><span class='cls_059'>93,81</span></div>
+<div style='position:absolute;left:520.69px;top:342.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010000") %></span></div>
+<div style='position:absolute;left:581.49px;top:342.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010010") %></span></div>
+<div style='position:absolute;left:644.69px;top:342.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010031") %></span></div>
+<div style='position:absolute;left:707.08px;top:342.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010070") %></span></div>
+<div style='position:absolute;left:769.48px;top:342.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010022") %></span></div>
 <div style='position:absolute;left:154.32px;top:360.99px' class='cls_013'><span class='cls_013'>01100101..</span></div>
 <div style='position:absolute;left:208.17px;top:360.99px' class='cls_013'><span class='cls_013'>БОБРОВКА ОК 3/4</span></div>
 <div style='position:absolute;left:396.77px;top:360.99px' class='cls_013'><span class='cls_013'>14,0 x 40,0</span></div>
 <div style='position:absolute;left:451.62px;top:360.99px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:360.99px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.69px;top:359.19px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:581.49px;top:359.19px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:644.69px;top:359.19px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:707.08px;top:359.19px' class='cls_059'><span class='cls_059'>41,52</span></div>
-<div style='position:absolute;left:769.48px;top:359.19px' class='cls_059'><span class='cls_059'>93,81</span></div>
+<div style='position:absolute;left:520.69px;top:359.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010100") %></span></div>
+<div style='position:absolute;left:581.49px;top:359.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010110") %></span></div>
+<div style='position:absolute;left:644.69px;top:359.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010131") %></span></div>
+<div style='position:absolute;left:707.08px;top:359.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010170") %></span></div>
+<div style='position:absolute;left:769.48px;top:359.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110010122") %></span></div>
 <div style='position:absolute;left:154.32px;top:378.00px' class='cls_013'><span class='cls_013'>01100150..</span></div>
 <div style='position:absolute;left:208.17px;top:378.00px' class='cls_013'><span class='cls_013'>БОБРОВКА ОК подконьковая</span></div>
 <div style='position:absolute;left:396.77px;top:378.00px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:443.62px;top:378.00px' class='cls_013'><span class='cls_013'>420/560</span></div>
 <div style='position:absolute;left:485.47px;top:378.00px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.69px;top:376.79px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:581.49px;top:376.79px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:644.69px;top:376.79px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:707.09px;top:376.79px' class='cls_059'><span class='cls_059'>41,52</span></div>
-<div style='position:absolute;left:769.48px;top:376.79px' class='cls_059'><span class='cls_059'>93,81</span></div>
+<div style='position:absolute;left:520.69px;top:376.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015000") %></span></div>
+<div style='position:absolute;left:581.49px;top:376.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015010") %></span></div>
+<div style='position:absolute;left:644.69px;top:376.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015031") %></span></div>
+<div style='position:absolute;left:707.09px;top:376.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015070") %></span></div>
+<div style='position:absolute;left:769.48px;top:376.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015022") %></span></div>
 <div style='position:absolute;left:154.32px;top:395.00px' class='cls_013'><span class='cls_013'>01100151..</span></div>
 <div style='position:absolute;left:208.17px;top:395.00px' class='cls_013'><span class='cls_013'>БОБРОВКА ОК подконьковая 3/4</span></div>
 <div style='position:absolute;left:396.77px;top:395.00px' class='cls_013'><span class='cls_013'>14,0 x 28,0</span></div>
 <div style='position:absolute;left:451.62px;top:395.00px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:395.00px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.69px;top:393.59px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:581.49px;top:393.59px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:644.69px;top:393.59px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:707.09px;top:393.59px' class='cls_059'><span class='cls_059'>41,52</span></div>
-<div style='position:absolute;left:769.49px;top:393.59px' class='cls_059'><span class='cls_059'>93,81</span></div>
+<div style='position:absolute;left:520.69px;top:393.59px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015100") %></span></div>
+<div style='position:absolute;left:581.49px;top:393.59px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015110") %></span></div>
+<div style='position:absolute;left:644.69px;top:393.59px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015131") %></span></div>
+<div style='position:absolute;left:707.09px;top:393.59px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015170") %></span></div>
+<div style='position:absolute;left:769.49px;top:393.59px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110015122") %></span></div>
 <div style='position:absolute;left:154.32px;top:412.01px' class='cls_013'><span class='cls_013'>01105130..</span></div>
 <div style='position:absolute;left:208.17px;top:412.01px' class='cls_013'><span class='cls_013'>БОБРОВКА карнизная</span></div>
 <div style='position:absolute;left:396.77px;top:412.01px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:443.63px;top:412.01px' class='cls_013'><span class='cls_013'>420/560</span></div>
 <div style='position:absolute;left:485.47px;top:412.01px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.69px;top:410.39px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:581.49px;top:410.39px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:644.69px;top:410.39px' class='cls_059'><span class='cls_059'>32,04</span></div>
-<div style='position:absolute;left:707.09px;top:410.39px' class='cls_059'><span class='cls_059'>41,52</span></div>
-<div style='position:absolute;left:769.49px;top:410.39px' class='cls_059'><span class='cls_059'>93,81</span></div>
+<div style='position:absolute;left:520.69px;top:410.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513000") %></span></div>
+<div style='position:absolute;left:581.49px;top:410.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513010") %></span></div>
+<div style='position:absolute;left:644.69px;top:410.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513031") %></span></div>
+<div style='position:absolute;left:707.09px;top:410.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513070") %></span></div>
+<div style='position:absolute;left:769.49px;top:410.39px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513022") %></span></div>
 <div style='position:absolute;left:154.32px;top:429.32px' class='cls_013'><span class='cls_013'>01100115..</span></div>
 <div style='position:absolute;left:208.17px;top:429.22px' class='cls_021'><span class='cls_021'>БОБРОВКА ОК </span><span class='cls_041'>вентиляционный комплект (3-части)</span></div>
 <div style='position:absolute;left:396.77px;top:429.23px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:454.03px;top:429.23px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.47px;top:429.02px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:515.09px;top:427.99px' class='cls_059'><span class='cls_059'>585,93</span></div>
-<div style='position:absolute;left:575.89px;top:427.99px' class='cls_059'><span class='cls_059'>623,10</span></div>
-<div style='position:absolute;left:639.09px;top:427.99px' class='cls_059'><span class='cls_059'>623,10</span></div>
-<div style='position:absolute;left:701.48px;top:427.99px' class='cls_059'><span class='cls_059'>861,99</span></div>
-<div style='position:absolute;left:763.88px;top:427.99px' class='cls_059'><span class='cls_059'>1479,19</span></div>
+<div style='position:absolute;left:515.09px;top:427.99px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110011500") %></span></div>
+<div style='position:absolute;left:575.89px;top:427.99px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110011510") %></span></div>
+<div style='position:absolute;left:639.09px;top:427.99px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110011531") %></span></div>
+<div style='position:absolute;left:701.48px;top:427.99px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110011570") %></span></div>
+<div style='position:absolute;left:763.88px;top:427.99px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110011522") %></span></div>
 <div style='position:absolute;left:154.32px;top:446.03px' class='cls_013'><span class='cls_013'>01100120..</span></div>
 <div style='position:absolute;left:208.18px;top:446.03px' class='cls_013'><span class='cls_013'>БОБРОВКА ОК снегозащитная</span></div>
 <div style='position:absolute;left:396.77px;top:446.03px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.63px;top:446.03px' class='cls_013'><span class='cls_013'>128</span></div>
 <div style='position:absolute;left:485.47px;top:446.03px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.69px;top:444.79px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:580.90px;top:444.59px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:644.68px;top:444.79px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:520.69px;top:444.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110012000") %></span></div>
+<div style='position:absolute;left:580.90px;top:444.59px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110012010") %></span></div>
+<div style='position:absolute;left:644.68px;top:444.79px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110012031") %></span></div>
 <div style='position:absolute;left:154.32px;top:464.45px' class='cls_013'><span class='cls_013'>01100144..</span></div>
 <div style='position:absolute;left:208.18px;top:464.45px' class='cls_013'><span class='cls_013'>БОБРОВКА ОК боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:464.45px' class='cls_013'><span class='cls_013'>18,0 x 44,0</span></div>
 <div style='position:absolute;left:451.63px;top:464.45px' class='cls_013'><span class='cls_013'>100</span></div>
 <div style='position:absolute;left:485.47px;top:464.45px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:515.09px;top:463.19px' class='cls_059'><span class='cls_059'>335,52</span></div>
-<div style='position:absolute;left:575.89px;top:463.19px' class='cls_059'><span class='cls_059'>335,52</span></div>
-<div style='position:absolute;left:639.09px;top:463.19px' class='cls_059'><span class='cls_059'>335,52</span></div>
+<div style='position:absolute;left:515.09px;top:463.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110014400") %></span></div>
+<div style='position:absolute;left:575.89px;top:463.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110014410") %></span></div>
+<div style='position:absolute;left:639.09px;top:463.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110014431") %></span></div>
 <div style='position:absolute;left:34.52px;top:485.77px' class='cls_056'><span class='cls_056'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:484.30px' class='cls_013'><span class='cls_013'>01100145..</span></div>
 <div style='position:absolute;left:208.18px;top:484.30px' class='cls_013'><span class='cls_013'>БОБРОВКА ОК боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:484.30px' class='cls_013'><span class='cls_013'>18,0 x 44,0</span></div>
 <div style='position:absolute;left:451.63px;top:484.30px' class='cls_013'><span class='cls_013'>100</span></div>
 <div style='position:absolute;left:485.47px;top:484.30px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:515.09px;top:483.19px' class='cls_059'><span class='cls_059'>322,44</span></div>
-<div style='position:absolute;left:575.89px;top:483.19px' class='cls_059'><span class='cls_059'>335,52</span></div>
-<div style='position:absolute;left:639.09px;top:483.19px' class='cls_059'><span class='cls_059'>335,52</span></div>
+<div style='position:absolute;left:515.09px;top:483.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110014500") %></span></div>
+<div style='position:absolute;left:575.89px;top:483.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110014510") %></span></div>
+<div style='position:absolute;left:639.09px;top:483.19px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110014531") %></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>21</span></div>
 </div>
 <div style='position:absolute;left:50%;margin-left:-420px;top:12705px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -2996,43 +2997,43 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:146.30px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:146.30px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:146.30px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.32px;top:145.40px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:581.26px;top:145.40px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:516.32px;top:145.40px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110030000") %></span></div>
+<div style='position:absolute;left:581.26px;top:145.40px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110030010") %></span></div>
 <div style='position:absolute;left:154.32px;top:163.31px' class='cls_013'><span class='cls_013'>01100301..</span></div>
 <div style='position:absolute;left:208.17px;top:163.31px' class='cls_013'><span class='cls_013'>БОБРОВКА сегментная 3/4</span></div>
 <div style='position:absolute;left:397.18px;top:163.31px' class='cls_013'><span class='cls_013'>14,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:163.31px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:163.31px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.32px;top:162.73px' class='cls_059'><span class='cls_059'>37,17</span></div>
-<div style='position:absolute;left:581.26px;top:162.73px' class='cls_059'><span class='cls_059'>41,52</span></div>
+<div style='position:absolute;left:516.32px;top:162.73px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110030100") %></span></div>
+<div style='position:absolute;left:581.26px;top:162.73px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110030110") %></span></div>
 <div style='position:absolute;left:154.32px;top:180.32px' class='cls_013'><span class='cls_013'>01100350..</span></div>
 <div style='position:absolute;left:208.17px;top:180.32px' class='cls_013'><span class='cls_013'>БОБРОВКА сегментная подконьковая</span></div>
 <div style='position:absolute;left:397.15px;top:180.32px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:180.32px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:180.32px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.32px;top:180.06px' class='cls_059'><span class='cls_059'>37,42</span></div>
-<div style='position:absolute;left:581.26px;top:180.06px' class='cls_059'><span class='cls_059'>41,52</span></div>
+<div style='position:absolute;left:516.32px;top:180.06px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110035000") %></span></div>
+<div style='position:absolute;left:581.26px;top:180.06px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110035010") %></span></div>
 <div style='position:absolute;left:154.32px;top:197.33px' class='cls_013'><span class='cls_013'>01100351..</span></div>
 <div style='position:absolute;left:208.17px;top:197.33px' class='cls_013'><span class='cls_013'>БОБРОВКА сегментная подконьковая 3/4</span></div>
 <div style='position:absolute;left:397.22px;top:197.33px' class='cls_013'><span class='cls_013'>14,0 x 28,0</span></div>
 <div style='position:absolute;left:451.56px;top:197.33px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:197.33px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.32px;top:196.06px' class='cls_059'><span class='cls_059'>37,17</span></div>
-<div style='position:absolute;left:581.26px;top:196.06px' class='cls_059'><span class='cls_059'>41,52</span></div>
+<div style='position:absolute;left:516.32px;top:196.06px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110035100") %></span></div>
+<div style='position:absolute;left:581.26px;top:196.06px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110035110") %></span></div>
 <div style='position:absolute;left:154.32px;top:214.34px' class='cls_013'><span class='cls_013'>01105130..</span></div>
 <div style='position:absolute;left:208.17px;top:214.34px' class='cls_013'><span class='cls_013'>БОБРОВКА карнизная</span></div>
 <div style='position:absolute;left:397.15px;top:214.34px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:214.34px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:214.34px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.32px;top:212.73px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:581.26px;top:212.73px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:516.32px;top:212.73px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513000") %></span></div>
+<div style='position:absolute;left:581.26px;top:212.73px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513010") %></span></div>
 <div style='position:absolute;left:154.32px;top:232.34px' class='cls_013'><span class='cls_013'>01100315..</span></div>
 <div style='position:absolute;left:208.17px;top:228.21px' class='cls_021'><span class='cls_021'>БОБРОВКА </span><span class='cls_041'>сегментная вентиляционный комплект</span></div>
 <div style='position:absolute;left:397.11px;top:230.97px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:453.51px;top:231.67px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.47px;top:231.34px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:510.32px;top:230.06px' class='cls_059'><span class='cls_059'>585,93</span></div>
-<div style='position:absolute;left:574.46px;top:230.06px' class='cls_059'><span class='cls_059'>623,10</span></div>
+<div style='position:absolute;left:510.32px;top:230.06px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110031500") %></span></div>
+<div style='position:absolute;left:574.46px;top:230.06px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110031510") %></span></div>
 <div style='position:absolute;left:207.60px;top:234.99px' class='cls_013'><span class='cls_013'>(3-части)</span></div>
 <div style='position:absolute;left:34.52px;top:249.65px' class='cls_056'><span class='cls_056'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:249.94px' class='cls_013'><span class='cls_013'>01100320..</span></div>
@@ -3040,8 +3041,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:248.57px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:249.27px' class='cls_013'><span class='cls_013'>128</span></div>
 <div style='position:absolute;left:485.47px;top:248.94px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.32px;top:247.66px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:580.46px;top:247.66px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:516.32px;top:247.66px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110032000") %></span></div>
+<div style='position:absolute;left:580.46px;top:247.66px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110032010") %></span></div>
 <div style='position:absolute;left:34.52px;top:302.60px' class='cls_037'><span class='cls_037'>Другие модели</span></div>
 <div style='position:absolute;left:261.01px;top:328.51px' class='cls_007'><span class='cls_007'>Бобровка заострённая</span></div>
 <div style='position:absolute;left:399.65px;top:328.71px' class='cls_007'><span class='cls_007'>Бобровка готическая</span></div>
@@ -3077,65 +3078,65 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:145.32px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:145.32px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:145.32px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:144.20px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:584.21px;top:144.20px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:521.54px;top:144.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110510000") %></span></div>
+<div style='position:absolute;left:584.21px;top:144.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110510010") %></span></div>
 <div style='position:absolute;left:154.32px;top:162.32px' class='cls_013'><span class='cls_013'>01105101..</span></div>
 <div style='position:absolute;left:208.17px;top:162.32px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ПК 3/4</span></div>
 <div style='position:absolute;left:397.18px;top:162.32px' class='cls_013'><span class='cls_013'>14,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:162.32px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:162.32px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:160.87px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:584.21px;top:160.87px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:521.54px;top:160.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110510100") %></span></div>
+<div style='position:absolute;left:584.21px;top:160.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110510110") %></span></div>
 <div style='position:absolute;left:154.32px;top:179.33px' class='cls_013'><span class='cls_013'>01105130..</span></div>
 <div style='position:absolute;left:208.17px;top:179.33px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ПК подконьковая / карнизная</span></div>
 <div style='position:absolute;left:397.15px;top:179.33px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:179.33px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:179.33px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:178.20px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:584.21px;top:178.20px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:521.54px;top:178.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513000") %></span></div>
+<div style='position:absolute;left:584.21px;top:178.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513010") %></span></div>
 <div style='position:absolute;left:154.32px;top:196.34px' class='cls_013'><span class='cls_013'>01105131..</span></div>
 <div style='position:absolute;left:208.17px;top:196.34px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ПК подконьковая / карнизная 3/4</span></div>
 <div style='position:absolute;left:397.22px;top:196.34px' class='cls_013'><span class='cls_013'>14,0 x 28,0</span></div>
 <div style='position:absolute;left:451.56px;top:196.34px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:196.34px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:194.87px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:584.21px;top:194.87px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:521.54px;top:194.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513100") %></span></div>
+<div style='position:absolute;left:584.21px;top:194.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513110") %></span></div>
 <div style='position:absolute;left:154.32px;top:213.67px' class='cls_013'><span class='cls_013'>01105115..</span></div>
 <div style='position:absolute;left:208.17px;top:213.55px' class='cls_021'><span class='cls_021'>Б. ВЕНСКАЯ ПК </span><span class='cls_092'>вентиляционный комплект (3-части)</span></div>
 <div style='position:absolute;left:397.11px;top:212.65px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:454.23px;top:213.67px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.47px;top:213.35px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.21px;top:212.20px' class='cls_059'><span class='cls_059'>585,93</span></div>
-<div style='position:absolute;left:578.88px;top:212.20px' class='cls_059'><span class='cls_059'>623,10</span></div>
+<div style='position:absolute;left:516.21px;top:212.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110511500") %></span></div>
+<div style='position:absolute;left:578.88px;top:212.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110511510") %></span></div>
 <div style='position:absolute;left:154.32px;top:229.96px' class='cls_013'><span class='cls_013'>01105131..</span></div>
 <div style='position:absolute;left:208.17px;top:229.96px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ карнизная 3/4</span></div>
 <div style='position:absolute;left:397.15px;top:229.96px' class='cls_013'><span class='cls_013'>14,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:229.96px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:229.96px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:228.87px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:584.21px;top:228.87px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:521.54px;top:228.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513100") %></span></div>
+<div style='position:absolute;left:584.21px;top:228.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513110") %></span></div>
 <div style='position:absolute;left:154.32px;top:246.96px' class='cls_013'><span class='cls_013'>01105120..</span></div>
 <div style='position:absolute;left:208.17px;top:246.96px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ЗК снегозащитная</span></div>
 <div style='position:absolute;left:397.22px;top:246.96px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:246.96px' class='cls_013'><span class='cls_013'>128</span></div>
 <div style='position:absolute;left:485.47px;top:246.96px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:245.53px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:584.21px;top:245.53px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:521.54px;top:245.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110512000") %></span></div>
+<div style='position:absolute;left:584.21px;top:245.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110512010") %></span></div>
 <div style='position:absolute;left:154.32px;top:263.97px' class='cls_013'><span class='cls_013'>01105144..</span></div>
 <div style='position:absolute;left:208.17px;top:263.97px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ЗК боковая левая</span></div>
 <div style='position:absolute;left:397.15px;top:263.97px' class='cls_013'><span class='cls_013'>18,0 x 44,0</span></div>
 <div style='position:absolute;left:451.51px;top:263.97px' class='cls_013'><span class='cls_013'>100</span></div>
 <div style='position:absolute;left:485.47px;top:263.97px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.54px;top:262.87px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:579.21px;top:262.87px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:516.54px;top:262.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110514400") %></span></div>
+<div style='position:absolute;left:579.21px;top:262.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110514410") %></span></div>
 <div style='position:absolute;left:35.52px;top:279.78px' class='cls_056'><span class='cls_056'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:280.97px' class='cls_013'><span class='cls_013'>01105145..</span></div>
 <div style='position:absolute;left:208.17px;top:281.18px' class='cls_021'><span class='cls_021'>Б. ВЕНСКАЯ ЗК боковая правая</span></div>
 <div style='position:absolute;left:397.11px;top:280.94px' class='cls_013'><span class='cls_013'>18,0 x 44,0</span></div>
 <div style='position:absolute;left:451.51px;top:280.97px' class='cls_013'><span class='cls_013'>100</span></div>
 <div style='position:absolute;left:485.47px;top:280.98px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.54px;top:279.87px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:579.21px;top:279.87px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:516.54px;top:279.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110514500") %></span></div>
+<div style='position:absolute;left:579.21px;top:279.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110514510") %></span></div>
 <div style='position:absolute;left:34.52px;top:308.90px' class='cls_037'><span class='cls_037'>Бобровка Венская ЗК</span></div>
 <div style='position:absolute;left:640.82px;top:329.00px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
 <div style='position:absolute;left:442.18px;top:335.57px' class='cls_053'><span class='cls_053'>Колличе-</span></div>
@@ -3163,72 +3164,72 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:389.94px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.51px;top:389.94px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:389.94px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:388.87px' class='cls_059'><span class='cls_059'>34,86</span></div>
-<div style='position:absolute;left:584.21px;top:388.87px' class='cls_059'><span class='cls_059'>37,93</span></div>
+<div style='position:absolute;left:521.54px;top:388.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110530000") %></span></div>
+<div style='position:absolute;left:584.21px;top:388.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110530010") %></span></div>
 <div style='position:absolute;left:154.32px;top:406.95px' class='cls_013'><span class='cls_013'>01105301..</span></div>
 <div style='position:absolute;left:208.17px;top:406.95px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ЗК 3/4</span></div>
 <div style='position:absolute;left:397.18px;top:406.95px' class='cls_013'><span class='cls_013'>14,0 x 40,0</span></div>
 <div style='position:absolute;left:452.56px;top:406.95px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:406.95px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:405.53px' class='cls_059'><span class='cls_059'>34,86</span></div>
-<div style='position:absolute;left:584.21px;top:405.53px' class='cls_059'><span class='cls_059'>37,93</span></div>
+<div style='position:absolute;left:521.54px;top:405.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110530100") %></span></div>
+<div style='position:absolute;left:584.21px;top:405.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110530110") %></span></div>
 <div style='position:absolute;left:154.32px;top:423.96px' class='cls_013'><span class='cls_013'>01105350..</span></div>
 <div style='position:absolute;left:208.17px;top:423.96px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ЗК подконьковая</span></div>
 <div style='position:absolute;left:397.15px;top:423.96px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:423.96px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:423.96px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:422.20px' class='cls_059'><span class='cls_059'>34,86</span></div>
-<div style='position:absolute;left:584.21px;top:422.20px' class='cls_059'><span class='cls_059'>37,93</span></div>
+<div style='position:absolute;left:521.54px;top:422.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110535000") %></span></div>
+<div style='position:absolute;left:584.21px;top:422.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110535010") %></span></div>
 <div style='position:absolute;left:154.32px;top:440.96px' class='cls_013'><span class='cls_013'>01105351..</span></div>
 <div style='position:absolute;left:208.17px;top:440.96px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ЗК подконьковая 3/4</span></div>
 <div style='position:absolute;left:397.22px;top:440.96px' class='cls_013'><span class='cls_013'>14,0 x 28,0</span></div>
 <div style='position:absolute;left:451.56px;top:440.96px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:440.96px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:439.53px' class='cls_059'><span class='cls_059'>34,86</span></div>
-<div style='position:absolute;left:584.21px;top:439.53px' class='cls_059'><span class='cls_059'>37,93</span></div>
+<div style='position:absolute;left:521.54px;top:439.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110535100") %></span></div>
+<div style='position:absolute;left:584.21px;top:439.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110535110") %></span></div>
 <div style='position:absolute;left:154.32px;top:457.97px' class='cls_013'><span class='cls_013'>01105130..</span></div>
 <div style='position:absolute;left:208.17px;top:457.97px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ карнизная</span></div>
 <div style='position:absolute;left:397.15px;top:457.97px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:457.97px' class='cls_013'><span class='cls_013'>420</span></div>
 <div style='position:absolute;left:485.47px;top:457.97px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:456.87px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:584.21px;top:456.87px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:521.54px;top:456.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513000") %></span></div>
+<div style='position:absolute;left:584.21px;top:456.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513010") %></span></div>
 <div style='position:absolute;left:154.32px;top:474.97px' class='cls_013'><span class='cls_013'>01105315..</span></div>
 <div style='position:absolute;left:208.17px;top:475.18px' class='cls_021'><span class='cls_021'>Б. ВЕНСКАЯ ЗК </span><span class='cls_092'>вентиляционный комплект (3-части)</span></div>
 <div style='position:absolute;left:397.11px;top:474.94px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:453.51px;top:474.97px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.47px;top:474.98px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.21px;top:473.53px' class='cls_059'><span class='cls_059'>585,93</span></div>
-<div style='position:absolute;left:578.88px;top:473.53px' class='cls_059'><span class='cls_059'>623,10</span></div>
+<div style='position:absolute;left:516.21px;top:473.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110531500") %></span></div>
+<div style='position:absolute;left:578.88px;top:473.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110531510") %></span></div>
 <div style='position:absolute;left:154.32px;top:490.96px' class='cls_013'><span class='cls_013'>01105131..</span></div>
 <div style='position:absolute;left:208.17px;top:490.96px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ карнизная 3/4</span></div>
 <div style='position:absolute;left:397.15px;top:490.96px' class='cls_013'><span class='cls_013'>14,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:490.96px' class='cls_013'><span class='cls_013'>560</span></div>
 <div style='position:absolute;left:485.47px;top:490.96px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:489.87px' class='cls_059'><span class='cls_059'>26,91</span></div>
-<div style='position:absolute;left:584.21px;top:489.87px' class='cls_059'><span class='cls_059'>32,04</span></div>
+<div style='position:absolute;left:521.54px;top:489.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513100") %></span></div>
+<div style='position:absolute;left:584.21px;top:489.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110513110") %></span></div>
 <div style='position:absolute;left:154.32px;top:507.96px' class='cls_013'><span class='cls_013'>01105320..</span></div>
 <div style='position:absolute;left:208.17px;top:507.96px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ЗК снегозащитная</span></div>
 <div style='position:absolute;left:397.22px;top:507.96px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.56px;top:507.96px' class='cls_013'><span class='cls_013'>128</span></div>
 <div style='position:absolute;left:485.47px;top:507.96px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:521.54px;top:506.53px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:584.21px;top:506.53px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:521.54px;top:506.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110532000") %></span></div>
+<div style='position:absolute;left:584.21px;top:506.53px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110532010") %></span></div>
 <div style='position:absolute;left:154.32px;top:524.97px' class='cls_013'><span class='cls_013'>01105344..</span></div>
 <div style='position:absolute;left:208.17px;top:524.97px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ЗК боковая левая</span></div>
 <div style='position:absolute;left:397.15px;top:524.97px' class='cls_013'><span class='cls_013'>18,0 x 44,0</span></div>
 <div style='position:absolute;left:451.51px;top:524.97px' class='cls_013'><span class='cls_013'>100</span></div>
 <div style='position:absolute;left:485.47px;top:524.97px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.54px;top:523.87px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:579.21px;top:523.87px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:516.54px;top:523.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110534400") %></span></div>
+<div style='position:absolute;left:579.21px;top:523.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110534410") %></span></div>
 <div style='position:absolute;left:34.52px;top:539.41px' class='cls_056'><span class='cls_056'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.32px;top:541.97px' class='cls_013'><span class='cls_013'>01105345..</span></div>
 <div style='position:absolute;left:208.17px;top:542.18px' class='cls_021'><span class='cls_021'>Б. ВЕНСКАЯ ЗК боковая правая</span></div>
 <div style='position:absolute;left:397.11px;top:541.94px' class='cls_013'><span class='cls_013'>18,0 x 44,0</span></div>
 <div style='position:absolute;left:451.51px;top:541.97px' class='cls_013'><span class='cls_013'>100</span></div>
 <div style='position:absolute;left:485.47px;top:541.98px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:516.54px;top:540.87px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:579.21px;top:540.87px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:516.54px;top:540.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110534500") %></span></div>
+<div style='position:absolute;left:579.21px;top:540.87px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110534510") %></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>23</span></div>
 </div>
 <div style='position:absolute;left:50%;margin-left:-420px;top:13915px;width:841px;height:595px;border-style:outset;overflow:hidden'>
@@ -3254,25 +3255,25 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:146.73px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:451.79px;top:146.73px' class='cls_013'><span class='cls_013'>324</span></div>
 <div style='position:absolute;left:485.10px;top:146.73px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.75px;top:145.52px' class='cls_059'><span class='cls_059'>44,34</span></div>
+<div style='position:absolute;left:520.75px;top:145.52px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110040000") %></span></div>
 <div style='position:absolute;left:154.32px;top:163.74px' class='cls_013'><span class='cls_013'>01100401..</span></div>
 <div style='position:absolute;left:208.17px;top:163.74px' class='cls_013'><span class='cls_013'>БОБРОВКА староградская 3/4</span></div>
 <div style='position:absolute;left:397.18px;top:163.74px' class='cls_013'><span class='cls_013'>14,0 x 40,0</span></div>
 <div style='position:absolute;left:451.58px;top:163.74px' class='cls_013'><span class='cls_013'>432</span></div>
 <div style='position:absolute;left:485.10px;top:163.74px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.75px;top:162.52px' class='cls_059'><span class='cls_059'>44,34</span></div>
+<div style='position:absolute;left:520.75px;top:162.52px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110040100") %></span></div>
 <div style='position:absolute;left:154.32px;top:180.75px' class='cls_013'><span class='cls_013'>01100450..</span></div>
 <div style='position:absolute;left:208.17px;top:180.75px' class='cls_013'><span class='cls_013'>БОБРОВКА староградская подконьковая</span></div>
 <div style='position:absolute;left:397.15px;top:180.75px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.79px;top:180.75px' class='cls_013'><span class='cls_013'>324</span></div>
 <div style='position:absolute;left:485.10px;top:180.75px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.75px;top:178.52px' class='cls_059'><span class='cls_059'>44,34</span></div>
+<div style='position:absolute;left:520.75px;top:178.52px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110045000") %></span></div>
 <div style='position:absolute;left:154.32px;top:197.76px' class='cls_013'><span class='cls_013'>01100451..</span></div>
 <div style='position:absolute;left:208.17px;top:197.76px' class='cls_013'><span class='cls_013'>БОБРОВКА староградская подконьковая 3/4</span></div>
 <div style='position:absolute;left:397.22px;top:197.76px' class='cls_013'><span class='cls_013'>14,0 x 28,0</span></div>
 <div style='position:absolute;left:451.51px;top:197.76px' class='cls_013'><span class='cls_013'>480</span></div>
 <div style='position:absolute;left:485.10px;top:197.76px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.75px;top:196.52px' class='cls_059'><span class='cls_059'>44,34</span></div>
+<div style='position:absolute;left:520.75px;top:196.52px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110045100") %></span></div>
 <div style='position:absolute;left:649.56px;top:205.77px' class='cls_093'><span class='cls_093'>з</span></div>
 <div style='position:absolute;left:571.68px;top:206.87px' class='cls_093'><span class='cls_093'>Шершавая поверхность</span></div>
 <div style='position:absolute;left:652.63px;top:206.87px' class='cls_093'><span class='cls_093'>а дополнительную плату 0,08 EUR/шт</span></div>
@@ -3281,7 +3282,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.15px;top:214.77px' class='cls_013'><span class='cls_013'>19,0 x 28,0</span></div>
 <div style='position:absolute;left:451.79px;top:214.77px' class='cls_013'><span class='cls_013'>324</span></div>
 <div style='position:absolute;left:485.10px;top:214.77px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:520.75px;top:212.52px' class='cls_059'><span class='cls_059'>44,34</span></div>
+<div style='position:absolute;left:520.75px;top:212.52px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110573000") %></span></div>
 <div style='position:absolute;left:571.68px;top:215.77px' class='cls_015'><span class='cls_015'>БОБРОВКА староградская вентиляционный комплект (3-части) -</span></div>
 <div style='position:absolute;left:571.68px;top:224.77px' class='cls_015'><span class='cls_015'>без шершавой поверхности.</span></div>
 <div style='position:absolute;left:208.17px;top:228.85px' class='cls_041'><span class='cls_041'>БОБРОВКА  староградская </span><span class='cls_095'>вентиляционный комплект</span></div>
@@ -3290,7 +3291,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:397.11px;top:231.77px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:453.77px;top:231.77px' class='cls_013'><span class='cls_013'>60</span></div>
 <div style='position:absolute;left:485.10px;top:231.77px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:514.75px;top:230.52px' class='cls_059'><span class='cls_059'>776,63</span></div>
+<div style='position:absolute;left:514.75px;top:230.52px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110041500") %></span></div>
 <div style='position:absolute;left:34.52px;top:252.82px' class='cls_037'><span class='cls_037'>Староградская (алтштатпакет): Бобровка ОК</span></div>
 <div style='position:absolute;left:672.92px;top:272.91px' class='cls_013'><span class='cls_013'>ГРН / шт</span></div>
 <div style='position:absolute;left:506.18px;top:279.57px' class='cls_053'><span class='cls_053'>Колличе-</span></div>
@@ -3312,7 +3313,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:460.39px;top:333.85px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:515.01px;top:333.85px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:548.37px;top:333.85px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:582.75px;top:332.52px' class='cls_059'><span class='cls_059'>40,75</span></div>
+<div style='position:absolute;left:582.75px;top:332.52px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110140050") %></span></div>
 <div style='position:absolute;left:37.98px;top:345.43px' class='cls_085'><span class='cls_085'>1</span></div>
 <div style='position:absolute;left:151.48px;top:350.86px' class='cls_013'><span class='cls_013'>0110070050</span></div>
 <div style='position:absolute;left:212.20px;top:350.38px' class='cls_085'><span class='cls_085'>2</span></div>
@@ -3320,7 +3321,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:460.56px;top:350.86px' class='cls_013'><span class='cls_013'>19,0 x 42,0</span></div>
 <div style='position:absolute;left:515.01px;top:350.86px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:548.37px;top:350.86px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:582.75px;top:349.32px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:582.75px;top:349.32px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110070050") %></span></div>
 <div style='position:absolute;left:56.92px;top:357.29px' class='cls_085'><span class='cls_085'>2</span></div>
 <div style='position:absolute;left:83.35px;top:369.07px' class='cls_085'><span class='cls_085'>3</span></div>
 <div style='position:absolute;left:151.48px;top:367.87px' class='cls_013'><span class='cls_013'>0110080050</span></div>
@@ -3329,7 +3330,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:460.39px;top:367.87px' class='cls_013'><span class='cls_013'>19,0 x 44,0</span></div>
 <div style='position:absolute;left:515.01px;top:367.87px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:548.37px;top:367.87px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:582.75px;top:366.12px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:582.75px;top:366.12px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110080050") %></span></div>
 <div style='position:absolute;left:634.96px;top:384.32px' class='cls_093'><span class='cls_093'>Поддон староградской (алтштатпакет) (324 шт)</span></div>
 <div style='position:absolute;left:34.52px;top:390.60px' class='cls_056'><span class='cls_056'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:634.96px;top:393.39px' class='cls_094'><span class='cls_094'>состоит из трех различных видов черепицы (по 108 шт).</span></div>
@@ -3358,8 +3359,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:460.39px;top:497.89px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
 <div style='position:absolute;left:515.01px;top:497.89px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:548.37px;top:497.89px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:583.35px;top:497.14px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:645.75px;top:497.14px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:583.35px;top:497.14px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110590000") %></span></div>
+<div style='position:absolute;left:645.75px;top:497.14px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110590019") %></span></div>
 <div style='position:absolute;left:63.29px;top:512.67px' class='cls_085'><span class='cls_085'>2</span></div>
 <div style='position:absolute;left:222.35px;top:516.65px' class='cls_021'><span class='cls_021'>БОБРОВКА ВЕНСКАЯ СТАРОГРАДСКАЯ ПК, </span><span class='cls_056'>шершавая</span></div>
 <div style='position:absolute;left:156.14px;top:520.57px' class='cls_013'><span class='cls_013'>01105500..</span></div>
@@ -3367,8 +3368,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:460.56px;top:520.57px' class='cls_013'><span class='cls_013'>19,0 x 42,0</span></div>
 <div style='position:absolute;left:515.01px;top:520.57px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:548.37px;top:520.57px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:583.35px;top:518.74px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:645.75px;top:518.74px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:583.35px;top:518.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110550000") %></span></div>
+<div style='position:absolute;left:645.75px;top:518.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110550019") %></span></div>
 <div style='position:absolute;left:91.43px;top:524.61px' class='cls_085'><span class='cls_085'>3</span></div>
 <div style='position:absolute;left:222.35px;top:524.65px' class='cls_056'><span class='cls_056'>поверхность</span></div>
 <div style='position:absolute;left:694.49px;top:529.23px' class='cls_094'><span class='cls_094'>Поддон староградской (алтштатпа-</span></div>
@@ -3379,8 +3380,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:460.39px;top:543.24px' class='cls_013'><span class='cls_013'>19,0 x 44,0</span></div>
 <div style='position:absolute;left:515.01px;top:543.24px' class='cls_013'><span class='cls_013'>108</span></div>
 <div style='position:absolute;left:548.37px;top:543.24px' class='cls_013'><span class='cls_013'>G</span></div>
-<div style='position:absolute;left:583.35px;top:542.74px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:645.75px;top:542.74px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:583.35px;top:542.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110770000") %></span></div>
+<div style='position:absolute;left:645.75px;top:542.74px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0110770019") %></span></div>
 <div style='position:absolute;left:34.52px;top:546.14px' class='cls_056'><span class='cls_056'>Расход: 30,4 - 35,3 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:222.35px;top:547.98px' class='cls_056'><span class='cls_056'>поверхность</span></div>
 <div style='position:absolute;left:694.49px;top:547.23px' class='cls_094'><span class='cls_094'>ных видов черепицы (по 108 шт).</span></div>
@@ -3412,9 +3413,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:208.17px;top:96.69px' class='cls_099'><span class='cls_099'>Конёк гладкий 17 см</span></div>
 <div style='position:absolute;left:407.44px;top:96.69px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:446.67px;top:96.69px' class='cls_099'><span class='cls_099'>96</span></div>
-<div style='position:absolute;left:513.87px;top:94.76px' class='cls_059'><span class='cls_059'>309,37</span></div>
-<div style='position:absolute;left:575.53px;top:94.76px' class='cls_059'><span class='cls_059'>325,26</span></div>
-<div style='position:absolute;left:638.20px;top:94.76px' class='cls_059'><span class='cls_059'>377,81</span></div>
+<div style='position:absolute;left:513.87px;top:94.76px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213030000") %></span></div>
+<div style='position:absolute;left:575.53px;top:94.76px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213030010") %></span></div>
+<div style='position:absolute;left:638.20px;top:94.76px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213030071") %></span></div>
 <div style='position:absolute;left:202.68px;top:111.18px' class='cls_099'><span class='cls_099'>К покрытию: Бобровка*, Фальцевая Бобровка*, Бобровка Венская*,</span></div>
 <div style='position:absolute;left:34.52px;top:107.22px' class='cls_096'><span class='cls_096'>Конёк гладкий</span></div>
 <div style='position:absolute;left:639.40px;top:125.68px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
@@ -3447,33 +3448,33 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:165.31px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.60px;top:165.31px' class='cls_099'><span class='cls_099'>100</span></div>
 <div style='position:absolute;left:477.11px;top:165.31px' class='cls_099'><span class='cls_099'>G,K</span></div>
-<div style='position:absolute;left:512.53px;top:164.09px' class='cls_059'><span class='cls_059'>331,16</span></div>
-<div style='position:absolute;left:576.20px;top:164.09px' class='cls_059'><span class='cls_059'>338,59</span></div>
-<div style='position:absolute;left:638.20px;top:164.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:699.54px;top:164.09px' class='cls_059'><span class='cls_059'>462,13</span></div>
-<div style='position:absolute;left:762.87px;top:164.09px' class='cls_059'><span class='cls_059'>818,92</span></div>
+<div style='position:absolute;left:512.53px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113030000") %></span></div>
+<div style='position:absolute;left:576.20px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113030010") %></span></div>
+<div style='position:absolute;left:638.20px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113030017") %></span></div>
+<div style='position:absolute;left:699.54px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113030070") %></span></div>
+<div style='position:absolute;left:762.87px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113030021") %></span></div>
 <div style='position:absolute;left:154.32px;top:169.02px' class='cls_105'><span class='cls_105'>04130300..</span></div>
 <div style='position:absolute;left:154.32px;top:177.45px' class='cls_105'><span class='cls_105'>01130100..</span></div>
 <div style='position:absolute;left:208.17px;top:180.66px' class='cls_099'><span class='cls_099'>Конёк гладкий 13 см</span></div>
 <div style='position:absolute;left:407.44px;top:180.66px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.60px;top:180.66px' class='cls_099'><span class='cls_099'>100</span></div>
 <div style='position:absolute;left:477.11px;top:180.66px' class='cls_099'><span class='cls_099'>G,K</span></div>
-<div style='position:absolute;left:512.53px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:576.20px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:638.20px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:699.54px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:762.87px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:512.53px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413030000") %></span></div>
+<div style='position:absolute;left:576.20px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413030010") %></span></div>
+<div style='position:absolute;left:638.20px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413030017") %></span></div>
+<div style='position:absolute;left:699.54px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413030070") %></span></div>
+<div style='position:absolute;left:762.87px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413030021") %></span></div>
 <div style='position:absolute;left:154.32px;top:184.12px' class='cls_105'><span class='cls_105'>04130100..</span></div>
 <div style='position:absolute;left:154.32px;top:192.52px' class='cls_105'><span class='cls_105'>01130000..</span></div>
 <div style='position:absolute;left:208.17px;top:196.00px' class='cls_099'><span class='cls_099'>Конёк гладкий 10 см</span></div>
 <div style='position:absolute;left:407.45px;top:196.00px' class='cls_099'><span class='cls_099'>4,5</span></div>
 <div style='position:absolute;left:444.60px;top:196.00px' class='cls_099'><span class='cls_099'>225</span></div>
 <div style='position:absolute;left:477.11px;top:196.00px' class='cls_099'><span class='cls_099'>G,K</span></div>
-<div style='position:absolute;left:512.54px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:576.20px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:638.20px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:699.54px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:762.87px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:512.54px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413010000") %></span></div>
+<div style='position:absolute;left:576.20px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413010010") %></span></div>
+<div style='position:absolute;left:638.20px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413010017") %></span></div>
+<div style='position:absolute;left:699.54px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413010070") %></span></div>
+<div style='position:absolute;left:762.87px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413010021") %></span></div>
 <div style='position:absolute;left:154.32px;top:199.20px' class='cls_105'><span class='cls_105'>04130000..</span></div>
 <div style='position:absolute;left:202.68px;top:210.05px' class='cls_099'><span class='cls_099'>К покрытию: Бобровка ОК, Фальцевая Бобровка гладкая (ОК / ПК)* - с завода Csorna (HU)</span></div>
 <div style='position:absolute;left:34.52px;top:206.73px' class='cls_096'><span class='cls_096'>Конёк гладкий</span></div>
@@ -3504,16 +3505,16 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:264.82px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:446.67px;top:264.82px' class='cls_099'><span class='cls_099'>96</span></div>
 <div style='position:absolute;left:478.12px;top:264.82px' class='cls_099'><span class='cls_099'>CN</span></div>
-<div style='position:absolute;left:516.93px;top:263.36px' class='cls_059'><span class='cls_059'>152,25</span></div>
-<div style='position:absolute;left:576.20px;top:263.36px' class='cls_059'><span class='cls_059'>159,43</span></div>
-<div style='position:absolute;left:700.87px;top:263.36px' class='cls_059'><span class='cls_059'>168,14</span></div>
+<div style='position:absolute;left:516.93px;top:263.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613030000") %></span></div>
+<div style='position:absolute;left:576.20px;top:263.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613030081") %></span></div>
+<div style='position:absolute;left:700.87px;top:263.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613030010") %></span></div>
 <div style='position:absolute;left:154.32px;top:280.16px' class='cls_099'><span class='cls_099'>16130301..</span></div>
 <div style='position:absolute;left:208.17px;top:280.16px' class='cls_099'><span class='cls_099'>Конёк гладкий 17 см XXL</span></div>
 <div style='position:absolute;left:407.44px;top:280.16px' class='cls_099'><span class='cls_099'>2,5</span></div>
 <div style='position:absolute;left:446.67px;top:280.16px' class='cls_099'><span class='cls_099'>96</span></div>
 <div style='position:absolute;left:478.12px;top:280.82px' class='cls_099'><span class='cls_099'>CN</span></div>
-<div style='position:absolute;left:576.20px;top:278.36px' class='cls_059'><span class='cls_059'>193,52</span></div>
-<div style='position:absolute;left:638.20px;top:278.36px' class='cls_059'><span class='cls_059'>204,54</span></div>
+<div style='position:absolute;left:576.20px;top:278.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613030181") %></span></div>
+<div style='position:absolute;left:638.20px;top:278.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613030112") %></span></div>
 <div style='position:absolute;left:202.68px;top:294.30px' class='cls_099'><span class='cls_099'>К покрытию: Твист, Болеро*, Медитеран, Танго Плюс</span></div>
 <div style='position:absolute;left:34.52px;top:290.33px' class='cls_096'><span class='cls_096'>Конёк шпунтованный</span></div>
 <div style='position:absolute;left:639.40px;top:308.79px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
@@ -3542,9 +3543,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:348.43px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:445.17px;top:348.43px' class='cls_099'><span class='cls_099'>112</span></div>
 <div style='position:absolute;left:480.99px;top:348.43px' class='cls_099'><span class='cls_099'>C</span></div>
-<div style='position:absolute;left:518.93px;top:346.70px' class='cls_059'><span class='cls_059'>152,25</span></div>
-<div style='position:absolute;left:575.53px;top:346.70px' class='cls_059'><span class='cls_059'>159,43</span></div>
-<div style='position:absolute;left:639.53px;top:347.03px' class='cls_059'><span class='cls_059'>168,14</span></div>
+<div style='position:absolute;left:518.93px;top:346.70px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613320000") %></span></div>
+<div style='position:absolute;left:575.53px;top:346.70px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613320081") %></span></div>
+<div style='position:absolute;left:639.53px;top:347.03px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613320010") %></span></div>
 <div style='position:absolute;left:202.68px;top:364.08px' class='cls_099'><span class='cls_099'>К покрытию: Самба 11, Романская*, Французская 12*</span></div>
 <div style='position:absolute;left:34.52px;top:360.12px' class='cls_096'><span class='cls_096'>Конёк шпунтованный</span></div>
 <div style='position:absolute;left:639.40px;top:378.58px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
@@ -3571,10 +3572,10 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:418.21px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.78px;top:418.21px' class='cls_099'><span class='cls_099'>120</span></div>
 <div style='position:absolute;left:480.99px;top:418.21px' class='cls_099'><span class='cls_099'>H</span></div>
-<div style='position:absolute;left:513.60px;top:416.36px' class='cls_059'><span class='cls_059'>241,70</span></div>
-<div style='position:absolute;left:573.53px;top:416.36px' class='cls_059'><span class='cls_059'>246,06</span></div>
-<div style='position:absolute;left:638.73px;top:416.36px' class='cls_059'><span class='cls_059'>250,42</span></div>
-<div style='position:absolute;left:700.87px;top:416.36px' class='cls_059'><span class='cls_059'>262,72</span></div>
+<div style='position:absolute;left:513.60px;top:416.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113350000") %></span></div>
+<div style='position:absolute;left:573.53px;top:416.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113350010") %></span></div>
+<div style='position:absolute;left:638.73px;top:416.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113350070") %></span></div>
+<div style='position:absolute;left:700.87px;top:416.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113350074") %></span></div>
 <div style='position:absolute;left:203.05px;top:433.06px' class='cls_099'><span class='cls_099'>К покрытию: Сулм*, Мулде*, Фигаро Делюкс*</span></div>
 <div style='position:absolute;left:34.52px;top:429.10px' class='cls_096'><span class='cls_096'>Конёк шпунтованный</span></div>
 <div style='position:absolute;left:639.40px;top:447.56px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
@@ -3602,11 +3603,11 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:487.19px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.60px;top:487.19px' class='cls_099'><span class='cls_099'>100</span></div>
 <div style='position:absolute;left:480.84px;top:487.19px' class='cls_099'><span class='cls_099'>G</span></div>
-<div style='position:absolute;left:513.20px;top:485.43px' class='cls_059'><span class='cls_059'>331,16</span></div>
-<div style='position:absolute;left:575.53px;top:485.43px' class='cls_059'><span class='cls_059'>338,59</span></div>
-<div style='position:absolute;left:637.53px;top:485.43px' class='cls_059'><span class='cls_059'>338,59</span></div>
-<div style='position:absolute;left:702.87px;top:485.43px' class='cls_059'><span class='cls_059'>463,67</span></div>
-<div style='position:absolute;left:763.54px;top:485.43px' class='cls_059'><span class='cls_059'>818,92</span></div>
+<div style='position:absolute;left:513.20px;top:485.43px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113320000") %></span></div>
+<div style='position:absolute;left:575.53px;top:485.43px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113320010") %></span></div>
+<div style='position:absolute;left:637.53px;top:485.43px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113320031") %></span></div>
+<div style='position:absolute;left:702.87px;top:485.43px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113320070") %></span></div>
+<div style='position:absolute;left:763.54px;top:485.43px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113320022") %></span></div>
 <div style='position:absolute;left:154.32px;top:490.39px' class='cls_105'><span class='cls_105'>04133200..</span></div>
 <div style='position:absolute;left:34.52px;top:497.66px' class='cls_096'><span class='cls_096'>Конёк шпунтованный</span></div>
 <div style='position:absolute;left:203.05px;top:502.52px' class='cls_099'><span class='cls_099'>К покрытию: Венера*</span></div>
@@ -3630,9 +3631,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:208.17px;top:556.66px' class='cls_099'><span class='cls_099'>Конёк шпунтованный 17 см</span></div>
 <div style='position:absolute;left:407.44px;top:556.66px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.60px;top:556.66px' class='cls_099'><span class='cls_099'>100</span></div>
-<div style='position:absolute;left:513.87px;top:554.76px' class='cls_059'><span class='cls_059'>309,37</span></div>
-<div style='position:absolute;left:576.20px;top:554.76px' class='cls_059'><span class='cls_059'>325,26</span></div>
-<div style='position:absolute;left:638.87px;top:554.76px' class='cls_059'><span class='cls_059'>377,81</span></div>
+<div style='position:absolute;left:513.87px;top:554.76px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213320000") %></span></div>
+<div style='position:absolute;left:576.20px;top:554.76px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213320010") %></span></div>
+<div style='position:absolute;left:638.87px;top:554.76px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213320071") %></span></div>
 <div style='position:absolute;left:802.86px;top:568.82px' class='cls_007'><span class='cls_007'>25</span></div>
 <div style='position:absolute;left:28.35px;top:577.16px' class='cls_013'><span class='cls_013'>(Срок доставки товара по типу черепицы и поверхностной обработки.)</span></div>
 </div>
@@ -3660,9 +3661,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:208.17px;top:96.52px' class='cls_112'><span class='cls_112'>Концевый конёк гладкий 17 см Капля</span></div>
 <div style='position:absolute;left:407.44px;top:96.69px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:446.67px;top:96.69px' class='cls_099'><span class='cls_099'>96</span></div>
-<div style='position:absolute;left:516.54px;top:94.60px' class='cls_059'><span class='cls_059'>1048,33</span></div>
-<div style='position:absolute;left:577.54px;top:94.60px' class='cls_059'><span class='cls_059'>1103,43</span></div>
-<div style='position:absolute;left:635.54px;top:94.60px' class='cls_059'><span class='cls_059'>1280,55</span></div>
+<div style='position:absolute;left:516.54px;top:94.60px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213032000") %></span></div>
+<div style='position:absolute;left:577.54px;top:94.60px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213032010") %></span></div>
+<div style='position:absolute;left:635.54px;top:94.60px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213032071") %></span></div>
 <div style='position:absolute;left:34.52px;top:106.96px' class='cls_111'><span class='cls_111'>Концевый конёк (Капля) гладкий</span></div>
 <div style='position:absolute;left:291.74px;top:111.60px' class='cls_112'><span class='cls_112'>К покрытию: Бобровка*, Фальцевая Бобровка*, Бобровка Венская*</span></div>
 <div style='position:absolute;left:639.40px;top:125.68px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
@@ -3696,32 +3697,32 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:154.32px;top:168.35px' class='cls_112'><span class='cls_112'>04130320..</span></div>
 <div style='position:absolute;left:208.17px;top:166.85px' class='cls_112'><span class='cls_112'>Концевый конёк гладкий 17 см Капля</span></div>
 <div style='position:absolute;left:477.85px;top:165.85px' class='cls_112'><span class='cls_112'>G,K</span></div>
-<div style='position:absolute;left:513.20px;top:164.09px' class='cls_059'><span class='cls_059'>971,69</span></div>
-<div style='position:absolute;left:576.20px;top:164.09px' class='cls_059'><span class='cls_059'>1048,33</span></div>
-<div style='position:absolute;left:638.20px;top:164.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:700.21px;top:164.09px' class='cls_059'><span class='cls_059'>1452,28</span></div>
-<div style='position:absolute;left:760.87px;top:164.09px' class='cls_059'><span class='cls_059'>1943,63</span></div>
+<div style='position:absolute;left:513.20px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413032000") %></span></div>
+<div style='position:absolute;left:576.20px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413032010") %></span></div>
+<div style='position:absolute;left:638.20px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413032017") %></span></div>
+<div style='position:absolute;left:700.21px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413032070") %></span></div>
+<div style='position:absolute;left:760.87px;top:164.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413032021") %></span></div>
 <div style='position:absolute;left:154.32px;top:178.17px' class='cls_112'><span class='cls_112'>01130120..</span></div>
 <div style='position:absolute;left:208.17px;top:181.74px' class='cls_112'><span class='cls_112'>Концевый конёк гладкий 13 см Капля</span></div>
 <div style='position:absolute;left:407.44px;top:180.66px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.60px;top:180.66px' class='cls_099'><span class='cls_099'>100</span></div>
 <div style='position:absolute;left:477.85px;top:181.67px' class='cls_112'><span class='cls_112'>G,K</span></div>
-<div style='position:absolute;left:513.20px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:576.20px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:638.20px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:700.21px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:760.87px;top:179.09px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:513.20px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113012000") %></span></div>
+<div style='position:absolute;left:576.20px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113012010") %></span></div>
+<div style='position:absolute;left:638.20px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113012017") %></span></div>
+<div style='position:absolute;left:700.21px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113012070") %></span></div>
+<div style='position:absolute;left:760.87px;top:179.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113012021") %></span></div>
 <div style='position:absolute;left:154.32px;top:184.17px' class='cls_112'><span class='cls_112'>04130120..</span></div>
 <div style='position:absolute;left:154.31px;top:193.99px' class='cls_112'><span class='cls_112'>01130020..</span></div>
 <div style='position:absolute;left:208.17px;top:196.63px' class='cls_112'><span class='cls_112'>Концевый конёк гладкий 10 см Капля</span></div>
 <div style='position:absolute;left:407.45px;top:196.00px' class='cls_099'><span class='cls_099'>4,5</span></div>
 <div style='position:absolute;left:444.60px;top:196.00px' class='cls_099'><span class='cls_099'>225</span></div>
 <div style='position:absolute;left:477.85px;top:197.49px' class='cls_112'><span class='cls_112'>G,K</span></div>
-<div style='position:absolute;left:513.20px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:576.20px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:638.20px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:700.21px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
-<div style='position:absolute;left:760.87px;top:194.09px' class='cls_059'><span class='cls_059'>0</span></div>
+<div style='position:absolute;left:513.20px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413012000") %></span></div>
+<div style='position:absolute;left:576.20px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413012010") %></span></div>
+<div style='position:absolute;left:638.20px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413012017") %></span></div>
+<div style='position:absolute;left:700.21px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413012070") %></span></div>
+<div style='position:absolute;left:760.87px;top:194.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413012021") %></span></div>
 <div style='position:absolute;left:154.31px;top:199.99px' class='cls_112'><span class='cls_112'>04130020..</span></div>
 <div style='position:absolute;left:34.52px;top:206.18px' class='cls_111'><span class='cls_111'>Концевый конёк (Капля) гладкий</span><span class='cls_112'> К покрытию: Бобровка ОК, Фальцевая Бобровка гладкая (ОК / ПК)* - с завода Csorna (HU)</span></div>
 <div style='position:absolute;left:639.40px;top:225.19px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
@@ -3750,9 +3751,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:264.32px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:446.67px;top:264.32px' class='cls_099'><span class='cls_099'>96</span></div>
 <div style='position:absolute;left:478.87px;top:265.26px' class='cls_112'><span class='cls_112'>CN</span></div>
-<div style='position:absolute;left:514.43px;top:262.80px' class='cls_059'><span class='cls_059'>586,70</span></div>
-<div style='position:absolute;left:574.87px;top:262.80px' class='cls_059'><span class='cls_059'>591,06</span></div>
-<div style='position:absolute;left:637.87px;top:263.13px' class='cls_059'><span class='cls_059'>626,69</span></div>
+<div style='position:absolute;left:514.43px;top:262.80px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613032000") %></span></div>
+<div style='position:absolute;left:574.87px;top:262.80px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613032081") %></span></div>
+<div style='position:absolute;left:637.87px;top:263.13px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613032010") %></span></div>
 <div style='position:absolute;left:34.52px;top:275.69px' class='cls_111'><span class='cls_111'>Концевый конёк (Капля) шпунтованный</span><span class='cls_112'> К покрытию: Твист, Болеро*, Медитеран, Танго Плюс</span></div>
 <div style='position:absolute;left:639.40px;top:294.39px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
 <div style='position:absolute;left:435.91px;top:300.99px' class='cls_097'><span class='cls_097'>Колличе-</span></div>
@@ -3780,9 +3781,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:334.03px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:445.17px;top:334.03px' class='cls_099'><span class='cls_099'>112</span></div>
 <div style='position:absolute;left:480.99px;top:334.03px' class='cls_099'><span class='cls_099'>C</span></div>
-<div style='position:absolute;left:513.10px;top:332.30px' class='cls_059'><span class='cls_059'>586,70</span></div>
-<div style='position:absolute;left:575.54px;top:332.30px' class='cls_059'><span class='cls_059'>591,06</span></div>
-<div style='position:absolute;left:637.87px;top:332.63px' class='cls_059'><span class='cls_059'>626,69</span></div>
+<div style='position:absolute;left:513.10px;top:332.30px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613322000") %></span></div>
+<div style='position:absolute;left:575.54px;top:332.30px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613322081") %></span></div>
+<div style='position:absolute;left:637.87px;top:332.63px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613322010") %></span></div>
 <div style='position:absolute;left:34.52px;top:343.70px' class='cls_111'><span class='cls_111'>Концевый конёк (Капля) шпунтованный</span></div>
 <div style='position:absolute;left:343.74px;top:349.68px' class='cls_112'><span class='cls_112'>К покрытию: Самба 11, Романская*, Французская 12*</span></div>
 <div style='position:absolute;left:639.40px;top:364.18px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
@@ -3809,10 +3810,10 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:403.81px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.78px;top:403.81px' class='cls_099'><span class='cls_099'>120</span></div>
 <div style='position:absolute;left:480.99px;top:403.81px' class='cls_099'><span class='cls_099'>H</span></div>
-<div style='position:absolute;left:513.27px;top:401.96px' class='cls_059'><span class='cls_059'>620,28</span></div>
-<div style='position:absolute;left:575.20px;top:401.96px' class='cls_059'><span class='cls_059'>650,78</span></div>
-<div style='position:absolute;left:638.40px;top:401.96px' class='cls_059'><span class='cls_059'>684,36</span></div>
-<div style='position:absolute;left:700.53px;top:401.96px' class='cls_059'><span class='cls_059'>702,56</span></div>
+<div style='position:absolute;left:513.27px;top:401.96px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352000") %></span></div>
+<div style='position:absolute;left:575.20px;top:401.96px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352010") %></span></div>
+<div style='position:absolute;left:638.40px;top:401.96px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352070") %></span></div>
+<div style='position:absolute;left:700.53px;top:401.96px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352074") %></span></div>
 <div style='position:absolute;left:34.52px;top:413.18px' class='cls_111'><span class='cls_111'>Концевый конёк (Капля) шпунтованный</span></div>
 <div style='position:absolute;left:345.07px;top:418.48px' class='cls_112'><span class='cls_112'>К покрытию:  Сулм*, Мулде*, Фигаро Делюкс*</span></div>
 <div style='position:absolute;left:639.40px;top:433.16px' class='cls_099'><span class='cls_099'>ГРН / шт</span></div>
@@ -3840,11 +3841,11 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:407.44px;top:472.79px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.60px;top:472.79px' class='cls_099'><span class='cls_099'>100</span></div>
 <div style='position:absolute;left:480.84px;top:472.79px' class='cls_099'><span class='cls_099'>G</span></div>
-<div style='position:absolute;left:513.20px;top:471.09px' class='cls_059'><span class='cls_059'>971,69</span></div>
-<div style='position:absolute;left:575.54px;top:471.09px' class='cls_059'><span class='cls_059'>1048,33</span></div>
-<div style='position:absolute;left:638.20px;top:471.09px' class='cls_059'><span class='cls_059'>1048,33</span></div>
-<div style='position:absolute;left:700.87px;top:471.09px' class='cls_059'><span class='cls_059'>1452,28</span></div>
-<div style='position:absolute;left:760.21px;top:471.09px' class='cls_059'><span class='cls_059'>1943,63</span></div>
+<div style='position:absolute;left:513.20px;top:471.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113322000") %></span></div>
+<div style='position:absolute;left:575.54px;top:471.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113322010") %></span></div>
+<div style='position:absolute;left:638.20px;top:471.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113322031") %></span></div>
+<div style='position:absolute;left:700.87px;top:471.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113322070") %></span></div>
+<div style='position:absolute;left:760.21px;top:471.09px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113322022") %></span></div>
 <div style='position:absolute;left:154.32px;top:475.96px' class='cls_112'><span class='cls_112'>04133220</span></div>
 <div style='position:absolute;left:34.52px;top:482.18px' class='cls_111'><span class='cls_111'>Концевый конёк (Капля) шпунтованный</span></div>
 <div style='position:absolute;left:345.07px;top:487.48px' class='cls_112'><span class='cls_112'>К покрытию:  Венера*</span></div>
@@ -3868,9 +3869,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:208.17px;top:541.96px' class='cls_112'><span class='cls_112'>Концевый конёк шпунтованный 17 см Капля</span></div>
 <div style='position:absolute;left:407.44px;top:542.26px' class='cls_099'><span class='cls_099'>3,0</span></div>
 <div style='position:absolute;left:444.60px;top:542.26px' class='cls_099'><span class='cls_099'>100</span></div>
-<div style='position:absolute;left:512.54px;top:540.36px' class='cls_059'><span class='cls_059'>1048,33</span></div>
-<div style='position:absolute;left:575.54px;top:540.36px' class='cls_059'><span class='cls_059'>1103,43</span></div>
-<div style='position:absolute;left:634.87px;top:540.36px' class='cls_059'><span class='cls_059'>1280,55</span></div>
+<div style='position:absolute;left:512.54px;top:540.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213322000") %></span></div>
+<div style='position:absolute;left:575.54px;top:540.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213322010") %></span></div>
+<div style='position:absolute;left:634.87px;top:540.36px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213322071") %></span></div>
 <div style='position:absolute;left:802.86px;top:567.76px' class='cls_007'><span class='cls_007'>26</span></div>
 <div style='position:absolute;left:28.35px;top:576.66px' class='cls_013'><span class='cls_013'>(Срок доставки товара по типу черепицы и поверхностной обработки.)</span></div>
 </div>
@@ -3893,15 +3894,15 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:154.32px;top:88.25px' class='cls_115'><span class='cls_115'>42130921..</span></div>
 <div style='position:absolute;left:209.16px;top:90.96px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:219.51px;top:88.33px' class='cls_123'><span class='cls_123'>Разветвляющий конёк Y для гладкого конька 17 см</span></div>
-<div style='position:absolute;left:516.54px;top:87.07px' class='cls_122'><span class='cls_122'>986,30</span></div>
-<div style='position:absolute;left:577.54px;top:87.07px' class='cls_122'><span class='cls_122'>1038,07</span></div>
-<div style='position:absolute;left:638.20px;top:87.07px' class='cls_122'><span class='cls_122'>1203,91</span></div>
+<div style='position:absolute;left:516.54px;top:87.07px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213092100") %></span></div>
+<div style='position:absolute;left:577.54px;top:87.07px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213092110") %></span></div>
+<div style='position:absolute;left:638.20px;top:87.07px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213092171") %></span></div>
 <div style='position:absolute;left:111.84px;top:100.15px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:154.32px;top:102.53px' class='cls_115'><span class='cls_115'>42130922..</span></div>
 <div style='position:absolute;left:219.51px;top:102.60px' class='cls_123'><span class='cls_123'>Разветвляющий конёк X для гладкого конька 17 см</span></div>
-<div style='position:absolute;left:510.54px;top:101.47px' class='cls_122'><span class='cls_122'>2070,25</span></div>
-<div style='position:absolute;left:571.53px;top:101.47px' class='cls_122'><span class='cls_122'>2179,44</span></div>
-<div style='position:absolute;left:632.20px;top:101.47px' class='cls_122'><span class='cls_122'>2528,03</span></div>
+<div style='position:absolute;left:510.54px;top:101.47px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213092200") %></span></div>
+<div style='position:absolute;left:571.53px;top:101.47px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213092210") %></span></div>
+<div style='position:absolute;left:632.20px;top:101.47px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213092271") %></span></div>
 <div style='position:absolute;left:259.74px;top:115.21px' class='cls_115'><span class='cls_115'>К покрытию: Бобровка*, Фальцевая Бобровка*, Бобровка Венская*</span></div>
 <div style='position:absolute;left:34.52px;top:111.29px' class='cls_114'><span class='cls_114'>Разветвляющий конёк</span></div>
 <div style='position:absolute;left:639.40px;top:129.08px' class='cls_117'><span class='cls_117'>ГРН / шт</span></div>
@@ -3927,19 +3928,19 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:154.32px;top:165.57px' class='cls_115'><span class='cls_115'>04130921..</span></div>
 <div style='position:absolute;left:209.16px;top:166.96px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:219.51px;top:165.83px' class='cls_125'><span class='cls_125'>Разветвляющий конёк Y для гладкого конька 17 см</span></div>
-<div style='position:absolute;left:510.54px;top:163.10px' class='cls_122'><span class='cls_122'>2991,70</span></div>
-<div style='position:absolute;left:571.54px;top:163.10px' class='cls_122'><span class='cls_122'>3253,91</span></div>
-<div style='position:absolute;left:635.54px;top:163.10px' class='cls_122'><span class='cls_122'>0</span></div>
-<div style='position:absolute;left:696.87px;top:163.10px' class='cls_122'><span class='cls_122'>3788,84</span></div>
-<div style='position:absolute;left:760.87px;top:163.10px' class='cls_122'><span class='cls_122'>5372,09</span></div>
+<div style='position:absolute;left:510.54px;top:163.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092100") %></span></div>
+<div style='position:absolute;left:571.54px;top:163.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092110") %></span></div>
+<div style='position:absolute;left:635.54px;top:163.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092117") %></span></div>
+<div style='position:absolute;left:696.87px;top:163.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092170") %></span></div>
+<div style='position:absolute;left:760.87px;top:163.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092121") %></span></div>
 <div style='position:absolute;left:111.84px;top:176.15px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:154.32px;top:179.59px' class='cls_115'><span class='cls_115'>04130922..</span></div>
 <div style='position:absolute;left:219.51px;top:180.11px' class='cls_125'><span class='cls_125'>Разветвляющий конёк X для гладкого конька 17 см (не для цвета '98')</span></div>
-<div style='position:absolute;left:510.54px;top:177.70px' class='cls_122'><span class='cls_122'>3643,25</span></div>
-<div style='position:absolute;left:571.54px;top:177.70px' class='cls_122'><span class='cls_122'>3960,06</span></div>
-<div style='position:absolute;left:635.54px;top:177.70px' class='cls_122'><span class='cls_122'>3960,06</span></div>
-<div style='position:absolute;left:696.87px;top:177.70px' class='cls_122'><span class='cls_122'>4636,98</span></div>
-<div style='position:absolute;left:760.87px;top:177.70px' class='cls_122'><span class='cls_122'>6041,84</span></div>
+<div style='position:absolute;left:510.54px;top:177.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092200") %></span></div>
+<div style='position:absolute;left:571.54px;top:177.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092210") %></span></div>
+<div style='position:absolute;left:635.54px;top:177.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092217") %></span></div>
+<div style='position:absolute;left:696.87px;top:177.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092270") %></span></div>
+<div style='position:absolute;left:760.87px;top:177.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092221") %></span></div>
 <div style='position:absolute;left:34.52px;top:187.94px' class='cls_114'><span class='cls_114'>Разветвляющий конёк</span></div>
 <div style='position:absolute;left:259.74px;top:192.57px' class='cls_115'><span class='cls_115'>К покрытию: Бобровка ОК, Фальцевая Бобровка гладкая (ОК / ПК)* - с завода Csorna (HU)</span></div>
 <div style='position:absolute;left:639.40px;top:205.53px' class='cls_117'><span class='cls_117'>ГРН / шт</span></div>
@@ -3962,15 +3963,15 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:209.16px;top:242.96px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:219.51px;top:241.39px' class='cls_123'><span class='cls_123'>Разветвляющий конёк Y для гладкого конька 17 см</span></div>
 <div style='position:absolute;left:478.87px;top:241.69px' class='cls_115'><span class='cls_115'>CN</span></div>
-<div style='position:absolute;left:514.43px;top:239.36px' class='cls_122'><span class='cls_122'>939,14</span></div>
-<div style='position:absolute;left:577.53px;top:239.36px' class='cls_122'><span class='cls_122'>1039,61</span></div>
-<div style='position:absolute;left:640.53px;top:239.66px' class='cls_122'><span class='cls_122'>1155,98</span></div>
+<div style='position:absolute;left:514.43px;top:239.36px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613031000") %></span></div>
+<div style='position:absolute;left:577.53px;top:239.36px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613031081") %></span></div>
+<div style='position:absolute;left:640.53px;top:239.66px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613031010") %></span></div>
 <div style='position:absolute;left:108.37px;top:252.27px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:154.32px;top:255.59px' class='cls_115'><span class='cls_115'>04130922..</span></div>
 <div style='position:absolute;left:219.51px;top:255.66px' class='cls_123'><span class='cls_123'>Разветвляющий конёк X для гладкого конька 17 см</span></div>
-<div style='position:absolute;left:508.44px;top:254.36px' class='cls_122'><span class='cls_122'>3643,25</span></div>
-<div style='position:absolute;left:571.54px;top:254.36px' class='cls_122'><span class='cls_122'>0</span></div>
-<div style='position:absolute;left:634.53px;top:254.66px' class='cls_122'><span class='cls_122'>3960,06</span></div>
+<div style='position:absolute;left:508.44px;top:254.36px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092200") %></span></div>
+<div style='position:absolute;left:571.54px;top:254.36px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092281") %></span></div>
+<div style='position:absolute;left:634.53px;top:254.66px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413092210") %></span></div>
 <div style='position:absolute;left:34.52px;top:264.86px' class='cls_114'><span class='cls_114'>Разветвляющий конёк</span></div>
 <div style='position:absolute;left:259.74px;top:268.96px' class='cls_115'><span class='cls_115'>К покрытию: Твист, Болеро*, Медитеран, Танго Плюс</span></div>
 <div style='position:absolute;left:639.40px;top:281.16px' class='cls_117'><span class='cls_117'>ГРН / шт</span></div>
@@ -3993,15 +3994,15 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:209.16px;top:318.96px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:219.51px;top:317.31px' class='cls_123'><span class='cls_123'>Разветвляющий конёк Y для шпунтованного конька 17 см</span></div>
 <div style='position:absolute;left:480.99px;top:316.93px' class='cls_117'><span class='cls_117'>C</span></div>
-<div style='position:absolute;left:514.44px;top:316.36px' class='cls_122'><span class='cls_122'>939,14</span></div>
-<div style='position:absolute;left:577.54px;top:316.36px' class='cls_122'><span class='cls_122'>1039,61</span></div>
-<div style='position:absolute;left:640.53px;top:316.66px' class='cls_122'><span class='cls_122'>1155,98</span></div>
+<div style='position:absolute;left:514.44px;top:316.36px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613322100") %></span></div>
+<div style='position:absolute;left:577.54px;top:316.36px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613322181") %></span></div>
+<div style='position:absolute;left:640.53px;top:316.66px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613322110") %></span></div>
 <div style='position:absolute;left:108.37px;top:327.47px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:154.32px;top:332.59px' class='cls_115'><span class='cls_115'>04130822..</span></div>
 <div style='position:absolute;left:219.51px;top:331.59px' class='cls_123'><span class='cls_123'>Разветвляющий конёк X для шпунтованного конька 17 см</span></div>
-<div style='position:absolute;left:508.44px;top:330.36px' class='cls_122'><span class='cls_122'>3643,25</span></div>
-<div style='position:absolute;left:571.54px;top:330.36px' class='cls_122'><span class='cls_122'>3960,06</span></div>
-<div style='position:absolute;left:634.53px;top:330.66px' class='cls_122'><span class='cls_122'>3960,06</span></div>
+<div style='position:absolute;left:508.44px;top:330.36px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413082200") %></span></div>
+<div style='position:absolute;left:571.54px;top:330.36px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413082281") %></span></div>
+<div style='position:absolute;left:634.53px;top:330.66px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413082210") %></span></div>
 <div style='position:absolute;left:34.52px;top:340.90px' class='cls_114'><span class='cls_114'>Разветвляющий конёк</span></div>
 <div style='position:absolute;left:259.74px;top:345.38px' class='cls_115'><span class='cls_115'>К покрытию: Самба 11, Романская*, Французская 12*</span></div>
 <div style='position:absolute;left:639.40px;top:358.58px' class='cls_117'><span class='cls_117'>ГРН / шт</span></div>
@@ -4022,18 +4023,18 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:209.16px;top:395.44px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:219.51px;top:393.57px' class='cls_123'><span class='cls_123'>Разветвляющий конёк Y для шпунтованного конька 21 см</span></div>
 <div style='position:absolute;left:480.99px;top:394.36px' class='cls_117'><span class='cls_117'>H</span></div>
-<div style='position:absolute;left:514.60px;top:392.57px' class='cls_122'><span class='cls_122'>1415,88</span></div>
-<div style='position:absolute;left:574.54px;top:392.57px' class='cls_122'><span class='cls_122'>1486,62</span></div>
-<div style='position:absolute;left:637.74px;top:392.57px' class='cls_122'><span class='cls_122'>1556,34</span></div>
-<div style='position:absolute;left:698.53px;top:392.57px' class='cls_122'><span class='cls_122'>1597,10</span></div>
+<div style='position:absolute;left:514.60px;top:392.57px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352100") %></span></div>
+<div style='position:absolute;left:574.54px;top:392.57px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352110") %></span></div>
+<div style='position:absolute;left:637.74px;top:392.57px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352170") %></span></div>
+<div style='position:absolute;left:698.53px;top:392.57px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352174") %></span></div>
 <div style='position:absolute;left:108.37px;top:404.61px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:154.32px;top:408.56px' class='cls_115'><span class='cls_115'>21133528</span></div>
 <div style='position:absolute;left:219.51px;top:407.85px' class='cls_123'><span class='cls_123'>Разветвляющий конёк X для шпунтованного конька 21 см</span></div>
 <div style='position:absolute;left:480.99px;top:408.76px' class='cls_117'><span class='cls_117'>H</span></div>
-<div style='position:absolute;left:514.60px;top:406.17px' class='cls_122'><span class='cls_122'>1415,88</span></div>
-<div style='position:absolute;left:574.54px;top:406.17px' class='cls_122'><span class='cls_122'>1486,62</span></div>
-<div style='position:absolute;left:637.74px;top:406.17px' class='cls_122'><span class='cls_122'>1556,34</span></div>
-<div style='position:absolute;left:698.53px;top:406.17px' class='cls_122'><span class='cls_122'>1597,10</span></div>
+<div style='position:absolute;left:514.60px;top:406.17px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352800") %></span></div>
+<div style='position:absolute;left:574.54px;top:406.17px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352810") %></span></div>
+<div style='position:absolute;left:637.74px;top:406.17px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352870") %></span></div>
+<div style='position:absolute;left:698.53px;top:406.17px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113352874") %></span></div>
 <div style='position:absolute;left:34.52px;top:416.15px' class='cls_114'><span class='cls_114'>Разветвляющий конёк</span></div>
 <div style='position:absolute;left:259.74px;top:421.25px' class='cls_115'><span class='cls_115'>К покрытию:  Сулм*, Мулде*, Фигаро Делюкс*</span></div>
 <div style='position:absolute;left:639.40px;top:434.58px' class='cls_117'><span class='cls_117'>ГРН / шт</span></div>
@@ -4054,19 +4055,19 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:154.32px;top:470.81px' class='cls_115'><span class='cls_115'>04133221</span></div>
 <div style='position:absolute;left:209.16px;top:472.24px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:219.51px;top:470.44px' class='cls_123'><span class='cls_123'>Разветвляющий конёк Y для шпунтованного конька 17 см</span></div>
-<div style='position:absolute;left:510.54px;top:469.10px' class='cls_122'><span class='cls_122'>2991,70</span></div>
-<div style='position:absolute;left:571.53px;top:469.10px' class='cls_122'><span class='cls_122'>3253,91</span></div>
-<div style='position:absolute;left:635.53px;top:469.10px' class='cls_122'><span class='cls_122'>3253,91</span></div>
-<div style='position:absolute;left:696.87px;top:469.10px' class='cls_122'><span class='cls_122'>3788,84</span></div>
-<div style='position:absolute;left:760.87px;top:469.10px' class='cls_122'><span class='cls_122'>5372,09</span></div>
+<div style='position:absolute;left:510.54px;top:469.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413322100") %></span></div>
+<div style='position:absolute;left:571.53px;top:469.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413322110") %></span></div>
+<div style='position:absolute;left:635.53px;top:469.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413322131") %></span></div>
+<div style='position:absolute;left:696.87px;top:469.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413322170") %></span></div>
+<div style='position:absolute;left:760.87px;top:469.10px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413322122") %></span></div>
 <div style='position:absolute;left:108.37px;top:481.41px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:154.32px;top:483.79px' class='cls_115'><span class='cls_115'>04130822..</span></div>
 <div style='position:absolute;left:219.51px;top:483.96px' class='cls_113'><span class='cls_113'>Разветвляющий конёк X для шпунтованного конька 17 см</span></div>
-<div style='position:absolute;left:510.54px;top:482.70px' class='cls_122'><span class='cls_122'>3643,25</span></div>
-<div style='position:absolute;left:571.53px;top:482.70px' class='cls_122'><span class='cls_122'>3960,06</span></div>
-<div style='position:absolute;left:635.53px;top:482.70px' class='cls_122'><span class='cls_122'>3960,06</span></div>
-<div style='position:absolute;left:696.87px;top:482.70px' class='cls_122'><span class='cls_122'>4636,98</span></div>
-<div style='position:absolute;left:760.87px;top:482.70px' class='cls_122'><span class='cls_122'>6041,84</span></div>
+<div style='position:absolute;left:510.54px;top:482.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413082200") %></span></div>
+<div style='position:absolute;left:571.53px;top:482.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413082210") %></span></div>
+<div style='position:absolute;left:635.53px;top:482.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413082231") %></span></div>
+<div style='position:absolute;left:696.87px;top:482.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413082270") %></span></div>
+<div style='position:absolute;left:760.87px;top:482.70px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("0413082222") %></span></div>
 <div style='position:absolute;left:34.52px;top:492.95px' class='cls_114'><span class='cls_114'>Разветвляющий конёк</span></div>
 <div style='position:absolute;left:259.74px;top:498.05px' class='cls_115'><span class='cls_115'>К покрытию: Венера*</span></div>
 <div style='position:absolute;left:639.40px;top:510.88px' class='cls_117'><span class='cls_117'>ГРН / шт</span></div>
@@ -4083,15 +4084,15 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:154.32px;top:546.38px' class='cls_115'><span class='cls_115'>42133221</span></div>
 <div style='position:absolute;left:209.16px;top:548.24px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:219.51px;top:546.36px' class='cls_113'><span class='cls_113'>Разветвляющий конёк X для шпунтованного конька 17 см</span></div>
-<div style='position:absolute;left:513.87px;top:544.41px' class='cls_122'><span class='cls_122'>986,30</span></div>
-<div style='position:absolute;left:575.54px;top:544.41px' class='cls_122'><span class='cls_122'>1038,07</span></div>
-<div style='position:absolute;left:638.87px;top:544.41px' class='cls_122'><span class='cls_122'>1203,91</span></div>
+<div style='position:absolute;left:513.87px;top:544.41px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213322100") %></span></div>
+<div style='position:absolute;left:575.54px;top:544.41px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213322110") %></span></div>
+<div style='position:absolute;left:638.87px;top:544.41px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213322171") %></span></div>
 <div style='position:absolute;left:108.37px;top:557.41px' class='cls_054'><span class='cls_054'>1</span></div>
 <div style='position:absolute;left:154.32px;top:560.38px' class='cls_115'><span class='cls_115'>42130821</span></div>
 <div style='position:absolute;left:219.51px;top:559.96px' class='cls_113'><span class='cls_113'>Разветвляющий конёк X для шпунтованного конька 17 см</span></div>
-<div style='position:absolute;left:507.20px;top:558.81px' class='cls_122'><span class='cls_122'>0</span></div>
-<div style='position:absolute;left:569.53px;top:558.81px' class='cls_122'><span class='cls_122'>0</span></div>
-<div style='position:absolute;left:632.87px;top:558.81px' class='cls_122'><span class='cls_122'>0</span></div>
+<div style='position:absolute;left:507.20px;top:558.81px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213082100") %></span></div>
+<div style='position:absolute;left:569.53px;top:558.81px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213082110") %></span></div>
+<div style='position:absolute;left:632.87px;top:558.81px' class='cls_122'><span class='cls_122'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213082171") %></span></div>
 <div style='position:absolute;left:802.86px;top:575.01px' class='cls_029'><span class='cls_029'>27</span></div>
 <div style='position:absolute;left:28.35px;top:581.24px' class='cls_130'><span class='cls_130'>(Срок доставки товара по типу черепицы и поверхностной обработки.)</span></div>
 </div>
@@ -4113,9 +4114,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:610.65px;top:94.51px' class='cls_107'><span class='cls_107'>48</span></div>
 <div style='position:absolute;left:154.32px;top:106.13px' class='cls_133'><span class='cls_133'>42130912..</span></div>
 <div style='position:absolute;left:208.17px;top:106.13px' class='cls_133'><span class='cls_133'>Универсальное окончание для гладких коньков 17 см</span></div>
-<div style='position:absolute;left:513.46px;top:104.32px' class='cls_143'><span class='cls_143'>422,92</span></div>
-<div style='position:absolute;left:577.64px;top:104.47px' class='cls_143'><span class='cls_143'>445,47</span></div>
-<div style='position:absolute;left:638.97px;top:104.47px' class='cls_143'><span class='cls_143'>516,22</span></div>
+<div style='position:absolute;left:513.46px;top:104.32px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213091200") %></span></div>
+<div style='position:absolute;left:577.64px;top:104.47px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213091210") %></span></div>
+<div style='position:absolute;left:638.97px;top:104.47px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213091271") %></span></div>
 <div style='position:absolute;left:34.52px;top:131.63px' class='cls_131'><span class='cls_131'>Окончание конька</span></div>
 <div style='position:absolute;left:207.15px;top:137.06px' class='cls_133'><span class='cls_133'>К покрытию: Бобровка, Фальцевая Бобровка гладкая (ОК / ПК)*, Фальцевая Бобровка*, Бобровка Венская*</span></div>
 <div style='position:absolute;left:640.15px;top:149.47px' class='cls_133'><span class='cls_133'>ГРН / шт</span></div>
@@ -4145,12 +4146,12 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:154.32px;top:184.47px' class='cls_133'><span class='cls_133'>01130912..</span></div>
 <div style='position:absolute;left:208.17px;top:187.47px' class='cls_133'><span class='cls_133'>Универсальное окончание для гладких коньков 17 см</span></div>
 <div style='position:absolute;left:470.55px;top:187.47px' class='cls_133'><span class='cls_133'>CN</span><span class='cls_137'>,G,K</span></div>
-<div style='position:absolute;left:503.02px;top:187.28px' class='cls_145'><span class='cls_145'>334,75</span></div>
-<div style='position:absolute;left:534.09px;top:187.28px' class='cls_145'><span class='cls_145'>0</span></div>
-<div style='position:absolute;left:580.84px;top:186.07px' class='cls_143'><span class='cls_143'>378,58</span></div>
-<div style='position:absolute;left:642.84px;top:186.07px' class='cls_143'><span class='cls_143'>0</span></div>
-<div style='position:absolute;left:703.64px;top:186.07px' class='cls_143'><span class='cls_143'>494,94</span></div>
-<div style='position:absolute;left:764.03px;top:186.07px' class='cls_143'><span class='cls_143'>618,74</span></div>
+<div style='position:absolute;left:503.02px;top:187.28px' class='cls_145'><span class='cls_145'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113091200") %></span></div>
+<div style='position:absolute;left:534.09px;top:187.28px' class='cls_145'><span class='cls_145'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113091281") %></span></div>
+<div style='position:absolute;left:580.84px;top:186.07px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113091210") %></span></div>
+<div style='position:absolute;left:642.84px;top:186.07px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113091217") %></span></div>
+<div style='position:absolute;left:703.64px;top:186.07px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113091270") %></span></div>
+<div style='position:absolute;left:764.03px;top:186.07px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113091221") %></span></div>
 <div style='position:absolute;left:154.32px;top:190.97px' class='cls_133'><span class='cls_133'>04130912..</span></div>
 <div style='position:absolute;left:34.52px;top:239.41px' class='cls_131'><span class='cls_131'>Окончание коньков</span></div>
 <div style='position:absolute;left:207.15px;top:244.59px' class='cls_133'><span class='cls_133'>К покрытию: Самба 11, Романская*, Французская 12*</span></div>
@@ -4172,20 +4173,20 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:213.10px;top:294.64px' class='cls_139'><span class='cls_139'>1</span></div>
 <div style='position:absolute;left:228.02px;top:294.53px' class='cls_133'><span class='cls_133'>Начальное окончание шпунтованного конька 21 см</span></div>
 <div style='position:absolute;left:480.60px;top:295.78px' class='cls_137'><span class='cls_137'>H</span></div>
-<div style='position:absolute;left:513.24px;top:294.22px' class='cls_143'><span class='cls_143'>298,35</span></div>
-<div style='position:absolute;left:576.17px;top:294.22px' class='cls_143'><span class='cls_143'>310,14</span></div>
-<div style='position:absolute;left:637.50px;top:294.52px' class='cls_143'><span class='cls_143'>326,03</span></div>
-<div style='position:absolute;left:701.37px;top:294.52px' class='cls_143'><span class='cls_143'>334,75</span></div>
+<div style='position:absolute;left:513.24px;top:294.22px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113351200") %></span></div>
+<div style='position:absolute;left:576.17px;top:294.22px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113351210") %></span></div>
+<div style='position:absolute;left:637.50px;top:294.52px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113351270") %></span></div>
+<div style='position:absolute;left:701.37px;top:294.52px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113351274") %></span></div>
 <div style='position:absolute;left:41.52px;top:307.04px' class='cls_139'><span class='cls_139'>1</span></div>
 <div style='position:absolute;left:97.05px;top:308.88px' class='cls_139'><span class='cls_139'>2</span></div>
 <div style='position:absolute;left:154.98px;top:309.96px' class='cls_133'><span class='cls_133'>21133511..</span></div>
 <div style='position:absolute;left:212.88px;top:309.75px' class='cls_139'><span class='cls_139'>2</span></div>
 <div style='position:absolute;left:228.02px;top:310.68px' class='cls_133'><span class='cls_133'>Концевое окончание шпунтованного конька 21 см</span></div>
 <div style='position:absolute;left:480.60px;top:310.78px' class='cls_137'><span class='cls_137'>H</span></div>
-<div style='position:absolute;left:513.24px;top:308.92px' class='cls_143'><span class='cls_143'>298,35</span></div>
-<div style='position:absolute;left:576.17px;top:308.92px' class='cls_143'><span class='cls_143'>310,14</span></div>
-<div style='position:absolute;left:637.50px;top:308.92px' class='cls_143'><span class='cls_143'>326,03</span></div>
-<div style='position:absolute;left:701.37px;top:308.92px' class='cls_143'><span class='cls_143'>334,75</span></div>
+<div style='position:absolute;left:513.24px;top:308.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113351100") %></span></div>
+<div style='position:absolute;left:576.17px;top:308.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113351110") %></span></div>
+<div style='position:absolute;left:637.50px;top:308.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113351170") %></span></div>
+<div style='position:absolute;left:701.37px;top:308.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("2113351174") %></span></div>
 <div style='position:absolute;left:34.52px;top:320.20px' class='cls_131'><span class='cls_131'>Окончание коньков</span></div>
 <div style='position:absolute;left:203.94px;top:325.36px' class='cls_133'><span class='cls_133'>К покрытию: Твист, Болер*, Медитеран, Танго Плюс</span></div>
 <div style='position:absolute;left:640.15px;top:338.04px' class='cls_133'><span class='cls_133'>ГРН / шт</span></div>
@@ -4208,18 +4209,18 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:213.10px;top:376.15px' class='cls_139'><span class='cls_139'>1</span></div>
 <div style='position:absolute;left:228.02px;top:375.83px' class='cls_133'><span class='cls_133'>Начальное окончание шпунтованного конька 17 см</span></div>
 <div style='position:absolute;left:480.60px;top:376.42px' class='cls_137'><span class='cls_137'>C</span></div>
-<div style='position:absolute;left:517.77px;top:375.02px' class='cls_143'><span class='cls_143'>138,41</span></div>
-<div style='position:absolute;left:578.30px;top:375.02px' class='cls_143'><span class='cls_143'>170,45</span></div>
-<div style='position:absolute;left:638.97px;top:375.02px' class='cls_143'><span class='cls_143'>193,52</span></div>
+<div style='position:absolute;left:517.77px;top:375.02px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613321000") %></span></div>
+<div style='position:absolute;left:578.30px;top:375.02px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613321081") %></span></div>
+<div style='position:absolute;left:638.97px;top:375.02px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613321010") %></span></div>
 <div style='position:absolute;left:41.52px;top:384.02px' class='cls_139'><span class='cls_139'>1</span></div>
 <div style='position:absolute;left:97.05px;top:384.02px' class='cls_139'><span class='cls_139'>2</span></div>
 <div style='position:absolute;left:154.32px;top:390.75px' class='cls_133'><span class='cls_133'>16133211..</span></div>
 <div style='position:absolute;left:212.88px;top:390.43px' class='cls_139'><span class='cls_139'>2</span></div>
 <div style='position:absolute;left:228.02px;top:390.83px' class='cls_133'><span class='cls_133'>Концевое окончание шпунтованного конька 17 см</span></div>
 <div style='position:absolute;left:480.60px;top:391.13px' class='cls_137'><span class='cls_137'>C</span></div>
-<div style='position:absolute;left:517.77px;top:389.72px' class='cls_143'><span class='cls_143'>138,41</span></div>
-<div style='position:absolute;left:578.30px;top:389.72px' class='cls_143'><span class='cls_143'>170,45</span></div>
-<div style='position:absolute;left:638.97px;top:389.72px' class='cls_143'><span class='cls_143'>193,52</span></div>
+<div style='position:absolute;left:517.77px;top:389.72px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613321100") %></span></div>
+<div style='position:absolute;left:578.30px;top:389.72px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613321181") %></span></div>
+<div style='position:absolute;left:638.97px;top:389.72px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("1613321110") %></span></div>
 <div style='position:absolute;left:34.52px;top:402.04px' class='cls_131'><span class='cls_131'>Окончание коньков</span></div>
 <div style='position:absolute;left:203.94px;top:406.27px' class='cls_133'><span class='cls_133'>К покрытию: Сульм*, Мульде*, Фигаро Делюкс*</span></div>
 <div style='position:absolute;left:640.15px;top:418.95px' class='cls_133'><span class='cls_133'>ГРН / шт</span></div>
@@ -4240,19 +4241,19 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:154.32px;top:456.95px' class='cls_133'><span class='cls_133'>01133210..</span></div>
 <div style='position:absolute;left:228.02px;top:456.74px' class='cls_133'><span class='cls_133'>Начальное окончание шпунтованного конька 17 см</span></div>
 <div style='position:absolute;left:480.60px;top:457.33px' class='cls_137'><span class='cls_137'>G</span></div>
-<div style='position:absolute;left:514.44px;top:456.12px' class='cls_143'><span class='cls_143'>334,75</span></div>
-<div style='position:absolute;left:576.30px;top:456.12px' class='cls_143'><span class='cls_143'>378,58</span></div>
-<div style='position:absolute;left:638.97px;top:456.12px' class='cls_143'><span class='cls_143'>378,58</span></div>
-<div style='position:absolute;left:701.50px;top:456.12px' class='cls_143'><span class='cls_143'>494,94</span></div>
-<div style='position:absolute;left:763.77px;top:456.12px' class='cls_143'><span class='cls_143'>618,74</span></div>
+<div style='position:absolute;left:514.44px;top:456.12px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321000") %></span></div>
+<div style='position:absolute;left:576.30px;top:456.12px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321010") %></span></div>
+<div style='position:absolute;left:638.97px;top:456.12px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321031") %></span></div>
+<div style='position:absolute;left:701.50px;top:456.12px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321070") %></span></div>
+<div style='position:absolute;left:763.77px;top:456.12px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321022") %></span></div>
 <div style='position:absolute;left:154.32px;top:471.66px' class='cls_133'><span class='cls_133'>01133211..</span></div>
 <div style='position:absolute;left:228.02px;top:471.74px' class='cls_133'><span class='cls_133'>Концевое окончание шпунтованного конька 17 см</span></div>
 <div style='position:absolute;left:480.60px;top:472.04px' class='cls_137'><span class='cls_137'>G</span></div>
-<div style='position:absolute;left:514.44px;top:471.32px' class='cls_143'><span class='cls_143'>334,75</span></div>
-<div style='position:absolute;left:576.30px;top:471.32px' class='cls_143'><span class='cls_143'>378,58</span></div>
-<div style='position:absolute;left:638.97px;top:471.32px' class='cls_143'><span class='cls_143'>378,58</span></div>
-<div style='position:absolute;left:701.50px;top:471.32px' class='cls_143'><span class='cls_143'>494,94</span></div>
-<div style='position:absolute;left:763.77px;top:471.32px' class='cls_143'><span class='cls_143'>618,74</span></div>
+<div style='position:absolute;left:514.44px;top:471.32px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321100") %></span></div>
+<div style='position:absolute;left:576.30px;top:471.32px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321110") %></span></div>
+<div style='position:absolute;left:638.97px;top:471.32px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321131") %></span></div>
+<div style='position:absolute;left:701.50px;top:471.32px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321170") %></span></div>
+<div style='position:absolute;left:763.77px;top:471.32px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("0113321122") %></span></div>
 <div style='position:absolute;left:34.52px;top:483.38px' class='cls_131'><span class='cls_131'>Окончание коньков</span></div>
 <div style='position:absolute;left:203.94px;top:487.61px' class='cls_133'><span class='cls_133'>К покрытию: Венера*</span></div>
 <div style='position:absolute;left:640.15px;top:500.28px' class='cls_133'><span class='cls_133'>ГРН / шт</span></div>
@@ -4268,14 +4269,14 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:610.15px;top:526.51px' class='cls_107'><span class='cls_107'>48</span></div>
 <div style='position:absolute;left:154.32px;top:538.28px' class='cls_133'><span class='cls_133'>42133210..</span></div>
 <div style='position:absolute;left:228.02px;top:538.07px' class='cls_133'><span class='cls_133'>Начальное окончание шпунтованного конька 17 см</span></div>
-<div style='position:absolute;left:514.80px;top:536.78px' class='cls_143'><span class='cls_143'>422,92</span></div>
-<div style='position:absolute;left:576.30px;top:536.92px' class='cls_143'><span class='cls_143'>445,47</span></div>
-<div style='position:absolute;left:638.30px;top:536.92px' class='cls_143'><span class='cls_143'>516,22</span></div>
+<div style='position:absolute;left:514.80px;top:536.78px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213321000") %></span></div>
+<div style='position:absolute;left:576.30px;top:536.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213321010") %></span></div>
+<div style='position:absolute;left:638.30px;top:536.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213321071") %></span></div>
 <div style='position:absolute;left:154.32px;top:552.99px' class='cls_133'><span class='cls_133'>42133211..</span></div>
 <div style='position:absolute;left:228.02px;top:553.07px' class='cls_133'><span class='cls_133'>Концевое окончание шпунтованного конька 17 см</span></div>
-<div style='position:absolute;left:515.77px;top:552.92px' class='cls_143'><span class='cls_143'>422,92</span></div>
-<div style='position:absolute;left:576.30px;top:552.92px' class='cls_143'><span class='cls_143'>445,47</span></div>
-<div style='position:absolute;left:638.30px;top:552.92px' class='cls_143'><span class='cls_143'>516,22</span></div>
+<div style='position:absolute;left:515.77px;top:552.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213321100") %></span></div>
+<div style='position:absolute;left:576.30px;top:552.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213321110") %></span></div>
+<div style='position:absolute;left:638.30px;top:552.92px' class='cls_143'><span class='cls_143'><%= ua.aits.tondach.model.GoodsModel.getPrice("4213321171") %></span></div>
 <div style='position:absolute;left:802.86px;top:569.35px' class='cls_026'><span class='cls_026'>28</span></div>
 <div style='position:absolute;left:28.35px;top:578.42px' class='cls_133'><span class='cls_133'>(Срок доставки товару по типу черепицы и поверхностной обработки.)</span></div>
 </div>
