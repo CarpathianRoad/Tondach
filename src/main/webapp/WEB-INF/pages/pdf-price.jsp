@@ -1,5 +1,5 @@
 
-
+<jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style type="text/css">
 <!--
@@ -2641,7 +2641,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:396.77px;top:404.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.62px;top:404.76px' class='cls_013'><span class='cls_013'>34</span></div>
 <div style='position:absolute;left:514.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704000") %></span></div>
-<div style='position:absolute;left:576.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704010") %></span></div></span></div>
+<div style='position:absolute;left:576.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704010") %></span></div>
 <div style='position:absolute;left:640.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704071") %></span></div></span></div>
 <div style='position:absolute;left:154.31px;top:421.78px' class='cls_013'><span class='cls_013'>43127041..</span></div>
 <div style='position:absolute;left:208.17px;top:421.78px' class='cls_013'><span class='cls_013'>ВЕНЕРА боковая правая</span></div>
