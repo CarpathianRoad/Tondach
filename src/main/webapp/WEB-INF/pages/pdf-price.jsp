@@ -2642,64 +2642,64 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:456.62px;top:404.76px' class='cls_013'><span class='cls_013'>34</span></div>
 <div style='position:absolute;left:514.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704000") %></span></div>
 <div style='position:absolute;left:576.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704010") %></span></div>
-<div style='position:absolute;left:640.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704071") %></span></div></span></div>
+<div style='position:absolute;left:640.03px;top:403.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704071") %></span></div>
 <div style='position:absolute;left:154.31px;top:421.78px' class='cls_013'><span class='cls_013'>43127041..</span></div>
 <div style='position:absolute;left:208.17px;top:421.78px' class='cls_013'><span class='cls_013'>ВЕНЕРА боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:421.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.62px;top:421.77px' class='cls_013'><span class='cls_013'>30</span></div>
-<div style='position:absolute;left:514.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704100") %></span></div></span></div>
-<div style='position:absolute;left:576.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704110") %></span></div></span></div>
-<div style='position:absolute;left:640.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704171") %></span></div></span></div>
+<div style='position:absolute;left:514.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704100") %></span></div>
+<div style='position:absolute;left:576.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704110") %></span></div>
+<div style='position:absolute;left:640.03px;top:420.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312704171") %></span></div>
 <div style='position:absolute;left:154.31px;top:438.77px' class='cls_013'><span class='cls_013'>43127050..</span></div>
 <div style='position:absolute;left:208.17px;top:438.77px' class='cls_013'><span class='cls_013'>ВЕНЕРА подконьковая</span></div>
 <div style='position:absolute;left:396.77px;top:438.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:451.96px;top:438.78px' class='cls_013'><span class='cls_013'>120</span></div>
-<div style='position:absolute;left:520.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705000") %></span></div></span></div>
-<div style='position:absolute;left:582.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705010") %></span></div></span></div>
-<div style='position:absolute;left:646.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705071") %></span></div></span></div>
+<div style='position:absolute;left:520.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705000") %></span></div>
+<div style='position:absolute;left:582.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705010") %></span></div>
+<div style='position:absolute;left:646.03px;top:437.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705071") %></span></div>
 <div style='position:absolute;left:154.31px;top:456.77px' class='cls_013'><span class='cls_013'>43127051..</span></div>
 <div style='position:absolute;left:208.17px;top:456.77px' class='cls_013'><span class='cls_013'>ВЕНЕРА подконьковая боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:455.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.62px;top:455.78px' class='cls_013'><span class='cls_013'>68</span></div>
-<div style='position:absolute;left:514.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705100") %></span></div></span></div>
-<div style='position:absolute;left:576.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705110") %></span></div></span></div>
-<div style='position:absolute;left:640.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705171") %></span></div></span></div>
+<div style='position:absolute;left:514.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705100") %></span></div>
+<div style='position:absolute;left:576.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705110") %></span></div>
+<div style='position:absolute;left:640.03px;top:454.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705171") %></span></div>
 <div style='position:absolute;left:154.31px;top:472.78px' class='cls_013'><span class='cls_013'>43127052..</span></div>
 <div style='position:absolute;left:208.17px;top:472.78px' class='cls_013'><span class='cls_013'>ВЕНЕРА подконьковая боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:472.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.29px;top:472.81px' class='cls_013'><span class='cls_013'>60</span></div>
-<div style='position:absolute;left:514.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705200") %></span></div></span></div>
-<div style='position:absolute;left:576.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705210") %></span></div></span></div>
-<div style='position:absolute;left:640.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705271") %></span></div></span></div>
+<div style='position:absolute;left:514.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705200") %></span></div>
+<div style='position:absolute;left:576.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705210") %></span></div>
+<div style='position:absolute;left:640.03px;top:471.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312705271") %></span></div>
 <div style='position:absolute;left:154.31px;top:489.80px' class='cls_013'><span class='cls_013'>43127010..</span></div>
 <div style='position:absolute;left:208.17px;top:489.80px' class='cls_013'><span class='cls_013'>ВЕНЕРА вентиляционная</span></div>
 <div style='position:absolute;left:396.77px;top:489.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:451.62px;top:489.81px' class='cls_013'><span class='cls_013'>120</span></div>
-<div style='position:absolute;left:514.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701000") %></span></div></span></div>
-<div style='position:absolute;left:582.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701010") %></span></div></span></div>
-<div style='position:absolute;left:640.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701071") %></span></div></span></div>
+<div style='position:absolute;left:514.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701000") %></span></div>
+<div style='position:absolute;left:582.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701010") %></span></div>
+<div style='position:absolute;left:640.03px;top:488.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312701071") %></span></div>
 <div style='position:absolute;left:154.31px;top:506.81px' class='cls_013'><span class='cls_013'>43127030..</span></div>
 <div style='position:absolute;left:208.17px;top:506.81px' class='cls_013'><span class='cls_013'>ВЕНЕРА карнизная</span></div>
 <div style='position:absolute;left:396.77px;top:506.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:451.62px;top:506.81px' class='cls_013'><span class='cls_013'>120</span></div>
-<div style='position:absolute;left:520.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703000") %></span></div></span></div>
-<div style='position:absolute;left:582.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703010") %></span></div></span></div>
-<div style='position:absolute;left:646.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703071") %></span></div></span></div>
+<div style='position:absolute;left:520.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703000") %></span></div>
+<div style='position:absolute;left:582.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703010") %></span></div>
+<div style='position:absolute;left:646.03px;top:505.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703071") %></span></div>
 <div style='position:absolute;left:154.31px;top:523.80px' class='cls_013'><span class='cls_013'>43127031..</span></div>
 <div style='position:absolute;left:208.17px;top:523.80px' class='cls_013'><span class='cls_013'>ВЕНЕРА карнизная боковая левая</span></div>
 <div style='position:absolute;left:396.77px;top:523.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.29px;top:523.81px' class='cls_013'><span class='cls_013'>34</span></div>
-<div style='position:absolute;left:514.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703100") %></span></div></span></div>
-<div style='position:absolute;left:576.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703110") %></span></div></span></div>
-<div style='position:absolute;left:640.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703171") %></span></div></span></div>
+<div style='position:absolute;left:514.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703100") %></span></div>
+<div style='position:absolute;left:576.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703110") %></span></div>
+<div style='position:absolute;left:640.03px;top:522.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703171") %></span></div>
 <div style='position:absolute;left:34.52px;top:536.74px' class='cls_056'><span class='cls_056'>Расход: мин. 11,0 шт/м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:154.31px;top:540.81px' class='cls_013'><span class='cls_013'>43127032..</span></div>
 <div style='position:absolute;left:208.17px;top:540.81px' class='cls_013'><span class='cls_013'>ВЕНЕРА карнизная боковая правая</span></div>
 <div style='position:absolute;left:396.77px;top:540.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
 <div style='position:absolute;left:456.29px;top:540.81px' class='cls_013'><span class='cls_013'>30</span></div>
-<div style='position:absolute;left:514.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703200") %></span></div></span></div>
-<div style='position:absolute;left:576.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703210") %></span></div></span></div>
-<div style='position:absolute;left:640.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703271") %></span></div></span></div>
+<div style='position:absolute;left:514.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703200") %></span></div>
+<div style='position:absolute;left:576.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703210") %></span></div>
+<div style='position:absolute;left:640.03px;top:539.20px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("4312703271") %></span></div>
 <div style='position:absolute;left:802.86px;top:566.16px' class='cls_007'><span class='cls_007'>20</span></div>
 </div>
 <div style='position:absolute;left:50%;margin-left:-420px;top:10890px;width:841px;height:595px;border-style:outset;overflow:hidden'>
