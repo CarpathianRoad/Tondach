@@ -188,5 +188,11 @@ public class SystemController {
         ModelAndView model = new ModelAndView("/system/addAdvertising");
         return model;
     }
+    
+    @RequestMapping(value = {"/system/update", "/system/update/"}, method = RequestMethod.GET)
+    public ModelAndView update(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/update");
+        return model;
+    }
 }
 

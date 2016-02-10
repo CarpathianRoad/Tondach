@@ -81,6 +81,9 @@
               <a id="download" href="${Constants.URL}system/download">
                 <button type="submit" class="btn btn-success">Файли для завантаження</button>
               </a>
+              <a id="update" href="${Constants.URL}system/update">
+                <button type="submit" class="btn btn-success">Оновлення</button>
+              </a>
           </div>
                 
           

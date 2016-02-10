@@ -17,6 +17,7 @@ public class DownloadModel {
     public String url;
     public String type;
     public String size;
+    public String ext;
     
     Helpers help = new Helpers();
     
@@ -59,7 +60,14 @@ public class DownloadModel {
     public void setSize(String size) {
         this.size = size;
     }
-    
+
+    public String getExt() {
+        return ext;
+    }
+
+    public void setExt(String ext) {
+        this.ext = ext;
+    }
     
     
     public List<DownloadModel> fillModel(ResultSet result)throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
@@ -71,6 +79,7 @@ public class DownloadModel {
             temp.setUrl(result.getString("url"));
             temp.setType(result.getString("type"));
             temp.setSize(result.getString("size"));
+            temp.setExt(result.getString("url").split("\\.")[1].toLowerCase());
             tempList.add(temp);
     	}
         return tempList;
@@ -111,6 +120,7 @@ public class DownloadModel {
             temp.setUrl(result.getString("url"));
             temp.setType(result.getString("type"));
             temp.setSize(help.getReadableSize(Constants.home + "files/avatars/" + result.getString("url"), 3));
+            temp.setExt(result.getString("url").split("\\.")[1].toLowerCase());
             
             filesList.add(temp);
         } 
@@ -136,6 +146,7 @@ public class DownloadModel {
             temp.setUrl(result.getString("url"));
             temp.setType(result.getString("type"));
             temp.setSize(help.getReadableSize(Constants.home + "files/avatars/" + result.getString("url"), 3));
+            temp.setExt(result.getString("url").split("\\.")[1].toLowerCase());
             
             filesList.add(temp);
         } 

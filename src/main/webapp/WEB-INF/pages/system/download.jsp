@@ -87,6 +87,7 @@
                 <tr>
                     <th class="text-center" style="width:3%">#</th>
                     <th style="width:40%">Назва</th>
+                    <th style="width:20%">Розмір</th>
                     <th style="width:20%">Категорія</th>
                     <th style="width:3%;"></th>
                 </tr>
@@ -96,7 +97,8 @@
                 <c:forEach items="${downloads}" var="item">
                     <tr class="table-item">
                         <td class="text-center counter">${count}</td>
-                        <td><a href="${Constants.URL}files/avatars/${item.url}" target="_blank">${item.title}</a></td>
+                        <td><a href="${Constants.URL}files/avatars/${item.url}" target="_blank"><img class="file-icon" src="${Constants.URL}images/icons/${item.ext}.png"/>${item.title}</a></td>
+                        <td>${item.size}</td>
                         <td>${item.type}</td>
                         <td class="text-center"><a onclick="changeLink('${item.id}', '${item.title}')" href="#" data-toggle="modal" data-target="#myModal"><img class="article-buttons" src="${Constants.URL}images/delete.png"  width="20" height="20"/></a></td>
 

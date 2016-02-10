@@ -5,6 +5,8 @@
  */
 package ua.aits.tondach.controller;
 
+import com.jcraft.jsch.JSchException;
+import com.jcraft.jsch.SftpException;
 import java.awt.Graphics;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
@@ -35,6 +37,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import ua.aits.tondach.functions.Constants;
+import ua.aits.tondach.functions.SFTPinJava;
 import ua.aits.tondach.functions.Transliterator;
 import ua.aits.tondach.model.ArticleModel;
 import ua.aits.tondach.model.DownloadModel;
@@ -54,6 +57,7 @@ public class AjaxAndFormController {
     SellerModel Seller = new SellerModel();
     DownloadModel Download = new DownloadModel();
     Transliterator TransliteratorClass = new Transliterator();
+    SFTPinJava SFTP = new SFTPinJava();
 
     @RequestMapping(value = {"/system/ajax/check/user", "/system/ajax/check/user/"}, method = RequestMethod.GET)
     public @ResponseBody
@@ -296,5 +300,30 @@ public class AjaxAndFormController {
         return new ResponseEntity<>(returnHTML, responseHeaders, HttpStatus.CREATED);
         //return returnHTML;
     }
-
+    @RequestMapping(value = {"/system/do/checkXmlUpdate"}, method = RequestMethod.GET)
+    public @ResponseBody
+    ResponseEntity<String> checkUpdate(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        request.setCharacterEncoding("UTF-8");
+        HttpHeaders responseHeaders = new HttpHeaders();
+        responseHeaders.add("Content-Type", "application/json; charset=utf-8");
+        System.out.println("start-check");
+        String result = "";
+        if(SFTP.checkFiles("nomenklatura.xml")) {
+            SFTP.getFiles("nomenklatura.xml");
+            result += "<br/>Файл <u>номенклатури</u> оновлено.";
+        }
+        else {
+            result += "<br/>Наразі на сервері остання версія файла <u>номенклатури</u>.";
+        }
+        
+        if(SFTP.checkFiles("kontragent.xml")) {
+            SFTP.getFiles("kontragent.xml");
+            result += "<br/>Файл <u>контрагентів</u> оновлено.";
+        }
+        else {
+            result += "<br/>Наразі на сервері остання версія файла <u>контрагенти</u>.";
+        }
+        return new ResponseEntity<>(result, responseHeaders, HttpStatus.CREATED);
+        //return returnHTML;
+    }
 }
