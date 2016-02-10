@@ -289,7 +289,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
     <img src="${Constants.URL}files/pdf/background01.jpg" width="841" height="595"></div>
 <div style="position:absolute;left:38.27px;top:167.98px" class="cls_002"><span class="cls_002">TONDACH</span></div>
 <div style="position:absolute;left:385.20px;top:167.98px" class="cls_003"><span class="cls_003"><sup>®</sup></span><span class="cls_002">UA</span></div>
-<div style="position:absolute;left:38.27px;top:228.33px" class="cls_005"><span class="cls_005">Прайс-лист</span><span class="cls_006"> 2014</span></div>
+<div style="position:absolute;left:38.27px;top:228.33px" class="cls_005"><span class="cls_005">Прайс-лист</span><span class="cls_006"> 2016</span></div>
 </div>
 <div style="position:absolute;left:50%;margin-left:-420px;top:605px;width:841px;height:595px;border-style:outset;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
@@ -2390,7 +2390,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:485.10px;top:147.21px' class='cls_013'><span class='cls_013'>P</span></div>
 <div style='position:absolute;left:519.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740000") %></span></div>
 <div style='position:absolute;left:582.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740010") %></span></div>
-<div style='position:absolute;left:644.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740031") %>/span></div>
+<div style='position:absolute;left:644.74px;top:146.34px' class='cls_059'><span class='cls_059'><%= ua.aits.tondach.model.GoodsModel.getPrice("0312740031") %></span></div>
 <div style='position:absolute;left:154.32px;top:164.21px' class='cls_013'><span class='cls_013'>03127401..</span></div>
 <div style='position:absolute;left:208.17px;top:164.21px' class='cls_013'><span class='cls_013'>ФИДЕЛИО половинчатая</span></div>
 <div style='position:absolute;left:395.77px;top:164.21px' class='cls_013'><span class='cls_013'>15,5 x 45,5</span></div>
