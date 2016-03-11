@@ -29,7 +29,7 @@ import org.apache.log4j.Logger;
 
 public  class SFTPinJava {
     final static Logger logger = Logger.getLogger(SFTPinJava.class);
-    String SFTPHOST = "88.81.239.25";
+    String SFTPHOST = "192.168.20.50";
             int SFTPPORT = 22;
             String SFTPUSER = "user1";
             String SFTPPASS = "userdahsftp";

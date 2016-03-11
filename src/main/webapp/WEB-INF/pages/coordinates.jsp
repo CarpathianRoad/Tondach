@@ -28,7 +28,6 @@
 		#adress b {color:#bd1220;}
 #grey-ad {color: #b2b2b2; line-height: 17px;font-size: 12px;}
     </style>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script>
 	
 var directionsDisplay;
@@ -172,7 +171,8 @@ ul.breadcrumb li:first-child { padding-left: 0;background: none; }
 			Щедріна 146 <br/>
 88000 Закарпаття <br/>
 Україна <br/><span id="grey-ad">GPS (48.623319, 22.245779)</span><br/>
-E mail: office@tondach.biz<br/>
+E mail: Maria.Kravtsova@wienerberger.com, Vasyl.Andriechko@wienerberger.com,<br/>
+Nikolay.Yakovenko@wienerberger.com<br/>
 <a href="http://www.tondach.biz" target="_blank">www.tondach.biz</a>, <a href="http://www.tondach.com" target="_blank">www.tondach.com</a><br/>
 			
 			<a href="${Constants.URL}feedback/" target="_blank">Надіслати повідомлення</a>

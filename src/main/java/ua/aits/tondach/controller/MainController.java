@@ -61,7 +61,8 @@ public class MainController {
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(email));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("consultant@tondach.biz"));
+            message.addRecipients(Message.RecipientType.CC,
+                    InternetAddress.parse("maria.kravtsova@wienerberger.com,Vasyl.Andriechko@wienerberger.com,Nikolay.Yakovenko@wienerberger.com"));
             message.setSubject("Mail from site");
             message.setText("Firstame: "+firstname
                     + "\nLastname: " + lastname 
@@ -100,7 +101,8 @@ public class MainController {
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(email));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("consultant@tondach.biz"));
+            message.addRecipients(Message.RecipientType.CC,
+                    InternetAddress.parse("maria.kravtsova@wienerberger.com,Vasyl.Andriechko@wienerberger.com,Nikolay.Yakovenko@wienerberger.com"));
             message.setSubject("Mail from site");
             message.setText("Firstame: "+firstname
                     + "\nLastname: " + lastname
@@ -142,7 +144,8 @@ public class MainController {
         try {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(email));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("consultant@tondach.biz"));
+            message.addRecipients(Message.RecipientType.CC,
+                    InternetAddress.parse("maria.kravtsova@wienerberger.com,Vasyl.Andriechko@wienerberger.com,Nikolay.Yakovenko@wienerberger.com"));
             message.setSubject("Mail from site");
             message.setText("Firstame: "+firstname
                     + "\nLastname: " + lastname

@@ -4,6 +4,13 @@
 <jsp:useBean id="Constants" class="ua.aits.tondach.functions.Constants" scope="session"/>
 
 <t:indexpage>
+    <style>
+        input, textarea {
+            font-family: Arial,sans-serif;
+font-size: 15px;
+line-height: 22px;
+        }
+    </style>
     <title>  Форма зоротнього зв'язку - природньо красиві і довговічні покрівлі </title>
 
     <div id="sidebar" class="_1"> 	

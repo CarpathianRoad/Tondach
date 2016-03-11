@@ -91,7 +91,8 @@ public class OrderHelpers  {
             }
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("consultant@tondach.biz"));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("sirakandrew@gmail.com"));
+            message.addRecipients(Message.RecipientType.CC,
+                    InternetAddress.parse("maria.kravtsova@wienerberger.com,Vasyl.Andriechko@wienerberger.com,Nikolay.Yakovenko@wienerberger.com"));
             message.setSubject("Нове замовлення");
             message.setText("Номер замовленя: " + order_id
                     + "\nДата замовлення: " + order_date

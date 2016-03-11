@@ -794,9 +794,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:615.64px;top:110.31px' class='cls_012'><span class='cls_012'>40</span></div>
 <div style='position:absolute;left:208.17px;top:131.85px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:256.49px;top:131.85px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:514.83px;top:130.65px' class='cls_059'><span class='cls_059'>365,38</span></div>
-<div style='position:absolute;left:563.90px;top:130.65px' class='cls_059'><span class='cls_059'>396,97</span></div>
-<div style='position:absolute;left:602.43px;top:130.65px' class='cls_059'><span class='cls_059'>455,66</span></div>
+<div style='position:absolute;left:514.83px;top:130.65px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:563.90px;top:130.65px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:602.43px;top:130.65px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:148.86px' class='cls_013'><span class='cls_013'>16127300..</span></div>
 <div style='position:absolute;left:208.17px;top:148.86px' class='cls_013'><span class='cls_013'>ТВИСТ рядовая</span></div>
 <div style='position:absolute;left:396.84px;top:148.86px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
@@ -870,10 +870,10 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:606.54px;top:357.17px' class='cls_012'><span class='cls_012'>43</span></div>
 <div style='position:absolute;left:208.30px;top:369.86px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:256.62px;top:369.86px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:514.03px;top:369.32px' class='cls_059'><span class='cls_059'>459,89</span></div>
-<div style='position:absolute;left:575.90px;top:369.32px' class='cls_059'><span class='cls_059'>545,33</span></div>
-<div style='position:absolute;left:638.22px;top:369.51px' class='cls_059'><span class='cls_059'>677,93</span></div>
-<div style='position:absolute;left:702.11px;top:368.53px' class='cls_059'><span class='cls_059'>695,64</span></div>
+<div style='position:absolute;left:514.03px;top:369.32px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:575.90px;top:369.32px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:638.22px;top:369.51px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:702.11px;top:368.53px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:387.27px' class='cls_013'><span class='cls_013'>21127600..</span></div>
 <div style='position:absolute;left:208.17px;top:387.27px' class='cls_013'><span class='cls_013'>САМБА 11 рядовая</span></div>
 <div style='position:absolute;left:397.55px;top:387.27px' class='cls_013'><span class='cls_013'>28,0 x 47,0</span></div>
@@ -959,9 +959,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:622.64px;top:106.83px' class='cls_012'><span class='cls_012'>40</span></div>
 <div style='position:absolute;left:208.51px;top:127.25px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_054'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.82px;top:128.23px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:512.23px;top:127.03px' class='cls_059'><span class='cls_059'>378,93</span></div>
-<div style='position:absolute;left:566.10px;top:127.03px' class='cls_059'><span class='cls_059'>410,52</span></div>
-<div style='position:absolute;left:609.43px;top:127.03px' class='cls_059'><span class='cls_059'>487,17</span></div>
+<div style='position:absolute;left:512.23px;top:127.03px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:566.10px;top:127.03px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:609.43px;top:127.03px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:145.32px' class='cls_013'><span class='cls_013'>16121100..</span></div>
 <div style='position:absolute;left:208.17px;top:145.32px' class='cls_013'><span class='cls_013'>ТАНГО ПЛЮС рядовая</span></div>
 <div style='position:absolute;left:396.84px;top:145.32px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
@@ -1030,8 +1030,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:606.74px;top:309.67px' class='cls_012'><span class='cls_012'>54</span></div>
 <div style='position:absolute;left:208.17px;top:321.50px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_054'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:322.48px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:513.70px;top:321.42px' class='cls_059'><span class='cls_059'>429,81</span></div>
-<div style='position:absolute;left:576.10px;top:321.42px' class='cls_059'><span class='cls_059'>456,67</span></div>
+<div style='position:absolute;left:513.70px;top:321.42px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:576.10px;top:321.42px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.31px;top:339.49px' class='cls_013'><span class='cls_013'>16127000..</span></div>
 <div style='position:absolute;left:208.17px;top:339.49px' class='cls_013'><span class='cls_013'>МЕДИТЕРАН рядовая</span></div>
 <div style='position:absolute;left:397.37px;top:339.49px' class='cls_013'><span class='cls_013'>27,0 x 43,0</span></div>
@@ -1102,8 +1102,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:575.42px;top:87.90px' class='cls_068'><span class='cls_068'>10</span></div>
 <div style='position:absolute;left:605.98px;top:87.88px' class='cls_068'><span class='cls_068'>19</span></div>
 <div style='position:absolute;left:208.88px;top:105.36px' class='cls_065'><span class='cls_065'>Цена за м</span><span class='cls_063'><sup>2</sup></span><span class='cls_065'>    от:</span></div>
-<div style='position:absolute;left:516.46px;top:105.92px' class='cls_069'><span class='cls_069'>600,10</span></div>
-<div style='position:absolute;left:578.86px;top:105.92px' class='cls_069'><span class='cls_069'>639,01</span></div>
+<div style='position:absolute;left:516.46px;top:105.92px' class='cls_069'><span class='cls_069'></span></div>
+<div style='position:absolute;left:578.86px;top:105.92px' class='cls_069'><span class='cls_069'></span></div>
 <div style='position:absolute;left:155.02px;top:123.71px' class='cls_065'><span class='cls_065'>13100100..</span></div>
 <div style='position:absolute;left:208.88px;top:123.71px' class='cls_065'><span class='cls_065'>БОБРОВКА ОК рядовая</span></div>
 <div style='position:absolute;left:397.82px;top:123.71px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
@@ -1208,8 +1208,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:575.42px;top:357.84px' class='cls_068'><span class='cls_068'>10</span></div>
 <div style='position:absolute;left:605.98px;top:357.82px' class='cls_068'><span class='cls_068'>19</span></div>
 <div style='position:absolute;left:208.17px;top:374.81px' class='cls_065'><span class='cls_065'>Цена за м</span><span class='cls_063'><sup>2</sup></span><span class='cls_065'>    от:</span></div>
-<div style='position:absolute;left:516.46px;top:374.92px' class='cls_069'><span class='cls_069'>600,10</span></div>
-<div style='position:absolute;left:578.86px;top:374.92px' class='cls_069'><span class='cls_069'>639,01</span></div>
+<div style='position:absolute;left:516.46px;top:374.92px' class='cls_069'><span class='cls_069'></span></div>
+<div style='position:absolute;left:578.86px;top:374.92px' class='cls_069'><span class='cls_069'></span></div>
 <div style='position:absolute;left:154.32px;top:393.11px' class='cls_065'><span class='cls_065'>13100300..</span></div>
 <div style='position:absolute;left:208.17px;top:393.11px' class='cls_065'><span class='cls_065'>БОБРОВКА сегментная рядовая</span></div>
 <div style='position:absolute;left:397.11px;top:393.11px' class='cls_065'><span class='cls_065'>19,0 x 40,0</span></div>
@@ -1312,8 +1312,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:575.42px;top:91.44px' class='cls_068'><span class='cls_068'>10</span></div>
 <div style='position:absolute;left:605.98px;top:91.42px' class='cls_068'><span class='cls_068'>19</span></div>
 <div style='position:absolute;left:208.17px;top:108.83px' class='cls_073'><span class='cls_073'>Цена за м</span><span class='cls_077'><sup>2</sup></span><span class='cls_073'>    от:</span></div>
-<div style='position:absolute;left:516.46px;top:109.12px' class='cls_069'><span class='cls_069'>600,10</span></div>
-<div style='position:absolute;left:578.86px;top:109.12px' class='cls_069'><span class='cls_069'>639,01</span></div>
+<div style='position:absolute;left:516.46px;top:109.12px' class='cls_069'><span class='cls_069'></span></div>
+<div style='position:absolute;left:578.86px;top:109.12px' class='cls_069'><span class='cls_069'></span></div>
 <div style='position:absolute;left:154.32px;top:127.57px' class='cls_073'><span class='cls_073'>13105100..</span></div>
 <div style='position:absolute;left:208.17px;top:127.57px' class='cls_073'><span class='cls_073'>Б. ВЕНСКАЯ ПК рядовая</span></div>
 <div style='position:absolute;left:397.11px;top:127.57px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
@@ -1397,8 +1397,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:575.42px;top:359.44px' class='cls_068'><span class='cls_068'>10</span></div>
 <div style='position:absolute;left:605.98px;top:359.42px' class='cls_068'><span class='cls_068'>19</span></div>
 <div style='position:absolute;left:208.17px;top:377.09px' class='cls_073'><span class='cls_073'>Цена за м</span><span class='cls_077'><sup>2</sup></span><span class='cls_073'>    от:</span></div>
-<div style='position:absolute;left:516.46px;top:378.12px' class='cls_069'><span class='cls_069'>600,10</span></div>
-<div style='position:absolute;left:578.86px;top:378.12px' class='cls_069'><span class='cls_069'>639,01</span></div>
+<div style='position:absolute;left:516.46px;top:378.12px' class='cls_069'><span class='cls_069'></span></div>
+<div style='position:absolute;left:578.86px;top:378.12px' class='cls_069'><span class='cls_069'></span></div>
 <div style='position:absolute;left:154.32px;top:396.43px' class='cls_073'><span class='cls_073'>13105300..</span></div>
 <div style='position:absolute;left:208.17px;top:396.43px' class='cls_073'><span class='cls_073'>Б. ВЕНСКАЯ ЗК рядовая</span></div>
 <div style='position:absolute;left:397.11px;top:396.43px' class='cls_073'><span class='cls_073'>19,0 x 40,0</span></div>
@@ -1486,7 +1486,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:588.44px;top:91.44px' class='cls_012'><span class='cls_012'>19</span></div>
 <div style='position:absolute;left:208.17px;top:113.54px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:113.54px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:578.71px;top:112.06px' class='cls_069'><span class='cls_069'>1076,03</span></div>
+<div style='position:absolute;left:578.71px;top:112.06px' class='cls_069'><span class='cls_069'></span></div>
 <div style='position:absolute;left:154.32px;top:130.65px' class='cls_013'><span class='cls_013'>1310590019</span></div>
 <div style='position:absolute;left:208.21px;top:131.06px' class='cls_041'><span class='cls_041'>Староградская Чорнои ПК рядовая антик</span></div>
 <div style='position:absolute;left:396.77px;top:130.65px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
@@ -1565,8 +1565,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:605.27px;top:351.58px' class='cls_012'><span class='cls_012'>19</span></div>
 <div style='position:absolute;left:208.17px;top:372.68px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:372.68px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:515.09px;top:371.83px' class='cls_059'><span class='cls_059'>383,52</span></div>
-<div style='position:absolute;left:575.89px;top:371.83px' class='cls_059'><span class='cls_059'>409,53</span></div>
+<div style='position:absolute;left:515.09px;top:371.83px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:575.89px;top:371.83px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:390.31px' class='cls_013'><span class='cls_013'>13111000..</span></div>
 <div style='position:absolute;left:208.17px;top:390.31px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА ПК рядовая</span></div>
 <div style='position:absolute;left:396.95px;top:391.38px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
@@ -1604,8 +1604,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:605.27px;top:484.25px' class='cls_012'><span class='cls_012'>19</span></div>
 <div style='position:absolute;left:208.17px;top:505.34px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:505.34px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:515.09px;top:504.50px' class='cls_059'><span class='cls_059'>406,08</span></div>
-<div style='position:absolute;left:575.89px;top:504.50px' class='cls_059'><span class='cls_059'>433,62</span></div>
+<div style='position:absolute;left:515.09px;top:504.50px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:575.89px;top:504.50px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:522.98px' class='cls_013'><span class='cls_013'>13110000..</span></div>
 <div style='position:absolute;left:208.17px;top:522.98px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА ОК рядовая</span></div>
 <div style='position:absolute;left:396.95px;top:522.98px' class='cls_013'><span class='cls_013'>21,0 x 40,0</span></div>
@@ -1652,9 +1652,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:621.77px;top:107.47px' class='cls_012'><span class='cls_012'>40</span></div>
 <div style='position:absolute;left:208.17px;top:128.31px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:259.16px;top:128.31px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:514.26px;top:126.87px' class='cls_059'><span class='cls_059'>365,38</span></div>
-<div style='position:absolute;left:565.16px;top:126.87px' class='cls_059'><span class='cls_059'>396,97</span></div>
-<div style='position:absolute;left:606.36px;top:126.87px' class='cls_059'><span class='cls_059'>455,66</span></div>
+<div style='position:absolute;left:514.26px;top:126.87px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:565.16px;top:126.87px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:606.36px;top:126.87px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:145.32px' class='cls_013'><span class='cls_013'>16127500..</span></div>
 <div style='position:absolute;left:208.17px;top:145.32px' class='cls_013'><span class='cls_013'>БОЛЕРО рядовая</span></div>
 <div style='position:absolute;left:396.84px;top:145.32px' class='cls_013'><span class='cls_013'>30,0 x 50,0</span></div>
@@ -1716,11 +1716,11 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:698.59px;top:302.58px' class='cls_012'><span class='cls_012'>71</span></div>
 <div style='position:absolute;left:208.34px;top:322.90px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:259.32px;top:322.90px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:513.68px;top:321.63px' class='cls_059'><span class='cls_059'>667,95</span></div>
-<div style='position:absolute;left:564.23px;top:321.63px' class='cls_059'><span class='cls_059'>719,83</span></div>
-<div style='position:absolute;left:604.23px;top:321.63px' class='cls_059'><span class='cls_059'>719,83</span></div>
-<div style='position:absolute;left:644.18px;top:321.63px' class='cls_059'><span class='cls_059'>780,88</span></div>
-<div style='position:absolute;left:684.05px;top:321.63px' class='cls_059'><span class='cls_059'>780,88</span></div>
+<div style='position:absolute;left:513.68px;top:321.63px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:564.23px;top:321.63px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:604.23px;top:321.63px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:644.18px;top:321.63px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:684.05px;top:321.63px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:337.38px' class='cls_013'><span class='cls_013'>21127000..</span></div>
 <div style='position:absolute;left:208.17px;top:337.38px' class='cls_013'><span class='cls_013'>РОМАНСКАЯ рядовая</span></div>
 <div style='position:absolute;left:396.84px;top:337.38px' class='cls_013'><span class='cls_013'>28,0 x 46,5</span></div>
@@ -1814,9 +1814,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:637.70px;top:106.66px' class='cls_012'><span class='cls_012'>70</span></div>
 <div style='position:absolute;left:669.05px;top:106.66px' class='cls_012'><span class='cls_012'>71</span></div>
 <div style='position:absolute;left:208.29px;top:124.25px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_054'>2</span><span class='cls_013'>    от:</span></div>
-<div style='position:absolute;left:515.06px;top:124.74px' class='cls_059'><span class='cls_059'>608,28</span></div>
-<div style='position:absolute;left:578.25px;top:124.74px' class='cls_059'><span class='cls_059'>657,43</span></div>
-<div style='position:absolute;left:639.05px;top:124.74px' class='cls_059'><span class='cls_059'>715,40</span></div>
+<div style='position:absolute;left:515.06px;top:124.74px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:578.25px;top:124.74px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:639.05px;top:124.74px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.43px;top:141.09px' class='cls_013'><span class='cls_013'>21120000..</span></div>
 <div style='position:absolute;left:208.29px;top:141.09px' class='cls_013'><span class='cls_013'>ФРАНЦУЗСКАЯ 12 рядовая</span></div>
 <div style='position:absolute;left:397.59px;top:141.09px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
@@ -1877,9 +1877,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:637.70px;top:273.33px' class='cls_012'><span class='cls_012'>70</span></div>
 <div style='position:absolute;left:669.05px;top:273.33px' class='cls_012'><span class='cls_012'>71</span></div>
 <div style='position:absolute;left:208.29px;top:290.92px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_054'>2</span><span class='cls_013'>    от:</span></div>
-<div style='position:absolute;left:515.06px;top:291.41px' class='cls_059'><span class='cls_059'>495,50</span></div>
-<div style='position:absolute;left:578.25px;top:291.41px' class='cls_059'><span class='cls_059'>628,34</span></div>
-<div style='position:absolute;left:639.05px;top:291.41px' class='cls_059'><span class='cls_059'>683,75</span></div>
+<div style='position:absolute;left:515.06px;top:291.41px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:578.25px;top:291.41px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:639.05px;top:291.41px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.43px;top:307.75px' class='cls_013'><span class='cls_013'>21121100..</span></div>
 <div style='position:absolute;left:208.29px;top:307.75px' class='cls_013'><span class='cls_013'>ГРАНИЦЕ  11  рядовая</span></div>
 <div style='position:absolute;left:397.59px;top:307.75px' class='cls_013'><span class='cls_013'>27,7 x 46,5</span></div>
@@ -1947,8 +1947,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:605.27px;top:107.67px' class='cls_012'><span class='cls_012'>19</span></div>
 <div style='position:absolute;left:208.17px;top:130.43px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:130.43px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:515.39px;top:127.95px' class='cls_059'><span class='cls_059'>403,12</span></div>
-<div style='position:absolute;left:577.39px;top:127.95px' class='cls_059'><span class='cls_059'>445,67</span></div>
+<div style='position:absolute;left:515.39px;top:127.95px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:577.39px;top:127.95px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:222.35px;top:147.69px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА гладкая ОК</span></div>
 <div style='position:absolute;left:154.32px;top:151.69px' class='cls_013'><span class='cls_013'>13113200..</span></div>
 <div style='position:absolute;left:210.74px;top:150.48px' class='cls_085'><span class='cls_085'>1</span></div>
@@ -2018,10 +2018,10 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:443.17px;top:107.91px' class='cls_053'><span class='cls_053'>поддоне</span></div>
 <div style='position:absolute;left:208.17px;top:129.77px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:129.77px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:514.14px;top:129.77px' class='cls_059'><span class='cls_059'>854,69</span></div>
-<div style='position:absolute;left:577.14px;top:129.77px' class='cls_059'><span class='cls_059'>913,55</span></div>
-<div style='position:absolute;left:639.14px;top:129.77px' class='cls_059'><span class='cls_059'>913,55</span></div>
-<div style='position:absolute;left:702.14px;top:129.77px' class='cls_059'><span class='cls_059'>1031,13</span></div>
+<div style='position:absolute;left:514.14px;top:129.77px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:577.14px;top:129.77px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:639.14px;top:129.77px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:702.14px;top:129.77px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:147.21px' class='cls_013'><span class='cls_013'>01127800..</span></div>
 <div style='position:absolute;left:208.17px;top:147.21px' class='cls_013'><span class='cls_013'>ФИГАРО Делюкс рядовая</span></div>
 <div style='position:absolute;left:396.77px;top:147.21px' class='cls_013'><span class='cls_013'>24,1 x 42,4</span></div>
@@ -2102,11 +2102,11 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:443.17px;top:320.57px' class='cls_053'><span class='cls_053'>поддоне</span></div>
 <div style='position:absolute;left:208.17px;top:343.76px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:343.76px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:514.14px;top:342.54px' class='cls_059'><span class='cls_059'>830,72</span></div>
-<div style='position:absolute;left:577.14px;top:342.54px' class='cls_059'><span class='cls_059'>914,20</span></div>
-<div style='position:absolute;left:639.14px;top:342.54px' class='cls_059'><span class='cls_059'>914,20</span></div>
-<div style='position:absolute;left:702.14px;top:342.54px' class='cls_059'><span class='cls_059'>1065,90</span></div>
-<div style='position:absolute;left:758.14px;top:342.54px' class='cls_059'><span class='cls_059'>1767,71</span></div>
+<div style='position:absolute;left:514.14px;top:342.54px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:577.14px;top:342.54px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:639.14px;top:342.54px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:702.14px;top:342.54px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:758.14px;top:342.54px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:360.71px' class='cls_013'><span class='cls_013'>01123100..</span></div>
 <div style='position:absolute;left:208.17px;top:360.71px' class='cls_013'><span class='cls_013'>СУЛМ рядовая</span></div>
 <div style='position:absolute;left:396.77px;top:360.71px' class='cls_013'><span class='cls_013'>25,2 x 42,2</span></div>
@@ -2227,11 +2227,11 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:443.17px;top:105.91px' class='cls_053'><span class='cls_053'>поддоне</span></div>
 <div style='position:absolute;left:208.17px;top:128.43px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:128.43px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:515.23px;top:126.97px' class='cls_059'><span class='cls_059'>854,78</span></div>
-<div style='position:absolute;left:577.23px;top:126.97px' class='cls_059'><span class='cls_059'>895,67</span></div>
-<div style='position:absolute;left:641.23px;top:126.97px' class='cls_059'><span class='cls_059'>895,67</span></div>
-<div style='position:absolute;left:703.23px;top:126.97px' class='cls_059'><span class='cls_059'>1044,29</span></div>
-<div style='position:absolute;left:758.23px;top:126.97px' class='cls_059'><span class='cls_059'>1731,88</span></div>
+<div style='position:absolute;left:515.23px;top:126.97px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:577.23px;top:126.97px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:641.23px;top:126.97px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:703.23px;top:126.97px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:758.23px;top:126.97px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:145.32px' class='cls_013'><span class='cls_013'>01122100..</span></div>
 <div style='position:absolute;left:208.17px;top:145.32px' class='cls_013'><span class='cls_013'>МУЛДЕ рядовая</span></div>
 <div style='position:absolute;left:396.77px;top:145.32px' class='cls_013'><span class='cls_013'>24,0 x 40,5</span></div>
@@ -2324,7 +2324,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:589.19px;top:340.19px' class='cls_012'><span class='cls_012'>98</span></div>
 <div style='position:absolute;left:207.67px;top:362.88px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:257.99px;top:362.88px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:570.43px;top:361.57px' class='cls_059'><span class='cls_059'>1527,30</span></div>
+<div style='position:absolute;left:570.43px;top:361.57px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:222.35px;top:378.72px' class='cls_013'><span class='cls_013'>ВЕНСКАЯ ЧЕРЕПИЦА STEYR ПК, шершавая</span></div>
 <div style='position:absolute;left:153.34px;top:382.72px' class='cls_013'><span class='cls_013'>0110590098</span></div>
 <div style='position:absolute;left:212.42px;top:382.77px' class='cls_085'><span class='cls_085'>1</span></div>
@@ -2380,9 +2380,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:610.65px;top:117.78px' class='cls_089'><span class='cls_089'>48</span></div>
 <div style='position:absolute;left:208.17px;top:129.77px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:129.77px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:513.74px;top:128.34px' class='cls_059'><span class='cls_059'>696,41</span></div>
-<div style='position:absolute;left:576.74px;top:128.34px' class='cls_059'><span class='cls_059'>840,18</span></div>
-<div style='position:absolute;left:638.74px;top:128.34px' class='cls_059'><span class='cls_059'>840,18</span></div>
+<div style='position:absolute;left:513.74px;top:128.34px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:576.74px;top:128.34px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:638.74px;top:128.34px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:147.21px' class='cls_013'><span class='cls_013'>03127400..</span></div>
 <div style='position:absolute;left:208.17px;top:147.21px' class='cls_013'><span class='cls_013'>ФИДЕЛИО рядовая</span></div>
 <div style='position:absolute;left:402.77px;top:148.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
@@ -2449,9 +2449,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:443.17px;top:320.57px' class='cls_053'><span class='cls_053'>поддоне</span></div>
 <div style='position:absolute;left:208.17px;top:343.76px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:343.76px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:514.14px;top:342.54px' class='cls_059'><span class='cls_059'>939,47</span></div>
-<div style='position:absolute;left:577.14px;top:342.54px' class='cls_059'><span class='cls_059'>1002,57</span></div>
-<div style='position:absolute;left:639.14px;top:342.54px' class='cls_059'><span class='cls_059'>1002,57</span></div>
+<div style='position:absolute;left:514.14px;top:342.54px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:577.14px;top:342.54px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:639.14px;top:342.54px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:360.71px' class='cls_013'><span class='cls_013'>03127000..</span></div>
 <div style='position:absolute;left:208.17px;top:360.71px' class='cls_013'><span class='cls_013'>КАРМЕН рядовая</span></div>
 <div style='position:absolute;left:400.77px;top:360.71px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
@@ -2541,9 +2541,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:606.74px;top:89.00px' class='cls_012'><span class='cls_012'>54</span></div>
 <div style='position:absolute;left:208.17px;top:101.87px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:101.87px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:514.14px;top:100.65px' class='cls_059'><span class='cls_059'>873,68</span></div>
-<div style='position:absolute;left:577.47px;top:100.65px' class='cls_059'><span class='cls_059'>954,96</span></div>
-<div style='position:absolute;left:640.47px;top:100.65px' class='cls_059'><span class='cls_059'>954,96</span></div>
+<div style='position:absolute;left:514.14px;top:100.65px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:577.47px;top:100.65px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:640.47px;top:100.65px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:118.82px' class='cls_013'><span class='cls_013'>03127700..</span></div>
 <div style='position:absolute;left:208.21px;top:119.06px' class='cls_090'><span class='cls_090'>МЕДИТЕРАН ПЛЮС рядовая</span></div>
 <div style='position:absolute;left:396.77px;top:118.82px' class='cls_013'><span class='cls_013'>25,5 x 44,6</span></div>
@@ -2626,9 +2626,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:610.65px;top:358.45px' class='cls_089'><span class='cls_089'>48</span></div>
 <div style='position:absolute;left:208.17px;top:370.87px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:370.87px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:515.23px;top:369.40px' class='cls_059'><span class='cls_059'>713,35</span></div>
-<div style='position:absolute;left:577.23px;top:369.40px' class='cls_059'><span class='cls_059'>752,84</span></div>
-<div style='position:absolute;left:641.23px;top:369.40px' class='cls_059'><span class='cls_059'>874,06</span></div>
+<div style='position:absolute;left:515.23px;top:369.40px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:577.23px;top:369.40px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:641.23px;top:369.40px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:387.75px' class='cls_013'><span class='cls_013'>43127000..</span></div>
 <div style='position:absolute;left:208.17px;top:387.75px' class='cls_013'><span class='cls_013'>ВЕНЕРА рядовая</span></div>
 <div style='position:absolute;left:396.77px;top:387.75px' class='cls_013'><span class='cls_013'>29,0 x 48,5</span></div>
@@ -2724,9 +2724,9 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:606.21px;top:116.89px' class='cls_009'><span class='cls_012'>40</span></div>
 <div style='position:absolute;left:208.17px;top:129.77px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:129.77px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:513.74px;top:128.34px' class='cls_059'><span class='cls_059'>886,01</span></div>
-<div style='position:absolute;left:576.74px;top:128.34px' class='cls_059'><span class='cls_059'>945,52</span></div>
-<div style='position:absolute;left:638.74px;top:128.34px' class='cls_059'><span class='cls_059'>945,52</span></div>
+<div style='position:absolute;left:513.74px;top:128.34px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:576.74px;top:128.34px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:638.74px;top:128.34px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:147.21px' class='cls_013'><span class='cls_013'>03127200..</span></div>
 <div style='position:absolute;left:208.17px;top:147.21px' class='cls_013'><span class='cls_013'>ФИГАРО рядовая</span></div>
 <div style='position:absolute;left:402.77px;top:148.21px' class='cls_013'><span class='cls_013'>27 x 45,5</span></div>
@@ -2802,8 +2802,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:611.49px;top:127.31px' class='cls_012'><span class='cls_012'>41</span></div>
 <div style='position:absolute;left:208.17px;top:139.77px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:139.77px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:515.09px;top:138.93px' class='cls_059'><span class='cls_059'>930,76</span></div>
-<div style='position:absolute;left:575.89px;top:138.93px' class='cls_059'><span class='cls_059'>1099,51</span></div>
+<div style='position:absolute;left:515.09px;top:138.93px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:575.89px;top:138.93px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:157.40px' class='cls_013'><span class='cls_013'>01110000..</span></div>
 <div style='position:absolute;left:208.17px;top:157.40px' class='cls_013'><span class='cls_013'>ФАЛЬЦЕВАЯ БОБРОВКА рядовая</span></div>
 <div style='position:absolute;left:396.95px;top:157.40px' class='cls_013'><span class='cls_013'>22,0 x 40,0</span></div>
@@ -2875,11 +2875,11 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:797.79px;top:313.35px' class='cls_013'><span class='cls_013'>36</span></div>
 <div style='position:absolute;left:208.17px;top:326.88px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:326.88px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:515.09px;top:325.59px' class='cls_059'><span class='cls_059'>818,06</span></div>
-<div style='position:absolute;left:575.89px;top:325.59px' class='cls_059'><span class='cls_059'>974,02</span></div>
-<div style='position:absolute;left:639.09px;top:325.59px' class='cls_059'><span class='cls_059'>974,02</span></div>
-<div style='position:absolute;left:701.48px;top:325.59px' class='cls_059'><span class='cls_059'>1262,21</span></div>
-<div style='position:absolute;left:757.48px;top:325.59px' class='cls_059'><span class='cls_059'>2851,82</span></div>
+<div style='position:absolute;left:515.09px;top:325.59px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:575.89px;top:325.59px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:639.09px;top:325.59px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:701.48px;top:325.59px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:757.48px;top:325.59px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:343.98px' class='cls_013'><span class='cls_013'>01100100..</span></div>
 <div style='position:absolute;left:208.17px;top:343.98px' class='cls_013'><span class='cls_013'>БОБРОВКА ОК рядовая</span></div>
 <div style='position:absolute;left:396.77px;top:343.98px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
@@ -2990,8 +2990,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:612.15px;top:116.92px' class='cls_012'><span class='cls_012'>41</span></div>
 <div style='position:absolute;left:208.17px;top:129.10px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:129.10px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:510.72px;top:127.80px' class='cls_059'><span class='cls_059'>818,06</span></div>
-<div style='position:absolute;left:575.66px;top:127.80px' class='cls_059'><span class='cls_059'>974,02</span></div>
+<div style='position:absolute;left:510.72px;top:127.80px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:575.66px;top:127.80px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:146.30px' class='cls_013'><span class='cls_013'>01100300..</span></div>
 <div style='position:absolute;left:208.17px;top:146.30px' class='cls_013'><span class='cls_013'>БОБРОВКА сегментная рядовая</span></div>
 <div style='position:absolute;left:397.11px;top:146.30px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
@@ -3071,8 +3071,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:612.15px;top:115.75px' class='cls_012'><span class='cls_012'>41</span></div>
 <div style='position:absolute;left:208.17px;top:128.44px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:128.44px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:516.21px;top:127.54px' class='cls_059'><span class='cls_059'>818,06</span></div>
-<div style='position:absolute;left:578.88px;top:127.54px' class='cls_059'><span class='cls_059'>974,02</span></div>
+<div style='position:absolute;left:516.21px;top:127.54px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:578.88px;top:127.54px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:145.32px' class='cls_013'><span class='cls_013'>01105100..</span></div>
 <div style='position:absolute;left:208.17px;top:145.32px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ПК рядовая</span></div>
 <div style='position:absolute;left:397.11px;top:145.32px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
@@ -3157,8 +3157,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:612.15px;top:360.42px' class='cls_012'><span class='cls_012'>41</span></div>
 <div style='position:absolute;left:208.17px;top:372.43px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:372.43px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:516.21px;top:372.20px' class='cls_059'><span class='cls_059'>1059,74</span></div>
-<div style='position:absolute;left:578.88px;top:372.20px' class='cls_059'><span class='cls_059'>1153,07</span></div>
+<div style='position:absolute;left:516.21px;top:372.20px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:578.88px;top:372.20px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:389.94px' class='cls_013'><span class='cls_013'>01105300..</span></div>
 <div style='position:absolute;left:208.17px;top:389.94px' class='cls_013'><span class='cls_013'>Б. ВЕНСКАЯ ЗК рядовая</span></div>
 <div style='position:absolute;left:397.11px;top:389.94px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
@@ -3249,7 +3249,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:525.81px;top:108.06px' class='cls_012'><span class='cls_012'>00</span></div>
 <div style='position:absolute;left:208.17px;top:129.10px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:129.10px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:515.15px;top:128.72px' class='cls_059'><span class='cls_059'>1347,94</span></div>
+<div style='position:absolute;left:515.15px;top:128.72px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:154.32px;top:146.73px' class='cls_013'><span class='cls_013'>01100400..</span></div>
 <div style='position:absolute;left:208.17px;top:146.73px' class='cls_013'><span class='cls_013'>БОБРОВКА староградская ОК рядовая</span></div>
 <div style='position:absolute;left:397.11px;top:146.73px' class='cls_013'><span class='cls_013'>19,0 x 40,0</span></div>
@@ -3306,7 +3306,7 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:589.90px;top:294.60px' class='cls_012'><span class='cls_012'>00</span></div>
 <div style='position:absolute;left:208.17px;top:317.10px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:317.10px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:577.95px;top:315.72px' class='cls_059'><span class='cls_059'>1238,80</span></div>
+<div style='position:absolute;left:577.95px;top:315.72px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:151.48px;top:333.85px' class='cls_013'><span class='cls_013'>0110140050</span></div>
 <div style='position:absolute;left:212.42px;top:332.51px' class='cls_085'><span class='cls_085'>1</span></div>
 <div style='position:absolute;left:222.35px;top:333.85px' class='cls_013'><span class='cls_013'>БОБРОВКА STEYR ОК, </span><span class='cls_073'>шершавая поверхность</span></div>
@@ -3350,8 +3350,8 @@ div.cls_142{font-family:Arial,serif;font-size:5.8px;color:rgb(255,254,255);font-
 <div style='position:absolute;left:652.97px;top:456.63px' class='cls_012'><span class='cls_012'>19</span></div>
 <div style='position:absolute;left:208.17px;top:477.77px' class='cls_013'><span class='cls_013'>Цена за м</span><span class='cls_055'><sup>2</sup></span></div>
 <div style='position:absolute;left:258.49px;top:477.77px' class='cls_013'><span class='cls_013'>от:</span></div>
-<div style='position:absolute;left:577.75px;top:476.34px' class='cls_059'><span class='cls_059'>0,00</span></div>
-<div style='position:absolute;left:637.75px;top:476.34px' class='cls_059'><span class='cls_059'>0,00</span></div>
+<div style='position:absolute;left:577.75px;top:476.34px' class='cls_059'><span class='cls_059'></span></div>
+<div style='position:absolute;left:637.75px;top:476.34px' class='cls_059'><span class='cls_059'></span></div>
 <div style='position:absolute;left:37.68px;top:499.06px' class='cls_085'><span class='cls_085'>1</span></div>
 <div style='position:absolute;left:156.10px;top:497.89px' class='cls_013'><span class='cls_013'>01105900..</span></div>
 <div style='position:absolute;left:212.42px;top:497.23px' class='cls_085'><span class='cls_085'>1</span></div>

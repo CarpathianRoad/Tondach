@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 var showMenu = false;
-var url = "/Tondach/";
+var url = "/";
 $(document).ready(function() {
     $("#nav-mobile").html($("#nav-main").html());
     $("#nav-trigger span").click(function(){
