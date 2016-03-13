@@ -19,16 +19,21 @@
         <br><hr>
     </div>
 
+
     <div class="row">
 
         <div class="article-filters">
             <button class="filter-button btn btn-success" id="updateBtn">Оновити номенклатуру і користувачів</button>
+            <a type="button" class="web-users" href="update_users">Список веб-користувачів</a>
+            <a type="button" class="web-downloads" href="update_xmls">Список завантажень</a>
         </div>
-            <div id="update-status"><strong>Статус: </strong><span></span></div>
-
+        <div id="update-status"><strong>Статус: </strong><span></span></div>
+        
 
 
     </div>
+
+    
 
 </div>
 
@@ -39,12 +44,13 @@
 <script src="${Constants.URL}js/plugins/dropzone.js"></script>
 <script>
     var inProgress = false;
-    
+
     $(document).ready(function () {
+
     });
-    
+
     $("#updateBtn").click(function (e) {
-        if(!inProgress) {
+        if (!inProgress) {
             $(this).attr("disabled", true);
             inProgress = true;
             $("#update-status span").html("Йде перевірка ...");
@@ -52,14 +58,14 @@
                 url: '${Constants.URL}system/do/checkXmlUpdate',
                 cache: false,
                 type: 'GET',
-                mimeType:"text/html; charset=UTF-8",
-                success: function(data){
+                mimeType: "text/html; charset=UTF-8",
+                success: function (data) {
                     $("#update-status span").html(data);
                     inProgress = false;
                     $("#updateBtn").attr("disabled", false);
                 }
-            });  
+            });
         }
     });
-        
+
 </script>

@@ -700,3 +700,8 @@ line-height: 10px;
     font-size: 14px;
     color: #ffffff;
 }
+button#updateBtn.filter-button.btn.btn-success{
+    display: block !important;
+    float: left !important;
+    width: 300px !important;
+}

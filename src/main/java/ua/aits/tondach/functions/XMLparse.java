@@ -95,6 +95,7 @@ public class XMLparse {
                  Element eElement = (Element) nNode;
                  user.setUser_number(eElement.getElementsByTagName("number").item(0).getTextContent());
                  user.setUser_name(eElement.getElementsByTagName("name").item(0).getTextContent());
+                 user.setUser_name(user.user_name.replace("\'", "\\\'"));
                  user.setUser_login(eElement.getElementsByTagName("login").item(0).getTextContent());
                  user.setUser_password(eElement.getElementsByTagName("password").item(0).getTextContent());
                  user.setUser_xml_date(xml_date);

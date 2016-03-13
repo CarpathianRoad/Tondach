@@ -20,7 +20,11 @@ import com.jcraft.jsch.SftpATTRS;
 import com.jcraft.jsch.SftpException;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import org.apache.log4j.Logger;
+import ua.aits.tondach.functions.DB;
 
 /**
  *
@@ -67,7 +71,7 @@ public  class SFTPinJava {
             session.disconnect();
          return fileExists;
      }
-    public void getFiles(String filename) throws SftpException, JSchException {
+    public void getFiles(String filename) throws SftpException, JSchException, SQLException {
 
             Session session = null;
             Channel channel = null;
@@ -87,6 +91,12 @@ public  class SFTPinJava {
         try{
             if(checkFiles(filename)) {
                 logger.info("The file "+ filename + " will be loaded");
+                DB.runQuery("INSERT INTO `docs_upload`("
+                    + "`date`, "
+                    + "`time`, "
+                    + "`type`) "
+                    + "VALUES('"+ new SimpleDateFormat("yyyy.MM.dd").format(new Date())+"', '"+ new SimpleDateFormat("HH:mm:ss").format(new Date())+"', '"+filename+"')");
+                DB.closeCon();
             System.out.println("sss0");
             byte[] buffer = new byte[1024];
             System.out.println("sss1");
@@ -119,7 +129,7 @@ public  class SFTPinJava {
         }
     }
     
-    public void updateFiles() throws SftpException, JSchException {
+    public void updateFiles() throws SftpException, JSchException, SQLException {
         getFiles("kontragent.xml");
         getFiles("nomenklatura.xml");
     }

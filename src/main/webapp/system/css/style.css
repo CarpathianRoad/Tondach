@@ -84,7 +84,7 @@
      border-color: darkred !important;
 }
 div.article-filters{
-    width:112px;
+    width:100%;
     height:40px;
     margin-bottom: 20px;
 }
@@ -95,4 +95,15 @@ div.article-filters{
 #update-status {
     margin-top: 15px;
     font-size: 17px;
+}
+.filter-button.btn.btn-success{
+    display: block;
+    float: left;
+    width: 300px;
+}
+.web-users, .web-downloads{
+    display: block;
+    float:right;
+    width: 300px;
+    padding:6px 12px;
 }

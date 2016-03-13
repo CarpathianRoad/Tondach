@@ -5,17 +5,24 @@
  */
 package ua.aits.tondach.controller;
 
+import java.io.UnsupportedEncodingException;
 import java.sql.SQLException;
 import java.text.ParseException;
+import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Scope;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import ua.aits.tondach.functions.Helpers;
+import ua.aits.tondach.functions.Helpers.UploadModel;
+import ua.aits.tondach.functions.XMLparse;
 import ua.aits.tondach.model.ArticleModel;
 import ua.aits.tondach.model.DownloadModel;
 import ua.aits.tondach.model.RiderModel;
@@ -32,12 +39,14 @@ import ua.aits.tondach.model.UserModel;
 public class SystemController {
     
     Helpers Helpers = new Helpers();
+    Helpers.UploadModel Upload = Helpers.new UploadModel();
     UserModel Users = new UserModel();
     ArticleModel Article = new ArticleModel();
     SlaterModel Slater = new SlaterModel();
     RiderModel Rider = new RiderModel();
     SellerModel Seller = new SellerModel();
     DownloadModel Download = new DownloadModel();
+    XMLparse XML = new XMLparse();
     
     @RequestMapping(value = {"/system/login", "/system/logon", "/system/enter"}, method = RequestMethod.GET)
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response)  {
@@ -194,5 +203,26 @@ public class SystemController {
         ModelAndView model = new ModelAndView("/system/update");
         return model;
     }
+    @RequestMapping(value = {"/system/update_users", "/system/update_users/"}, method = RequestMethod.GET)
+    public ModelAndView update_users(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/update_users");
+        model.addObject("users", XMLparse.parseUsers());
+        return model;
+    }
+    @RequestMapping(value = {"/system/update_xmls", "/system/update_xmls/"}, method = RequestMethod.GET)
+    public ModelAndView update_xmls(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
+        ModelAndView model = new ModelAndView("/system/update_xmls");
+        model.addObject("docs", Upload.getAllDocs());
+        return model;
+    }
+//    @RequestMapping(value = {"/system/contentByType/", "/system/contentByType"}, method = RequestMethod.GET)
+//    public @ResponseBody
+//    ResponseEntity<String> contentByType(HttpServletRequest request, HttpServletResponse response) throws Exception {
+//        request.setCharacterEncoding("UTF-8");
+//        String type = request.getParameter("type");
+//        System.out.println(type);
+//        List<UploadModel> tempC = Upload.getByType(type);
+//        return new ResponseEntity<>(HttpStatus.CREATED);
+//    }
 }
 

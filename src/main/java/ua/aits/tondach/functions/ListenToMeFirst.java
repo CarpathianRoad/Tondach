@@ -7,6 +7,7 @@ package ua.aits.tondach.functions;
 
 import com.jcraft.jsch.JSchException;
 import com.jcraft.jsch.SftpException;
+import java.sql.SQLException;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
@@ -38,6 +39,8 @@ public class ListenToMeFirst implements javax.servlet.ServletContextListener {
             } catch (SftpException ex) {
                 Logger.getLogger(ListenToMeFirst.class.getName()).log(Level.SEVERE, null, ex);
             } catch (JSchException ex) {
+                Logger.getLogger(ListenToMeFirst.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (SQLException ex) {
                 Logger.getLogger(ListenToMeFirst.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
