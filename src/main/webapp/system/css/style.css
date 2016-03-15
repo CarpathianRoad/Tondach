@@ -101,9 +101,9 @@ div.article-filters{
     float: left;
     width: 300px;
 }
-.web-users, .web-downloads{
+.web-users, .web-downloads, .web-nomenk{
     display: block;
     float:right;
-    width: 300px;
+    width: 200px;   
     padding:6px 12px;
 }

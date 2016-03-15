@@ -19,9 +19,15 @@
             font-family: sans-serif;
             text-align: center;
         }
+        .sortorder:after {
+            content: '\25b2';
+        }
+        .sortorder.reverse:after {
+            content: '\25bc';
+        }
         .row.table{
-            width:40%;
-            padding-left:30%;
+            width:90%;
+            padding-left:5%;
         }
     </style>
     <head>
@@ -35,31 +41,34 @@
 
 
 
-        <title>Список завантажень</title>
+        <title>Список номенклатури</title>
     </head>
     <body>
-        <h1>Список завантажень</h1>
+        <h1>Список номенклатури</h1>
         <div class="row table" align="middle">
             <table border="2" id="upload-table" class="display">
                 
                 <thead>
-                    <tr>
-                        <th width="15%">Date</th>
-                        <th width="15%">Time</th>
-                        <th width="40%">Type</th>
-                    </tr>
                     <tr class="tr-head">
-                        <th width="15%">Date</th>
-                        <th width="15%">Time</th>
-                        <th width="40%">Type</th>
+                        <th width="5%">Code</th>
+                        <th width="10%">Article</th>
+                        <th width="15%">Category1</th>
+                        <th width="15%">Category2</th>
+                        <th width="40%">Name</th>
+                        <th width="5%">Unit</th>
+                        <th width="5%">Price grn</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <c:forEach items="${docs}" var="item">
+                    <c:forEach items="${dobro}" var="item">
                         <tr class="tr-body">
-                            <td align="middle">${item.date}</td>
-                            <td align="middle">${item.time}</td>
-                            <td align="middle">${item.type}</td>
+                            <td align="middle">${item.code}</td>
+                            <td align="middle">${item.article}</td>
+                            <td align="middle">${item.category_1}</td>
+                            <td align="middle">${item.category_2}</td>
+                            <td align="left">${item.name}</td>
+                            <td align="middle">${item.unit}</td>
+                            <td align="middle">${item.price}</td>
                         </tr>
                     </c:forEach>
                 </tbody>
@@ -70,30 +79,9 @@
         <script type="text/javascript">
             $(document).ready(function () {
                 var table = $('#upload-table').DataTable({
-                    "order": [[0, "desc"]],
+                    "order": [[0, "asc"]],
                     "fixedHeader": true,
-                    "searchHighlight": true,
-                    initComplete: function () {
-                        this.api().columns().every(function () {
-                            var column = this;
-                            var select = $('<select><option value=""></option></select>')
-                                    .appendTo($(column.header()).empty())
-                                    .on('change', function () {
-                                        var val = $.fn.dataTable.util.escapeRegex(
-                                                $(this).val()
-                                                );
-
-                                        column
-                                                .search(val ? '^' + val + '$' : '', true, false)
-                                                .draw();
-                                    });
-
-                            column.data().unique().sort().each(function (d, j) {
-                                select.append('<option value="' + d + '">' + d + '</option>');
-                            });
-                        });
-                    },
-                    
+                    "searchHighlight": true
                 });
                 $('.dataTables_filter input[type="search"]').attr('placeholder', 'Search...').css({'width': '250px', 'display': 'inline-block'});
                 $('.dataTables_length').find('br').remove();

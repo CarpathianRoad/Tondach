@@ -24,8 +24,9 @@
 
         <div class="article-filters">
             <button class="filter-button btn btn-success" id="updateBtn">Оновити номенклатуру і користувачів</button>
-            <a type="button" class="web-users" href="update_users">Список веб-користувачів</a>
-            <a type="button" class="web-downloads" href="update_xmls">Список завантажень</a>
+            <a type="button" class="web-users" href="update_users" target="_blank">Список веб-користувачів</a>
+            <a type="button" class="web-downloads" href="update_xmls" target="_blank">Список завантажень</a>
+            <a type="button" class="web-nomenk" href="update_nomenklatura" target="_blank">Список номенклатури</a>
         </div>
         <div id="update-status"><strong>Статус: </strong><span></span></div>
         

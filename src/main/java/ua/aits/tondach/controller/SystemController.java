@@ -215,14 +215,11 @@ public class SystemController {
         model.addObject("docs", Upload.getAllDocs());
         return model;
     }
-//    @RequestMapping(value = {"/system/contentByType/", "/system/contentByType"}, method = RequestMethod.GET)
-//    public @ResponseBody
-//    ResponseEntity<String> contentByType(HttpServletRequest request, HttpServletResponse response) throws Exception {
-//        request.setCharacterEncoding("UTF-8");
-//        String type = request.getParameter("type");
-//        System.out.println(type);
-//        List<UploadModel> tempC = Upload.getByType(type);
-//        return new ResponseEntity<>(HttpStatus.CREATED);
-//    }
+    @RequestMapping(value = {"/system/update_nomenklatura", "/system/update_nomenklatura/"}, method = RequestMethod.GET)
+    public ModelAndView update_nomenklatura(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
+        ModelAndView model = new ModelAndView("/system/update_nomenklatura");
+        model.addObject("dobro", XMLparse.parseGoods());
+        return model;
+    }
 }
 
