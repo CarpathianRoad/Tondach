@@ -31,23 +31,35 @@
         }
     </style>
     <head>
+
+        <!--
+            Connect all required css and js files for our dataTable plugin
+            in the head of the page so it can download all needed resources
+            before the page is loaded completely.
+        -->
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="${Constants.URL}js/jquery-1.12.0.min.js" charset="utf-8"></script>
         <link rel="stylesheet" type="text/css" href="${Constants.URL}css/jquery.dataTables.min.css" />
-        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/plug-ins/1.10.11/features/searchHighlight/dataTables.searchHighlight.css" />
+        <link rel="stylesheet" type="text/css" href="${Constants.URL}css/dataTables.searchHighlight.css" />
         <script type="text/javascript" src="${Constants.URL}js/jquery.dataTables.min.js" charset="utf-8"></script>
-        <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.11/features/searchHighlight/dataTables.searchHighlight.min.js" charset="utf-8"></script>
-        <script type="text/javascript" src="//bartaz.github.io/sandbox.js/jquery.highlight.js" charset="utf-8"></script>
+        <script type="text/javascript" src="${Constants.URL}js/dataTables.searchHighlight.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="${Constants.URL}js/jquery.highlight.js" charset="utf-8"></script>
 
-
+        <!--
+            Get the data from the SystemController and using jQuery
+            set it  in a proper way.
+        -->
 
         <title>Список номенклатури</title>
     </head>
     <body>
-        <h1>Список номенклатури</h1>
+        <h1 style="margin-bottom: 10px">Список номенклатури</h1>
+        <c:forEach items="${upload_time}" var="item" begin="0" end="0">
+            <h2 style="margin-top:10px">${item.date} - ${item.time}</h2>
+        </c:forEach>
         <div class="row table" align="middle">
             <table border="2" id="upload-table" class="display">
-                
                 <thead>
                     <tr class="tr-head">
                         <th width="5%">Code</th>
@@ -60,7 +72,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <c:forEach items="${dobro}" var="item">
+                    <c:forEach items="${stuff}" var="item">
                         <tr class="tr-body">
                             <td align="middle">${item.code}</td>
                             <td align="middle">${item.article}</td>
@@ -78,6 +90,11 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function () {
+
+                /*Connect dataTable plugin to the table
+                 *and then set the properties needed.
+                 */
+
                 var table = $('#upload-table').DataTable({
                     "order": [[0, "asc"]],
                     "fixedHeader": true,

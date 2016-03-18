@@ -25,13 +25,20 @@
         }
     </style>
     <head>
+
+        <!--
+            Connect all required css and js files for our dataTable plugin
+            in the head of the page so it can download all needed resources
+            before the page is loaded.
+        -->
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <script type="text/javascript" src="${Constants.URL}js/jquery-1.12.0.min.js" charset="utf-8"></script>
         <link rel="stylesheet" type="text/css" href="${Constants.URL}css/jquery.dataTables.min.css" />
-        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/plug-ins/1.10.11/features/searchHighlight/dataTables.searchHighlight.css" />
+        <link rel="stylesheet" type="text/css" href="${Constants.URL}css/dataTables.searchHighlight.css" />
         <script type="text/javascript" src="${Constants.URL}js/jquery.dataTables.min.js" charset="utf-8"></script>
-        <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.11/features/searchHighlight/dataTables.searchHighlight.min.js" charset="utf-8"></script>
-        <script type="text/javascript" src="//bartaz.github.io/sandbox.js/jquery.highlight.js" charset="utf-8"></script>
+        <script type="text/javascript" src="${Constants.URL}js/dataTables.searchHighlight.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="${Constants.URL}js/jquery.highlight.js" charset="utf-8"></script>
 
 
 
@@ -41,7 +48,7 @@
         <h1>Список завантажень</h1>
         <div class="row table" align="middle">
             <table border="2" id="upload-table" class="display">
-                
+
                 <thead>
                     <tr>
                         <th width="15%">Date</th>
@@ -54,6 +61,12 @@
                         <th width="40%">Type</th>
                     </tr>
                 </thead>
+
+                <!--
+                    Get the data from the SystemController and using jQuery
+                    set it in the table in a proper way.
+                -->
+
                 <tbody>
                     <c:forEach items="${docs}" var="item">
                         <tr class="tr-body">
@@ -69,47 +82,55 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function () {
+
+                /*Connect dataTable plugin to the table
+                 *and then set the properties needed.
+                 */
+
                 var table = $('#upload-table').DataTable({
-                    "order": [[0, "desc"]],
-                    "fixedHeader": true,
-                    "searchHighlight": true,
-                    initComplete: function () {
-                        this.api().columns().every(function () {
-                            var column = this;
-                            var select = $('<select><option value=""></option></select>')
-                                    .appendTo($(column.header()).empty())
-                                    .on('change', function () {
-                                        var val = $.fn.dataTable.util.escapeRegex(
-                                                $(this).val()
-                                                );
+                        "order": [[0, "desc"]],
+                        "fixedHeader": true,
+                        "searchHighlight": true,
+                        columnDefs: [ {
+                            targets: [ 0 ],
+                            orderData: [ 0, 1 ]
+                        }],
+                                initComplete: function () {
+                                this.api().columns().every(function () {
+                                    var column = this;
+                                    var select = $('<select><option value=""></option></select>')
+                                            .appendTo($(column.header()).empty())
+                                            .on('change', function () {
+                                                var val = $.fn.dataTable.util.escapeRegex(
+                                                        $(this).val()
+                                                        );
 
-                                        column
-                                                .search(val ? '^' + val + '$' : '', true, false)
-                                                .draw();
+                                                column
+                                                        .search(val ? '^' + val + '$' : '', true, false)
+                                                        .draw();
+                                            });
+
+                                    column.data().unique().sort().each(function (d, j) {
+                                        select.append('<option value="' + d + '">' + d + '</option>');
                                     });
+                                });
+                                }
+                    });
+                    $('.dataTables_filter input[type="search"]').attr('placeholder', 'Search...').css({'width': '250px', 'display': 'inline-block'});
+                    $('.dataTables_length').find('br').remove();
+                    $('.dataTables_length').attr('style', 'margin-bottom:20px');
+                    $('.dataTables_length').find('label').css({'display': 'block', 'padding-right': '20px'});
 
-                            column.data().unique().sort().each(function (d, j) {
-                                select.append('<option value="' + d + '">' + d + '</option>');
-                            });
-                        });
-                    },
-                    
-                });
-                $('.dataTables_filter input[type="search"]').attr('placeholder', 'Search...').css({'width': '250px', 'display': 'inline-block'});
-                $('.dataTables_length').find('br').remove();
-                $('.dataTables_length').attr('style', 'margin-bottom:20px');
-                $('.dataTables_length').find('label').css({'display': 'block', 'padding-right': '20px'});
+                    $('#users-table').on(('mouseover', 'tr', function () {
+                        $(this).find('th').css({'color': 'red'});
+                    }));
+                    table.on('draw', function () {
+                        var body = $(table.table().body());
 
-                $('#users-table').on(('mouseover', 'tr', function () {
-                    $(this).find('th').css({'color': 'red'});
-                }));
-                table.on('draw', function () {
-                    var body = $(table.table().body());
-
-                    body.unhighlight();
-                    body.highlight(table.search());
-                });
-            });
+                        body.unhighlight();
+                        body.highlight(table.search());
+                    });
+                    });
         </script>
     </body>
 

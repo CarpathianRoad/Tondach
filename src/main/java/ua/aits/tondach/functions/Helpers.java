@@ -119,6 +119,12 @@ public class Helpers {
         return readableSize;
     }
 
+    /*
+        Model with 'getting' methods of xml's information.
+        Get the data from the DB using ResultSet, insert it into the UploadModel
+        list. After, methods called from controller can set date in views.
+    */
+    
     public class UploadModel {
 
         public Integer getId() {
@@ -174,7 +180,7 @@ public class Helpers {
     }
         
         public List<UploadModel> getByType(String type) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
-        ResultSet result = DB.getResultSet("SELECT * FROM docs_upload WHERE type = '"+StringEscapeUtils.escapeSql(type)+"' ORDER BY date;");
+        ResultSet result = DB.getResultSet("SELECT * FROM docs_upload WHERE type = '"+StringEscapeUtils.escapeSql(type)+"' ORDER BY date desc;");
         List<UploadModel> docsList = new LinkedList<>();
         while (result.next()) { 
             UploadModel temp = new UploadModel();

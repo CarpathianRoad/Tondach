@@ -25,18 +25,28 @@
         }
     </style>
     <head>
+
+        <!--
+            Connect all required css and js files for dataTable plugin
+            in the head of the page so it can download all needed resources
+            before the page is loaded.
+        -->
+
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="${Constants.URL}js/jquery-1.12.0.min.js" charset="utf-8"></script>
         <link rel="stylesheet" type="text/css" href="${Constants.URL}css/jquery.dataTables.min.css" />
-        <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/plug-ins/1.10.11/features/searchHighlight/dataTables.searchHighlight.css" />
+        <link rel="stylesheet" type="text/css" href="${Constants.URL}css/dataTables.searchHighlight.css" />
         <script type="text/javascript" src="${Constants.URL}js/jquery.dataTables.min.js" charset="utf-8"></script>
-        <script type="text/javascript" src="//cdn.datatables.net/plug-ins/1.10.11/features/searchHighlight/dataTables.searchHighlight.min.js" charset="utf-8"></script>
-        <script type="text/javascript" src="//bartaz.github.io/sandbox.js/jquery.highlight.js" charset="utf-8"></script>
+        <script type="text/javascript" src="${Constants.URL}js/dataTables.searchHighlight.min.js" charset="utf-8"></script>
+        <script type="text/javascript" src="${Constants.URL}js/jquery.highlight.js" charset="utf-8"></script>
 
         <title>Список веб-користувачів</title>
     </head>
     <body>
-        <h1>Список веб-користувачів</h1>
+        <h1 style="margin-bottom:10px">Список веб-користувачів</h1>
+        <c:forEach items="${upload_time}" var="item" begin="0" end="0">
+            <h2 style="margin-top:10px">${item.date} | ${item.time}</h2>
+        </c:forEach>
         <div class="row table" align="middle">
 
             <table border="2" id="users-table" class="display">
@@ -48,6 +58,12 @@
                         <th width="10%">Password</th>
                     </tr>
                 </thead>
+
+                <!--
+                    Get the data from the SystemController and using jQuery
+                    set it in the table in a proper way.
+                -->
+
                 <tbody>
                     <c:forEach items="${users}" var="item">
                         <tr class="tr-body">
@@ -65,6 +81,11 @@
         </div>
         <script type="text/javascript">
             $(document).ready(function () {
+
+                /*Connect dataTable plugin to the table
+                 *and then set the properties needed.
+                 */
+
                 var table = $('#users-table').DataTable({
                     "order": [[0, "desc"]],
                     "searchHighlight": true
