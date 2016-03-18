@@ -45,32 +45,6 @@ public class SystemController {
     DownloadModel Download = new DownloadModel();
     XMLparse XML = new XMLparse();
     
-    /*
-        Parsing the data using the method from XMLparse class,
-        also using the Helpers class where you get the UploadModel method and 
-        get the data from the DB.
-    */
-    
-    @RequestMapping(value = {"/system/update_users", "/system/update_users/"}, method = RequestMethod.GET)
-    public ModelAndView update_users(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/update_users");
-        model.addObject("users", XMLparse.parseUsers());
-        model.addObject("upload_time", Upload.getByType("kontragent"));
-        return model;
-    }
-    @RequestMapping(value = {"/system/update_xmls", "/system/update_xmls/"}, method = RequestMethod.GET)
-    public ModelAndView update_xmls(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
-        ModelAndView model = new ModelAndView("/system/update_xmls");
-        model.addObject("docs", Upload.getAllDocs());
-        return model;
-    }
-    @RequestMapping(value = {"/system/update_nomenklatura", "/system/update_nomenklatura/"}, method = RequestMethod.GET)
-    public ModelAndView update_nomenklatura(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
-        ModelAndView model = new ModelAndView("/system/update_nomenklatura");
-        model.addObject("stuff", XMLparse.parseGoods());
-        model.addObject("upload_time", Upload.getByType("nomenklatura"));
-        return model;
-    }
     
     @RequestMapping(value = {"/system/login", "/system/logon", "/system/enter"}, method = RequestMethod.GET)
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response)  {
@@ -228,5 +202,31 @@ public class SystemController {
         return model;
     }
     
+    /*
+        Parsing the data using the method from XMLparse class,
+        also using the Helpers class where you get the UploadModel method and 
+        get the data from the DB.
+    */
+    
+    @RequestMapping(value = {"/system/update_users", "/system/update_users/"}, method = RequestMethod.GET)
+    public ModelAndView update_users(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
+        ModelAndView model = new ModelAndView("/system/update_users");
+        model.addObject("users", XMLparse.parseUsers());
+        model.addObject("upload_time", Upload.getByType("kontragent"));
+        return model;
+    }
+    @RequestMapping(value = {"/system/update_xmls", "/system/update_xmls/"}, method = RequestMethod.GET)
+    public ModelAndView update_xmls(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
+        ModelAndView model = new ModelAndView("/system/update_xmls");
+        model.addObject("docs", Upload.getAllDocs());
+        return model;
+    }
+    @RequestMapping(value = {"/system/update_nomenklatura", "/system/update_nomenklatura/"}, method = RequestMethod.GET)
+    public ModelAndView update_nomenklatura(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
+        ModelAndView model = new ModelAndView("/system/update_nomenklatura");
+        model.addObject("stuff", XMLparse.parseGoods());
+        model.addObject("upload_time", Upload.getByType("nomenklatura"));
+        return model;
+    }
 }
 

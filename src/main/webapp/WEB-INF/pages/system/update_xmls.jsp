@@ -84,7 +84,7 @@
             $(document).ready(function () {
 
                 /*Connect dataTable plugin to the table
-                 *and then set the properties needed.
+                  and then set the properties needed.
                  */
 
                 var table = $('#upload-table').DataTable({

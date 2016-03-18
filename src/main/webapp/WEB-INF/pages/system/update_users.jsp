@@ -45,7 +45,7 @@
     <body>
         <h1 style="margin-bottom:10px">Список веб-користувачів</h1>
         <c:forEach items="${upload_time}" var="item" begin="0" end="0">
-            <h2 style="margin-top:10px">${item.date} | ${item.time}</h2>
+            <h2 style="margin-top:10px">${item.date} - ${item.time}</h2>
         </c:forEach>
         <div class="row table" align="middle">
 
