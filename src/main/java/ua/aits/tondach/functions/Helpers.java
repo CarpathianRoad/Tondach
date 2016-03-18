@@ -180,7 +180,7 @@ public class Helpers {
     }
         
         public List<UploadModel> getByType(String type) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
-        ResultSet result = DB.getResultSet("SELECT * FROM docs_upload WHERE type = '"+StringEscapeUtils.escapeSql(type)+"' ORDER BY date desc;");
+        ResultSet result = DB.getResultSet("SELECT * FROM docs_upload WHERE type = '"+StringEscapeUtils.escapeSql(type)+"' ORDER BY date desc, time desc;");
         List<UploadModel> docsList = new LinkedList<>();
         while (result.next()) { 
             UploadModel temp = new UploadModel();

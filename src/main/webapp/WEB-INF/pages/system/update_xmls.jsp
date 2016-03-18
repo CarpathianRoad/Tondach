@@ -91,7 +91,7 @@
                         "order": [[0, "desc"]],
                         "fixedHeader": true,
                         "searchHighlight": true,
-                        columnDefs: [ {
+                         columnDefs: [ {
                             targets: [ 0 ],
                             orderData: [ 0, 1 ]
                         }],
