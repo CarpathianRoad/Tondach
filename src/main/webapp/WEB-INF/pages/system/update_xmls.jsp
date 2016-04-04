@@ -84,14 +84,14 @@
             $(document).ready(function () {
 
                 /*Connect dataTable plugin to the table
-                 *and then set the properties needed.
+                  and then set the properties needed.
                  */
 
                 var table = $('#upload-table').DataTable({
                         "order": [[0, "desc"]],
                         "fixedHeader": true,
                         "searchHighlight": true,
-                        columnDefs: [ {
+                         columnDefs: [ {
                             targets: [ 0 ],
                             orderData: [ 0, 1 ]
                         }],
