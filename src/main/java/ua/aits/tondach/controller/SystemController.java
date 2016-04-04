@@ -55,7 +55,7 @@ public class SystemController {
     public ModelAndView update_users(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/update_users");
         model.addObject("users", XMLparse.parseUsers());
-        model.addObject("upload_time", Upload.getByType("kontragent"));
+        model.addObject("upload_time", Upload.getByType("kontragent.xml"));
         return model;
     }
     @RequestMapping(value = {"/system/update_xmls", "/system/update_xmls/"}, method = RequestMethod.GET)
@@ -68,7 +68,7 @@ public class SystemController {
     public ModelAndView update_nomenklatura(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
         ModelAndView model = new ModelAndView("/system/update_nomenklatura");
         model.addObject("stuff", XMLparse.parseGoods());
-        model.addObject("upload_time", Upload.getByType("nomenklatura"));
+        model.addObject("upload_time", Upload.getByType("nomenklatura.xml"));
         return model;
     }
     
