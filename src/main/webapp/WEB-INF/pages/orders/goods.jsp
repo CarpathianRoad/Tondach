@@ -20,6 +20,9 @@
                        ${list}
                     </div>
                     <div class="col-lg-9 all-goods">
+                        <div class="col-lg-7 search form-group" style="padding-left: 0;">
+                            <input type="text" class="form-control" id="search-field" placeholder="Введіть назву або артикул">
+                        </div>
                         <div class="pre-loader">
                             <div class="loader">Loading...</div>
                         </div>
@@ -69,10 +72,17 @@
 </t:orderspage>
 <script>
     $(document).ready(function () {
-        loadContent("default", "default", 50, 1);
+        loadContent("default", "default", 50, 1, "");
+    });
+    $( "#search-field" ).on('input',function(e){
+        loadContent("default", "default", 50, 1, $(this).val());
+        $(".filters .list-group-item").removeClass("active-item");
+        $(".panel-collapse").removeClass("in");
+        $("#all").addClass("active-item");
     });
     $(".filters .list-group-item").click(function(){
         $('.pre-loader').show();
+        $( "#search-field" ).val("");
         $(".filters .list-group-item").removeClass("active-item");
         $(this).addClass("active-item");
             
@@ -81,14 +91,14 @@
                 if($(this).attr("id") === "all") {
                     category1 = "default";
                 }
-                loadContent(category1, "default", 50, 1);
+                loadContent(category1, "default", 50, 1, "");
             }
             else if($(this).hasClass("second")) {
-                loadContent("default", $(this).html(), 50, 1);
+                loadContent("default", $(this).html(), 50, 1, "");
             }
     });
     
-    function loadContent(category1, category2, count, page) {
+    function loadContent(category1, category2, count, page, search) {
         $(".pre-loader").show();
         category1 = category1 !== "" ? category1 : "default";
         category2 = category2 !== "" ? category2 : 'default';
@@ -96,10 +106,13 @@
             type: "get",
             url: "${Constants.URL}orders/system/getContent",
             cache: false,    
-            data:'category1='+category1.replace('+','%2b')+'&category2='+category2.replace('+','%2b')+'&count='+count+'&page='+page,
+            data:'category1='+category1.replace('+','%2b')+'&category2='+category2.replace('+','%2b')+'&count='+count+'&page='+page+'&search='+search.replace('+','%2b'),
             mimeType:"text/html; charset=UTF-8",
             success: function(response){
-             $(".all-goods tbody").html(response);
+             $(".all-goods tbody").html(response);   
+             if(response === '<tr><td colspan="5" class="pagination"><ul class="pagination"></ul></td></tr>') {
+                $(".all-goods tbody").html('<tr><td colspan="5">Товар відсутній</td></tr>');    
+            }
              initPage();
              $(".pre-loader").hide();
             },
@@ -122,7 +135,13 @@
             else if($(currFilter).hasClass("second")) {
                 category2 = $(currFilter).html();
             }
-            loadContent(category1, category2, 50, currPage);
+            
+            if($("#search-field").val().length !== 0 ) {
+                loadContent("default", "default", 50, currPage, $("#search-field").val());
+            }
+            else { 
+                loadContent(category1, category2, 50, currPage);
+            }
         });
         
         $("#add-to-cart").unbind('click').bind('click', function () {

@@ -214,24 +214,36 @@ public class OrdersController {
         request.setCharacterEncoding("UTF-8");
         String category1 = request.getParameter("category1");
         String category2 = request.getParameter("category2");
+        String search = request.getParameter("search");
         int countPage = 100;
         int page = Integer.parseInt(request.getParameter("page"));
         List<GoodsModel> tempC = XMLparse.parseGoods();
         System.out.println(category2 + "//////1");
-        if(!"default".equals(category1)) {
+        System.out.println(search + "//////2");
+        if(!"".equals(search) && search != null) {
             for(Iterator<GoodsModel> roleIter = tempC.iterator(); roleIter.hasNext();){
-                GoodsModel currentRole = roleIter.next();
-                 if (!category1.equals(currentRole.getCategory_1())) {
-                    roleIter.remove();
-                  }
+                    GoodsModel currentRole = roleIter.next();
+                     if (!currentRole.getArticle().contains(search) && !currentRole.getName().toLowerCase().contains(search.toLowerCase())) {
+                        roleIter.remove();
+                      }
             }
         }
-        else if(!"default".equals(category2)) {
-            for(Iterator<GoodsModel> roleIter = tempC.iterator(); roleIter.hasNext();){
-                GoodsModel currentRole = roleIter.next();
-                 if (!category2.equals(currentRole.getCategory_2())) {
-                    roleIter.remove();
-                  }
+        else {
+            if(!"default".equals(category1)) {
+                for(Iterator<GoodsModel> roleIter = tempC.iterator(); roleIter.hasNext();){
+                    GoodsModel currentRole = roleIter.next();
+                     if (!category1.equals(currentRole.getCategory_1())) {
+                        roleIter.remove();
+                      }
+                }
+            }
+            else if(!"default".equals(category2)) {
+                for(Iterator<GoodsModel> roleIter = tempC.iterator(); roleIter.hasNext();){
+                    GoodsModel currentRole = roleIter.next();
+                     if (!category2.equals(currentRole.getCategory_2())) {
+                        roleIter.remove();
+                      }
+                }
             }
         }
         String returnHTML = "";
