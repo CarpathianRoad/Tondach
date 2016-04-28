@@ -61,13 +61,13 @@
     <div class="collapse navbar-collapse" id="main-header-title">
       <ul class="nav nav-pills navbar-left">
         <li id="index">
-            <a href="${Constants.URL}orders/index">
+            <a href="<c:url value="/orders/index" />">
                 <span>Список замовлень</span>
             </a>
         </li>
       </ul>
       <ul class="nav nav-pills navbar-right">
-          <li class="shopping" id="cart"><a href="${Constants.URL}orders/cart" class="btn-shopping"><i class="fa fa-shopping-cart"></i><span>Позицій: ${fn:length(sessionScope.carts)}   Сума: 
+          <li class="shopping" id="cart"><a href="<c:url value="/orders/cart" />" class="btn-shopping"><i class="fa fa-shopping-cart"></i><span>Позицій: ${fn:length(sessionScope.carts)}   Сума: 
                       <c:choose>
                         <c:when test="${sessionScope.carts == null}">
                             0.0
@@ -77,7 +77,7 @@
                         </c:otherwise>
                     </c:choose>
                   </span></a></li>
-          <li><a href="${Constants.URL}orders/system/logout.do" class="btn-exit">Вихід</a></li>
+          <li><a href="<c:url value="/orders/system/logout.do" />" class="btn-exit">Вихід</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

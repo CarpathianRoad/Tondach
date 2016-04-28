@@ -19,7 +19,7 @@
                             Ваше замовлення прийнято і буде оброблено <br/>
                             Зачекайте хвилинку.<br/>
                             <img class="loading-gif" src="${Constants.URL}orders/img/loading-x.gif" />
-                            <form name="login-form" id="descr-form" action="${Constants.URL}orders/sending" method="POST" style="display: none">
+                            <form name="login-form" id="descr-form" action="<c:url value="/orders/sending" />" method="POST" style="display: none">
                                 <input  type="hidden" value="${descr}" name="descr"/>
                             </form>
                         </div>

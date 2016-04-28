@@ -46,7 +46,7 @@ public class OrdersController {
     XMLparse XML = new XMLparse();
     CartModel Cart = new CartModel();
     
-    @RequestMapping(value = {"/orders/login", "/orders/logon", "/orders/enter"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/orders/login", "/orders/logon", "/orders/enter","/Tondach/orders/login", "/Tondach/orders/logon", "/Tondach/orders/enter"}, method = RequestMethod.GET)
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response)  {
         ModelAndView model = new ModelAndView("/orders/login");
         try{
@@ -58,7 +58,8 @@ public class OrdersController {
         return model;
     }
     
-    @RequestMapping(value = {"/orders/index", "/orders/main", "/orders/home","/orders/orders", "/orders/orders/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/orders/index", "/orders/main", "/orders/home","/orders/orders", "/orders/orders/",
+                            "/Tondach/orders/index", "/Tondach/orders/main", "/Tondach/orders/home","/Tondach/orders/orders", "/Tondach/orders/orders/"}, method = RequestMethod.GET)
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException  {
         ModelAndView model = new ModelAndView("/orders/orders");
         
@@ -71,14 +72,14 @@ public class OrdersController {
         return model;
     }
     
-    @RequestMapping(value = {"/orders/cart", "/orders/cart/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/orders/cart", "/orders/cart/", "/Tondach/orders/cart", "/Tondach/orders/cart/"}, method = RequestMethod.GET)
     public ModelAndView cart(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException  {
         ModelAndView model = new ModelAndView("/orders/cart");
         
         return model;
     }
     
-    @RequestMapping(value = {"/orders/goods", "/orders/goods/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/orders/goods", "/orders/goods/", "/Tondach/orders/goods", "/Tondach/orders/goods/"}, method = RequestMethod.GET)
     public ModelAndView goods(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException  {
         ModelAndView model = new ModelAndView("/orders/goods");
         model.addObject("goods", XMLparse.parseGoods());
@@ -86,7 +87,7 @@ public class OrdersController {
         return model;
     }
     
-    @RequestMapping(value = {"/orders/complete", "/orders/complete/"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/orders/complete", "/orders/complete/", "/Tondach/orders/complete", "/Tondach/orders/complete/"}, method = RequestMethod.POST)
     public ModelAndView complete(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException  {
         request.setCharacterEncoding("UTF-8");
         String descr = request.getParameter("descr");
@@ -95,7 +96,7 @@ public class OrdersController {
         return model;
     }
     
-    @RequestMapping(value = {"/orders/sending", "/orders/sending/"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/orders/sending", "/orders/sending/","/Tondach/orders/sending", "/Tondach/orders/sending/"}, method = RequestMethod.POST)
     public ModelAndView sending(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException, JSchException, SftpException  {
         request.setCharacterEncoding("UTF-8");
         String descr = request.getParameter("descr");
@@ -106,7 +107,7 @@ public class OrdersController {
         session.removeAttribute("carts");
         return new ModelAndView("redirect:" + "/orders/orders"); 
     }
-    @RequestMapping(value = {"/orders/system/remove/{code}", "/orders/system/remove/{code}/"})
+    @RequestMapping(value = {"/orders/system/remove/{code}", "/orders/system/remove/{code}/", "/Tondach/orders/system/remove/{code}", "/Tondach/orders/system/remove/{code}/"})
     public ModelAndView removeFromCart(@PathVariable("code") String code, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
                 HttpSession session = request.getSession(true);
@@ -124,7 +125,7 @@ public class OrdersController {
                 return new ModelAndView("redirect:" + "/orders/cart"); 
     }
     
-    @RequestMapping(value = {"/orders/system/remove/order/{id}", "/orders/system/remove/order/{id}/"})
+    @RequestMapping(value = {"/orders/system/remove/order/{id}", "/orders/system/remove/order/{id}/","/Tondach/orders/system/remove/order/{id}", "/Tondach/orders/system/remove/order/{id}/"})
     public ModelAndView deleteUser (@PathVariable("id") String id, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
                 Cart.removeOrder(id);
@@ -133,12 +134,12 @@ public class OrdersController {
     
     UserOrderModel Users = new UserOrderModel();
     
-    @RequestMapping(value = {"/orders/system/ajax/check/user", "/orders/system/ajax/check/user/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/orders/system/ajax/check/user", "/orders/system/ajax/check/user/", "/Tondach/orders/system/ajax/check/user", "/Tondach/orders/system/ajax/check/user/"}, method = RequestMethod.GET)
 	public @ResponseBody String archiveCheckUser(HttpServletRequest request,HttpServletResponse response) throws Exception {
     	return Users.isExitsUser(request.getParameter("user_login"), request.getParameter("user_password"));
     }
         
-    @RequestMapping(value = {"/orders/system/login.do","/orders/system/login.do/"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/orders/system/login.do","/orders/system/login.do/", "/Tondach/orders/system/login.do","/Tondach/orders/system/login.do/"}, method = RequestMethod.POST)
     public ModelAndView login(@RequestParam("user_code") String user_code, @RequestParam("user_login") String user_name, @RequestParam("user_password") String user_password, HttpServletRequest request, HttpServletResponse response) throws Exception {
         UserOrderModel user = Users.getOneUserFullById(user_code);
         HttpSession session = request.getSession(true);
@@ -150,7 +151,7 @@ public class OrdersController {
         return new ModelAndView("redirect:" + "/orders/index");   
     }
     
-    @RequestMapping(value = {"/orders/system/logout.do","/orders/archive/logout.do/"})
+    @RequestMapping(value = {"/orders/system/logout.do","/orders/archive/logout.do/", "/Tondach/orders/system/logout.do","/Tondach/orders/archive/logout.do/"})
     public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession(false);
@@ -158,7 +159,7 @@ public class OrdersController {
         return new ModelAndView("redirect:" + "/orders/login"); 
     } 
     
-    @RequestMapping(value = {"/orders/system/clearCart.do","/orders/system/clearCart.do/"})
+    @RequestMapping(value = {"/orders/system/clearCart.do","/orders/system/clearCart.do/", "/Tondach/orders/system/clearCart.do","/Tondach/orders/system/clearCart.do/"})
     public ModelAndView clearCart(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession(false);
@@ -166,7 +167,7 @@ public class OrdersController {
         return new ModelAndView("redirect:" + "/orders/orders"); 
     } 
     
-    @RequestMapping(value = {"/orders/system/ajax/addToCart", "/orders/system/ajax/addToCart/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/orders/system/ajax/addToCart", "/orders/system/ajax/addToCart/","/Tondach/orders/system/ajax/addToCart", "/Tondach/orders/system/ajax/addToCart/"}, method = RequestMethod.GET)
 	public @ResponseBody String addToCart(HttpServletRequest request,HttpServletResponse response) throws Exception {
     	HttpSession session = request.getSession(true);
         List<CartModel> carts = null;
@@ -208,7 +209,7 @@ public class OrdersController {
         return Integer.toString(carts.size()) + "|" + summ;
     }
         
-    @RequestMapping(value = {"/orders/system/getContent/", "/orders/system/getContent"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/orders/system/getContent/", "/orders/system/getContent", "/Tondach/orders/system/getContent/", "/Tondach/orders/system/getContent"}, method = RequestMethod.GET)
     public @ResponseBody
     ResponseEntity<String> contentByType(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("UTF-8");

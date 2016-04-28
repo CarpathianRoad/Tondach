@@ -12,7 +12,7 @@
     
     <div class="page-header main-page-title second-order-title">
       <div class="container">
-        <h3>Список замовлень  <a type="button" style="margin-left: 50px;" class="btn btn-primary show-items" href="${Constants.URL}orders/goods">Створити нове замовлення</a></h3> 
+        <h3>Список замовлень  <a type="button" style="margin-left: 50px;" class="btn btn-primary show-items" href="<c:url value="/orders/goods" />">Створити нове замовлення</a></h3> 
       </div>
     </div>
      <div class="row">
@@ -41,7 +41,7 @@
                                       <td class="text-center">${fn:replace(order.order_date, '/', '.')}</td>
                                       <td class="text-center">${fn:length(order.items)}</td>
                                       <td class="text-center">${order.order_summary}</td>
-                                      <td title="Видалити замовлення" class="item-remove text-center"><a href="${Constants.URL}orders/system/remove/order/${order.order_id}"><span class="fa fa-times"></span></a></td>
+                                      <td title="Видалити замовлення" class="item-remove text-center"><a href="<c:url value="/orders/system/remove/order/${order.order_id}" />"><span class="fa fa-times"></span></a></td>
                                     
                                     </tr>
                                 </c:forEach>

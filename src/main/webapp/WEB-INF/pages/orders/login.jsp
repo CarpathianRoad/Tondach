@@ -41,7 +41,7 @@
     <body class="en">
                     <div class="container wrapper">
 
-      <form id="login_form" role="form" class="form-signin" name="login-form" action="${Constants.URL}orders/system/login.do" method="POST">
+      <form id="login_form" role="form" class="form-signin" name="login-form" action="<c:url value="/orders/system/login.do" />" method="POST">
         <h3 class="form-signin-heading" style="text-align:center">Вхід</h3>
         <label for="inputEmail" class="sr-only">Логін</label>
         <input style="margin-bottom: 20px;" type="text" id="user_login" name="user_login" class="form-control" placeholder="Логін" required="" autofocus="">
