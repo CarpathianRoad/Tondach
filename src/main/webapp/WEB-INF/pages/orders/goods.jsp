@@ -102,11 +102,15 @@
         $(".pre-loader").show();
         category1 = category1 !== "" ? category1 : "default";
         category2 = category2 !== "" ? category2 : 'default';
-        $.ajax({
+        var srch = "";
+	if(search !== "" && search !== undefined) {
+		srch = search.replace('+','%2b');
+	}
+	$.ajax({
             type: "get",
             url: "${Constants.URL}orders/system/getContent",
             cache: false,    
-            data:'category1='+category1.replace('+','%2b')+'&category2='+category2.replace('+','%2b')+'&count='+count+'&page='+page+'&search='+search.replace('+','%2b'),
+            data:'category1='+category1.replace('+','%2b')+'&category2='+category2.replace('+','%2b')+'&count='+count+'&page='+page+'&search='+srch,
             mimeType:"text/html; charset=UTF-8",
             success: function(response){
              $(".all-goods tbody").html(response);   
