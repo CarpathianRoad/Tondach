@@ -27,7 +27,7 @@
     <meta name="author" content="">
 
     <title>Веб-замовлення</title>
-    <link rel="icon" href="${Constants.URL}img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="${Constants.URL}orders/img/favicon.ico" type="image/x-icon">
     <link href="${Constants.URL}orders/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="${Constants.URL}orders/css/main.css" rel="stylesheet">

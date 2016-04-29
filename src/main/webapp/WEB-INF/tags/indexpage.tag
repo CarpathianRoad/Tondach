@@ -192,7 +192,7 @@
                                 <a href="${Constants.URL}gallery">Галерея</a>
                             </li>
                             <li class="level-3">
-                                <a href="${Constants.URL}pdf-price/" target="_blank">Прайс</a>
+                                <a href="${Constants.URL}download-files/" target="_blank">Прайс</a>
                             </li>
                         </ul>
                     </div>
@@ -332,7 +332,7 @@
                             </li>
                             <li class="level-3">
                                 <!--  -->
-                                <a href="http://88.81.239.23:59185/orders/login" target="_blank">Вхід для партнерів</a>
+                                <a href="${Constants.URL}orders/login" target="_blank">Вхід для партнерів</a>
                             </li>
                         </ul>
                         <a style="color: #fff;margin-left: 125px; display:none" target="_blank" href="http://1c.tondach.biz/Price">Прайс для партнерів</a>

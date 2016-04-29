@@ -108,7 +108,7 @@
 	}
 	$.ajax({
             type: "get",
-            url: "${Constants.URL}orders/system/getContent",
+            url: "/Tondach/orders/system/getContent;jsessionid=<c:out value="${pageContext.session.id}"/>",
             cache: false,    
             data:'category1='+category1.replace('+','%2b')+'&category2='+category2.replace('+','%2b')+'&count='+count+'&page='+page+'&search='+srch,
             mimeType:"text/html; charset=UTF-8",
@@ -161,7 +161,7 @@
             else {
                 $.ajax({
                     type: "get",
-                    url: "${Constants.URL}orders/system/ajax/addToCart",
+                    url: "/Tondach/orders/system/ajax/addToCart;jsessionid=<c:out value="${pageContext.session.id}"/>",
                     cache: false,    
                     data:'article='+$("#article").val()+'&name='+$("#name").val()+'&code='+$("#code").val()+'&price='+$("#price").val()+'&value='+$("#value").val()+'&unit='+$("#unit").val()+'&xml_date='+$("#xml_date").val(),
                     success: function(response){

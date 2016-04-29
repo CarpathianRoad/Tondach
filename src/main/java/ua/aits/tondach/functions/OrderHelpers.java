@@ -67,8 +67,8 @@ public class OrderHelpers  {
     }
     
     public static void sendMail(String order_id, String order_number, String order_partner, String order_summ, String order_date, String order_xml_date, String descr, List<CartModel> items) {
-        final String username = "consultant@tondach.biz";
-        final String password = "conton123";
+        final String username = "robot@aits.ua";
+        final String password = "37Rh!_09=S/U";
         //consultant@tondach.biz
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -90,9 +90,9 @@ public class OrderHelpers  {
                         + "\nСума: " + (item.item_value * item.item_price) + "\n\n";
             }
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("consultant@tondach.biz"));
+            message.setFrom(new InternetAddress("robot@aits.ua"));
             message.addRecipients(Message.RecipientType.CC,
-                    InternetAddress.parse("maria.kravtsova@wienerberger.com,Vasyl.Andriechko@wienerberger.com,Nikolay.Yakovenko@wienerberger.com"));
+                    InternetAddress.parse("maria.kravtsova@wienerberger.com,Vasyl.Andriechko@wienerberger.com,Nikolay.Yakovenko@wienerberger.com,director@aits.ua"));
             message.setSubject("Нове замовлення");
             message.setText("Номер замовленя: " + order_id
                     + "\nДата замовлення: " + order_date
