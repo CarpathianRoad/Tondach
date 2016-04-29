@@ -66,22 +66,22 @@
           
           
           <div id="navbar" class="navbar-form navbar-header">
-              <a id="news" href="${Constants.URL}system/news">
+              <a id="news" href="<c:url value="/system/news" />">
                   <button type="submit" class="btn btn-success">Новини</button>
               </a>
-              <a id="slaters" href="${Constants.URL}system/slaters">
+              <a id="slaters" href="<c:url value="/system/slaters" />">
                 <button type="submit" class="btn btn-success">Покрівельники</button>
               </a>
-              <a id="riders" href="${Constants.URL}system/riders">
+              <a id="riders" href="<c:url value="/system/riders" />">
                 <button type="submit" class="btn btn-success">Перевізники</button>
               </a>
-              <a id="sellers" href="${Constants.URL}system/wherebuy">
+              <a id="sellers" href="<c:url value="/system/wherebuy" />">
                 <button type="submit" class="btn btn-success">Де придбати</button>
               </a>
-              <a id="download" href="${Constants.URL}system/download">
+              <a id="download" href="<c:url value="/system/download" />">
                 <button type="submit" class="btn btn-success">Файли для завантаження</button>
               </a>
-              <a id="update" href="${Constants.URL}system/update">
+              <a id="update" href="<c:url value="/system/update" />">
                 <button type="submit" class="btn btn-success">Оновлення</button>
               </a>
           </div>
@@ -89,7 +89,7 @@
           
         <div id="navbar" class="navbar-collapse collapse">
           <div class="navbar-form navbar-right">
-              <a id="logout"  href="${Constants.URL}orders/system/logout.do">
+              <a id="logout"  href="<c:url value="/orders/system/logout.do" />">
             <button type="submit" class="btn btn-success">Вихід</button>
               </a>
           </div>  
