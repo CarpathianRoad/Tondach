@@ -20,7 +20,7 @@
     <div class="margintop20">
         <br>
         <div class="row add-row">
-            <form action="${Constants.URL}system/do/insertExtra" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
+            <form action="<c:url value="/system/do/insertExtra" />" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
             <input type="hidden" class="form-control" id="avatar_path" name="avatar_path">
             
             <hr>
@@ -43,7 +43,7 @@
                 <label for="tlt"><span class="red-star">Файл</span></label><br/>
             </div>
         </div>
-        <form action="${Constants.URL}system/do/uploadfile" class="dropzone"  id="my-awesome-dropzone-gal">
+        <form action="<c:url value="/system/do/uploadfile" />" class="dropzone"  id="my-awesome-dropzone-gal">
            <label for="tlt"><span class="red-star"></span></label>
             <input type="hidden" name="path" value="/files/avatars/" />
             <input type="file" name="file" style="display:none" />
@@ -122,7 +122,7 @@
     function deleteFile(temp){
         var path = "/files/avatars/" + $(temp).parent().find(".dz-details .dz-filename span").text();
         jQuery.ajax({
-            url: '${Constants.URL}system/do/removefile',
+            url: '/Tondach/system/do/removefile;jsessionid=<c:out value="${pageContext.session.id}"/>',
             cache: false,
             contentType: false,
             processData: false,
@@ -174,7 +174,7 @@
             $("#cke_71_textInput").val("s2as1");
         });
         $("#my-awesome-dropzone-gal").dropzone({ 
-            url: "${Constants.URL}system/do/uploadfile",
+            url: "/Tondach/system/do/uploadfile;jsessionid=<c:out value="${pageContext.session.id}"/>",
             addRemoveLinks: true
         });
     }   

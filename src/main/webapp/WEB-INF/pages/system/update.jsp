@@ -56,7 +56,7 @@
             inProgress = true;
             $("#update-status span").html("Йде перевірка ...");
             jQuery.ajax({
-                url: '${Constants.URL}system/do/checkXmlUpdate',
+                url: '/Tondach/system/do/checkXmlUpdate;jsessionid=<c:out value="${pageContext.session.id}"/>',
                 cache: false,
                 type: 'GET',
                 mimeType: "text/html; charset=UTF-8",

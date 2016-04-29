@@ -59,13 +59,13 @@ public class AjaxAndFormController {
     Transliterator TransliteratorClass = new Transliterator();
     SFTPinJava SFTP = new SFTPinJava();
 
-    @RequestMapping(value = {"/system/ajax/check/user", "/system/ajax/check/user/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/ajax/check/user", "/system/ajax/check/user/","/Tondach/system/ajax/check/user", "/Tondach/system/ajax/check/user/"}, method = RequestMethod.GET)
     public @ResponseBody
     String archiveCheckUser(HttpServletRequest request, HttpServletResponse response) throws Exception {
         return Users.isExitsUser(request.getParameter("user_name"), request.getParameter("user_password"));
     }
 
-    @RequestMapping(value = {"/system/login.do", "/system/login.do/"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/login.do", "/system/login.do/","/Tondach/system/login.do", "/Tondach/system/login.do/"}, method = RequestMethod.POST)
     public ModelAndView login(@RequestParam("user_id") String user_id, @RequestParam("user_name") String user_name, @RequestParam("user_password") String user_password, HttpServletRequest request, HttpServletResponse response) throws Exception {
         UserModel user = Users.getOneUserFullById(user_id);
         HttpSession session = request.getSession(true);
@@ -77,7 +77,7 @@ public class AjaxAndFormController {
         }
     }
 
-    @RequestMapping(value = {"/system/logout.do", "/archive/logout.do/"})
+    @RequestMapping(value = {"/system/logout.do", "/archive/logout.do/","/Tondach/system/logout.do", "/Tondach/archive/logout.do/"})
     public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession(false);
@@ -87,14 +87,14 @@ public class AjaxAndFormController {
         return new ModelAndView("redirect:" + "/orders/login");
     }
 
-    @RequestMapping(value = {"/system/users/checkUserName", "/system/users/checkUserName/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/users/checkUserName", "/system/users/checkUserName/","/Tondach/system/users/checkUserName", "/Tondach/system/users/checkUserName/"}, method = RequestMethod.GET)
     public @ResponseBody
     String сheckUsername(HttpServletRequest request,
             HttpServletResponse response) throws Exception {
         return Users.isExitsUserName(request.getParameter("user_name"));
     }
 
-    @RequestMapping(value = "/system/do/insertFile", method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/do/insertFile","/Tondach/system/do/insertFile"}, method = RequestMethod.POST)
     public ModelAndView insertCertificate(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
         request.setCharacterEncoding("UTF-8");
         String title = request.getParameter("title");
@@ -104,14 +104,14 @@ public class AjaxAndFormController {
         return new ModelAndView("redirect:" + "/system/download/");
     }
 
-    @RequestMapping(value = "/system/deleteFile/{id}", method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/deleteFile/{id}","/Tondach/system/deleteFile/{id}"}, method = RequestMethod.GET)
     public ModelAndView deleteFile(@PathVariable("id") String id, HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
         Download.deleteFile(id);
         return new ModelAndView("redirect:" + "/system/download");
     }
 
-    @RequestMapping(value = "/system/do/insertdata", method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/do/insertdata","/Tondach/system/do/insertdata"}, method = RequestMethod.POST)
     public ModelAndView addArticle(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
         request.setCharacterEncoding("UTF-8");
         String title = request.getParameter("title");
@@ -121,7 +121,7 @@ public class AjaxAndFormController {
         return new ModelAndView("redirect:" + "/system/news/");
     }
 
-    @RequestMapping(value = "/system/do/editdata", method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/do/editdata","/Tondach/system/do/insertdata"}, method = RequestMethod.POST)
     public ModelAndView editArticle(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
         request.setCharacterEncoding("UTF-8");
         String id = request.getParameter("article_id");
@@ -133,7 +133,7 @@ public class AjaxAndFormController {
         return new ModelAndView("redirect:" + "/system/news/");
     }
 
-    @RequestMapping(value = "/system/deletedata.do", method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/deletedata.do","/Tondach/system/deletedata.do"}, method = RequestMethod.POST)
     public ModelAndView doDeleteArticle(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
         String user_id = request.getParameter("article_id");
@@ -141,7 +141,7 @@ public class AjaxAndFormController {
         return new ModelAndView("redirect:" + "/system/news");
     }
 
-    @RequestMapping(value = "/system/do/editslater", method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/do/editslater","/Tondach/system/do/editslater"}, method = RequestMethod.POST)
     public ModelAndView editSlater(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
         request.setCharacterEncoding("UTF-8");
         String id = request.getParameter("slater_id");
@@ -150,7 +150,7 @@ public class AjaxAndFormController {
         return new ModelAndView("redirect:" + "/system/slaters/");
     }
 
-    @RequestMapping(value = "/system/do/editrider", method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/do/editrider","/Tondach/system/do/editrider"}, method = RequestMethod.POST)
     public ModelAndView editRider(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
         request.setCharacterEncoding("UTF-8");
         String id = request.getParameter("rider_id");
@@ -159,7 +159,7 @@ public class AjaxAndFormController {
         return new ModelAndView("redirect:" + "/system/riders/");
     }
 
-    @RequestMapping(value = "/system/do/editseller", method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/do/editseller","/Tondach/system/do/editseller"}, method = RequestMethod.POST)
     public ModelAndView editSeller(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
         request.setCharacterEncoding("UTF-8");
         String id = request.getParameter("seller_id");
@@ -170,7 +170,7 @@ public class AjaxAndFormController {
     }
     /* File functions */
 
-    @RequestMapping(value = {"/system/do/uploadimage", "/system/do/uploadimage/"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/do/uploadimage", "/system/do/uploadimage/","/Tondach/system/do/uploadimage", "/Tondach/system/do/uploadimage/"}, method = RequestMethod.POST)
     public @ResponseBody
     String uploadImageHandler(@RequestParam("file") MultipartFile file, @RequestParam("path") String path, HttpServletRequest request) throws UnsupportedEncodingException {
         request.setCharacterEncoding("UTF-8");
@@ -198,7 +198,7 @@ public class AjaxAndFormController {
         }
     }
 
-    @RequestMapping(value = {"/system/do/uploadfile", "/system/do/uploadfile/"}, method = RequestMethod.POST)
+    @RequestMapping(value = {"/system/do/uploadfile", "/system/do/uploadfile/","/Tondach/system/do/uploadfile", "/Tondach/system/do/uploadfile/"}, method = RequestMethod.POST)
     public @ResponseBody
     String uploadFileHandler(@RequestParam("file") MultipartFile file, @RequestParam("path") String path, HttpServletRequest request) throws UnsupportedEncodingException {
         String name = file.getOriginalFilename();
@@ -224,7 +224,7 @@ public class AjaxAndFormController {
         }
     }
 
-    @RequestMapping(value = "/system/do/removefile", method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/do/removefile","/Tondach/system/do/removefile"}, method = RequestMethod.GET)
     public @ResponseBody
     String removeFileOrDir(HttpServletRequest request) {
         String path = request.getParameter("path");
@@ -233,7 +233,7 @@ public class AjaxAndFormController {
         return result.toString();
     }
 
-    @RequestMapping(value = {"/tools/imageupload/{folder}/", "/tools/imageupload/{folder}"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/tools/imageupload/{folder}/", "/tools/imageupload/{folder}","/Tondach/tools/imageupload/{folder}/", "/Tondach/tools/imageupload/{folder}"}, method = RequestMethod.GET)
     public ModelAndView fileManager(@PathVariable("folder") String folder, HttpServletRequest request, HttpServletResponse response) throws Exception {
         String path = request.getParameter("path");
         String type = request.getParameter("type");
@@ -300,7 +300,7 @@ public class AjaxAndFormController {
         return new ResponseEntity<>(returnHTML, responseHeaders, HttpStatus.CREATED);
         //return returnHTML;
     }
-    @RequestMapping(value = {"/system/do/checkXmlUpdate"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/do/checkXmlUpdate","/Tondach/system/do/checkXmlUpdate"}, method = RequestMethod.GET)
     public @ResponseBody
     ResponseEntity<String> checkUpdate(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("UTF-8");

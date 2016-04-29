@@ -23,7 +23,7 @@
    
        
         
-	<form action="${Constants.URL}system/do/editslater" name="addSlaterForm" id="addForm" method="POST" type="multipart/form-data">
+	<form action="<c:url value="/system/do/editslater" />" name="addSlaterForm" id="addForm" method="POST" type="multipart/form-data">
             <input type="hidden" class="form-control" name="slater_id" value="${slaters.id}">
             
             
@@ -114,7 +114,7 @@
     function deleteFile(temp){
         var path = "/files/avatars/" + $(temp).parent().find(".dz-details .dz-filename span").text();
         jQuery.ajax({
-            url: '${Constants.URL}system/do/removefile',
+            url: '/Tondach/system/do/removefile;jsessionid=<c:out value="${pageContext.session.id}"/>',
             cache: false,
             contentType: false,
             processData: false,

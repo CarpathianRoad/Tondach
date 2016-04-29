@@ -51,20 +51,20 @@ public class SystemController {
         get the data from the DB.
     */
     
-    @RequestMapping(value = {"/system/update_users", "/system/update_users/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/update_users", "/system/update_users/","/Tondach/system/update_users", "/Tondach/system/update_users/"}, method = RequestMethod.GET)
     public ModelAndView update_users(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/update_users");
         model.addObject("users", XMLparse.parseUsers());
         model.addObject("upload_time", Upload.getByType("kontragent.xml"));
         return model;
     }
-    @RequestMapping(value = {"/system/update_xmls", "/system/update_xmls/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/update_xmls", "/system/update_xmls/","/Tondach/system/update_xmls", "/Tondach/system/update_xmls/"}, method = RequestMethod.GET)
     public ModelAndView update_xmls(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
         ModelAndView model = new ModelAndView("/system/update_xmls");
         model.addObject("docs", Upload.getAllDocs());
         return model;
     }
-    @RequestMapping(value = {"/system/update_nomenklatura", "/system/update_nomenklatura/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/update_nomenklatura", "/system/update_nomenklatura/","/Tondach/system/update_nomenklatura", "/Tondach/system/update_nomenklatura/"}, method = RequestMethod.GET)
     public ModelAndView update_nomenklatura(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException, UnsupportedEncodingException   {
         ModelAndView model = new ModelAndView("/system/update_nomenklatura");
         model.addObject("stuff", XMLparse.parseGoods());
@@ -72,32 +72,32 @@ public class SystemController {
         return model;
     }
     
-    @RequestMapping(value = {"/system/login", "/system/logon", "/system/enter"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/login", "/system/logon", "/system/enter","/Tondach/system/login", "/Tondach/system/logon", "/Tondach/system/enter"}, method = RequestMethod.GET)
     public ModelAndView login(HttpServletRequest request, HttpServletResponse response)  {
         ModelAndView model = new ModelAndView("/system/login");
         return model;
     }
     
-    @RequestMapping(value = {"/system/index", "/system/main", "/system/home"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/index", "/system/main", "/system/home","/Tondach/system/index", "/Tondach/system/main", "/Tondach/system/home"}, method = RequestMethod.GET)
     public ModelAndView index(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException  {
         ModelAndView model = new ModelAndView("/system/index");
         return model;
     }
     
-    @RequestMapping(value = {"/system/menu", "/system/menu/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/menu", "/system/menu/","/Tondach/system/menu", "/Tondach/system/menu/"}, method = RequestMethod.GET)
     public ModelAndView menu(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException  {
         ModelAndView model = new ModelAndView("/system/menu");
         return model;
     }
     
-    @RequestMapping(value = {"/system/users", "/system/users/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/users", "/system/users/","/Tondach/system/users", "/Tondach/system/users/"}, method = RequestMethod.GET)
     public ModelAndView users(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException  {
         ModelAndView model = new ModelAndView("/system/users");
         model.addObject("users", Users.getAllUsers());
         return model;
     }
     
-    @RequestMapping(value = {"/system/users/add", "/system/users/add/"})
+    @RequestMapping(value = {"/system/users/add", "/system/users/add/","/Tondach/system/users/add", "/Tondach/system/users/add/"})
     public ModelAndView addUser(HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
             request.setCharacterEncoding("UTF-8");
@@ -105,7 +105,7 @@ public class SystemController {
             return modelAndView;
     }
     
-    @RequestMapping(value = {"/system/users/edit/{id}", "/system/users/edit/{id}/"})
+    @RequestMapping(value = {"/system/users/edit/{id}", "/system/users/edit/{id}/","/Tondach/system/users/edit/{id}", "/Tondach/system/users/edit/{id}/"})
     public ModelAndView editUser (@PathVariable("id") String id, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
                 ModelAndView modelAndView = new ModelAndView("/system/users_edit");
@@ -113,7 +113,7 @@ public class SystemController {
             return modelAndView;
     }
     
-    @RequestMapping(value = {"/system/users/delete/{id}", "/system/users/delete/{id}/"})
+    @RequestMapping(value = {"/system/users/delete/{id}", "/system/users/delete/{id}/","/Tondach/system/users/delete/{id}", "/Tondach/system/users/delete/{id}/"})
     public ModelAndView deleteUser (@PathVariable("id") String id, HttpServletRequest request,
 		HttpServletResponse response) throws Exception {
                 ModelAndView modelAndView = new ModelAndView("/system/users_delete");
@@ -121,7 +121,7 @@ public class SystemController {
             return modelAndView;
     }
     
-    @RequestMapping(value = {"system/add/", "/system/add/", "/system/add"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/add/", "/system/add","/Tondach/system/add/", "/Tondach/system/add"}, method = RequestMethod.GET)
     public ModelAndView add(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/add");
         String folder = "files";
@@ -129,7 +129,7 @@ public class SystemController {
     	model.addObject("folder_str", folder.replace('/', '|'));
         return model;
     }
-    @RequestMapping(value = {"system/edit/{id}", "/system/edit/{id}"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/edit/{id}", "/system/edit/{id}","/Tondach/system/edit/{id}", "/Tondach/system/edit/{id}"}, method = RequestMethod.GET)
     public ModelAndView edit(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/edit");
         String folder = "files";
@@ -138,14 +138,14 @@ public class SystemController {
         model.addObject("article",Article.getOneArticle(id));
         return model;
     }
-    @RequestMapping(value = {"system/delete/{id}", "/system/delete/{id}"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/delete/{id}", "/system/delete/{id}","/Tondach/system/delete/{id}", "/Tondach/system/delete/{id}"}, method = RequestMethod.GET)
     public ModelAndView delete(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/delete");
         model.addObject("article",Article.getOneArticle(id));
         return model;
     }
     
-    @RequestMapping(value = {"system/slaters/", "/system/slaters/", "/system/slaters"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/slaters/", "/system/slaters","/Tondach/system/slaters/", "/Tondach/system/slaters"}, method = RequestMethod.GET)
     public ModelAndView slaters(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/slaters");
         model.addObject("slaters", Slater.getOneSlater("1"));
@@ -156,7 +156,7 @@ public class SystemController {
         return model;
     }
     
-    @RequestMapping(value = {"system/riders/", "/system/riders/", "/system/riders"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/riders/", "/system/riders", "/Tondach/system/riders/", "/Tondach/system/riders"}, method = RequestMethod.GET)
     public ModelAndView riders(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/riders");
         model.addObject("riders", Rider.getOneRider("1"));
@@ -167,21 +167,21 @@ public class SystemController {
         return model;
     }
     
-    @RequestMapping(value = {"system/news/", "/system/news/", "/system/news"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/news/", "/system/news","/Tondach/system/news/", "/Tondach/system/news"}, method = RequestMethod.GET)
     public ModelAndView news(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/news");
         model.addObject("article", Article.getArticleByCount("0", "100"));
         return model;
     }
     
-    @RequestMapping(value = {"system/wherebuy/", "/system/wherebuy/", "/system/wherebuy"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/wherebuy/", "/system/wherebuy","/Tondach/system/wherebuy/", "/Tondach/system/wherebuy"}, method = RequestMethod.GET)
     public ModelAndView wherebuy(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/wherebuy");
         model.addObject("seller", Seller.getSellerByCount("0", "100"));
         return model;
     }
     
-    @RequestMapping(value = {"system/editseller/{id}", "/system/editseller{id}"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/editseller{id}","/Tondach/system/editseller{id}"}, method = RequestMethod.GET)
     public ModelAndView wherebuyedit(@PathVariable("id") String id, HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/editseller");
         model.addObject("seller", Seller.getOneSeller(id));
@@ -191,38 +191,38 @@ public class SystemController {
         return model;
     }
 
-    @RequestMapping(value = {"system/download/", "/system/download/", "/system/download"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/download/", "/system/download","/Tondach/system/download/", "/Tondach/system/download"}, method = RequestMethod.GET)
     public ModelAndView download(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/download");
         model.addObject("downloads", Download.getFilesByCount("0", "10000"));
         return model;
     }
     
-    @RequestMapping(value = {"system/addCertificate/", "/system/addCertificate/", "/system/addCertificate"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/addCertificate/", "/system/addCertificate","/Tondach/system/addCertificate/", "/Tondach/system/addCertificate"}, method = RequestMethod.GET)
     public ModelAndView addCert(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/addCertificate");
         return model;
     }
     
-    @RequestMapping(value = {"system/addBWK/", "/system/addBWK/", "/system/addBWK"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/addBWK/", "/system/addBWK","/Tondach/system/addBWK/", "/Tondach/system/addBWK"}, method = RequestMethod.GET)
     public ModelAndView addBWK(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/addBWK");
         return model;
     }
     
-    @RequestMapping(value = {"system/addExtra/", "/system/addExtra/", "/system/addExtra"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/addExtra/", "/system/addExtra","/Tondach/system/addExtra/", "/Tondach/system/addExtra"}, method = RequestMethod.GET)
     public ModelAndView addExtra(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/addExtra");
         return model;
     }
     
-    @RequestMapping(value = {"system/addAdvertising/", "/system/addAdvertising/", "/system/addAdvertising"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/addAdvertising/", "/system/addAdvertising","/Tondach/system/addAdvertising/", "/Tondach/system/addAdvertising"}, method = RequestMethod.GET)
     public ModelAndView addAdvert(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/addAdvertising");
         return model;
     }
     
-    @RequestMapping(value = {"/system/update", "/system/update/"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/system/update", "/system/update/","/Tondach/system/update", "/Tondach/system/update/"}, method = RequestMethod.GET)
     public ModelAndView update(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/update");
         return model;

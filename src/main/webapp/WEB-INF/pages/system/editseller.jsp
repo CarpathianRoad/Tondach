@@ -19,7 +19,7 @@
     <div class="margintop20">
         
         
-	<form action="${Constants.URL}system/do/editseller" name="addSellerForm" id="addForm" method="POST" type="multipart/form-data">
+	<form action="<c:url value="/system/do/editseller" />" name="addSellerForm" id="addForm" method="POST" type="multipart/form-data">
             <input type="hidden" class="form-control" name="seller_id" value="${seller.id}">
             
             <div class="row add-row">
@@ -51,7 +51,7 @@
         </form>
         <p>
             <button class="btn btn-success margintop30 marginbottom30 sudmitData" type="submit">Додати зміни</button>
-            <a href="${Constants.URL}system/wherebuy">
+            <a href="<c:url value="/system/wherebuy" />">
                   <button type="submit" class="btn btn-success">Скасувати</button>
               </a>
         </p>
@@ -129,7 +129,7 @@
     function deleteFile(temp){
         var path = "/files/avatars/" + $(temp).parent().find(".dz-details .dz-filename span").text();
         jQuery.ajax({
-            url: '${Constants.URL}system/do/removefile',
+            url: '/Tondach/system/do/removefile;jsessionid=<c:out value="${pageContext.session.id}"/>',
             cache: false,
             contentType: false,
             processData: false,

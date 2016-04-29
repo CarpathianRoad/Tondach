@@ -30,11 +30,11 @@
                     
                     <p>
                         <button class="btn btn-success margintop30 marginbottom30"  id="sudmitDelete" type="submit">Видалити</button>
-                        <a href="${Constants.URL}system/news"><button class="btn btn-danger margintop30 marginbottom30" id="sudmitData" type="submit">Повернутись до новин</button></a>
+                        <a href="<c:url value="/system/news" />"><button class="btn btn-danger margintop30 marginbottom30" id="sudmitData" type="submit">Повернутись до новин</button></a>
                     </p>
                 </div>
         </div>
-                    <form action="${Constants.URL}system/deletedata.do" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
+                    <form action="<c:url value="/system/deletedata.do" />" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
                         <input type="hidden" id="user_id" name="article_id" value="${article.article_id}"/>
                     </form>
     </div>

@@ -20,7 +20,7 @@
 	<div class="row">
                     <div class="col-lg-10">
                         <div class="table-responsive">
-                            <a href="<c:url value="/system/users/add/"/>${category}">
+                            <a href="<c:url value="/system/users/add/${category}"/>">
                             <button type="submit" class="btn btn-success">+ Додати користувача</button></a>
                             <table class="article-table table table-bordered table-hover table-striped">
   <thead>

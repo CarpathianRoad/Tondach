@@ -35,7 +35,7 @@
             <hr>
 
             <div class="row add-row">
-                <form action="${Constants.URL}system/do/insertFile" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
+                <form action="<c:url value="/system/do/insertFile" />" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
                     <input type="hidden" class="form-control" id="avatar_path" name="avatar_path">
 
 
@@ -68,7 +68,7 @@
                     <label for="tlt"><span class="red-star">Файл</span></label><br/>
                 </div>
             </div>
-            <form action="${Constants.URL}system/do/uploadfile" class="dropzone"  type="multipart/form-data" id="my-awesome-dropzone-gal">
+            <form action="<c:url value="/system/do/uploadfile" />" class="dropzone"  type="multipart/form-data" id="my-awesome-dropzone-gal">
                 <label for="tlt"><span class="red-star"></span></label>
                 <input type="hidden" name="path" value="/files/avatars/" />
                 <input type="file" name="file" style="display:none" />
@@ -97,7 +97,7 @@
                 <c:forEach items="${downloads}" var="item">
                     <tr class="table-item">
                         <td class="text-center counter">${count}</td>
-                        <td><a href="${Constants.URL}files/avatars/${item.url}" target="_blank"><img class="file-icon" src="${Constants.URL}images/icons/${item.ext}.png"/>${item.title}</a></td>
+                        <td><a href="<c:url value="/files/avatars/${item.url}" />" target="_blank"><img class="file-icon" src="${Constants.URL}images/icons/${item.ext}.png"/>${item.title}</a></td>
                         <td>${item.size}</td>
                         <td>${item.type}</td>
                         <td class="text-center"><a onclick="changeLink('${item.id}', '${item.title}')" href="#" data-toggle="modal" data-target="#myModal"><img class="article-buttons" src="${Constants.URL}images/delete.png"  width="20" height="20"/></a></td>
@@ -135,7 +135,7 @@
     </div>
     <script>
         function changeLink(id, title) {
-            $('.modal-footer a').attr('href', '${Constants.URL}system/deleteFile/' + id);
+            $('.modal-footer a').attr('href', '<c:url value="/system/deleteFile/" />' + id);
             $('.modal-body b').text(title);
         }
         ;
@@ -171,7 +171,7 @@
             });
             initCKE();
             $("#my-awesome-dropzone-gal").dropzone({
-                url: "${Constants.URL}system/do/uploadfile",
+                url: "/Tondach/system/do/uploadfile;jsessionid=<c:out value="${pageContext.session.id}"/>",
                 addRemoveLinks: true
             });
         });
@@ -186,7 +186,7 @@
         $(".lang-switch-title button").click(function () {
             $(".lang-switch-title button").removeClass("active");
             $("#my-awesome-dropzone-gal").dropzone({ 
-            url: "${Constants.URL}system/do/uploadfile",
+            url: "/Tondach/system/do/uploadfile;jsessionid=<c:out value="${pageContext.session.id}"/>",
             addRemoveLinks: true
         });("active");
             $(this).addClass("active");
@@ -226,7 +226,7 @@
         function deleteFile(temp){
         var path = "/files/avatars/" + $(temp).parent().find(".dz-details .dz-filename span").text();
         jQuery.ajax({
-            url: '${Constants.URL}system/do/removefile',
+            url: '/Tondach/system/do/removefile;jsessionid=<c:out value="${pageContext.session.id}"/>',
             cache: false,
             contentType: false,
             processData: false,

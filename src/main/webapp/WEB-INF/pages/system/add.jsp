@@ -26,12 +26,12 @@
                 <label for="tlt"><span class="red-star">Аватар</span></label><br/>
             </div>
         </div>
-        <form action="${Constants.URL}system/do/uploadfile" class="dropzone"  id="my-awesome-dropzone-gal">
+        <form action="<c:url value="/system/do/uploadfile" />" class="dropzone"  id="my-awesome-dropzone-gal">
            <label for="tlt"><span class="red-star"></span></label>
             <input type="hidden" name="path" value="/files/avatars/" />
             <input type="file" name="file" style="display:none" />
         </form>
-	<form action="${Constants.URL}system/do/insertdata" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
+	<form action="<c:url value="/system/do/insertdata" />" name="addArticleForm" id="addForm" method="POST" type="multipart/form-data">
             <input type="hidden" class="form-control" id="avatar_path" name="avatar_path">
             
             <hr>
@@ -82,7 +82,7 @@
         $(".input-avatar-text-lang[lang='"+currentLangAT+"']").show();
         initCKE();
         $("#my-awesome-dropzone-gal").dropzone({ 
-            url: "${Constants.URL}system/do/uploadfile",
+            url: "/Tondach/system/do/uploadfile;jsessionid=<c:out value="${pageContext.session.id}"/>",
             addRemoveLinks: true
         });
     });
@@ -97,7 +97,7 @@
     $(".lang-switch-title button").click(function(){
         $(".lang-switch-title button").removeClass;
         $("#my-awesome-dropzone-gal").dropzone({ 
-            url: "${Constants.URL}system/do/uploadfile",
+            url: "/Tondach/system/do/uploadfile;jsessionid=<c:out value="${pageContext.session.id}"/>",
             addRemoveLinks: true
         });("active");
         $(this).addClass("active");
@@ -144,7 +144,7 @@
     function deleteFile(temp){
         var path = "/files/avatars/" + $(temp).parent().find(".dz-details .dz-filename span").text();
         jQuery.ajax({
-            url: '${Constants.URL}system/do/removefile',
+            url: '/Tondach/system/do/removefile;jsessionid=<c:out value="${pageContext.session.id}"/>',
             cache: false,
             contentType: false,
             processData: false,

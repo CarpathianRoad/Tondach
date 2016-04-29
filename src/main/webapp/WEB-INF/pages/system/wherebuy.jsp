@@ -26,7 +26,7 @@
                             	<tbody>
                                 	<c:forEach items="${seller}" var="item">
                                             <tr class="table-item">
-                                                <td><a href="${Constants.URL}system/editseller/${item.id}">${item.town}</a></td>
+                                                <td><a href="<c:url value="/system/editseller/${item.id}" />">${item.town}</a></td>
                                                 <td>${item.capital}</td>
                                                 <td class="text-center">${item.amount}</td>
                                             </tr>

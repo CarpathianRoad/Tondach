@@ -36,7 +36,7 @@ public class MainController {
         return model;
     }
     
-    @RequestMapping(value = {"/sendmail/", "/sendmail", "sendmail/", "sendmail"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/sendmail/", "/sendmail"}, method = RequestMethod.GET)
     public @ResponseBody
     String sendMail(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("UTF-8");
@@ -77,7 +77,7 @@ public class MainController {
 	}
     }
     
-    @RequestMapping(value = {"/sendmailRid/", "/sendmailRid", "sendmailRid/", "sendmailRid"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/sendmailRid/", "/sendmailRid"}, method = RequestMethod.GET)
     public @ResponseBody
     String sendMailRid(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("UTF-8");
@@ -116,7 +116,7 @@ public class MainController {
 	}
     }
     
-    @RequestMapping(value = {"/sendmailSlat/", "/sendmailSlat", "sendmailSlat/", "sendmailSlat"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/sendmailSlat/", "/sendmailSlat"}, method = RequestMethod.GET)
     public @ResponseBody
     String sendMailSlat(HttpServletRequest request, HttpServletResponse response) throws Exception {
         request.setCharacterEncoding("UTF-8");

@@ -22,7 +22,7 @@
         <div class="login">
             <div class="heading">
                 <h2>Sign in</h2>
-                <form id="login_form" role="form" name="login-form" action="${Constants.URL}system/login.do" method="POST">
+                <form id="login_form" role="form" name="login-form" action="<c:url value="/system/login.do" />" method="POST">
                     <input name="user_id" id="user_id" type="hidden"/>
                     <div class="input-group input-group-lg">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
@@ -35,7 +35,7 @@
                 </form>
                 <button class="float submit-button">Вхід</button>
                 <div class="validation"></div>
-                <button class="float button"><a href="${Constants.URL}index" style="text-decoration:none; color: white;">Повернутись до головної</a></button>
+                <button class="float button"><a href="<c:url value="/index" />" style="text-decoration:none; color: white;">Повернутись до головної</a></button>
             </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
