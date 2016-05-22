@@ -37,6 +37,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import ua.aits.tondach.functions.Constants;
+import ua.aits.tondach.functions.Helpers;
 import ua.aits.tondach.functions.SFTPinJava;
 import ua.aits.tondach.functions.Transliterator;
 import ua.aits.tondach.model.ArticleModel;
@@ -58,6 +59,7 @@ public class AjaxAndFormController {
     DownloadModel Download = new DownloadModel();
     Transliterator TransliteratorClass = new Transliterator();
     SFTPinJava SFTP = new SFTPinJava();
+    Helpers Helpers = new Helpers();
 
     @RequestMapping(value = {"/system/ajax/check/user", "/system/ajax/check/user/","/Tondach/system/ajax/check/user", "/Tondach/system/ajax/check/user/"}, method = RequestMethod.GET)
     public @ResponseBody
@@ -95,10 +97,13 @@ public class AjaxAndFormController {
     }
 
     @RequestMapping(value = {"/system/do/insertFile","/Tondach/system/do/insertFile"}, method = RequestMethod.POST)
-    public ModelAndView insertCertificate(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
+    public ModelAndView insertFile(HttpServletRequest request) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedEncodingException, IOException {
         request.setCharacterEncoding("UTF-8");
         String title = request.getParameter("title");
-        String url = request.getParameter("avatar_path");
+        String file = request.getParameter("avatar_path");
+        Integer curent = Integer.parseInt(Helpers.lastFileModified(Constants.home+"files/downloads").getName().split("\\.")[0]);
+        String ext = file.split("\\.")[1];
+        String url = curent.toString()+"."+ext;
         String type = request.getParameter("type");
         Download.insertFile(title, url, type);
         return new ModelAndView("redirect:" + "/system/download/");
@@ -116,8 +121,12 @@ public class AjaxAndFormController {
         request.setCharacterEncoding("UTF-8");
         String title = request.getParameter("title");
         String text = request.getParameter("text");
-        String image = request.getParameter("avatar_path");
-        Articles.insertArticle(title, text, image);
+        String file = request.getParameter("avatar_path");
+        Integer curent = Integer.parseInt(Helpers.lastFileModified(Constants.home+"files/avatars").getName().split("\\.")[0]);
+        String ext = file.split("\\.")[1];
+        String name = curent.toString()+"."+ext;
+        
+        Articles.insertArticle(title, text, name);
         return new ModelAndView("redirect:" + "/system/news/");
     }
 
@@ -127,9 +136,13 @@ public class AjaxAndFormController {
         String id = request.getParameter("article_id");
         String title = request.getParameter("title");
         String text = request.getParameter("text");
-        String image = request.getParameter("avatar_path");
+        String file = request.getParameter("avatar_path");
+        Integer curent = Integer.parseInt(Helpers.lastFileModified(Constants.home+"files/avatars").getName().split("\\.")[0]);
+        String ext = file.split("\\.")[1];
+        String name = curent.toString()+"."+ext;
+        
 
-        Articles.updateArticle(id, title, text, image);
+        Articles.updateArticle(id, title, text, name);
         return new ModelAndView("redirect:" + "/system/news/");
     }
 
@@ -173,11 +186,9 @@ public class AjaxAndFormController {
     @RequestMapping(value = {"/system/do/uploadimage", "/system/do/uploadimage/","/Tondach/system/do/uploadimage", "/Tondach/system/do/uploadimage/"}, method = RequestMethod.POST)
     public @ResponseBody
     String uploadImageHandler(@RequestParam("file") MultipartFile file, @RequestParam("path") String path, HttpServletRequest request) throws UnsupportedEncodingException {
-        request.setCharacterEncoding("UTF-8");
-        String name = new String(file.getOriginalFilename().getBytes("windows-1252"), "UTF-8");
-        System.out.println(name);
-        name = TransliteratorClass.transliterate(name);
-
+       Integer curent = Integer.parseInt(Helpers.lastFileModified(Constants.home+path).getName().split("\\.")[0]) + 1;
+                String ext = file.getOriginalFilename().split("\\.")[1];
+                String name = curent.toString()+"."+ext;
         if (!file.isEmpty()) {
             try {
                 byte[] bytes = file.getBytes();
@@ -197,13 +208,18 @@ public class AjaxAndFormController {
             return "You failed to upload " + name + " because the file was empty.";
         }
     }
-
+    
+    @RequestMapping(value = {"/Tondach/getlastfileinfolder", "/getlastfileinfolder", "/Tondach/getlastfileinfolder/", "/getlastfileinfolder/"}, method = RequestMethod.GET)
+    public @ResponseBody String getLastFile(@RequestParam("path") String path,  HttpServletRequest request) {
+    	return Helpers.lastFileModified(Constants.home+path).getName();
+    }
+    
     @RequestMapping(value = {"/system/do/uploadfile", "/system/do/uploadfile/","/Tondach/system/do/uploadfile", "/Tondach/system/do/uploadfile/"}, method = RequestMethod.POST)
     public @ResponseBody
     String uploadFileHandler(@RequestParam("file") MultipartFile file, @RequestParam("path") String path, HttpServletRequest request) throws UnsupportedEncodingException {
-        String name = file.getOriginalFilename();
-        String name1 = TransliteratorClass.transliterate(name);
-        System.out.println(name1);
+        Integer curent = Integer.parseInt(Helpers.lastFileModified(Constants.home+path).getName().split("\\.")[0]) + 1;
+                String ext = file.getOriginalFilename().split("\\.")[1];
+                String name = curent.toString()+"."+ext;
         if (!file.isEmpty()) {
             try {
                 byte[] bytes = file.getBytes();

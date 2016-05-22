@@ -80,12 +80,7 @@
 <script> 
     $(document).ready(function () { 
         
-        var currentLang = $(".lang-switch-text button.active").attr("id");
-        $(".textareas .textarea-msg[lang='"+currentLang+"']").show();
-        var currentLangT = $(".lang-switch-title button.active").attr("id");
-        $(".input-title-lang[lang='"+currentLangT+"']").show();
-        var currentLangAT = $(".lang-switch-avatar-text button.active").attr("id");
-        $(".input-avatar-text-lang[lang='"+currentLangAT+"']").show();
+       
         initCKE();
         if('${article.image}' !== null && '${article.image}' !== ''){
             $("#my-awesome-dropzone-gal .dz-message").hide();
@@ -93,27 +88,7 @@
         } 
     });
     
-    $(".lang-switch-text button").click(function(){
-        $(".lang-switch-text button").removeClass("active");
-        $(this).addClass("active");
-        var currentLang = $(this).attr("id");
-        $(".textareas .textarea-msg").hide();
-        $(".textareas .textarea-msg[lang='"+currentLang+"']").show();
-    });
-    $(".lang-switch-title button").click(function(){
-        $(".lang-switch-title button").removeClass("active");
-        $(this).addClass("active");
-        var currentLangT = $(this).attr("id");
-        $(".input-title-lang").hide();
-        $(".input-title-lang[lang='"+currentLangT+"']").show();
-    });
-    $(".lang-switch-avatar-text button").click(function(){
-        $(".lang-switch-avatar-text button").removeClass("active");
-        $(this).addClass("active");
-        var currentLangT = $(this).attr("id");
-        $(".input-avatar-text-lang").hide();
-        $(".input-avatar-text-lang[lang='"+currentLangT+"']").show();
-    });
+   
     $(".sudmitData").click(function(e){
         $("div.validation").html('');
         $("div.validation").attr("id","");
@@ -168,6 +143,7 @@
     }
        
     function initCKE() {
+        CKEDITOR.timestamp='EAPE';
         CKEDITOR.replace('editor', {
             filebrowserBrowseUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
             filebrowserUploadUrl : '${Constants.URL}tools/imageupload/${folder_str}/',
@@ -178,7 +154,6 @@
         });
         
         CKEDITOR.on('instanceReady', function() { 
-        $("#cke_editor iframe").webkitimageresize().webkittableresize().webkittdresize();
         $("#cke_editor iframe").webkitimageresize().webkittableresize().webkittdresize();
         
     $(".cke_button.cke_button__image.cke_button_off").click(function(){

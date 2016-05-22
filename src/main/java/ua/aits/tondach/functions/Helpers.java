@@ -6,6 +6,7 @@
 package ua.aits.tondach.functions;
 
 import java.io.File;
+import java.io.FileFilter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.DateFormat;
@@ -77,6 +78,25 @@ public class Helpers {
         return imageSize;
     }
 
+    public File lastFileModified(String dir) {
+        File fl = new File(dir);
+        File[] files = fl.listFiles(new FileFilter() {
+            public boolean accept(File file) {
+                return file.isFile();
+            }
+        });
+        Integer lastMod = 0;
+        File choice = null;
+        for (File file : files) {
+            Integer num = Integer.parseInt(file.getName().split("\\.")[0]);
+            if (num > lastMod) {
+                choice = file;
+                lastMod = num;
+            }
+        }
+        return choice;
+    }
+
     ArticleModel Articles = new ArticleModel();
 
     public static String getThreeNews() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
@@ -120,11 +140,10 @@ public class Helpers {
     }
 
     /*
-        Model with 'getting' methods of xml's information.
-        Get the data from the DB using ResultSet, insert it into the UploadModel
-        list. After, methods called from controller can set date in views.
-    */
-    
+     Model with 'getting' methods of xml's information.
+     Get the data from the DB using ResultSet, insert it into the UploadModel
+     list. After, methods called from controller can set date in views.
+     */
     public class UploadModel {
 
         public Integer getId() {
@@ -162,37 +181,36 @@ public class Helpers {
         public String date;
         public String time;
         public String type;
-        
-        
+
         public List<UploadModel> getAllDocs() throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
-        ResultSet result = DB.getResultSet("SELECT * FROM docs_upload ORDER BY date;");
-        List<UploadModel> docsList = new LinkedList<>();
-        while (result.next()) { 
-            UploadModel temp = new UploadModel();
-            temp.setId(result.getInt("id"));
-            temp.setDate(result.getString("date"));
-            temp.setTime(result.getString("time"));
-            temp.setType(result.getString("type"));
-            docsList.add(temp);
-        } 
-        DB.closeCon();
-    return docsList;
-    }
-        
+            ResultSet result = DB.getResultSet("SELECT * FROM docs_upload ORDER BY date;");
+            List<UploadModel> docsList = new LinkedList<>();
+            while (result.next()) {
+                UploadModel temp = new UploadModel();
+                temp.setId(result.getInt("id"));
+                temp.setDate(result.getString("date"));
+                temp.setTime(result.getString("time"));
+                temp.setType(result.getString("type"));
+                docsList.add(temp);
+            }
+            DB.closeCon();
+            return docsList;
+        }
+
         public List<UploadModel> getByType(String type) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException {
-        ResultSet result = DB.getResultSet("SELECT * FROM docs_upload WHERE type = '"+StringEscapeUtils.escapeSql(type)+"' ORDER BY date desc, time desc;");
-        List<UploadModel> docsList = new LinkedList<>();
-        while (result.next()) { 
-            UploadModel temp = new UploadModel();
-            temp.setId(result.getInt("id"));
-            temp.setDate(result.getString("date"));
-            temp.setTime(result.getString("time"));
-            temp.setType(result.getString("type"));
-            docsList.add(temp);
-        } 
-        DB.closeCon();
-    return docsList;
-    }
+            ResultSet result = DB.getResultSet("SELECT * FROM docs_upload WHERE type = '" + StringEscapeUtils.escapeSql(type) + "' ORDER BY date desc, time desc;");
+            List<UploadModel> docsList = new LinkedList<>();
+            while (result.next()) {
+                UploadModel temp = new UploadModel();
+                temp.setId(result.getInt("id"));
+                temp.setDate(result.getString("date"));
+                temp.setTime(result.getString("time"));
+                temp.setType(result.getString("type"));
+                docsList.add(temp);
+            }
+            DB.closeCon();
+            return docsList;
+        }
     }
 
 }

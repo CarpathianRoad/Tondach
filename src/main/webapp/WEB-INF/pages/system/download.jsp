@@ -70,7 +70,7 @@
             </div>
             <form action="<c:url value="/system/do/uploadfile" />" class="dropzone"  type="multipart/form-data" id="my-awesome-dropzone-gal">
                 <label for="tlt"><span class="red-star"></span></label>
-                <input type="hidden" name="path" value="/files/avatars/" />
+                <input type="hidden" name="path" value="/files/downloads/" />
                 <input type="file" name="file" style="display:none" />
             </form>
 
@@ -97,7 +97,7 @@
                 <c:forEach items="${downloads}" var="item">
                     <tr class="table-item">
                         <td class="text-center counter">${count}</td>
-                        <td><a href="<c:url value="/files/avatars/${item.url}" />" target="_blank"><img class="file-icon" src="${Constants.URL}images/icons/${item.ext}.png"/>${item.title}</a></td>
+                        <td><a href="<c:url value="/files/downloads/${item.url}" />" target="_blank"><img class="file-icon" src="${Constants.URL}images/icons/${item.ext}.png"/>${item.title}</a></td>
                         <td>${item.size}</td>
                         <td>${item.type}</td>
                         <td class="text-center"><a onclick="changeLink('${item.id}', '${item.title}')" href="#" data-toggle="modal" data-target="#myModal"><img class="article-buttons" src="${Constants.URL}images/delete.png"  width="20" height="20"/></a></td>
@@ -159,48 +159,17 @@
                 }
             });
 
-            var currentLang = $(".lang-switch-text button.active").attr("id");
-            $(".textareas .textarea-msg[lang='" + currentLang + "']").show();
-            var currentLangT = $(".lang-switch-title button.active").attr("id");
-            $(".input-title-lang[lang='" + currentLangT + "']").show();
-            var currentLangAT = $(".lang-switch-avatar-text button.active").attr("id");
-            $(".input-avatar-text-lang[lang='" + currentLangAT + "']").show();
-
+            
             $(".article-filters").click(function () {
                 $(".article-filters-block").toggle("slow");
             });
-            initCKE();
             $("#my-awesome-dropzone-gal").dropzone({
                 url: "/Tondach/system/do/uploadfile;jsessionid=<c:out value="${pageContext.session.id}"/>",
                 addRemoveLinks: true
             });
         });
 
-        $(".lang-switch-text button").click(function () {
-            $(".lang-switch-text button").removeClass("active");
-            $(this).addClass("active");
-            var currentLang = $(this).attr("id");
-            $(".textareas .textarea-msg").hide();
-            $(".textareas .textarea-msg[lang='" + currentLang + "']").show();
-        });
-        $(".lang-switch-title button").click(function () {
-            $(".lang-switch-title button").removeClass("active");
-            $("#my-awesome-dropzone-gal").dropzone({ 
-            url: "/Tondach/system/do/uploadfile;jsessionid=<c:out value="${pageContext.session.id}"/>",
-            addRemoveLinks: true
-        });("active");
-            $(this).addClass("active");
-            var currentLangT = $(this).attr("id");
-            $(".").hide();
-            $(".input-title-lang[lang='" + currentLangT + "']").show();
-        });
-        $(".lang-switch-avatar-text button").click(function () {
-            $(".lang-switch-avatar-text button").removeClass("active");
-            $(this).addClass("active");
-            var currentLangT = $(this).attr("id");
-            $(".input-avatar-text-lang").hide();
-            $(".input-avatar-text-lang[lang='" + currentLangT + "']").show();
-        });
+        
         $(".sudmitData").click(function (e) {
             $("div.validation").html('');
             $("div.validation").attr("id", "");
@@ -224,7 +193,7 @@
             'slow');
         }
         function deleteFile(temp){
-        var path = "/files/avatars/" + $(temp).parent().find(".dz-details .dz-filename span").text();
+        var path = "/files/downloads/" + $(temp).parent().find(".dz-details .dz-filename span").text();
         jQuery.ajax({
             url: '/Tondach/system/do/removefile;jsessionid=<c:out value="${pageContext.session.id}"/>',
             cache: false,
@@ -236,47 +205,5 @@
             }
         });
     }
-        function imageInserted() {
-            $("label.cke_dialog_ui_labeled_label:contains('HSpace')").next().find(".cke_dialog_ui_input_text").val("15");
-            $(".cke_editor_editor_dialog .cke_dialog_body").removeClass("image-dialog");
-            $(".cke_editor_editor_dialog .cke_dialog_body").removeClass("image-dialog");
-            $(".cke_dialog_ui_button_ok span").click();
-        }
-
-        function initCKE() {
-            CKEDITOR.replace('editor', {
-                filebrowserBrowseUrl: '${Constants.URL}tools/imageupload',
-                filebrowserUploadUrl: '${Constants.URL}tools/imageupload',
-                filebrowserImageBrowseUrl: '${Constants.URL}tools/imageupload',
-                filebrowserImageUploadUrl: '${Constants.URL}tools/imageupload',
-                filebrowserWindowWidth: 800,
-                filebrowserWindowHeight: 500
-            });
-
-            CKEDITOR.on('instanceReady', function () {
-                $("#cke_editor iframe").webkitimageresize().webkittableresize().webkittdresize();
-                $("#cke_editor iframe").webkitimageresize().webkittableresize().webkittdresize();
-
-                $(".cke_button.cke_button__image.cke_button_off").click(function () {
-                    $(".cke_dialog_body").hide();
-                    setTimeout(function () {   //calls click event after a certain time
-
-                        $(".cke_editor_editor_dialog .cke_dialog_body").addClass("image-dialog");
-                        $(".cke_editor_editor_dialog .cke_dialog_body").addClass("image-dialog");
-
-                        if ($(".cke_editor_editor_dialog .cke_dialog_body").hasClass("image-dialog")) {
-                            $(".cke_dialog_body").show();
-                        }
-                        if ($(".cke_editor_editor_dialog .cke_dialog_body").hasClass("image-dialog")) {
-                            $(".cke_dialog_body").show();
-                        }
-                    }, 500);
-                });
-            });
-            var obj = $("#cke_120_fileInput").contents().find(".returnImage");
-            obj.click("click", function (e) {
-                $("#cke_71_textInput").val("s2as1");
-            });
-        }
 </script>
 

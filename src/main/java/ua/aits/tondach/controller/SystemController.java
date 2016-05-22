@@ -198,30 +198,6 @@ public class SystemController {
         return model;
     }
     
-    @RequestMapping(value = {"/system/addCertificate/", "/system/addCertificate","/Tondach/system/addCertificate/", "/Tondach/system/addCertificate"}, method = RequestMethod.GET)
-    public ModelAndView addCert(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/addCertificate");
-        return model;
-    }
-    
-    @RequestMapping(value = {"/system/addBWK/", "/system/addBWK","/Tondach/system/addBWK/", "/Tondach/system/addBWK"}, method = RequestMethod.GET)
-    public ModelAndView addBWK(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/addBWK");
-        return model;
-    }
-    
-    @RequestMapping(value = {"/system/addExtra/", "/system/addExtra","/Tondach/system/addExtra/", "/Tondach/system/addExtra"}, method = RequestMethod.GET)
-    public ModelAndView addExtra(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/addExtra");
-        return model;
-    }
-    
-    @RequestMapping(value = {"/system/addAdvertising/", "/system/addAdvertising","/Tondach/system/addAdvertising/", "/Tondach/system/addAdvertising"}, method = RequestMethod.GET)
-    public ModelAndView addAdvert(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
-        ModelAndView model = new ModelAndView("/system/addAdvertising");
-        return model;
-    }
-    
     @RequestMapping(value = {"/system/update", "/system/update/","/Tondach/system/update", "/Tondach/system/update/"}, method = RequestMethod.GET)
     public ModelAndView update(HttpServletRequest request, HttpServletResponse response) throws SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException, ParseException   {
         ModelAndView model = new ModelAndView("/system/update");
