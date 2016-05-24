@@ -75,7 +75,7 @@
             <h3><a href="${Constants.URL}download-files/quality/">Сертифікати</a></h3><br/>
             <ul>
                 <c:forEach items="${cert}" var="item">
-                    <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/jpg.png" alt="jpg" /> <a href="${Constants.URL}files/avatars/${item.url}" target="_blank" class="wf_file"><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
+                    <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/jpg.png" alt="jpg" /> <a href="${Constants.URL}files/downloads/${item.url}" target="_blank" class="wf_file"><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
                     </c:forEach>
             </ul></div>
 
@@ -83,7 +83,7 @@
             <h3><a href="${Constants.URL}download-files/bwk/">Плівка від BWK</a></h3><br/>
             <ul>
                 <c:forEach items="${bwk}" var="item">
-                    <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/avatars/${item.url}" target="_blank" class="wf_file"><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
+                    <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/downloads/${item.url}" target="_blank" class="wf_file"><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
                 </c:forEach>`
             </ul></div>
 
@@ -91,7 +91,7 @@
             <h3><a href="${Constants.URL}download-files/extras/">Додаткові матеріали</a></h3><br/>
             <ul>
                 <c:forEach items="${extra}" var="item">
-                    <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/avatars/${item.url}" target="_blank" class="wf_file"><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
+                    <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/pdf.png" alt="jpg" /> <a href="${Constants.URL}files/downloads/${item.url}" target="_blank" class="wf_file"><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
                     </c:forEach>
             </ul></div>
 
@@ -99,7 +99,7 @@
             <h3><a href="${Constants.URL}download-files/advertising/">Рекламні матеріали</a></h3><br/>
             <ul>
                 <c:forEach items="${advert}" var="item">
-                    <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/archive.png" alt="jpg" /> <a href="${Constants.URL}files/avatars/${item.url}" target="_blank" class="wf_file"><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
+                    <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/archive.png" alt="jpg" /> <a href="${Constants.URL}files/downloads/${item.url}" target="_blank" class="wf_file"><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
                     </c:forEach>
             </ul></div>
     </t:indexpage>

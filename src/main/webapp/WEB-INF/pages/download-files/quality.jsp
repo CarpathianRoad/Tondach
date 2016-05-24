@@ -120,7 +120,7 @@
                     <div>
                         <ul>
                             <c:forEach items="${cert}" var="item">
-                                <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/jpg.png" alt="jpg" /> <a href="${Constants.URL}files/avatars/${item.url}" target="_blank" class="wf_file" download><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
+                                <li><img style="border: 0px; vertical-align: middle;" class="wf_file_icon" src="${Constants.URL}css/icons/jpg.png" alt="jpg" /> <a href="${Constants.URL}files/downloads/${item.url}" target="_blank" class="wf_file" download><span class="wf_file_text">${item.title}</span> </a><span class="wf_file_size" style="margin-left: 5px;">${item.size}</span></li>
                                 </c:forEach>
                         </ul>
                     </div>

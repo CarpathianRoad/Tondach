@@ -119,7 +119,7 @@ public class DownloadModel {
             temp.setId(result.getInt("id"));
             temp.setUrl(result.getString("url"));
             temp.setType(result.getString("type"));
-            temp.setSize(help.getReadableSize(Constants.home + "files/avatars/" + result.getString("url"), 3));
+            temp.setSize(help.getReadableSize(Constants.home + "files/downloads/" + result.getString("url"), 3));
             temp.setExt(result.getString("url").split("\\.")[1].toLowerCase());
             
             filesList.add(temp);
@@ -145,7 +145,7 @@ public class DownloadModel {
             temp.setId(result.getInt("id"));
             temp.setUrl(result.getString("url"));
             temp.setType(result.getString("type"));
-            temp.setSize(help.getReadableSize(Constants.home + "files/avatars/" + result.getString("url"), 3));
+            temp.setSize(help.getReadableSize(Constants.home + "files/downloads/" + result.getString("url"), 3));
             temp.setExt(result.getString("url").split("\\.")[1].toLowerCase());
             
             filesList.add(temp);

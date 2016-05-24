@@ -97,7 +97,7 @@
                 <c:forEach items="${downloads}" var="item">
                     <tr class="table-item">
                         <td class="text-center counter">${count}</td>
-                        <td><a href="<c:url value="/files/downloads/${item.url}" />" target="_blank"><img class="file-icon" src="${Constants.URL}images/icons/${item.ext}.png"/>${item.title}</a></td>
+                        <td><a href="${Constants.URL}files/downloads/${item.url};jsessionid=<c:out value="${pageContext.session.id}"/>" target="_blank"><img class="file-icon" src="${Constants.URL}images/icons/${item.ext}.png"/>${item.title}</a></td>
                         <td>${item.size}</td>
                         <td>${item.type}</td>
                         <td class="text-center"><a onclick="changeLink('${item.id}', '${item.title}')" href="#" data-toggle="modal" data-target="#myModal"><img class="article-buttons" src="${Constants.URL}images/delete.png"  width="20" height="20"/></a></td>

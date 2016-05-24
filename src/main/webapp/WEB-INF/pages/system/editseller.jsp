@@ -162,7 +162,6 @@
         
         CKEDITOR.on('instanceReady', function() { 
         $("#cke_editor iframe").webkitimageresize().webkittableresize().webkittdresize();
-        $("#cke_editor iframe").webkitimageresize().webkittableresize().webkittdresize();
         
     $(".cke_button.cke_button__image.cke_button_off").click(function(){
         $(".cke_dialog_body").hide();
